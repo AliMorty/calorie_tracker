@@ -1,0 +1,358 @@
+/* ===================================================
+   Calorie Tracker - styles.css
+   Mobile-first, light theme, Cronometer-inspired
+   =================================================== */
+
+/* ---------- reset & base ---------- */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+  background-color: #f5f6f8;
+  color: #1a1a2e;
+  line-height: 1.5;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---------- app shell ---------- */
+
+#app {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 0 2rem 0;
+}
+
+/* ---------- date header ---------- */
+
+.date-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  background: #ffffff;
+  border-bottom: 1px solid #e8e8ee;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.date-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a1a2e;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  color: #4a6cf7;
+  cursor: pointer;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  transition: background-color 0.15s;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.nav-btn:hover {
+  background-color: #eef1ff;
+}
+
+.nav-btn:active {
+  background-color: #dde3ff;
+}
+
+/* ---------- summary card ---------- */
+
+.summary-card {
+  background: #ffffff;
+  margin: 0.75rem;
+  border-radius: 12px;
+  padding: 1rem 1rem 0.75rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.summary-calories-row {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-bottom: 0.6rem;
+}
+
+.summary-cal-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.summary-cal-number {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.summary-cal-number.over {
+  color: #e74c3c;
+}
+
+.summary-cal-label {
+  font-size: 0.75rem;
+  color: #8e8ea0;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-top: 0.1rem;
+}
+
+/* ---------- progress bars ---------- */
+
+.progress-bar-container {
+  width: 100%;
+  height: 8px;
+  background: #eaedf3;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 0.75rem;
+}
+
+.progress-bar-container.small {
+  height: 6px;
+  margin-bottom: 0;
+}
+
+.progress-bar {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.4s ease;
+  width: 0%;
+}
+
+/* Color states */
+.bar-ok    { background-color: #4a6cf7; }
+.bar-warn  { background-color: #f5a623; }
+.bar-over  { background-color: #e74c3c; }
+
+/* Macro-specific bar colors (override bar-ok default) */
+.protein-bar.bar-ok { background-color: #4a6cf7; }
+.carbs-bar.bar-ok   { background-color: #f5a623; }
+.fat-bar.bar-ok     { background-color: #e74c3c; }
+
+/* When warn/over, keep the universal warn/over colors */
+.protein-bar.bar-warn, .carbs-bar.bar-warn, .fat-bar.bar-warn { background-color: #f5a623; }
+.protein-bar.bar-over, .carbs-bar.bar-over, .fat-bar.bar-over { background-color: #e74c3c; }
+
+/* ---------- macro bar groups ---------- */
+
+.macro-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.macro-bar-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.macro-bar-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #555;
+}
+
+.macro-name {
+  font-weight: 600;
+}
+
+/* ---------- meal sections ---------- */
+
+.meal-section {
+  background: #ffffff;
+  margin: 0.75rem;
+  border-radius: 12px;
+  padding: 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+.meal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #f0f0f5;
+}
+
+.meal-header-left {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+}
+
+.meal-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.meal-macros-summary {
+  font-size: 0.8rem;
+  color: #8e8ea0;
+  font-weight: 500;
+}
+
+.add-food-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background: #4a6cf7;
+  color: #fff;
+  font-size: 1.3rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.15s;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.add-food-btn:hover {
+  background-color: #3a5ce5;
+}
+
+.add-food-btn:active {
+  background-color: #2f4fd4;
+}
+
+/* ---------- macro chips on meal row ---------- */
+
+.meal-macro-row {
+  display: flex;
+  gap: 0.4rem;
+  padding: 0.3rem 1rem 0.5rem;
+}
+
+.macro-chip {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.15rem 0.5rem;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.protein-chip { background-color: #4a6cf7; }
+.carbs-chip   { background-color: #f5a623; }
+.fat-chip     { background-color: #e74c3c; }
+
+/* ---------- food entries ---------- */
+
+.food-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid #f6f6fa;
+}
+
+.food-entry:last-child {
+  border-bottom: none;
+}
+
+.food-info {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  flex: 1;
+  margin-right: 0.75rem;
+}
+
+.food-name {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #1a1a2e;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.food-portion {
+  font-size: 0.75rem;
+  color: #8e8ea0;
+}
+
+.food-macros {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-shrink: 0;
+}
+
+.food-cal {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  min-width: 2.5rem;
+  text-align: right;
+}
+
+.food-cal::after {
+  content: ' cal';
+  font-size: 0.65rem;
+  font-weight: 400;
+  color: #8e8ea0;
+}
+
+.food-macro-detail {
+  display: flex;
+  gap: 0.3rem;
+  font-size: 0.7rem;
+  color: #8e8ea0;
+}
+
+.fm-p::before { content: 'P '; color: #4a6cf7; font-weight: 600; }
+.fm-c::before { content: 'C '; color: #f5a623; font-weight: 600; }
+.fm-f::before { content: 'F '; color: #e74c3c; font-weight: 600; }
+
+/* ---------- empty meal state ---------- */
+
+.empty-meal {
+  padding: 1.5rem 1rem;
+  text-align: center;
+  color: #b0b0c0;
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+/* ---------- responsive: larger screens ---------- */
+
+@media (min-width: 481px) {
+  #app {
+    margin-top: 1rem;
+  }
+
+  .date-header {
+    border-radius: 12px 12px 0 0;
+    margin: 0 0.75rem;
+  }
+}
+
+/* ---------- utility ---------- */
+
+.over {
+  color: #e74c3c !important;
+}

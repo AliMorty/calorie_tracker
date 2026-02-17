@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>Calorie Tracker</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div id="app">
+
+    <!-- Date navigation header -->
+    <header class="date-header">
+      <button id="prev-day-btn" class="nav-btn" aria-label="Previous day">&larr;</button>
+      <span id="date-label" class="date-label">Today, Feb 16</span>
+      <button id="next-day-btn" class="nav-btn" aria-label="Next day">&rarr;</button>
+    </header>
+
+    <!-- Daily summary card -->
+    <section class="summary-card">
+      <div class="summary-calories-row">
+        <div class="summary-cal-block">
+          <span class="summary-cal-number" id="summary-calories">0</span>
+          <span class="summary-cal-label">eaten</span>
+        </div>
+        <div class="summary-cal-block">
+          <span class="summary-cal-number" id="remaining-calories">0</span>
+          <span class="summary-cal-label">remaining</span>
+        </div>
+        <div class="summary-cal-block">
+          <span class="summary-cal-number" id="goal-calories">2000</span>
+          <span class="summary-cal-label">goal</span>
+        </div>
+      </div>
+      <div class="progress-bar-container">
+        <div class="progress-bar" id="progress-calories"></div>
+      </div>
+
+      <div class="macro-bars">
+        <div class="macro-bar-group">
+          <div class="macro-bar-label">
+            <span class="macro-name">Protein</span>
+            <span><span id="summary-protein">0g</span> / <span id="goal-protein">150g</span></span>
+          </div>
+          <div class="progress-bar-container small">
+            <div class="progress-bar protein-bar" id="progress-protein"></div>
+          </div>
+        </div>
+        <div class="macro-bar-group">
+          <div class="macro-bar-label">
+            <span class="macro-name">Carbs</span>
+            <span><span id="summary-carbs">0g</span> / <span id="goal-carbs">250g</span></span>
+          </div>
+          <div class="progress-bar-container small">
+            <div class="progress-bar carbs-bar" id="progress-carbs"></div>
+          </div>
+        </div>
+        <div class="macro-bar-group">
+          <div class="macro-bar-label">
+            <span class="macro-name">Fat</span>
+            <span><span id="summary-fat">0g</span> / <span id="goal-fat">65g</span></span>
+          </div>
+          <div class="progress-bar-container small">
+            <div class="progress-bar fat-bar" id="progress-fat"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Meal sections -->
+    <main id="meals-container">
+      <!-- Rendered by ui.js -->
+    </main>
+
+  </div>
+
+  <!-- Scripts: order matters (storage first, then ui, then app) -->
+  <script src="js/storage.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
