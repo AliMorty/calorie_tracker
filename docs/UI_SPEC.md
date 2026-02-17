@@ -137,31 +137,55 @@ Opens when user taps `[+]` on a meal section. This is a **bottom sheet** that sl
 
 ### 2.1 Serving Size Picker
 
-Opens after tapping a food from search results. This is a smaller modal or inline expansion.
+Opens after tapping a food from search results. This is a **full-screen overlay** (not a sub-view within the bottom sheet). The bottom sheet closes and this screen takes over.
 
 ```
 +------------------------------------------+
-|  [< Back]     Chicken Breast, grilled    |
+|  [X]        Breakfast  v         [...]   |  <-- X=close, meal name=dropdown, ...=more
 +------------------------------------------+
 |                                          |
-|  Serving size:                           |
-|  [  1  ] x [  100g          v ]          |  <-- quantity input + unit dropdown
+|  Chicken Thigh                           |  <-- food name, large bold
+|  Generic                                 |  <-- source/brand label, gray
 |                                          |
-|  Nutrition for this serving:             |
-|  Calories:  165                          |
-|  Protein:   31g                          |
-|  Carbs:     0g                           |
-|  Fat:       3.6g                         |
+|  +----------+----------+--------+------+ |
+|  |  245     | o 24.9   |  o  0  | o 15.4| |
+|  |  Cal     | Prot (g) | Carb(g)| Fat(g)| |  <-- live-updating macro card
+|  +----------+----------+--------+------+ |
 |                                          |
-|  [ Add to Breakfast ]                    |  <-- primary action button
+|  [ 100          ]  [ g            v ]   |  <-- qty input + unit dropdown
 |                                          |
+|  [          Add food                ]   |  <-- full-width blue pill button
+|                                          |
++------------------------------------------+
+|  Calorie                           245   |  <-- scrollable nutrition details
+|  ----------------------------------------|
+|  Total fat                       15.4 g  |
+|    Saturated fat                  4.3 g  |
+|    Polyunsaturated fat            3.4 g  |
+|    Monounsaturated fat            6.1 g  |
+|    Trans fat                      0.0 g  |
+|  ----------------------------------------|
+|  Total carbs                       0 g   |
+|    Fiber                           0 g   |
+|    ...                                   |
 +------------------------------------------+
 ```
 
-- Quantity is a number input (supports decimals like 1.5)
-- Unit dropdown shows available serving units for this food (g, cup, oz, "1 large", etc.)
-- Nutrition values update live as quantity changes
-- "Add to Breakfast" button saves the entry and closes back to the diary
+- Quantity input is a number field (supports decimals like 1.5, 0.5, etc.)
+- Unit dropdown lists available units for this food (e.g. g, oz, cup, ml, "1 large" - depends on food)
+- All values in the macro card update live as the user changes quantity or unit
+- Tapping "Add food" saves the entry and returns to the diary
+- The meal name in the header has a dropdown arrow - tapping it lets the user switch which meal they are adding to without going back
+
+### Visual Design Notes (see `docs/samples/add_food.jpg`)
+
+- **Screen type:** Full-screen overlay with the same soft light blue/gray gradient background as the main page
+- **Header:** X button on the far left, meal name centered with a small blue dropdown arrow, 3-dot menu on the far right. Thin divider line below.
+- **Food name:** Large, bold, dark text. Source label ("Generic") directly below in small gray text.
+- **Macro card:** White rounded rectangle card with 4 columns separated by thin vertical dividers. Each macro column has: a colored dot (blue=protein, orange=carbs, green=fat, none=calories), the value in bold, and the label below in small gray text.
+- **Serving inputs:** Two rounded rectangle inputs side by side. Left is narrower (quantity). Right is wider (unit) with a blue dropdown arrow on the right edge.
+- **Add food button:** Full-width, tall, blue pill-shaped button with white bold text "Add food".
+- **Nutrition details:** Plain list below the fold, white background. Primary nutrients (Calorie, Total fat, Total carbs, Protein) in bold. Sub-nutrients (Saturated fat, Fiber, etc.) indented slightly in regular weight gray text. Values right-aligned.
 
 ---
 
@@ -290,7 +314,7 @@ Main Screen (Diary)
   |
   +--> [+] --> Add Food Sheet (bottom sheet overlay)
   |              |
-  |              +--> Food result --> Serving Size Picker (sub-view within sheet)
+  |              +--> Food result --> Serving Size Picker (full-screen overlay, sheet closes)
   |              +--> [Scan] --> Scanner View (full-screen overlay)
   |              +--> [Quick Add] --> Quick Add Form (sub-view within sheet)
   |
