@@ -50,6 +50,19 @@ This is what the user sees when they open the app.
 +------------------------------------------+
 ```
 
+### Visual Design Notes (see `docs/samples/main_page.jpg`)
+
+The ASCII diagram above shows structure only. The actual visual design differs significantly:
+
+- **Macro summary widget:** Uses concentric circular ring charts, not horizontal bars. There are 4 rings stacked from outer to inner: Calories (blue), Protein (blue, slightly smaller), Carbs (salmon/orange), Fat (green). Each ring fills proportionally to progress toward goal. The numbers (current vs goal) are listed to the right of the rings in a two-column layout.
+- **Consumed/Remaining toggle:** A pill-shaped segmented control sits above the macro widget. "Consumed" and "Remaining" are the two options. It switches what the numbers display.
+- **Summary card background:** Soft gradient background (light blue fading to light pink/peach). The macro widget sits inside a white rounded card on top of this gradient area.
+- **Planner and Nutrients buttons:** Two pill-shaped buttons sit below the summary card, side by side, with icons. These are secondary navigation shortcuts.
+- **Meal section headers:** Meal name (e.g. "Breakfast") in bold, with a summary line below it (e.g. "379 Cal, 38p, 43c, 8f"). The `[+]` button is a filled blue circle on the right. A 3-dot menu icon sits next to it.
+- **Food entry rows:** Grouped inside a rounded white card per meal. Each entry shows food name in bold on top, and serving size + macro summary in smaller gray text below (e.g. "400g - 274 Cal, 36.4p, 16c, 8f").
+- **Bottom navigation bar:** Fixed tab bar with 4 items: Diary (active, blue icon), Coach, Me, Settings.
+- **Overall color palette:** White background, blue as primary accent, gray for secondary text, salmon/orange and green for carbs/fat respectively.
+
 ### Interactions on Main Screen
 
 | Element | Action | Result |
