@@ -73,3 +73,4 @@ Status legend: `planned` | `in-progress` | `done` | `cut`
 - Tier 1 is the priority. The app should be usable for daily calorie tracking before moving to Tier 2+.
 - Barcode scanning (2.1) and OCR (2.3) require HTTPS or localhost to access the camera API. We will need to either serve via a local HTTPS server or deploy somewhere.
 - The Canadian food database (3.1) could start from Open Food Facts (open source, has Canadian products) and be enriched over time by user contributions.
+- **End goal: the app must visually match the reference design.** Reference screenshots of the desired app are stored in `docs/samples/`. Before considering any UI feature complete, compare it against the reference screenshots and make sure they match.
