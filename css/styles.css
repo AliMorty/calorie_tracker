@@ -351,6 +351,145 @@ body {
   }
 }
 
+/* ---------- add food panel (bottom sheet) ---------- */
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 100;
+}
+
+.overlay.hidden,
+.add-food-panel.hidden {
+  display: none;
+}
+
+.add-food-panel {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 480px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 20px 20px 0 0;
+  z-index: 101;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel-header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #f0f0f5;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+.panel-close-btn {
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  color: #8e8ea0;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0.1rem 0.3rem;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.panel-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.panel-search-bar {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #f0f0f5;
+  flex-shrink: 0;
+}
+
+.food-search-input {
+  width: 100%;
+  padding: 0.6rem 0.9rem;
+  border: 1.5px solid #e0e0ea;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  background: #f8f8fc;
+  color: #1a1a2e;
+}
+
+.food-search-input:focus {
+  border-color: #4a6cf7;
+  background: #fff;
+}
+
+.food-list {
+  overflow-y: auto;
+  flex: 1;
+}
+
+.food-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #f6f6fa;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.food-list-item:last-child {
+  border-bottom: none;
+}
+
+.food-list-item:active {
+  background-color: #f0f3ff;
+}
+
+.food-list-item-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.food-list-item-name {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #1a1a2e;
+}
+
+.food-list-item-serving {
+  font-size: 0.75rem;
+  color: #8e8ea0;
+  margin-top: 0.1rem;
+}
+
+.food-list-item-cal {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  flex-shrink: 0;
+}
+
+.food-list-item-cal::after {
+  content: ' cal';
+  font-size: 0.65rem;
+  font-weight: 400;
+  color: #8e8ea0;
+}
+
+.food-list-empty {
+  padding: 2rem 1rem;
+  text-align: center;
+  color: #b0b0c0;
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
 /* ---------- utility ---------- */
 
 .over {

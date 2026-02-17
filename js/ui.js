@@ -244,6 +244,81 @@ const UI = (function () {
     return row;
   }
 
+  // ---------- add food panel ----------
+
+  function showAddFoodPanel(mealType, foods, onSelect) {
+    var mealLabels = { breakfast: 'Breakfast', lunch: 'Lunch', dinner: 'Dinner', snacks: 'Snacks' };
+    document.getElementById('panel-title').textContent = 'Add to ' + mealLabels[mealType];
+    document.getElementById('food-search-input').value = '';
+    _renderFoodList(foods, mealType, onSelect);
+
+    document.getElementById('add-food-overlay').classList.remove('hidden');
+    document.getElementById('add-food-panel').classList.remove('hidden');
+    document.getElementById('food-search-input').focus();
+
+    document.getElementById('food-search-input').oninput = function () {
+      var query = this.value.trim().toLowerCase();
+      var filtered = query
+        ? foods.filter(function (f) { return f.name.toLowerCase().indexOf(query) !== -1; })
+        : foods;
+      _renderFoodList(filtered, mealType, onSelect);
+    };
+
+    document.getElementById('panel-close-btn').onclick = hideAddFoodPanel;
+    document.getElementById('add-food-overlay').onclick = hideAddFoodPanel;
+  }
+
+  function hideAddFoodPanel() {
+    document.getElementById('add-food-overlay').classList.add('hidden');
+    document.getElementById('add-food-panel').classList.add('hidden');
+  }
+
+  function _renderFoodList(foods, mealType, onSelect) {
+    var list = document.getElementById('food-list');
+    list.innerHTML = '';
+
+    if (foods.length === 0) {
+      var empty = document.createElement('div');
+      empty.className = 'food-list-empty';
+      empty.textContent = 'No foods found';
+      list.appendChild(empty);
+      return;
+    }
+
+    for (var i = 0; i < foods.length; i++) {
+      var food = foods[i];
+      var item = document.createElement('div');
+      item.className = 'food-list-item';
+
+      var info = document.createElement('div');
+      info.className = 'food-list-item-info';
+
+      var name = document.createElement('span');
+      name.className = 'food-list-item-name';
+      name.textContent = food.name;
+
+      var serving = document.createElement('span');
+      serving.className = 'food-list-item-serving';
+      serving.textContent = food.servingLabel;
+
+      info.appendChild(name);
+      info.appendChild(serving);
+
+      var cal = document.createElement('span');
+      cal.className = 'food-list-item-cal';
+      cal.textContent = food.calories;
+
+      item.appendChild(info);
+      item.appendChild(cal);
+
+      item.addEventListener('click', (function (f) {
+        return function () { onSelect(mealType, f); };
+      })(food));
+
+      list.appendChild(item);
+    }
+  }
+
   // ---------- navigation bindings ----------
 
   function bindNavigation(onPrev, onNext) {
@@ -265,5 +340,7 @@ const UI = (function () {
     renderSummary: renderSummary,
     renderMeals: renderMeals,
     bindNavigation: bindNavigation,
+    showAddFoodPanel: showAddFoodPanel,
+    hideAddFoodPanel: hideAddFoodPanel,
   };
 })();

@@ -8,17 +8,23 @@
 const App = (function () {
 
   var currentDate = new Date();
+  var dayData = null;
+  var foodDatabase = [];
 
   function init() {
     UI.init();
     UI.bindNavigation(goToPrevDay, goToNextDay);
+    dayData = Storage.getDummyDayData();
+
+    fetch('data/foods.json')
+      .then(function (res) { return res.json(); })
+      .then(function (json) { foodDatabase = json.foods; })
+      .catch(function () { foodDatabase = []; });
+
     renderDay();
   }
 
   function renderDay() {
-    // For step 1, use hardcoded dummy data regardless of date.
-    // In step 2 this will switch to: Storage.getMealsForDate(currentDate)
-    var dayData = Storage.getDummyDayData();
     var goals = Storage.getGoals();
     var totals = Storage.computeDayTotals(dayData);
 
@@ -38,8 +44,25 @@ const App = (function () {
   }
 
   function handleAddFood(mealType) {
-    // Placeholder for step 2 - will open an add-food modal/panel
-    console.log('Add food clicked for:', mealType);
+    UI.showAddFoodPanel(mealType, foodDatabase, onFoodSelected);
+  }
+
+  function onFoodSelected(mealType, food) {
+    var entry = {
+      id: Date.now().toString(36) + Math.random().toString(36).substr(2, 5),
+      foodId: food.id,
+      name: food.name,
+      servingQty: 1,
+      servingLabel: food.servingLabel,
+      calories: food.calories,
+      protein: food.protein,
+      carbs: food.carbs,
+      fat: food.fat,
+      addedAt: new Date().toISOString(),
+    };
+    dayData.meals[mealType].entries.push(entry);
+    UI.hideAddFoodPanel();
+    renderDay();
   }
 
   // ---------- expose ----------
