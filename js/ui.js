@@ -244,6 +244,65 @@ const UI = (function () {
     return row;
   }
 
+  // ---------- food detail screen ----------
+
+  function showFoodDetail(mealType, food, unitConversions, onAdd) {
+    var mealLabels = { breakfast: 'Breakfast', lunch: 'Lunch', dinner: 'Dinner', snacks: 'Snacks' };
+    document.getElementById('fd-meal-label').textContent = mealLabels[mealType];
+    document.getElementById('fd-name').textContent = food.name;
+
+    var unitSelect = document.getElementById('fd-unit');
+    unitSelect.innerHTML = '';
+    for (var i = 0; i < food.units.length; i++) {
+      var opt = document.createElement('option');
+      opt.value = i;
+      opt.textContent = food.units[i].label;
+      unitSelect.appendChild(opt);
+    }
+
+    var defaultIdx = food.units.findIndex(function (u) { return u.label === food.defaultUnit; });
+    if (defaultIdx === -1) defaultIdx = 0;
+    unitSelect.value = defaultIdx;
+
+    var qtyInput = document.getElementById('fd-qty');
+    qtyInput.value = food.units[defaultIdx].defaultQty;
+
+    _updateFoodDetailMacros(food, parseFloat(qtyInput.value), food.units[defaultIdx], unitConversions);
+
+    qtyInput.oninput = function () {
+      var qty = parseFloat(this.value) || 0;
+      var unit = food.units[parseInt(unitSelect.value)];
+      _updateFoodDetailMacros(food, qty, unit, unitConversions);
+    };
+
+    unitSelect.onchange = function () {
+      var unit = food.units[parseInt(this.value)];
+      qtyInput.value = unit.defaultQty;
+      _updateFoodDetailMacros(food, parseFloat(qtyInput.value), unit, unitConversions);
+    };
+
+    document.getElementById('fd-add-btn').onclick = function () {
+      var qty = parseFloat(qtyInput.value) || 0;
+      var unit = food.units[parseInt(unitSelect.value)];
+      onAdd(mealType, food, qty, unit);
+    };
+
+    document.getElementById('fd-close-btn').onclick = hideFoodDetail;
+    document.getElementById('food-detail-screen').classList.remove('hidden');
+  }
+
+  function hideFoodDetail() {
+    document.getElementById('food-detail-screen').classList.add('hidden');
+  }
+
+  function _updateFoodDetailMacros(food, qty, unit, unitConversions) {
+    var n = Storage.calcFoodNutrition(food, qty, unit, unitConversions);
+    document.getElementById('fd-cal').textContent     = n.calories;
+    document.getElementById('fd-protein').textContent = n.protein;
+    document.getElementById('fd-carbs').textContent   = n.carbs;
+    document.getElementById('fd-fat').textContent     = n.fat;
+  }
+
   // ---------- add food panel ----------
 
   function showAddFoodPanel(mealType, foods, onSelect) {
@@ -299,14 +358,14 @@ const UI = (function () {
 
       var serving = document.createElement('span');
       serving.className = 'food-list-item-serving';
-      serving.textContent = food.servingLabel;
+      serving.textContent = food.displayServing || food.servingLabel || '';
 
       info.appendChild(name);
       info.appendChild(serving);
 
       var cal = document.createElement('span');
       cal.className = 'food-list-item-cal';
-      cal.textContent = food.calories;
+      cal.textContent = food.displayCalories !== undefined ? food.displayCalories : 0;
 
       item.appendChild(info);
       item.appendChild(cal);
@@ -342,5 +401,7 @@ const UI = (function () {
     bindNavigation: bindNavigation,
     showAddFoodPanel: showAddFoodPanel,
     hideAddFoodPanel: hideAddFoodPanel,
+    showFoodDetail: showFoodDetail,
+    hideFoodDetail: hideFoodDetail,
   };
 })();

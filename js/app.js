@@ -10,6 +10,7 @@ const App = (function () {
   var currentDate = new Date();
   var dayData = null;
   var foodDatabase = [];
+  var unitConversions = {};
 
   function init() {
     UI.init();
@@ -18,8 +19,21 @@ const App = (function () {
 
     fetch('data/foods.json')
       .then(function (res) { return res.json(); })
-      .then(function (json) { foodDatabase = json.foods; })
-      .catch(function () { foodDatabase = []; });
+      .then(function (json) {
+        unitConversions = json.unitConversions;
+        foodDatabase = json.foods.map(function (food) {
+          var defaultUnitData = food.units.find(function (u) { return u.label === food.defaultUnit; }) || food.units[0];
+          var n = Storage.calcFoodNutrition(food, defaultUnitData.defaultQty, defaultUnitData, json.unitConversions);
+          return Object.assign({}, food, {
+            displayCalories: n.calories,
+            displayServing: defaultUnitData.defaultQty + ' ' + defaultUnitData.label,
+          });
+        });
+      })
+      .catch(function () {
+        unitConversions = {};
+        foodDatabase = [];
+      });
 
     renderDay();
   }
@@ -44,24 +58,30 @@ const App = (function () {
   }
 
   function handleAddFood(mealType) {
-    UI.showAddFoodPanel(mealType, foodDatabase, onFoodSelected);
+    UI.showAddFoodPanel(mealType, foodDatabase, onFoodPicked);
   }
 
-  function onFoodSelected(mealType, food) {
+  function onFoodPicked(mealType, food) {
+    UI.hideAddFoodPanel();
+    UI.showFoodDetail(mealType, food, unitConversions, onFoodConfirmed);
+  }
+
+  function onFoodConfirmed(mealType, food, qty, unit) {
+    var nutrition = Storage.calcFoodNutrition(food, qty, unit, unitConversions);
     var entry = {
       id: Date.now().toString(36) + Math.random().toString(36).substr(2, 5),
       foodId: food.id,
       name: food.name,
-      servingQty: 1,
-      servingLabel: food.servingLabel,
-      calories: food.calories,
-      protein: food.protein,
-      carbs: food.carbs,
-      fat: food.fat,
+      servingQty: qty,
+      servingLabel: qty + ' ' + unit.label,
+      calories: nutrition.calories,
+      protein: nutrition.protein,
+      carbs: nutrition.carbs,
+      fat: nutrition.fat,
       addedAt: new Date().toISOString(),
     };
     dayData.meals[mealType].entries.push(entry);
-    UI.hideAddFoodPanel();
+    UI.hideFoodDetail();
     renderDay();
   }
 

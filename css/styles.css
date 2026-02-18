@@ -351,6 +351,177 @@ body {
   }
 }
 
+/* ---------- food detail screen (full-screen overlay) ---------- */
+
+.food-detail-screen {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(160deg, #e8f0ff 0%, #f5e8e0 100%);
+  z-index: 200;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.food-detail-screen.hidden {
+  display: none;
+}
+
+.food-detail-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.fd-close-btn {
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  color: #555;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0.1rem 0.3rem;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.fd-meal-label {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.fd-header-spacer {
+  width: 32px;
+}
+
+.food-detail-content {
+  padding: 1.5rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.fd-name-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.fd-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  line-height: 1.2;
+}
+
+.fd-source {
+  font-size: 0.85rem;
+  color: #8e8ea0;
+}
+
+.fd-macro-card {
+  background: #fff;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07);
+}
+
+.fd-macro-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.fd-macro-divider {
+  width: 1px;
+  height: 36px;
+  background: #e0e0ea;
+  flex-shrink: 0;
+}
+
+.fd-macro-value {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.fd-macro-label {
+  font-size: 0.7rem;
+  color: #8e8ea0;
+  text-align: center;
+}
+
+.fd-dot-blue::before   { content: '\25CF  '; color: #4a6cf7; font-size: 0.55rem; vertical-align: middle; }
+.fd-dot-orange::before { content: '\25CF  '; color: #f5a623; font-size: 0.55rem; vertical-align: middle; }
+.fd-dot-green::before  { content: '\25CF  '; color: #27ae60; font-size: 0.55rem; vertical-align: middle; }
+
+.fd-serving-row {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.fd-qty {
+  width: 90px;
+  padding: 0.75rem 0.9rem;
+  border: 1.5px solid #e0e0ea;
+  border-radius: 12px;
+  font-size: 1rem;
+  background: #fff;
+  color: #1a1a2e;
+  outline: none;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.fd-qty:focus {
+  border-color: #4a6cf7;
+}
+
+.fd-unit {
+  flex: 1;
+  padding: 0.75rem 0.9rem;
+  border: 1.5px solid #e0e0ea;
+  border-radius: 12px;
+  font-size: 1rem;
+  background: #fff;
+  color: #1a1a2e;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='none' stroke='%234a6cf7' stroke-width='2' d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.9rem center;
+  padding-right: 2.5rem;
+}
+
+.fd-unit:focus {
+  border-color: #4a6cf7;
+}
+
+.fd-add-btn {
+  width: 100%;
+  padding: 1rem;
+  background: #4a6cf7;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: background-color 0.15s;
+}
+
+.fd-add-btn:active {
+  background-color: #3a5ce5;
+}
+
 /* ---------- add food panel (bottom sheet) ---------- */
 
 .overlay {

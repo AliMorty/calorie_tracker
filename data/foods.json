@@ -1,224 +1,249 @@
 {
+  "unitConversions": {
+    "weight": {
+      "g":  1,
+      "oz": 28.35,
+      "lb": 453.59
+    },
+    "volume": {
+      "ml":    1,
+      "tsp":   5,
+      "tbsp":  15,
+      "fl oz": 29.57,
+      "cup":   240
+    }
+  },
   "foods": [
     {
       "id": "egg_whole",
       "name": "Egg, whole",
-      "servingSize": 50,
-      "servingUnit": "g",
-      "servingLabel": "1 large",
-      "calories": 72,
-      "protein": 6.3,
-      "carbs": 0.4,
-      "fat": 4.8
+      "per100g": { "calories": 144, "protein": 12.6, "carbs": 0.8, "fat": 9.6 },
+      "units": [
+        { "label": "large egg", "type": "weight", "grams": 50,  "defaultQty": 1   },
+        { "label": "g",         "type": "weight",               "defaultQty": 50  },
+        { "label": "oz",        "type": "weight",               "defaultQty": 1   }
+      ],
+      "defaultUnit": "large egg"
     },
     {
       "id": "chicken_breast",
       "name": "Chicken Breast, grilled",
-      "servingSize": 100,
-      "servingUnit": "g",
-      "servingLabel": "100g",
-      "calories": 165,
-      "protein": 31,
-      "carbs": 0,
-      "fat": 3.6
+      "per100g": { "calories": 165, "protein": 31.0, "carbs": 0.0, "fat": 3.6 },
+      "units": [
+        { "label": "g",  "type": "weight", "defaultQty": 100 },
+        { "label": "oz", "type": "weight", "defaultQty": 3.5 }
+      ],
+      "defaultUnit": "g"
     },
     {
       "id": "rice_white_cooked",
       "name": "Rice, white, cooked",
-      "servingSize": 158,
-      "servingUnit": "g",
-      "servingLabel": "1 cup",
-      "calories": 206,
-      "protein": 4.3,
-      "carbs": 44.5,
-      "fat": 0.4
+      "per100g": { "calories": 130, "protein": 2.7, "carbs": 28.2, "fat": 0.3 },
+      "units": [
+        { "label": "cup", "type": "weight", "grams": 158, "defaultQty": 1   },
+        { "label": "g",   "type": "weight",               "defaultQty": 100 },
+        { "label": "oz",  "type": "weight",               "defaultQty": 3.5 }
+      ],
+      "defaultUnit": "cup"
     },
     {
       "id": "banana",
       "name": "Banana",
-      "servingSize": 118,
-      "servingUnit": "g",
-      "servingLabel": "1 medium",
-      "calories": 105,
-      "protein": 1.3,
-      "carbs": 27,
-      "fat": 0.4
+      "per100g": { "calories": 89, "protein": 1.1, "carbs": 22.9, "fat": 0.3 },
+      "units": [
+        { "label": "medium", "type": "weight", "grams": 118, "defaultQty": 1   },
+        { "label": "large",  "type": "weight", "grams": 136, "defaultQty": 1   },
+        { "label": "g",      "type": "weight",               "defaultQty": 100 },
+        { "label": "oz",     "type": "weight",               "defaultQty": 3.5 }
+      ],
+      "defaultUnit": "medium"
     },
     {
       "id": "oats_rolled",
       "name": "Oats, rolled, dry",
-      "servingSize": 40,
-      "servingUnit": "g",
-      "servingLabel": "1/2 cup",
-      "calories": 154,
-      "protein": 5.3,
-      "carbs": 27.4,
-      "fat": 2.6
+      "per100g": { "calories": 385, "protein": 13.3, "carbs": 68.5, "fat": 6.5 },
+      "units": [
+        { "label": "cup",  "type": "weight", "grams": 80, "defaultQty": 0.5 },
+        { "label": "tbsp", "type": "weight", "grams": 10, "defaultQty": 3   },
+        { "label": "g",    "type": "weight",               "defaultQty": 40  },
+        { "label": "oz",   "type": "weight",               "defaultQty": 1.4 }
+      ],
+      "defaultUnit": "cup"
     },
     {
       "id": "milk_whole",
       "name": "Milk, whole",
-      "servingSize": 244,
-      "servingUnit": "ml",
-      "servingLabel": "1 cup",
-      "calories": 149,
-      "protein": 8,
-      "carbs": 12,
-      "fat": 8
+      "per100g":  { "calories": 61, "protein": 3.3, "carbs": 4.9, "fat": 3.3 },
+      "per100ml": { "calories": 61, "protein": 3.3, "carbs": 4.9, "fat": 3.3 },
+      "units": [
+        { "label": "cup",   "type": "volume",               "defaultQty": 1   },
+        { "label": "ml",    "type": "volume",               "defaultQty": 240 },
+        { "label": "fl oz", "type": "volume",               "defaultQty": 8   },
+        { "label": "g",     "type": "weight",               "defaultQty": 244 },
+        { "label": "oz",    "type": "weight",               "defaultQty": 8   }
+      ],
+      "defaultUnit": "cup"
     },
     {
       "id": "bread_whole_wheat",
       "name": "Bread, whole wheat",
-      "servingSize": 28,
-      "servingUnit": "g",
-      "servingLabel": "1 slice",
-      "calories": 69,
-      "protein": 3.6,
-      "carbs": 11.6,
-      "fat": 1.2
+      "per100g": { "calories": 246, "protein": 12.9, "carbs": 41.4, "fat": 4.3 },
+      "units": [
+        { "label": "slice", "type": "weight", "grams": 28, "defaultQty": 1  },
+        { "label": "g",     "type": "weight",               "defaultQty": 28 },
+        { "label": "oz",    "type": "weight",               "defaultQty": 1  }
+      ],
+      "defaultUnit": "slice"
     },
     {
       "id": "salmon_atlantic",
       "name": "Salmon, Atlantic, cooked",
-      "servingSize": 100,
-      "servingUnit": "g",
-      "servingLabel": "100g",
-      "calories": 208,
-      "protein": 20,
-      "carbs": 0,
-      "fat": 13
+      "per100g": { "calories": 208, "protein": 20.0, "carbs": 0.0, "fat": 13.0 },
+      "units": [
+        { "label": "g",  "type": "weight", "defaultQty": 100 },
+        { "label": "oz", "type": "weight", "defaultQty": 3.5 }
+      ],
+      "defaultUnit": "g"
     },
     {
       "id": "avocado",
       "name": "Avocado",
-      "servingSize": 68,
-      "servingUnit": "g",
-      "servingLabel": "1/2 medium",
-      "calories": 114,
-      "protein": 1.4,
-      "carbs": 6,
-      "fat": 10.5
+      "per100g": { "calories": 160, "protein": 2.0, "carbs": 8.5, "fat": 14.7 },
+      "units": [
+        { "label": "half medium",  "type": "weight", "grams": 68,  "defaultQty": 1   },
+        { "label": "whole medium", "type": "weight", "grams": 136, "defaultQty": 1   },
+        { "label": "g",            "type": "weight",               "defaultQty": 68  },
+        { "label": "oz",           "type": "weight",               "defaultQty": 2.4 }
+      ],
+      "defaultUnit": "half medium"
     },
     {
       "id": "greek_yogurt",
       "name": "Greek Yogurt, plain, 2%",
-      "servingSize": 150,
-      "servingUnit": "g",
-      "servingLabel": "3/4 cup",
-      "calories": 100,
-      "protein": 17,
-      "carbs": 6,
-      "fat": 1.8
+      "per100g": { "calories": 67, "protein": 11.3, "carbs": 4.0, "fat": 1.2 },
+      "units": [
+        { "label": "cup",  "type": "weight", "grams": 245, "defaultQty": 0.75 },
+        { "label": "tbsp", "type": "weight", "grams": 15,  "defaultQty": 1    },
+        { "label": "g",    "type": "weight",               "defaultQty": 150  },
+        { "label": "oz",   "type": "weight",               "defaultQty": 5    }
+      ],
+      "defaultUnit": "cup"
     },
     {
       "id": "olive_oil",
       "name": "Olive Oil",
-      "servingSize": 14,
-      "servingUnit": "ml",
-      "servingLabel": "1 tbsp",
-      "calories": 119,
-      "protein": 0,
-      "carbs": 0,
-      "fat": 13.5
+      "per100g":  { "calories": 884, "protein": 0.0, "carbs": 0.0, "fat": 100.0 },
+      "per100ml": { "calories": 808, "protein": 0.0, "carbs": 0.0, "fat": 91.4  },
+      "units": [
+        { "label": "tbsp", "type": "volume",               "defaultQty": 1    },
+        { "label": "tsp",  "type": "volume",               "defaultQty": 1    },
+        { "label": "ml",   "type": "volume",               "defaultQty": 14   },
+        { "label": "g",    "type": "weight",               "defaultQty": 14   },
+        { "label": "oz",   "type": "weight",               "defaultQty": 0.5  }
+      ],
+      "defaultUnit": "tbsp"
     },
     {
       "id": "apple",
       "name": "Apple",
-      "servingSize": 182,
-      "servingUnit": "g",
-      "servingLabel": "1 medium",
-      "calories": 95,
-      "protein": 0.5,
-      "carbs": 25,
-      "fat": 0.3
+      "per100g": { "calories": 52, "protein": 0.3, "carbs": 13.7, "fat": 0.2 },
+      "units": [
+        { "label": "medium", "type": "weight", "grams": 182, "defaultQty": 1   },
+        { "label": "small",  "type": "weight", "grams": 138, "defaultQty": 1   },
+        { "label": "g",      "type": "weight",               "defaultQty": 100 },
+        { "label": "oz",     "type": "weight",               "defaultQty": 3.5 }
+      ],
+      "defaultUnit": "medium"
     },
     {
       "id": "sweet_potato",
       "name": "Sweet Potato, baked",
-      "servingSize": 114,
-      "servingUnit": "g",
-      "servingLabel": "1 medium",
-      "calories": 103,
-      "protein": 2.3,
-      "carbs": 24,
-      "fat": 0.1
+      "per100g": { "calories": 90, "protein": 2.0, "carbs": 21.1, "fat": 0.1 },
+      "units": [
+        { "label": "medium", "type": "weight", "grams": 114, "defaultQty": 1   },
+        { "label": "large",  "type": "weight", "grams": 180, "defaultQty": 1   },
+        { "label": "g",      "type": "weight",               "defaultQty": 100 },
+        { "label": "oz",     "type": "weight",               "defaultQty": 3.5 }
+      ],
+      "defaultUnit": "medium"
     },
     {
       "id": "almonds",
       "name": "Almonds",
-      "servingSize": 28,
-      "servingUnit": "g",
-      "servingLabel": "1 oz (~23 almonds)",
-      "calories": 164,
-      "protein": 6,
-      "carbs": 6,
-      "fat": 14
+      "per100g": { "calories": 579, "protein": 21.2, "carbs": 21.7, "fat": 49.9 },
+      "units": [
+        { "label": "oz",  "type": "weight",                "defaultQty": 1    },
+        { "label": "cup", "type": "weight", "grams": 143,  "defaultQty": 0.25 },
+        { "label": "g",   "type": "weight",                "defaultQty": 28   }
+      ],
+      "defaultUnit": "oz"
     },
     {
       "id": "broccoli",
       "name": "Broccoli, steamed",
-      "servingSize": 78,
-      "servingUnit": "g",
-      "servingLabel": "1/2 cup",
-      "calories": 27,
-      "protein": 1.9,
-      "carbs": 5.6,
-      "fat": 0.3
+      "per100g": { "calories": 35, "protein": 2.4, "carbs": 7.2, "fat": 0.4 },
+      "units": [
+        { "label": "cup", "type": "weight", "grams": 156, "defaultQty": 1  },
+        { "label": "g",   "type": "weight",               "defaultQty": 78 },
+        { "label": "oz",  "type": "weight",               "defaultQty": 3  }
+      ],
+      "defaultUnit": "cup"
     },
     {
       "id": "ground_beef_lean",
       "name": "Ground Beef, 90% lean",
-      "servingSize": 100,
-      "servingUnit": "g",
-      "servingLabel": "100g",
-      "calories": 176,
-      "protein": 20,
-      "carbs": 0,
-      "fat": 10
+      "per100g": { "calories": 176, "protein": 20.0, "carbs": 0.0, "fat": 10.0 },
+      "units": [
+        { "label": "g",  "type": "weight", "defaultQty": 100 },
+        { "label": "oz", "type": "weight", "defaultQty": 3.5 }
+      ],
+      "defaultUnit": "g"
     },
     {
       "id": "cheddar_cheese",
       "name": "Cheddar Cheese",
-      "servingSize": 28,
-      "servingUnit": "g",
-      "servingLabel": "1 oz",
-      "calories": 113,
-      "protein": 7,
-      "carbs": 0.4,
-      "fat": 9.3
+      "per100g": { "calories": 402, "protein": 24.9, "carbs": 1.3, "fat": 33.1 },
+      "units": [
+        { "label": "oz",           "type": "weight",               "defaultQty": 1   },
+        { "label": "slice",        "type": "weight", "grams": 28,  "defaultQty": 1   },
+        { "label": "cup shredded", "type": "weight", "grams": 113, "defaultQty": 1   },
+        { "label": "g",            "type": "weight",               "defaultQty": 28  }
+      ],
+      "defaultUnit": "oz"
     },
     {
       "id": "peanut_butter",
       "name": "Peanut Butter",
-      "servingSize": 32,
-      "servingUnit": "g",
-      "servingLabel": "2 tbsp",
-      "calories": 188,
-      "protein": 7,
-      "carbs": 7,
-      "fat": 16
+      "per100g": { "calories": 588, "protein": 25.0, "carbs": 20.0, "fat": 50.0 },
+      "units": [
+        { "label": "tbsp", "type": "weight", "grams": 16,  "defaultQty": 2   },
+        { "label": "tsp",  "type": "weight", "grams": 5.3, "defaultQty": 1   },
+        { "label": "g",    "type": "weight",               "defaultQty": 32  },
+        { "label": "oz",   "type": "weight",               "defaultQty": 1   }
+      ],
+      "defaultUnit": "tbsp"
     },
     {
       "id": "lentils_cooked",
       "name": "Lentils, cooked",
-      "servingSize": 198,
-      "servingUnit": "g",
-      "servingLabel": "1 cup",
-      "calories": 230,
-      "protein": 18,
-      "carbs": 40,
-      "fat": 0.8
+      "per100g": { "calories": 116, "protein": 9.1, "carbs": 20.2, "fat": 0.4 },
+      "units": [
+        { "label": "cup", "type": "weight", "grams": 198, "defaultQty": 1   },
+        { "label": "g",   "type": "weight",               "defaultQty": 100 },
+        { "label": "oz",  "type": "weight",               "defaultQty": 3.5 }
+      ],
+      "defaultUnit": "cup"
     },
     {
       "id": "tuna_canned",
       "name": "Tuna, canned in water",
-      "servingSize": 85,
-      "servingUnit": "g",
-      "servingLabel": "1 can (drained)",
-      "calories": 73,
-      "protein": 17,
-      "carbs": 0,
-      "fat": 0.8
+      "per100g": { "calories": 86, "protein": 20.0, "carbs": 0.0, "fat": 0.9 },
+      "units": [
+        { "label": "can (drained)", "type": "weight", "grams": 85, "defaultQty": 1  },
+        { "label": "g",            "type": "weight",               "defaultQty": 85 },
+        { "label": "oz",           "type": "weight",               "defaultQty": 3  }
+      ],
+      "defaultUnit": "can (drained)"
     }
   ]
 }

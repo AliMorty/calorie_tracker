@@ -77,6 +77,47 @@
 
   </div>
 
+  <!-- Food Detail Screen (full-screen overlay) -->
+  <div id="food-detail-screen" class="food-detail-screen hidden">
+    <div class="food-detail-header">
+      <button id="fd-close-btn" class="fd-close-btn">&times;</button>
+      <span id="fd-meal-label" class="fd-meal-label">Breakfast</span>
+      <div class="fd-header-spacer"></div>
+    </div>
+    <div class="food-detail-content">
+      <div class="fd-name-section">
+        <h2 id="fd-name" class="fd-name"></h2>
+        <span class="fd-source">Generic</span>
+      </div>
+      <div class="fd-macro-card">
+        <div class="fd-macro-col">
+          <span id="fd-cal" class="fd-macro-value">0</span>
+          <span class="fd-macro-label">Cal</span>
+        </div>
+        <div class="fd-macro-divider"></div>
+        <div class="fd-macro-col">
+          <span id="fd-protein" class="fd-macro-value fd-dot-blue">0</span>
+          <span class="fd-macro-label">Protein (g)</span>
+        </div>
+        <div class="fd-macro-divider"></div>
+        <div class="fd-macro-col">
+          <span id="fd-carbs" class="fd-macro-value fd-dot-orange">0</span>
+          <span class="fd-macro-label">Carbs (g)</span>
+        </div>
+        <div class="fd-macro-divider"></div>
+        <div class="fd-macro-col">
+          <span id="fd-fat" class="fd-macro-value fd-dot-green">0</span>
+          <span class="fd-macro-label">Fat (g)</span>
+        </div>
+      </div>
+      <div class="fd-serving-row">
+        <input type="number" id="fd-qty" class="fd-qty" min="0.1" step="0.1" />
+        <select id="fd-unit" class="fd-unit"></select>
+      </div>
+      <button id="fd-add-btn" class="fd-add-btn">Add food</button>
+    </div>
+  </div>
+
   <!-- Add Food Bottom Sheet -->
   <div id="add-food-overlay" class="overlay hidden"></div>
   <div id="add-food-panel" class="add-food-panel hidden">

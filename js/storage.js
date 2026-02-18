@@ -245,6 +245,46 @@ const Storage = (function () {
     };
   }
 
+  // ---------- food nutrition calculator ----------
+
+  /**
+   * Calculate nutrition for a given food, quantity, and unit.
+   * Uses per100g for weight-type units, per100ml for volume-type units.
+   * @param {object} food - food object from foods.json
+   * @param {number} qty - quantity entered by user
+   * @param {object} unit - unit object from food.units array
+   * @param {object} unitConversions - the unitConversions object from foods.json
+   */
+  function calcFoodNutrition(food, qty, unit, unitConversions) {
+    var multiplier = 0;
+    var base;
+
+    if (unit.type === 'weight') {
+      var gramsPerUnit = unit.grams !== undefined
+        ? unit.grams
+        : (unitConversions.weight ? unitConversions.weight[unit.label] : 0);
+      multiplier = qty * gramsPerUnit / 100;
+      base = food.per100g;
+    } else if (unit.type === 'volume') {
+      var mlPerUnit = unit.ml !== undefined
+        ? unit.ml
+        : (unitConversions.volume ? unitConversions.volume[unit.label] : 0);
+      multiplier = qty * mlPerUnit / 100;
+      base = food.per100ml;
+    }
+
+    if (!base || multiplier === 0) {
+      return { calories: 0, protein: 0, carbs: 0, fat: 0 };
+    }
+
+    return {
+      calories: Math.round(base.calories * multiplier),
+      protein:  Math.round(base.protein  * multiplier * 10) / 10,
+      carbs:    Math.round(base.carbs    * multiplier * 10) / 10,
+      fat:      Math.round(base.fat      * multiplier * 10) / 10,
+    };
+  }
+
   // ---------- expose public interface ----------
 
   return {
@@ -257,5 +297,6 @@ const Storage = (function () {
     computeDayTotals: computeDayTotals,
     computeMealTotals: computeMealTotals,
     getDummyDayData: getDummyDayData,
+    calcFoodNutrition: calcFoodNutrition,
   };
 })();
