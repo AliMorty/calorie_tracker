@@ -52,6 +52,13 @@ The fix is to give the panel a fixed height so it is always the same size regard
 - **Confidence:** Fairly confident this will fix the drift. Exact value (72vh) may need tuning based on how it looks on device.
 - **Outcome:** DID NOT WORK. Ali tested on iPhone Safari and the issue persisted. The panel still does not behave as a stable fixed-height sheet. Root cause is not yet fully understood - the `height: 72vh` change alone was insufficient.
 
+#### Attempt 2
+- **Files changed:** `css/styles.css` - `.add-food-panel`
+- **What was changed:** Replace `height: 72vh` with `top: 28%` and `bottom: 0`, removing the `height` property entirely. Both edges are now explicitly pinned so the browser computes the height from two fixed constraints rather than from a `vh` calculation.
+- **Reasoning:** iOS Safari has a known bug where `vh` units are calculated against the maximum viewport height (address bar hidden), making the panel taller than the visible area when the address bar is showing. By pinning `top` and `bottom` explicitly, we remove the `vh` calculation entirely and force the browser to derive the height from two absolute positions. There is no JS positioning code - the panel is purely CSS `position: fixed`. Confirmed by reading `ui.js:348` - `showAddFoodPanel` only toggles the `hidden` class, nothing else.
+- **Confidence:** Medium. This approach is generally more reliable than `vh` on iOS Safari but cannot be confirmed without testing on device. If this also fails, next step is collaborative `console.log` debugging to inspect actual computed values at runtime.
+- **Outcome:** pending
+
 ### Final fix
 TBD
 
