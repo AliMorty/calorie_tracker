@@ -333,6 +333,14 @@ const UI = (function () {
    * @param {array} recentFoods - recently added foods (subset of foods)
    * @param {function} onSelect - callback(mealType, food)
    */
+  function _adjustPanelForKeyboard() {
+    if (!window.visualViewport) return;
+    var panel = document.getElementById('add-food-panel');
+    if (panel.classList.contains('hidden')) return;
+    var keyboardHeight = window.innerHeight - window.visualViewport.height - window.visualViewport.offsetTop;
+    panel.style.bottom = Math.max(0, keyboardHeight) + 'px';
+  }
+
   function showAddFoodPanel(mealType, foods, recentFoods, onSelect) {
     var mealLabels = { breakfast: 'Breakfast', lunch: 'Lunch', dinner: 'Dinner', snacks: 'Snacks' };
     document.getElementById('panel-title').textContent = 'Add to ' + mealLabels[mealType];
@@ -346,6 +354,13 @@ const UI = (function () {
 
     document.getElementById('add-food-overlay').classList.remove('hidden');
     document.getElementById('add-food-panel').classList.remove('hidden');
+
+    // iOS Safari: adjust panel position when keyboard opens/closes
+    if (window.visualViewport) {
+      window.visualViewport.addEventListener('resize', _adjustPanelForKeyboard);
+      window.visualViewport.addEventListener('scroll', _adjustPanelForKeyboard);
+    }
+
     document.getElementById('food-search-input').focus();
 
     document.getElementById('food-search-input').oninput = function () {
@@ -371,8 +386,16 @@ const UI = (function () {
   }
 
   function hideAddFoodPanel() {
+    var panel = document.getElementById('add-food-panel');
+    panel.style.bottom = '';
+    panel.classList.add('hidden');
     document.getElementById('add-food-overlay').classList.add('hidden');
-    document.getElementById('add-food-panel').classList.add('hidden');
+
+    // Clean up iOS Safari keyboard listeners
+    if (window.visualViewport) {
+      window.visualViewport.removeEventListener('resize', _adjustPanelForKeyboard);
+      window.visualViewport.removeEventListener('scroll', _adjustPanelForKeyboard);
+    }
   }
 
   function _renderRecentSection(recentFoods, mealType, onSelect) {

@@ -57,6 +57,23 @@ The fix is to give the panel a fixed height so it is always the same size regard
 - **What was changed:** Replace `height: 72vh` with `top: 28%` and `bottom: 0`, removing the `height` property entirely. Both edges are now explicitly pinned so the browser computes the height from two fixed constraints rather than from a `vh` calculation.
 - **Reasoning:** iOS Safari has a known bug where `vh` units are calculated against the maximum viewport height (address bar hidden), making the panel taller than the visible area when the address bar is showing. By pinning `top` and `bottom` explicitly, we remove the `vh` calculation entirely and force the browser to derive the height from two absolute positions. There is no JS positioning code - the panel is purely CSS `position: fixed`. Confirmed by reading `ui.js:348` - `showAddFoodPanel` only toggles the `hidden` class, nothing else.
 - **Confidence:** Medium. This approach is generally more reliable than `vh` on iOS Safari but cannot be confirmed without testing on device. If this also fails, next step is collaborative `console.log` debugging to inspect actual computed values at runtime.
+- **Outcome:** DID NOT WORK on iPhone. However Ali provided Windows browser screenshots which show the panel behaving correctly on desktop - fixed size, stable header, list scrolls. This is a critical finding: **the CSS fix is correct and works on desktop. The problem is iOS Safari specific.**
+
+**Reference photos (Windows - working correctly):**
+- `issue-001_windows-working-few-results_brea-typed.png` - panel stable with 2 results and empty space below
+- `issue-001_windows-working-many-results-scrollable.png` - panel stable with full list scrollable inside
+
+**New hypothesis:** iOS Safari has a well-known bug where `position: fixed` elements shift when the virtual keyboard opens. When the user taps the search bar, iOS Safari opens the keyboard, shrinks the visual viewport, and tries to scroll the page to show the focused input. This causes `position: fixed` elements to move even though they should be immune to scrolling. As the user types and the keyboard stays open, any further viewport adjustments keep shifting the panel. This is NOT a CSS sizing problem - the CSS is correct. It is an iOS Safari keyboard + `position: fixed` interaction problem.
+
+**Fix approach for attempt 3:** Use the browser's Visual Viewport API (`window.visualViewport`) to detect when the keyboard opens/closes and dynamically adjust the panel's `bottom` value in JavaScript to compensate. When the keyboard is open, `window.innerHeight - window.visualViewport.height` gives the keyboard height. Setting `panel.style.bottom = keyboardHeight + 'px'` keeps the panel sitting just above the keyboard.
+
+**Confidence:** Medium-high. The Visual Viewport API is the standard modern solution for this iOS Safari issue. The risk is that it may not be supported on older iOS versions, but iOS 13+ supports it which covers the vast majority of active iPhones.
+
+#### Attempt 3
+- **Files changed:** `js/ui.js` - `showAddFoodPanel` and `hideAddFoodPanel`
+- **What was changed:** Added Visual Viewport API listeners inside `showAddFoodPanel`. When the visual viewport resizes (keyboard opens/closes), the panel's `bottom` is adjusted to equal the keyboard height. Listeners are cleaned up when the panel is hidden.
+- **Reasoning:** The CSS positioning is correct (confirmed working on desktop). The issue is purely iOS Safari's keyboard interaction with `position: fixed`. The Visual Viewport API is the standard fix for this.
+- **Confidence:** Medium-high. Cannot test on device directly.
 - **Outcome:** pending
 
 ### Final fix
