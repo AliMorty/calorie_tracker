@@ -11,7 +11,7 @@ See CLAUDE.md for the full rules on how to use this file.
 | # | Title | Opened | Closed | Status |
 |---|-------|--------|--------|--------|
 | 1 | Add Food panel height is content-driven - header cuts off or panel drifts | 2026-02-18 | 2026-02-18 | fixed |
-| 2 | Search results show recent foods above matches - should be reversed | 2026-02-18 | open | open - attempts 1 and 2 did not fully resolve |
+| 2 | Search results show recent foods above matches - should be reversed | 2026-02-18 | 2026-02-19 | fixed |
 
 ---
 
@@ -21,8 +21,8 @@ See CLAUDE.md for the full rules on how to use this file.
 
 ## Issue #2 - Search results show recent foods above matches - should be reversed
 **Opened:** 2026-02-18
-**Closed:** open
-**Status:** open
+**Closed:** 2026-02-19
+**Status:** fixed
 
 ### What happened
 When the user types a search query in the Add Food panel (e.g. "rice"), the panel shows:
@@ -66,13 +66,22 @@ There is no generic `.hidden { display: none }`. So adding `hidden` to `#recent-
 - No search query: all foods at top, recent at bottom - both always visible
 - Typing a query: filtered search results at top, recent foods still visible below
 
+#### Attempt 3 (final)
+- **Files changed:** `index.html`, `js/ui.js`
+- **What was changed:** (1) Wrapped `#food-list` in a new `#all-foods-section` div with an "All Foods" heading, restoring the labeled two-section layout. (2) Removed the JS lines that hid `#recent-section` during search, so both sections stay visible at all times.
+- **Reasoning:** Attempt 2 had removed the section headings and merged everything into a flat list, which was never requested. The original request was simply to swap the order of two labeled sections. The HTML already had `#food-list` before `#recent-section` (correct order from attempt 2), so only the missing "All Foods" heading and the unwanted hiding logic needed to be addressed.
+- **Confidence:** High. Minimal change, restoring previously working UI pattern.
+- **Outcome:** WORKED. Confirmed by Ali on alimorty.github.io/calorie_tracker.
+
 ### Final fix
-TBD
+Added an "All Foods" heading above `#food-list` in `index.html` and removed the JS logic in `ui.js` that hid the recent section during search. The DOM order was already correct from attempt 2 (`#food-list` before `#recent-section`), so the only missing pieces were the section label and the unwanted hiding behavior.
 
 ### Lessons
 - Always confirm intended behaviour before implementing. The ticket said "recent foods either hidden or shown below" - two options were written and the wrong one was chosen without asking.
 - Do not make UX decisions unilaterally. When the spec is ambiguous, ask Ali before coding.
-- Attempt 1 fixed the wrong thing (CSS hiding) without fixing the order. Attempt 2 fixed the order but introduced unwanted hiding behaviour. Two partial fixes compounded each other.
+- Attempt 1 fixed the wrong thing (CSS hiding) without fixing the order. Attempt 2 fixed the order but introduced unwanted hiding behaviour and removed section labels that were never asked to be removed. Two partial fixes compounded each other.
+- **Do not remove UI elements that were not part of the bug report.** The section headings ("RECENT", "ALL FOODS") were working fine. The only request was to swap order. Removing headings and merging into a flat list was scope creep that made the UI worse.
+- **Make the smallest possible change.** If the request is "swap the order of two sections", the fix should be swapping two DOM elements - not restructuring the entire panel.
 
 ---
 
