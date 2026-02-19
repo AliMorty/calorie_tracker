@@ -291,6 +291,11 @@ const UI = (function () {
 
     _updateFoodDetailMacros(food, parseFloat(qtyInput.value), food.units[parseInt(unitSelect.value)], unitConversions);
 
+    qtyInput.onfocus = function () {
+      var input = this;
+      setTimeout(function () { input.select(); }, 50);
+    };
+
     qtyInput.oninput = function () {
       var qty = parseFloat(this.value) || 0;
       var unit = food.units[parseInt(unitSelect.value)];
