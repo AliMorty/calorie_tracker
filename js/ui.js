@@ -363,16 +363,14 @@ const UI = (function () {
     document.getElementById('food-search-input').oninput = function () {
       var query = this.value.trim().toLowerCase();
       if (query) {
-        // Searching: show filtered results, hide recent
+        // Searching: show filtered results, keep recent visible below
         var filtered = foods.filter(function (f) {
           return f.name.toLowerCase().indexOf(query) !== -1;
         });
         _renderFoodList(filtered, mealType, onSelect);
-        document.getElementById('recent-section').classList.add('hidden');
       } else {
-        // Cleared: restore all foods and recent
+        // Cleared: restore all foods
         _renderFoodList(foods, mealType, onSelect);
-        document.getElementById('recent-section').classList.toggle('hidden', recentFoods.length === 0);
       }
     };
 
