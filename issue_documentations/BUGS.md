@@ -36,10 +36,24 @@ When the search bar is empty: show Recent section at top, All Foods below (curre
 When the user is actively typing a query: hide the Recent section entirely and show only the filtered search results, ranked by relevance.
 
 ### Root cause
-Not yet investigated. The relevant code is likely in `js/ui.js` in the `showAddFoodPanel` `oninput` handler and `_renderRecentSection`.
+The `oninput` handler in `js/ui.js:370` correctly calls `classList.add('hidden')` on `#recent-section` when a query is typed. However there is no CSS rule for `.hidden` on generic elements. The stylesheet only has specific rules:
+- `.food-detail-screen.hidden { display: none }`
+- `.overlay.hidden, .add-food-panel.hidden { display: none }`
+
+There is no generic `.hidden { display: none }`. So adding `hidden` to `#recent-section` and `#all-foods-heading` via JS has zero visual effect - those elements stay fully visible.
+
+**Fix:** Add a single generic `.hidden { display: none; }` rule to `css/styles.css`. Safe to do - every use of the `hidden` class in this codebase intends the element to be invisible. The existing specific rules are redundant with it but harmless.
+
+**Confidence: very high.** Confirmed by grepping CSS for all `.hidden` rules - only three specific selectors exist, none covering `#recent-section` or `#all-foods-heading`.
 
 ### Fix attempts
-None yet.
+
+#### Attempt 1
+- **Files changed:** `css/styles.css`
+- **What was changed:** Added `.hidden { display: none; }` as a generic rule at the top of the utility section
+- **Reasoning:** Direct fix for the missing CSS rule. Every element that uses the `hidden` class in this project intends to be hidden.
+- **Confidence:** Very high.
+- **Outcome:** pending
 
 ### Final fix
 TBD

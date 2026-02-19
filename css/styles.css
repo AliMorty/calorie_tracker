@@ -680,6 +680,10 @@ body {
 
 /* ---------- utility ---------- */
 
+.hidden {
+  display: none;
+}
+
 .over {
   color: #e74c3c !important;
 }
