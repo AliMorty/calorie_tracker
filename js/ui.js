@@ -346,11 +346,8 @@ const UI = (function () {
     document.getElementById('panel-title').textContent = 'Add to ' + mealLabels[mealType];
     document.getElementById('food-search-input').value = '';
 
-    _renderRecentSection(recentFoods, mealType, onSelect);
     _renderFoodList(foods, mealType, onSelect);
-
-    // Show "All foods" heading only when recent section is also visible
-    document.getElementById('all-foods-heading').classList.toggle('hidden', recentFoods.length === 0);
+    _renderRecentSection(recentFoods, mealType, onSelect);
 
     document.getElementById('add-food-overlay').classList.remove('hidden');
     document.getElementById('add-food-panel').classList.remove('hidden');
@@ -366,18 +363,16 @@ const UI = (function () {
     document.getElementById('food-search-input').oninput = function () {
       var query = this.value.trim().toLowerCase();
       if (query) {
-        // Searching: hide recent section and "All foods" heading
-        document.getElementById('recent-section').classList.add('hidden');
-        document.getElementById('all-foods-heading').classList.add('hidden');
+        // Searching: show filtered results, hide recent
         var filtered = foods.filter(function (f) {
           return f.name.toLowerCase().indexOf(query) !== -1;
         });
         _renderFoodList(filtered, mealType, onSelect);
+        document.getElementById('recent-section').classList.add('hidden');
       } else {
-        // Cleared: restore recent section and heading
-        document.getElementById('recent-section').classList.toggle('hidden', recentFoods.length === 0);
-        document.getElementById('all-foods-heading').classList.toggle('hidden', recentFoods.length === 0);
+        // Cleared: restore all foods and recent
         _renderFoodList(foods, mealType, onSelect);
+        document.getElementById('recent-section').classList.toggle('hidden', recentFoods.length === 0);
       }
     };
 

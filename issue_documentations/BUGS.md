@@ -53,13 +53,20 @@ There is no generic `.hidden { display: none }`. So adding `hidden` to `#recent-
 - **What was changed:** Added `.hidden { display: none; }` as a generic rule at the top of the utility section
 - **Reasoning:** Direct fix for the missing CSS rule. Every element that uses the `hidden` class in this project intends to be hidden.
 - **Confidence:** Very high.
+- **Outcome:** PARTIALLY fixed. The recent section now hides correctly during search (CSS was missing a generic `.hidden { display: none }` rule). However the ORDER was not addressed - recent still appeared above all foods when no query was active. A second fix was needed.
+
+#### Attempt 2
+- **Files changed:** `index.html`, `js/ui.js`
+- **What was changed:** Swapped `#food-list` and `#recent-section` in the HTML so all foods renders at the top and recent appears at the bottom. Removed `#all-foods-heading` element (no longer needed). Updated `showAddFoodPanel` in ui.js to match the new order and remove all-foods-heading references.
+- **Reasoning:** The CSS fix in attempt 1 was correct but only solved half the problem - the hiding. The ordering was wrong from the start. Swapping the DOM order is the simplest fix.
+- **Confidence:** High.
 - **Outcome:** pending
 
 ### Final fix
 TBD
 
 ### Lessons
-TBD
+The original ticket described two problems: (1) recent showing above search results, and (2) wrong order. Attempt 1 only fixed (1) and missed (2). Should have read the ticket more carefully before marking as done.
 
 ---
 
