@@ -10,7 +10,7 @@ See CLAUDE.md for the full rules on how to use this file.
 
 | # | Title | Opened | Closed | Status |
 |---|-------|--------|--------|--------|
-| 1 | Add Food panel height is content-driven - header cuts off or panel drifts | 2026-02-18 | 2026-02-18 | fixed |
+| 1 | Add Food panel height is content-driven - header cuts off or panel drifts | 2026-02-18 | open | open |
 
 ---
 
@@ -20,8 +20,8 @@ See CLAUDE.md for the full rules on how to use this file.
 
 ## Issue #1 - Add Food panel height is content-driven - header cuts off or panel drifts
 **Opened:** 2026-02-18
-**Closed:** 2026-02-18
-**Status:** fixed
+**Closed:** open
+**Status:** open - fix attempt 1 did not work
 
 ### What happened
 On iPhone Safari, the Add Food bottom sheet panel does not have a stable fixed height.
@@ -50,11 +50,10 @@ The fix is to give the panel a fixed height so it is always the same size regard
 - **What was changed:** Replace `max-height: 90vh` with `height: 72vh` to give the panel a stable fixed height
 - **Reasoning:** 72vh leaves enough room above the panel to see the main screen behind the overlay, matches roughly what the reference design shows, and is tall enough to show ~6-8 food items comfortably on an iPhone screen
 - **Confidence:** Fairly confident this will fix the drift. Exact value (72vh) may need tuning based on how it looks on device.
-- **Outcome:** Fix applied. Pending confirmation from Ali on device.
+- **Outcome:** DID NOT WORK. Ali tested on iPhone Safari and the issue persisted. The panel still does not behave as a stable fixed-height sheet. Root cause is not yet fully understood - the `height: 72vh` change alone was insufficient.
 
 ### Final fix
-Changed `max-height: 90vh` to `height: 72vh` in `.add-food-panel` in `css/styles.css:555`.
-One line change. The panel is now always 72vh tall regardless of list content. The food list scrolls inside it via `overflow-y: auto` on `.panel-body`.
+TBD
 
 ### Lessons
-Bottom sheets should always have a fixed height, not a content-driven height. Using only `max-height` without `height` means the panel collapses when the list is short and the header drifts off screen when the list is long. Always set `height` on a bottom sheet and let the inner scrollable area handle overflow.
+TBD
