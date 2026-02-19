@@ -11,10 +11,41 @@ See CLAUDE.md for the full rules on how to use this file.
 | # | Title | Opened | Closed | Status |
 |---|-------|--------|--------|--------|
 | 1 | Add Food panel height is content-driven - header cuts off or panel drifts | 2026-02-18 | 2026-02-18 | fixed |
+| 2 | Search results show recent foods above matches - should be reversed | 2026-02-18 | open | open |
 
 ---
 
 <!-- Full issue entries go below this line, most recent at the top -->
+
+---
+
+## Issue #2 - Search results show recent foods above matches - should be reversed
+**Opened:** 2026-02-18
+**Closed:** open
+**Status:** open
+
+### What happened
+When the user types a search query in the Add Food panel (e.g. "rice"), the panel shows:
+1. RECENT section at the top (foods added today, unfiltered)
+2. ALL FOODS section below (filtered search results matching the query)
+
+The user wants the opposite behaviour when actively searching: the most relevant search matches should appear at the top, with recent foods either hidden or shown below the results.
+
+### Expected behaviour
+When the search bar is empty: show Recent section at top, All Foods below (current behaviour is correct).
+When the user is actively typing a query: hide the Recent section entirely and show only the filtered search results, ranked by relevance.
+
+### Root cause
+Not yet investigated. The relevant code is likely in `js/ui.js` in the `showAddFoodPanel` `oninput` handler and `_renderRecentSection`.
+
+### Fix attempts
+None yet.
+
+### Final fix
+TBD
+
+### Lessons
+TBD
 
 ---
 
