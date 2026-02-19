@@ -13,6 +13,86 @@ When the user says **"add the summary"** (or similar), create a session summary 
   4. **Current challenges and anticipated risks** - any blockers right now, plus things that could become problems as the project grows
 - Always commit the summary file after creating it.
 
+## Issue Tracking
+
+Every bug or problem gets tracked in two places simultaneously.
+
+### 1. GitHub Issues
+- Open a GitHub issue for every bug using the `gh` CLI
+- Reference the issue number in every related commit message (e.g. `Fix search crash, closes #3`)
+- Close the issue in the same commit that contains the confirmed fix
+
+### 2. issue_documentations/BUGS.md (in-repo record)
+- Location: `issue_documentations/BUGS.md`
+- Contains a summary table at the top for quick scanning, followed by a full entry per issue
+
+**Table format:**
+
+| # | Title | Opened | Closed | Status |
+|---|-------|--------|--------|--------|
+| 1 | Short title | YYYY-MM-DD | YYYY-MM-DD | fixed |
+
+**Full entry format per issue:**
+
+```
+## Issue #N - Short title
+**Opened:** YYYY-MM-DD
+**Closed:** YYYY-MM-DD (or "open")
+**Status:** open / fixed / workaround
+
+### What happened
+Describe the bug and exact steps to reproduce it.
+
+### Root cause
+Which file(s) and line(s) were involved. Why it was broken.
+If unknown, say so honestly.
+
+### Fix attempts
+For each attempt:
+- **Files changed:** list with line numbers
+- **What was changed and why:** the reasoning behind the change
+- **Confidence level:** how confident was the agent that this would work and why
+- **Outcome:** worked / partially worked / didn't work / caused issue #N
+
+### Final fix
+What actually solved it and the full reasoning.
+
+### Lessons
+What a future agent should know before touching this area of code again.
+Any warnings about fragile or confusing parts nearby.
+```
+
+- Always update `BUGS.md` in the same commit as the fix - never separately
+- If a fix causes a new issue, note it explicitly in the original issue entry under "Outcome" and open a new issue
+
+## Honesty and Caution Rules
+
+These rules exist to prevent the slow destruction of a working codebase through overconfident or poorly reasoned fixes.
+
+**Before making any change:**
+- If you don't understand why something is broken, say so explicitly before touching any code. Do not guess silently.
+- If a fix requires changing more than 2-3 lines, pause and explain the plan first.
+- Do not refactor, clean up, or "improve" code that is not directly related to the bug being fixed.
+- Pinpoint the exact location in the code you suspect is the cause before making any change. State it out loud in the conversation.
+
+**When making changes:**
+- Change the smallest possible thing that could fix the bug. Prefer targeted edits over rewrites.
+- Make one change at a time. Do not bundle multiple speculative fixes into a single commit.
+- If a fix feels like a hack - it works but you're not sure why - say that explicitly in both the commit message and BUGS.md.
+- If there are two plausible causes and it's genuinely unclear which one is responsible, say so and discuss with Ali before proceeding. Fix one at a time and test between each.
+
+**When reporting:**
+- Always include your confidence level (e.g. "I'm fairly confident because...", "I'm not sure why this works but it does", "I genuinely don't know the root cause").
+- If something is confusing about the codebase, flag it to Ali during the conversation, not just in documentation.
+- If something feels risky - like a change that could have unexpected side effects elsewhere - warn Ali before proceeding.
+- Never present a guess as a fact.
+- If anything seems worrying or fragile, raise it proactively during the conversation. Don't wait to be asked.
+
+**When a fix doesn't work:**
+- Stop. Do not keep trying random changes.
+- Document what was tried and why it didn't work in BUGS.md.
+- Ask Ali how to proceed rather than escalating changes.
+
 ## Bash Command Explanations
 
 Whenever you give the user a bash command to run, always follow it immediately with a brief explanation of what each term/part of the command means. The goal is to help the user gradually learn the command line. For example:
