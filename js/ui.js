@@ -129,9 +129,10 @@ const UI = (function () {
    * Render all meal sections.
    * @param {object} dayData - { meals: { breakfast: {entries}, ... } }
    * @param {function} onAddClick - callback(mealType) when "+" is clicked
+   * @param {function} onEditEntry - callback(mealType, entry) when a food row is tapped
    * @param {function} computeMealTotals - function(entries) => totals
    */
-  function renderMeals(dayData, onAddClick, computeMealTotals) {
+  function renderMeals(dayData, onAddClick, onEditEntry, computeMealTotals) {
     els.mealsContainer.innerHTML = '';
 
     var mealOrder = ['breakfast', 'lunch', 'dinner', 'snacks'];
@@ -140,12 +141,12 @@ const UI = (function () {
       var mealType = mealOrder[i];
       var meal = dayData.meals[mealType];
       var totals = computeMealTotals(meal.entries);
-      var section = _buildMealSection(mealType, meal.entries, totals, onAddClick);
+      var section = _buildMealSection(mealType, meal.entries, totals, onAddClick, onEditEntry);
       els.mealsContainer.appendChild(section);
     }
   }
 
-  function _buildMealSection(mealType, entries, totals, onAddClick) {
+  function _buildMealSection(mealType, entries, totals, onAddClick, onEditEntry) {
     var section = document.createElement('div');
     section.className = 'meal-section';
 
@@ -193,7 +194,7 @@ const UI = (function () {
 
     // Food entries
     for (var i = 0; i < entries.length; i++) {
-      section.appendChild(_buildFoodEntry(entries[i]));
+      section.appendChild(_buildFoodEntry(entries[i], onEditEntry, mealType));
     }
 
     // Empty state
@@ -207,7 +208,7 @@ const UI = (function () {
     return section;
   }
 
-  function _buildFoodEntry(entry) {
+  function _buildFoodEntry(entry, onEditEntry, mealType) {
     var row = document.createElement('div');
     row.className = 'food-entry';
     row.setAttribute('data-entry-id', entry.id);
@@ -222,10 +223,7 @@ const UI = (function () {
 
     var portion = document.createElement('span');
     portion.className = 'food-portion';
-    var qtyLabel = entry.servingQty > 1
-      ? entry.servingQty + ' x ' + entry.servingLabel
-      : entry.servingLabel;
-    portion.textContent = qtyLabel;
+    portion.textContent = entry.servingLabel || '';
     info.appendChild(portion);
 
     row.appendChild(info);
@@ -241,12 +239,24 @@ const UI = (function () {
       '</span>';
     row.appendChild(macros);
 
+    row.addEventListener('click', (function (e, mt) {
+      return function () { onEditEntry(mt, e); };
+    })(entry, mealType));
+
     return row;
   }
 
   // ---------- food detail screen ----------
 
-  function showFoodDetail(mealType, food, unitConversions, onAdd) {
+  /**
+   * Show the food detail screen for adding or editing a food entry.
+   * @param {string} mealType
+   * @param {object} food - food object from foodDatabase
+   * @param {object} unitConversions
+   * @param {function} onConfirm - callback(mealType, food, qty, unit, existingEntry)
+   * @param {object|null} existingEntry - if editing, the entry being edited; null for new
+   */
+  function showFoodDetail(mealType, food, unitConversions, onConfirm, existingEntry) {
     var mealLabels = { breakfast: 'Breakfast', lunch: 'Lunch', dinner: 'Dinner', snacks: 'Snacks' };
     document.getElementById('fd-meal-label').textContent = mealLabels[mealType];
     document.getElementById('fd-name').textContent = food.name;
@@ -262,12 +272,24 @@ const UI = (function () {
 
     var defaultIdx = food.units.findIndex(function (u) { return u.label === food.defaultUnit; });
     if (defaultIdx === -1) defaultIdx = 0;
-    unitSelect.value = defaultIdx;
 
     var qtyInput = document.getElementById('fd-qty');
-    qtyInput.value = food.units[defaultIdx].defaultQty;
+    var addBtn = document.getElementById('fd-add-btn');
 
-    _updateFoodDetailMacros(food, parseFloat(qtyInput.value), food.units[defaultIdx], unitConversions);
+    if (existingEntry) {
+      // Edit mode: pre-fill with the entry's saved values
+      var preUnitIdx = food.units.findIndex(function (u) { return u.label === existingEntry.servingUnit; });
+      unitSelect.value = preUnitIdx !== -1 ? preUnitIdx : defaultIdx;
+      qtyInput.value = existingEntry.servingQty;
+      addBtn.textContent = 'Update';
+    } else {
+      // Add mode: use food defaults
+      unitSelect.value = defaultIdx;
+      qtyInput.value = food.units[defaultIdx].defaultQty;
+      addBtn.textContent = 'Add food';
+    }
+
+    _updateFoodDetailMacros(food, parseFloat(qtyInput.value), food.units[parseInt(unitSelect.value)], unitConversions);
 
     qtyInput.oninput = function () {
       var qty = parseFloat(this.value) || 0;
@@ -281,10 +303,10 @@ const UI = (function () {
       _updateFoodDetailMacros(food, parseFloat(qtyInput.value), unit, unitConversions);
     };
 
-    document.getElementById('fd-add-btn').onclick = function () {
+    addBtn.onclick = function () {
       var qty = parseFloat(qtyInput.value) || 0;
       var unit = food.units[parseInt(unitSelect.value)];
-      onAdd(mealType, food, qty, unit);
+      onConfirm(mealType, food, qty, unit, existingEntry);
     };
 
     document.getElementById('fd-close-btn').onclick = hideFoodDetail;
@@ -305,11 +327,22 @@ const UI = (function () {
 
   // ---------- add food panel ----------
 
-  function showAddFoodPanel(mealType, foods, onSelect) {
+  /**
+   * @param {string} mealType
+   * @param {array} foods - full food database
+   * @param {array} recentFoods - recently added foods (subset of foods)
+   * @param {function} onSelect - callback(mealType, food)
+   */
+  function showAddFoodPanel(mealType, foods, recentFoods, onSelect) {
     var mealLabels = { breakfast: 'Breakfast', lunch: 'Lunch', dinner: 'Dinner', snacks: 'Snacks' };
     document.getElementById('panel-title').textContent = 'Add to ' + mealLabels[mealType];
     document.getElementById('food-search-input').value = '';
+
+    _renderRecentSection(recentFoods, mealType, onSelect);
     _renderFoodList(foods, mealType, onSelect);
+
+    // Show "All foods" heading only when recent section is also visible
+    document.getElementById('all-foods-heading').classList.toggle('hidden', recentFoods.length === 0);
 
     document.getElementById('add-food-overlay').classList.remove('hidden');
     document.getElementById('add-food-panel').classList.remove('hidden');
@@ -317,10 +350,20 @@ const UI = (function () {
 
     document.getElementById('food-search-input').oninput = function () {
       var query = this.value.trim().toLowerCase();
-      var filtered = query
-        ? foods.filter(function (f) { return f.name.toLowerCase().indexOf(query) !== -1; })
-        : foods;
-      _renderFoodList(filtered, mealType, onSelect);
+      if (query) {
+        // Searching: hide recent section and "All foods" heading
+        document.getElementById('recent-section').classList.add('hidden');
+        document.getElementById('all-foods-heading').classList.add('hidden');
+        var filtered = foods.filter(function (f) {
+          return f.name.toLowerCase().indexOf(query) !== -1;
+        });
+        _renderFoodList(filtered, mealType, onSelect);
+      } else {
+        // Cleared: restore recent section and heading
+        document.getElementById('recent-section').classList.toggle('hidden', recentFoods.length === 0);
+        document.getElementById('all-foods-heading').classList.toggle('hidden', recentFoods.length === 0);
+        _renderFoodList(foods, mealType, onSelect);
+      }
     };
 
     document.getElementById('panel-close-btn').onclick = hideAddFoodPanel;
@@ -330,6 +373,23 @@ const UI = (function () {
   function hideAddFoodPanel() {
     document.getElementById('add-food-overlay').classList.add('hidden');
     document.getElementById('add-food-panel').classList.add('hidden');
+  }
+
+  function _renderRecentSection(recentFoods, mealType, onSelect) {
+    var section = document.getElementById('recent-section');
+    var list = document.getElementById('recent-list');
+    list.innerHTML = '';
+
+    if (recentFoods.length === 0) {
+      section.classList.add('hidden');
+      return;
+    }
+
+    for (var i = 0; i < recentFoods.length; i++) {
+      list.appendChild(_buildFoodListItem(recentFoods[i], mealType, onSelect));
+    }
+
+    section.classList.remove('hidden');
   }
 
   function _renderFoodList(foods, mealType, onSelect) {
@@ -345,37 +405,40 @@ const UI = (function () {
     }
 
     for (var i = 0; i < foods.length; i++) {
-      var food = foods[i];
-      var item = document.createElement('div');
-      item.className = 'food-list-item';
-
-      var info = document.createElement('div');
-      info.className = 'food-list-item-info';
-
-      var name = document.createElement('span');
-      name.className = 'food-list-item-name';
-      name.textContent = food.name;
-
-      var serving = document.createElement('span');
-      serving.className = 'food-list-item-serving';
-      serving.textContent = food.displayServing || food.servingLabel || '';
-
-      info.appendChild(name);
-      info.appendChild(serving);
-
-      var cal = document.createElement('span');
-      cal.className = 'food-list-item-cal';
-      cal.textContent = food.displayCalories !== undefined ? food.displayCalories : 0;
-
-      item.appendChild(info);
-      item.appendChild(cal);
-
-      item.addEventListener('click', (function (f) {
-        return function () { onSelect(mealType, f); };
-      })(food));
-
-      list.appendChild(item);
+      list.appendChild(_buildFoodListItem(foods[i], mealType, onSelect));
     }
+  }
+
+  function _buildFoodListItem(food, mealType, onSelect) {
+    var item = document.createElement('div');
+    item.className = 'food-list-item';
+
+    var info = document.createElement('div');
+    info.className = 'food-list-item-info';
+
+    var name = document.createElement('span');
+    name.className = 'food-list-item-name';
+    name.textContent = food.name;
+
+    var serving = document.createElement('span');
+    serving.className = 'food-list-item-serving';
+    serving.textContent = food.displayServing || food.servingLabel || '';
+
+    info.appendChild(name);
+    info.appendChild(serving);
+
+    var cal = document.createElement('span');
+    cal.className = 'food-list-item-cal';
+    cal.textContent = food.displayCalories !== undefined ? food.displayCalories : 0;
+
+    item.appendChild(info);
+    item.appendChild(cal);
+
+    item.addEventListener('click', (function (f) {
+      return function () { onSelect(mealType, f); };
+    })(food));
+
+    return item;
   }
 
   // ---------- navigation bindings ----------

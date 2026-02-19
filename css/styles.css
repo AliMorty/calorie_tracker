@@ -267,6 +267,12 @@ body {
   align-items: center;
   padding: 0.6rem 1rem;
   border-bottom: 1px solid #f6f6fa;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.food-entry:active {
+  background-color: #f5f5ff;
 }
 
 .food-entry:last-child {
@@ -599,10 +605,21 @@ body {
   background: #fff;
 }
 
-.food-list {
-  overflow-y: auto;
+.panel-body {
   flex: 1;
+  overflow-y: auto;
 }
+
+.panel-section-heading {
+  padding: 0.6rem 1rem 0.3rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #8e8ea0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.food-list {}
 
 .food-list-item {
   display: flex;

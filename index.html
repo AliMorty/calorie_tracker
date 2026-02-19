@@ -128,7 +128,14 @@
     <div class="panel-search-bar">
       <input type="text" id="food-search-input" class="food-search-input" placeholder="Search foods..." autocomplete="off" />
     </div>
-    <div id="food-list" class="food-list"></div>
+    <div class="panel-body">
+      <div id="recent-section" class="hidden">
+        <div class="panel-section-heading">Recent</div>
+        <div id="recent-list"></div>
+      </div>
+      <div id="all-foods-heading" class="panel-section-heading hidden">All foods</div>
+      <div id="food-list"></div>
+    </div>
   </div>
 
   <!-- Scripts: order matters (storage first, then ui, then app) -->
