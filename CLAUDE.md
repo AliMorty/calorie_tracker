@@ -102,8 +102,10 @@ These rules exist to prevent the slow destruction of a working codebase through 
 **When making changes:**
 - Change the smallest possible thing that could fix the bug. Prefer targeted edits over rewrites.
 - Make one change at a time. Do not bundle multiple speculative fixes into a single commit.
+- Do not remove, rename, or restructure UI elements that are not part of the bug report. If the request is "swap A and B", the fix is swapping A and B - not redesigning how A and B work. If you think additional changes are needed, describe them and ask Ali before doing them.
 - If a fix feels like a hack - it works but you're not sure why - say that explicitly in both the commit message and BUGS.md.
 - If there are two plausible causes and it's genuinely unclear which one is responsible, say so and discuss with Ali before proceeding. Fix one at a time and test between each.
+- After making a change, re-read your diff and ask yourself: "Did I change anything that was not requested?" If yes, revert the extra changes and explain why you thought they were needed. Let Ali decide.
 
 **When reporting:**
 - Always include your confidence level (e.g. "I'm fairly confident because...", "I'm not sure why this works but it does", "I genuinely don't know the root cause").
