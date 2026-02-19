@@ -11,7 +11,7 @@ See CLAUDE.md for the full rules on how to use this file.
 | # | Title | Opened | Closed | Status |
 |---|-------|--------|--------|--------|
 | 1 | Add Food panel height is content-driven - header cuts off or panel drifts | 2026-02-18 | 2026-02-18 | fixed |
-| 2 | Search results show recent foods above matches - should be reversed | 2026-02-18 | open | open |
+| 2 | Search results show recent foods above matches - should be reversed | 2026-02-18 | open | open - attempts 1 and 2 did not fully resolve |
 
 ---
 
@@ -60,13 +60,19 @@ There is no generic `.hidden { display: none }`. So adding `hidden` to `#recent-
 - **What was changed:** Swapped `#food-list` and `#recent-section` in the HTML so all foods renders at the top and recent appears at the bottom. Removed `#all-foods-heading` element (no longer needed). Updated `showAddFoodPanel` in ui.js to match the new order and remove all-foods-heading references.
 - **Reasoning:** The CSS fix in attempt 1 was correct but only solved half the problem - the hiding. The ordering was wrong from the start. Swapping the DOM order is the simplest fix.
 - **Confidence:** High.
-- **Outcome:** pending
+- **Outcome:** DID NOT FULLY RESOLVE. The DOM order was swapped correctly but the fix also hides the recent section during search, which Ali did not want. Ali clarified: recent foods should ALWAYS be visible below the food list - even when the user is actively searching. Hiding recents during search was an assumption made without confirming with Ali first.
+
+**Clarified desired behaviour:**
+- No search query: all foods at top, recent at bottom - both always visible
+- Typing a query: filtered search results at top, recent foods still visible below
 
 ### Final fix
 TBD
 
 ### Lessons
-The original ticket described two problems: (1) recent showing above search results, and (2) wrong order. Attempt 1 only fixed (1) and missed (2). Should have read the ticket more carefully before marking as done.
+- Always confirm intended behaviour before implementing. The ticket said "recent foods either hidden or shown below" - two options were written and the wrong one was chosen without asking.
+- Do not make UX decisions unilaterally. When the spec is ambiguous, ask Ali before coding.
+- Attempt 1 fixed the wrong thing (CSS hiding) without fixing the order. Attempt 2 fixed the order but introduced unwanted hiding behaviour. Two partial fixes compounded each other.
 
 ---
 
