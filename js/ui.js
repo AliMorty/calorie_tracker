@@ -293,7 +293,7 @@ const UI = (function () {
 
     qtyInput.onfocus = function () {
       var input = this;
-      setTimeout(function () { input.select(); }, 50);
+      setTimeout(function () { input.select(); }, 10);
     };
 
     qtyInput.oninput = function () {
