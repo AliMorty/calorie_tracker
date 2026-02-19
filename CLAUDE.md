@@ -65,6 +65,30 @@ Any warnings about fragile or confusing parts nearby.
 - Always update `BUGS.md` in the same commit as the fix - never separately
 - If a fix causes a new issue, note it explicitly in the original issue entry under "Outcome" and open a new issue
 
+## Bug Clarification Rules
+
+When Ali reports a bug, **do not immediately try to fix it.** First make sure you both have the same understanding of the problem. A fix built on a wrong understanding wastes everyone's time and can make things worse.
+
+**Always ask before touching code:**
+- What device and browser is Ali testing on? (iPhone Safari, Android Chrome, desktop Chrome, etc.) - this is the single most important question for UI/layout bugs
+- What exactly happens, step by step? ("the panel moves" is different from "the panel shrinks")
+- What did you expect to happen instead?
+- Does it happen every time, or only sometimes?
+- Did it work before a recent change, or has it never worked?
+
+**Confirm your understanding before proceeding:**
+- After reading the bug description, restate what you think the problem is in your own words and ask Ali to confirm
+- If the bug description is ambiguous about desired behaviour (e.g. "either X or Y"), always ask which one - never choose unilaterally
+- If you have a hypothesis, state it clearly: "I think the cause is X because Y - does that match what you're seeing?"
+
+**Why this matters:**
+Bug #1 (iOS Safari panel drift) took 3 attempts because the testing environment (iPhone Safari) was not established upfront. If the first question had been "what device/browser are you testing on?", the iOS Safari keyboard/viewport issue would have been suspected immediately and the fix might have been found in one attempt. See `insights/collaborative_debugging.md` for the full story.
+
+**Screenshots are extremely valuable - ask for them:**
+- If a layout or visual bug is reported, ask Ali to share a screenshot before trying anything
+- A screenshot often tells you more than a paragraph of text description
+- Windows vs iPhone screenshots helped isolate bug #1 as iOS-specific in seconds
+
 ## Honesty and Caution Rules
 
 These rules exist to prevent the slow destruction of a working codebase through overconfident or poorly reasoned fixes.
