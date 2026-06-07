@@ -392,22 +392,33 @@ const UI = (function () {
       onConfirm(mealType, food, qty, unit, existingEntry);
     };
 
-    document.getElementById('fd-close-btn').onclick = hideFoodDetail;
+    document.getElementById('fd-close-btn').onclick = hideFoodDetailToRight;
     document.getElementById('food-detail-screen').classList.remove('hidden');
   }
 
   function hideFoodDetail() {
+    // Called on confirm — slide down and also hide the Add Food panel behind it
     var screen = document.getElementById('food-detail-screen');
     screen.style.transition = 'transform 0.2s ease-in';
     screen.classList.add('hiding-down');
+    hideAddFoodPanel();
     setTimeout(function () {
       screen.style.transition = 'none';
       screen.classList.remove('hiding-down');
       screen.classList.add('hidden');
-      // Force reflow then restore transition for next open
       screen.offsetHeight;
       screen.style.transition = '';
     }, 200);
+  }
+
+  function hideFoodDetailToRight() {
+    // Called on X — slide back to right, revealing the food list behind
+    var screen = document.getElementById('food-detail-screen');
+    screen.style.transition = 'transform 0.15s ease-in';
+    screen.classList.add('hidden');
+    setTimeout(function () {
+      screen.style.transition = '';
+    }, 150);
   }
 
   function _updateFoodDetailMacros(food, qty, unit, unitConversions) {

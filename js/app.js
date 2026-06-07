@@ -127,7 +127,6 @@ const App = (function () {
   }
 
   function onFoodPicked(mealType, food) {
-    UI.hideAddFoodPanel();
     UI.showFoodDetail(mealType, food, unitConversions, onFoodConfirmed, null);
   }
 
