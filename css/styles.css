@@ -476,10 +476,13 @@ body {
   overflow-y: auto;
   display: flex;
   flex-direction: column;
+  transform: translateX(0);
+  transition: transform 0.2s ease-out;
 }
 
 .food-detail-screen.hidden {
-  display: none;
+  transform: translateX(100%);
+  pointer-events: none;
 }
 
 .food-detail-header {
@@ -644,11 +647,13 @@ body {
   inset: 0;
   background: rgba(0, 0, 0, 0.4);
   z-index: 100;
+  opacity: 1;
+  transition: opacity 0.2s ease-out;
 }
 
-.overlay.hidden,
-.add-food-panel.hidden {
-  display: none;
+.overlay.hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .add-food-panel {
@@ -664,6 +669,13 @@ body {
   z-index: 101;
   display: flex;
   flex-direction: column;
+  transform: translateY(0);
+  transition: transform 0.2s ease-out;
+}
+
+.add-food-panel.hidden {
+  transform: translateY(100%);
+  pointer-events: none;
 }
 
 .panel-header {
@@ -791,6 +803,15 @@ body {
 
 .hidden {
   display: none !important;
+}
+
+/* Animated panels: override display:none so CSS transitions work */
+.add-food-panel.hidden,
+.food-detail-screen.hidden {
+  display: flex !important;
+}
+.overlay.hidden {
+  display: block !important;
 }
 
 .over {

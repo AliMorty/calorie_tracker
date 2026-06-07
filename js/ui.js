@@ -397,7 +397,12 @@ const UI = (function () {
   }
 
   function hideFoodDetail() {
-    document.getElementById('food-detail-screen').classList.add('hidden');
+    var screen = document.getElementById('food-detail-screen');
+    screen.style.transition = 'transform 0.15s ease-in';
+    screen.classList.add('hidden');
+    setTimeout(function () {
+      screen.style.transition = '';
+    }, 150);
   }
 
   function _updateFoodDetailMacros(food, qty, unit, unitConversions) {
@@ -441,8 +446,6 @@ const UI = (function () {
       window.visualViewport.addEventListener('scroll', _adjustPanelForKeyboard);
     }
 
-    document.getElementById('food-search-input').focus();
-
     document.getElementById('food-search-input').oninput = function () {
       var query = this.value.trim().toLowerCase();
       if (query) {
@@ -463,9 +466,21 @@ const UI = (function () {
 
   function hideAddFoodPanel() {
     var panel = document.getElementById('add-food-panel');
+    var overlay = document.getElementById('add-food-overlay');
+
+    // Switch to ease-in for exit animation
+    panel.style.transition = 'transform 0.15s ease-in';
+    overlay.style.transition = 'opacity 0.15s ease-in';
+
     panel.style.bottom = '';
     panel.classList.add('hidden');
-    document.getElementById('add-food-overlay').classList.add('hidden');
+    overlay.classList.add('hidden');
+
+    // Reset transition after animation completes
+    setTimeout(function () {
+      panel.style.transition = '';
+      overlay.style.transition = '';
+    }, 150);
 
     // Clean up iOS Safari keyboard listeners
     if (window.visualViewport) {
