@@ -485,6 +485,10 @@ body {
   pointer-events: none;
 }
 
+.food-detail-screen.hiding-down {
+  transform: translateY(100%) !important;
+}
+
 .food-detail-header {
   display: flex;
   align-items: center;

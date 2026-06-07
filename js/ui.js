@@ -398,11 +398,16 @@ const UI = (function () {
 
   function hideFoodDetail() {
     var screen = document.getElementById('food-detail-screen');
-    screen.style.transition = 'transform 0.15s ease-in';
-    screen.classList.add('hidden');
+    screen.style.transition = 'transform 0.2s ease-in';
+    screen.classList.add('hiding-down');
     setTimeout(function () {
+      screen.style.transition = 'none';
+      screen.classList.remove('hiding-down');
+      screen.classList.add('hidden');
+      // Force reflow then restore transition for next open
+      screen.offsetHeight;
       screen.style.transition = '';
-    }, 150);
+    }, 200);
   }
 
   function _updateFoodDetailMacros(food, qty, unit, unitConversions) {
