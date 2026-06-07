@@ -503,6 +503,9 @@ const UI = (function () {
       window.visualViewport.removeEventListener('resize', _adjustPanelForKeyboard);
       window.visualViewport.removeEventListener('scroll', _adjustPanelForKeyboard);
     }
+
+    // Stop barcode camera if open
+    _closeBarcodeScanner();
   }
 
   function _renderRecentSection(recentFoods, mealType, onSelect) {
@@ -582,9 +585,61 @@ const UI = (function () {
 
   function init() {
     cacheElements();
+    _initBarcodeScanner();
   }
 
   // ---------- expose ----------
+
+  // --- Barcode Scanner ---
+  var _barcodeStream = null;
+
+  function _openBarcodeScanner() {
+    var viewfinder = document.getElementById('barcode-viewfinder');
+    var video = document.getElementById('barcode-video');
+
+    // Already open
+    if (_barcodeStream) return;
+
+    viewfinder.classList.remove('hidden');
+
+    navigator.mediaDevices.getUserMedia({
+      video: { facingMode: 'environment' }
+    }).then(function (stream) {
+      _barcodeStream = stream;
+      video.srcObject = stream;
+    }).catch(function (err) {
+      console.error('Camera access denied:', err);
+      viewfinder.classList.add('hidden');
+      alert('Could not access camera. Please allow camera permissions and try again.');
+    });
+  }
+
+  function _closeBarcodeScanner() {
+    var viewfinder = document.getElementById('barcode-viewfinder');
+    var video = document.getElementById('barcode-video');
+
+    if (_barcodeStream) {
+      _barcodeStream.getTracks().forEach(function (track) { track.stop(); });
+      _barcodeStream = null;
+    }
+    video.srcObject = null;
+    viewfinder.classList.add('hidden');
+  }
+
+  function _initBarcodeScanner() {
+    document.getElementById('barcode-scan-btn').onclick = function () {
+      var viewfinder = document.getElementById('barcode-viewfinder');
+      if (viewfinder.classList.contains('hidden')) {
+        _openBarcodeScanner();
+      } else {
+        _closeBarcodeScanner();
+      }
+    };
+
+    document.getElementById('viewfinder-close-btn').onclick = function () {
+      _closeBarcodeScanner();
+    };
+  }
 
   return {
     init: init,
