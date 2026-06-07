@@ -112,3 +112,64 @@ Not yet implemented. This section will be expanded when those features are desig
   (highlighted blue) so the user can immediately type a replacement without backspacing.
   Implemented via `select()` with a short `setTimeout` for iOS Safari compatibility.
   See Feature #1.
+
+---
+
+## UX Polish Roadmap
+
+These are the main reasons the app feels less smooth than native apps like Carbon,
+and what to do about each one. Ordered by impact.
+
+### 1. Optimistic UI (high impact)
+
+**Problem:** Every action (add/delete/edit food) waits for Supabase to respond before
+updating the screen. This creates a noticeable delay, especially on mobile networks.
+
+**Fix:** Update the UI immediately on user action (assume success), then sync to
+Supabase in the background. If the server call fails, revert the UI and show an error.
+This is what native apps do — the screen reacts instantly.
+
+### 2. Screen transition animations (high impact)
+
+**Problem:** Panels appear/disappear with `display: none` toggling — instant and jarring.
+Native apps slide, fade, or spring into place, giving spatial context.
+
+**Fix:** Replace `.hidden` toggling with CSS transform transitions (already specced in
+the Animations section above, but not yet implemented). Panels should slide in/out with
+150-200ms easing.
+
+### 3. Real food database API (high impact)
+
+**Problem:** The static local JSON has ~50 foods. Carbon has hundreds of thousands.
+Limited search results make the app feel incomplete.
+
+**Fix:** Integrate USDA FoodData Central or OpenFoodFacts API. Show results as user
+types with debounced search (300ms delay). Cache recent searches locally.
+
+### 4. Incremental DOM updates (medium impact)
+
+**Problem:** After any change, the entire day re-renders (`innerHTML = ''`). This causes
+a brief flash — all food entries disappear and reappear. Native apps update only the
+affected row.
+
+**Fix:** Instead of wiping and rebuilding the meal list, surgically insert/remove/update
+only the specific DOM element that changed. Alternatively, adopt a lightweight virtual
+DOM approach.
+
+### 5. Haptic and micro-feedback (low impact, native-only)
+
+**Problem:** No tactile confirmation on swipe threshold, no subtle bounce on pull,
+no press states that feel physical.
+
+**Fix:** Limited options on web. Can add: subtle scale-down on touch (`:active` transform),
+CSS spring-style animations for swipe snap-back, and the Vibration API for Android
+(`navigator.vibrate(10)` on swipe threshold). iOS Safari doesn't support vibration.
+
+### 6. Typography and spacing refinement (low impact)
+
+**Problem:** Functional but not premium. Native apps have carefully tuned font weights,
+letter-spacing, line-height, and whitespace ratios.
+
+**Fix:** Audit padding/margins for consistent vertical rhythm. Use slightly heavier
+font weight for numbers (tabular figures). Add subtle color hierarchy (not everything
+the same gray).
