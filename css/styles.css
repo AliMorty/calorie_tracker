@@ -328,22 +328,64 @@ body {
 
 /* ---------- food entries ---------- */
 
+.swipe-container {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid #f6f6fa;
+  touch-action: pan-y;
+}
+
+.swipe-container:last-child {
+  border-bottom: none;
+}
+
+.swipe-delete-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #ff3b30;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 1.2rem;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
 .food-entry {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.6rem 1rem;
-  border-bottom: 1px solid #f6f6fa;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
+  background: #fff;
+  position: relative;
+  transition: transform 0.2s ease;
+  will-change: transform;
+}
+
+.food-entry.swiping {
+  transition: none;
 }
 
 .food-entry:active {
   background-color: #f5f5ff;
 }
 
-.food-entry:last-child {
-  border-bottom: none;
+.food-entry.removing {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform: translateX(-100%) !important;
+  opacity: 0;
+}
+
+.swipe-container.collapsing {
+  transition: max-height 0.3s ease, margin 0.3s ease;
+  max-height: 0 !important;
+  overflow: hidden;
 }
 
 .food-info {

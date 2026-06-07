@@ -130,9 +130,10 @@ const UI = (function () {
    * @param {object} dayData - { meals: { breakfast: {entries}, ... } }
    * @param {function} onAddClick - callback(mealType) when "+" is clicked
    * @param {function} onEditEntry - callback(mealType, entry) when a food row is tapped
+   * @param {function} onDeleteEntry - callback(mealType, entry) when swiped to delete
    * @param {function} computeMealTotals - function(entries) => totals
    */
-  function renderMeals(dayData, onAddClick, onEditEntry, computeMealTotals) {
+  function renderMeals(dayData, onAddClick, onEditEntry, onDeleteEntry, computeMealTotals) {
     els.mealsContainer.innerHTML = '';
 
     var mealOrder = ['breakfast', 'lunch', 'dinner', 'snacks'];
@@ -141,12 +142,12 @@ const UI = (function () {
       var mealType = mealOrder[i];
       var meal = dayData.meals[mealType];
       var totals = computeMealTotals(meal.entries);
-      var section = _buildMealSection(mealType, meal.entries, totals, onAddClick, onEditEntry);
+      var section = _buildMealSection(mealType, meal.entries, totals, onAddClick, onEditEntry, onDeleteEntry);
       els.mealsContainer.appendChild(section);
     }
   }
 
-  function _buildMealSection(mealType, entries, totals, onAddClick, onEditEntry) {
+  function _buildMealSection(mealType, entries, totals, onAddClick, onEditEntry, onDeleteEntry) {
     var section = document.createElement('div');
     section.className = 'meal-section';
 
@@ -194,7 +195,7 @@ const UI = (function () {
 
     // Food entries
     for (var i = 0; i < entries.length; i++) {
-      section.appendChild(_buildFoodEntry(entries[i], onEditEntry, mealType));
+      section.appendChild(_buildFoodEntry(entries[i], onEditEntry, onDeleteEntry, mealType));
     }
 
     // Empty state
@@ -208,7 +209,15 @@ const UI = (function () {
     return section;
   }
 
-  function _buildFoodEntry(entry, onEditEntry, mealType) {
+  function _buildFoodEntry(entry, onEditEntry, onDeleteEntry, mealType) {
+    var container = document.createElement('div');
+    container.className = 'swipe-container';
+
+    var deleteBg = document.createElement('div');
+    deleteBg.className = 'swipe-delete-bg';
+    deleteBg.textContent = 'Delete';
+    container.appendChild(deleteBg);
+
     var row = document.createElement('div');
     row.className = 'food-entry';
     row.setAttribute('data-entry-id', entry.id);
@@ -243,7 +252,76 @@ const UI = (function () {
       return function () { onEditEntry(mt, e); };
     })(entry, mealType));
 
-    return row;
+    container.appendChild(row);
+
+    // Swipe-to-delete touch handling
+    _attachSwipeHandler(container, row, function () {
+      onDeleteEntry(mealType, entry);
+    });
+
+    return container;
+  }
+
+  function _attachSwipeHandler(container, row, onDelete) {
+    var startX = 0, startY = 0, currentX = 0;
+    var isSwiping = false, directionLocked = false, isHorizontal = false;
+    var threshold = 80;
+
+    row.addEventListener('touchstart', function (e) {
+      startX = e.touches[0].clientX;
+      startY = e.touches[0].clientY;
+      currentX = 0;
+      isSwiping = false;
+      directionLocked = false;
+      isHorizontal = false;
+      row.classList.add('swiping');
+    }, { passive: true });
+
+    row.addEventListener('touchmove', function (e) {
+      var dx = e.touches[0].clientX - startX;
+      var dy = e.touches[0].clientY - startY;
+
+      if (!directionLocked) {
+        if (Math.abs(dx) > 8 || Math.abs(dy) > 8) {
+          directionLocked = true;
+          isHorizontal = Math.abs(dx) > Math.abs(dy);
+        }
+        return;
+      }
+
+      if (!isHorizontal) return;
+
+      e.preventDefault();
+      isSwiping = true;
+      // Only allow swiping left (negative)
+      currentX = Math.min(0, dx);
+      row.style.transform = 'translateX(' + currentX + 'px)';
+    }, { passive: false });
+
+    row.addEventListener('touchend', function () {
+      row.classList.remove('swiping');
+
+      if (!isSwiping) {
+        row.style.transform = '';
+        return;
+      }
+
+      if (currentX < -threshold) {
+        // Delete
+        row.classList.add('removing');
+        container.style.maxHeight = container.offsetHeight + 'px';
+        setTimeout(function () {
+          container.classList.add('collapsing');
+          container.style.maxHeight = '0px';
+        }, 250);
+        setTimeout(function () {
+          onDelete();
+        }, 500);
+      } else {
+        // Snap back
+        row.style.transform = '';
+      }
+    });
   }
 
   // ---------- food detail screen ----------

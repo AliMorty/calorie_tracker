@@ -90,7 +90,7 @@ const App = (function () {
 
     UI.renderDateHeader(currentDate);
     UI.renderSummary(totals, goals);
-    UI.renderMeals(dayData, handleAddFood, handleEditEntry, Storage.computeMealTotals);
+    UI.renderMeals(dayData, handleAddFood, handleEditEntry, handleDeleteEntry, Storage.computeMealTotals);
   }
 
   function goToPrevDay() {
@@ -106,6 +106,12 @@ const App = (function () {
   function handleAddFood(mealType) {
     var recentFoods = _getRecentFoods(5);
     UI.showAddFoodPanel(mealType, foodDatabase, recentFoods, onFoodPicked);
+  }
+
+  function handleDeleteEntry(mealType, entry) {
+    Promise.resolve(Storage.removeFoodEntry(currentDate, mealType, entry.id)).then(function () {
+      _loadAndRenderDay();
+    });
   }
 
   function handleEditEntry(mealType, entry) {
