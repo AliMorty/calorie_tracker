@@ -3,6 +3,7 @@
  *
  * Wires Storage and UI together.
  * Manages current state (selected date) and user interactions.
+ * Handles auth flow (login screen vs app).
  */
 
 const App = (function () {
@@ -13,9 +14,47 @@ const App = (function () {
   var unitConversions = {};
 
   function init() {
+    // Initialize auth and wait for session check
+    SupabaseAuth.init(onAuthChange);
+  }
+
+  function onAuthChange(user) {
+    if (user) {
+      _showApp(user);
+    } else {
+      _showLogin();
+    }
+  }
+
+  function _showLogin() {
+    document.getElementById('login-screen').classList.remove('hidden');
+    document.getElementById('app').classList.add('hidden');
+  }
+
+  function _showApp(user) {
+    document.getElementById('login-screen').classList.add('hidden');
+    document.getElementById('app').classList.remove('hidden');
+
+    // Update user display
+    var nameEl = document.getElementById('user-display-name');
+    if (nameEl && user.user_metadata) {
+      nameEl.textContent = user.user_metadata.full_name || user.email || '';
+    }
+
+    _bootApp();
+  }
+
+  function _bootApp() {
     UI.init();
     UI.bindNavigation(goToPrevDay, goToNextDay);
-    dayData = Storage.getMealsForDate(currentDate);
+
+    // Bind sign out button
+    var signOutBtn = document.getElementById('sign-out-btn');
+    if (signOutBtn) {
+      signOutBtn.addEventListener('click', function () {
+        SupabaseAuth.signOut();
+      });
+    }
 
     fetch('data/foods.json')
       .then(function (res) { return res.json(); })
@@ -35,7 +74,14 @@ const App = (function () {
         foodDatabase = [];
       });
 
-    renderDay();
+    _loadAndRenderDay();
+  }
+
+  function _loadAndRenderDay() {
+    Promise.resolve(Storage.getMealsForDate(currentDate)).then(function (data) {
+      dayData = data;
+      renderDay();
+    });
   }
 
   function renderDay() {
@@ -49,14 +95,12 @@ const App = (function () {
 
   function goToPrevDay() {
     currentDate.setDate(currentDate.getDate() - 1);
-    dayData = Storage.getMealsForDate(currentDate);
-    renderDay();
+    _loadAndRenderDay();
   }
 
   function goToNextDay() {
     currentDate.setDate(currentDate.getDate() + 1);
-    dayData = Storage.getMealsForDate(currentDate);
-    renderDay();
+    _loadAndRenderDay();
   }
 
   function handleAddFood(mealType) {
@@ -93,18 +137,20 @@ const App = (function () {
       fat: nutrition.fat,
     };
 
+    var promise;
     if (existingEntry) {
-      Storage.updateFoodEntry(currentDate, mealType, existingEntry.id, entryData);
+      promise = Storage.updateFoodEntry(currentDate, mealType, existingEntry.id, entryData);
     } else {
-      Storage.addFoodEntry(currentDate, mealType, Object.assign({
+      promise = Storage.addFoodEntry(currentDate, mealType, Object.assign({
         foodId: food.id,
         name: food.name,
       }, entryData));
     }
 
-    dayData = Storage.getMealsForDate(currentDate);
-    UI.hideFoodDetail();
-    renderDay();
+    Promise.resolve(promise).then(function () {
+      UI.hideFoodDetail();
+      _loadAndRenderDay();
+    });
   }
 
   function _getRecentFoods(limit) {

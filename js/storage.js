@@ -1,9 +1,10 @@
 /**
  * storage.js - Data persistence layer
  *
- * All localStorage read/write logic lives here. No DOM access.
- * Exposes a clean interface so the backing store can be swapped
- * to a remote API later without touching the rest of the app.
+ * When logged in: reads/writes from Supabase (food_logs table).
+ * When not logged in: falls back to localStorage.
+ *
+ * Exposes the same public API regardless of backing store.
  */
 
 const Storage = (function () {
@@ -14,7 +15,7 @@ const Storage = (function () {
     customFoods: 'ct_custom_foods', // user-created foods (future)
   };
 
-  // ---------- low-level helpers ----------
+  // ---------- low-level localStorage helpers ----------
 
   function _read(key) {
     try {
@@ -36,7 +37,6 @@ const Storage = (function () {
 
   // ---------- date helpers ----------
 
-  // Canonical date string used as diary key: "YYYY-MM-DD"
   function _dateKey(date) {
     const y = date.getFullYear();
     const m = String(date.getMonth() + 1).padStart(2, '0');
@@ -44,22 +44,40 @@ const Storage = (function () {
     return y + '-' + m + '-' + d;
   }
 
-  // ---------- diary ----------
+  // ---------- Supabase helpers ----------
 
-  /**
-   * Returns the full diary object (all dates).
-   * Structure:
-   * {
-   *   "2026-02-16": {
-   *     meals: {
-   *       breakfast: { entries: [ { id, foodId, name, servingQty, servingLabel, calories, protein, carbs, fat, addedAt } ] },
-   *       lunch:     { entries: [...] },
-   *       dinner:    { entries: [...] },
-   *       snacks:    { entries: [...] }
-   *     }
-   *   }
-   * }
-   */
+  function _isOnline() {
+    return typeof SupabaseAuth !== 'undefined' && SupabaseAuth.isLoggedIn();
+  }
+
+  function _db() {
+    return SupabaseAuth.getClient();
+  }
+
+  function _userId() {
+    var user = SupabaseAuth.getUser();
+    return user ? user.id : null;
+  }
+
+  // Convert a Supabase row to our entry format
+  function _rowToEntry(row) {
+    return {
+      id: row.id,
+      foodId: row.food_id,
+      name: row.name,
+      servingQty: Number(row.serving_qty),
+      servingUnit: row.serving_unit,
+      servingLabel: row.serving_label,
+      calories: Number(row.calories),
+      protein: Number(row.protein),
+      carbs: Number(row.carbs),
+      fat: Number(row.fat),
+      addedAt: row.added_at,
+    };
+  }
+
+  // ---------- diary (localStorage fallback) ----------
+
   function _getDiary() {
     return _read(KEYS.diary) || {};
   }
@@ -68,7 +86,6 @@ const Storage = (function () {
     _write(KEYS.diary, diary);
   }
 
-  // Empty day template
   function _emptyDay() {
     return {
       meals: {
@@ -84,77 +101,163 @@ const Storage = (function () {
 
   /**
    * Get meals for a specific date.
-   * @param {Date} date
-   * @returns {{ meals: { breakfast: {entries:[]}, lunch: {entries:[]}, dinner: {entries:[]}, snacks: {entries:[]} } }}
+   * Returns a Promise when online, or plain object when offline.
+   * Callers should always use Promise.resolve() wrapper.
    */
   function getMealsForDate(date) {
-    const diary = _getDiary();
-    const key = _dateKey(date);
-    return diary[key] || _emptyDay();
+    if (!_isOnline()) {
+      var diary = _getDiary();
+      var key = _dateKey(date);
+      return Promise.resolve(diary[key] || _emptyDay());
+    }
+
+    var dateStr = _dateKey(date);
+    return _db()
+      .from('food_logs')
+      .select('*')
+      .eq('user_id', _userId())
+      .eq('date', dateStr)
+      .then(function (result) {
+        if (result.error) {
+          console.error('Supabase read error:', result.error);
+          // Fallback to localStorage
+          var diary = _getDiary();
+          return diary[dateStr] || _emptyDay();
+        }
+
+        var dayData = _emptyDay();
+        var rows = result.data || [];
+        for (var i = 0; i < rows.length; i++) {
+          var row = rows[i];
+          var meal = row.meal;
+          if (dayData.meals[meal]) {
+            dayData.meals[meal].entries.push(_rowToEntry(row));
+          }
+        }
+        return dayData;
+      });
   }
 
   /**
    * Add a food entry to a meal on a given date.
-   * @param {Date} date
-   * @param {string} mealType - "breakfast" | "lunch" | "dinner" | "snacks"
-   * @param {object} entry - { foodId, name, servingQty, servingLabel, calories, protein, carbs, fat }
-   * @returns {object} the created entry (with generated id and timestamp)
+   * Returns a Promise.
    */
   function addFoodEntry(date, mealType, entry) {
-    const diary = _getDiary();
-    const key = _dateKey(date);
-
-    if (!diary[key]) {
-      diary[key] = _emptyDay();
+    if (!_isOnline()) {
+      var diary = _getDiary();
+      var key = _dateKey(date);
+      if (!diary[key]) diary[key] = _emptyDay();
+      var newEntry = Object.assign({}, entry, {
+        id: _generateId(),
+        addedAt: new Date().toISOString(),
+      });
+      diary[key].meals[mealType].entries.push(newEntry);
+      _saveDiary(diary);
+      return Promise.resolve(newEntry);
     }
 
-    const newEntry = Object.assign({}, entry, {
-      id: _generateId(),
-      addedAt: new Date().toISOString(),
-    });
+    var row = {
+      user_id: _userId(),
+      date: _dateKey(date),
+      meal: mealType,
+      food_id: entry.foodId || null,
+      name: entry.name,
+      serving_qty: entry.servingQty,
+      serving_unit: entry.servingUnit || '',
+      serving_label: entry.servingLabel || '',
+      calories: entry.calories,
+      protein: entry.protein,
+      carbs: entry.carbs,
+      fat: entry.fat,
+    };
 
-    diary[key].meals[mealType].entries.push(newEntry);
-    _saveDiary(diary);
-    return newEntry;
+    return _db()
+      .from('food_logs')
+      .insert(row)
+      .select()
+      .then(function (result) {
+        if (result.error) {
+          console.error('Supabase insert error:', result.error);
+          return null;
+        }
+        return _rowToEntry(result.data[0]);
+      });
   }
 
   /**
-   * Remove a food entry by id from a meal on a given date.
+   * Remove a food entry by id.
    */
   function removeFoodEntry(date, mealType, entryId) {
-    const diary = _getDiary();
-    const key = _dateKey(date);
+    if (!_isOnline()) {
+      var diary = _getDiary();
+      var key = _dateKey(date);
+      if (!diary[key]) return Promise.resolve(false);
+      var meal = diary[key].meals[mealType];
+      var idx = meal.entries.findIndex(function (e) { return e.id === entryId; });
+      if (idx === -1) return Promise.resolve(false);
+      meal.entries.splice(idx, 1);
+      _saveDiary(diary);
+      return Promise.resolve(true);
+    }
 
-    if (!diary[key]) return false;
-
-    const meal = diary[key].meals[mealType];
-    const idx = meal.entries.findIndex(function (e) { return e.id === entryId; });
-    if (idx === -1) return false;
-
-    meal.entries.splice(idx, 1);
-    _saveDiary(diary);
-    return true;
+    return _db()
+      .from('food_logs')
+      .delete()
+      .eq('id', entryId)
+      .eq('user_id', _userId())
+      .then(function (result) {
+        if (result.error) {
+          console.error('Supabase delete error:', result.error);
+          return false;
+        }
+        return true;
+      });
   }
 
   /**
-   * Update an existing food entry (e.g. change serving quantity).
+   * Update an existing food entry.
    */
   function updateFoodEntry(date, mealType, entryId, updates) {
-    const diary = _getDiary();
-    const key = _dateKey(date);
+    if (!_isOnline()) {
+      var diary = _getDiary();
+      var key = _dateKey(date);
+      if (!diary[key]) return Promise.resolve(null);
+      var meal = diary[key].meals[mealType];
+      var entry = meal.entries.find(function (e) { return e.id === entryId; });
+      if (!entry) return Promise.resolve(null);
+      Object.assign(entry, updates);
+      _saveDiary(diary);
+      return Promise.resolve(entry);
+    }
 
-    if (!diary[key]) return null;
+    // Map our entry field names to DB column names
+    var dbUpdates = {};
+    if (updates.name !== undefined) dbUpdates.name = updates.name;
+    if (updates.servingQty !== undefined) dbUpdates.serving_qty = updates.servingQty;
+    if (updates.servingUnit !== undefined) dbUpdates.serving_unit = updates.servingUnit;
+    if (updates.servingLabel !== undefined) dbUpdates.serving_label = updates.servingLabel;
+    if (updates.calories !== undefined) dbUpdates.calories = updates.calories;
+    if (updates.protein !== undefined) dbUpdates.protein = updates.protein;
+    if (updates.carbs !== undefined) dbUpdates.carbs = updates.carbs;
+    if (updates.fat !== undefined) dbUpdates.fat = updates.fat;
+    if (updates.foodId !== undefined) dbUpdates.food_id = updates.foodId;
 
-    const meal = diary[key].meals[mealType];
-    const entry = meal.entries.find(function (e) { return e.id === entryId; });
-    if (!entry) return null;
-
-    Object.assign(entry, updates);
-    _saveDiary(diary);
-    return entry;
+    return _db()
+      .from('food_logs')
+      .update(dbUpdates)
+      .eq('id', entryId)
+      .eq('user_id', _userId())
+      .select()
+      .then(function (result) {
+        if (result.error) {
+          console.error('Supabase update error:', result.error);
+          return null;
+        }
+        return result.data[0] ? _rowToEntry(result.data[0]) : null;
+      });
   }
 
-  // ---------- goals ----------
+  // ---------- goals (always localStorage for now) ----------
 
   function getGoals() {
     return _read(KEYS.goals) || {
@@ -175,11 +278,6 @@ const Storage = (function () {
     return Date.now().toString(36) + Math.random().toString(36).substr(2, 5);
   }
 
-  /**
-   * Compute totals for a day's meals object.
-   * @param {{ meals: object }} dayData - as returned by getMealsForDate
-   * @returns {{ calories: number, protein: number, carbs: number, fat: number }}
-   */
   function computeDayTotals(dayData) {
     var totals = { calories: 0, protein: 0, carbs: 0, fat: 0 };
     var mealTypes = Object.keys(dayData.meals);
@@ -195,9 +293,6 @@ const Storage = (function () {
     return totals;
   }
 
-  /**
-   * Compute totals for a single meal.
-   */
   function computeMealTotals(entries) {
     var totals = { calories: 0, protein: 0, carbs: 0, fat: 0 };
     for (var i = 0; i < entries.length; i++) {
@@ -247,14 +342,6 @@ const Storage = (function () {
 
   // ---------- food nutrition calculator ----------
 
-  /**
-   * Calculate nutrition for a given food, quantity, and unit.
-   * Uses per100g for weight-type units, per100ml for volume-type units.
-   * @param {object} food - food object from foods.json
-   * @param {number} qty - quantity entered by user
-   * @param {object} unit - unit object from food.units array
-   * @param {object} unitConversions - the unitConversions object from foods.json
-   */
   function calcFoodNutrition(food, qty, unit, unitConversions) {
     var multiplier = 0;
     var base;
