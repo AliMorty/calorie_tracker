@@ -6,8 +6,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
   <title>Calorie Tracker</title>
-  <link rel="stylesheet" id="main-css">
-  <script>document.getElementById('main-css').href='css/styles.css?v='+Date.now();</script>
+  <link rel="stylesheet" href="css/styles.css">
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 <body>
@@ -161,21 +160,10 @@
   </div>
 
   <!-- Scripts: order matters (supabase first, then storage, ui, app) -->
-  <script>
-    // Cache-bust: always load latest versions of local JS files (in order)
-    (function(){
-      var v='?v='+Date.now();
-      var scripts=['js/supabase.js','js/storage.js','js/ui.js','js/app.js'];
-      function loadNext(i){
-        if(i>=scripts.length)return;
-        var s=document.createElement('script');
-        s.src=scripts[i]+v;
-        s.onload=function(){loadNext(i+1);};
-        document.body.appendChild(s);
-      }
-      loadNext(0);
-    })();
-  </script>
+  <script src="js/supabase.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/app.js"></script>
 
 </body>
 </html>
