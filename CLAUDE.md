@@ -119,6 +119,15 @@ These rules exist to prevent the slow destruction of a working codebase through 
 - Document what was tried and why it didn't work in BUGS.md.
 - Ask Ali how to proceed rather than escalating changes.
 
+## No Secrets in Committed Files
+
+Never include API keys, OAuth credentials, client secrets, database passwords, or any sensitive values in session summaries, documentation, or any file that gets committed to the repo. This repo is public.
+
+- Refer to credentials by location only (e.g. "configured in Supabase dashboard under Authentication → Providers → Google")
+- If you need to reference a credential in conversation, that's fine — just don't write it into a file
+
+**Why this matters:** In session 006, OAuth Client ID and Client Secret were included in the session summary. GitHub Push Protection blocked the push and the commit history had to be rewritten to remove them. Obvious mistake, easily avoided.
+
 ## Bash Command Explanations
 
 Whenever you give the user a bash command to run, always follow it immediately with a brief explanation of what each term/part of the command means. The goal is to help the user gradually learn the command line. For example:
