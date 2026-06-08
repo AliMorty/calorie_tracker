@@ -147,7 +147,7 @@ const App = (function () {
   }
 
   function searchFoodsFromDB(query) {
-    return SupabaseAuth.searchFoods(query).then(function (results) {
+    return SupabaseAuth.searchFoods(query, 100).then(function (results) {
       return results.map(_adaptFlatFood);
     });
   }

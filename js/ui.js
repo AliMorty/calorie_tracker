@@ -447,6 +447,19 @@ const UI = (function () {
 
   var _searchTimer = null;
 
+  function _rankSearchResults(foods, queryLower) {
+    return foods.slice().sort(function (a, b) {
+      var aName = a.name.toLowerCase();
+      var bName = b.name.toLowerCase();
+      var aStarts = aName.indexOf(queryLower) === 0 ? 0 : 1;
+      var bStarts = bName.indexOf(queryLower) === 0 ? 0 : 1;
+      // 1. Names starting with query come first
+      if (aStarts !== bStarts) return aStarts - bStarts;
+      // 2. Shorter names first (more generic/staple)
+      return aName.length - bName.length;
+    });
+  }
+
   function showAddFoodPanel(mealType, foods, recentFoods, onSelect, searchDB) {
     var mealLabels = { breakfast: 'Breakfast', lunch: 'Lunch', dinner: 'Dinner', snacks: 'Snacks' };
     document.getElementById('panel-title').textContent = 'Add to ' + mealLabels[mealType];
@@ -492,9 +505,10 @@ const UI = (function () {
             var extra = dbResults.filter(function (f) {
               return !localNames[f.name];
             });
-            if (extra.length > 0) {
-              _renderFoodList(filtered.concat(extra), mealType, onSelect);
-            }
+            var all = filtered.concat(extra);
+            // Rank results: "starts with" first, then shorter names first
+            all = _rankSearchResults(all, queryLower);
+            _renderFoodList(all.slice(0, 30), mealType, onSelect);
           });
         }, 300);
       }
