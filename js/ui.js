@@ -591,24 +591,61 @@ const UI = (function () {
   // ---------- expose ----------
 
   // --- Barcode Scanner ---
-  var _barcodeStream = null;
+  var _barcodeScanner = null;
+  var _scannerRunning = false;
 
   function _openBarcodeScanner() {
     var viewfinder = document.getElementById('barcode-viewfinder');
-    var video = document.getElementById('barcode-video');
 
-    // Already open
-    if (_barcodeStream) return;
+    if (_scannerRunning) return;
+
+    // Reset result bar
+    document.getElementById('barcode-result').classList.add('hidden');
+    document.getElementById('barcode-number').textContent = '';
+    document.querySelector('.viewfinder-camera').classList.remove('scan-success');
 
     viewfinder.classList.remove('hidden');
 
-    navigator.mediaDevices.getUserMedia({
-      video: { facingMode: 'environment' }
-    }).then(function (stream) {
-      _barcodeStream = stream;
-      video.srcObject = stream;
+    if (!_barcodeScanner) {
+      _barcodeScanner = new Html5Qrcode('barcode-reader');
+    }
+
+    _barcodeScanner.start(
+      { facingMode: 'environment' },
+      {
+        fps: 10,
+        qrbox: { width: 250, height: 100 },
+        aspectRatio: 1.7,
+        formatsToSupport: [
+          Html5QrcodeSupportedFormats.EAN_13,
+          Html5QrcodeSupportedFormats.EAN_8,
+          Html5QrcodeSupportedFormats.UPC_A,
+          Html5QrcodeSupportedFormats.UPC_E,
+          Html5QrcodeSupportedFormats.CODE_128,
+          Html5QrcodeSupportedFormats.CODE_39
+        ]
+      },
+      function onSuccess(decodedText) {
+        // Green flash
+        var camera = document.querySelector('.viewfinder-camera');
+        camera.classList.add('scan-success');
+
+        // Show result
+        document.getElementById('barcode-number').textContent = decodedText;
+        document.getElementById('barcode-result').classList.remove('hidden');
+
+        // Stop scanning after successful read
+        _barcodeScanner.stop().then(function () {
+          _scannerRunning = false;
+        });
+      },
+      function onError() {
+        // Ignore scan errors — just means no barcode found in this frame
+      }
+    ).then(function () {
+      _scannerRunning = true;
     }).catch(function (err) {
-      console.error('Camera access denied:', err);
+      console.error('Barcode scanner failed to start:', err);
       viewfinder.classList.add('hidden');
       alert('Could not access camera. Please allow camera permissions and try again.');
     });
@@ -616,14 +653,15 @@ const UI = (function () {
 
   function _closeBarcodeScanner() {
     var viewfinder = document.getElementById('barcode-viewfinder');
-    var video = document.getElementById('barcode-video');
 
-    if (_barcodeStream) {
-      _barcodeStream.getTracks().forEach(function (track) { track.stop(); });
-      _barcodeStream = null;
+    if (_scannerRunning && _barcodeScanner) {
+      _barcodeScanner.stop().then(function () {
+        _scannerRunning = false;
+      });
     }
-    video.srcObject = null;
     viewfinder.classList.add('hidden');
+    document.getElementById('barcode-result').classList.add('hidden');
+    document.querySelector('.viewfinder-camera').classList.remove('scan-success');
   }
 
   function _initBarcodeScanner() {
@@ -637,6 +675,16 @@ const UI = (function () {
     };
 
     document.getElementById('viewfinder-close-btn').onclick = function () {
+      _closeBarcodeScanner();
+    };
+
+    document.getElementById('barcode-confirm-btn').onclick = function () {
+      var code = document.getElementById('barcode-number').textContent;
+      if (code) {
+        // Phase 3: this will trigger food database lookup
+        console.log('Barcode confirmed:', code);
+        alert('Barcode: ' + code + '\n\nFood lookup coming in Phase 3!');
+      }
       _closeBarcodeScanner();
     };
   }

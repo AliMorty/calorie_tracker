@@ -8,6 +8,7 @@
   <title>Calorie Tracker</title>
   <link rel="stylesheet" href="css/styles.css">
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
 </head>
 <body>
 
@@ -165,8 +166,11 @@
         <button id="viewfinder-close-btn" class="viewfinder-close-btn">&times;</button>
       </div>
       <div class="viewfinder-camera">
-        <video id="barcode-video" autoplay playsinline></video>
-        <div class="viewfinder-guide"></div>
+        <div id="barcode-reader"></div>
+      </div>
+      <div id="barcode-result" class="barcode-result hidden">
+        <span id="barcode-number"></span>
+        <button id="barcode-confirm-btn" class="barcode-confirm-btn">Confirm</button>
       </div>
     </div>
     <div class="panel-body">
