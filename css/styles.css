@@ -899,11 +899,6 @@ body {
   height: 100%;
 }
 
-/* Hide html5-qrcode built-in UI elements */
-#barcode-reader #qr-shaded-region {
-  display: none !important;
-}
-
 #barcode-reader video {
   object-fit: cover !important;
 }
