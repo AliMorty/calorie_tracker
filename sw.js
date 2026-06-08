@@ -1,4 +1,4 @@
-var CACHE_VERSION = 'v4';
+var CACHE_VERSION = 'v5';
 var CACHE_NAME = 'calorie-tracker-' + CACHE_VERSION;
 
 var FILES_TO_CACHE = [
@@ -8,7 +8,9 @@ var FILES_TO_CACHE = [
   '/js/supabase.js',
   '/js/storage.js',
   '/js/ui.js',
-  '/js/app.js'
+  '/js/app.js',
+  '/data/foods.json',
+  '/data/common_foods.json'
 ];
 
 // Install: cache all app files

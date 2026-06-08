@@ -44,6 +44,29 @@ const App = (function () {
     _bootApp();
   }
 
+  /**
+   * Convert a flat food object (per-gram values) into the format
+   * expected by showFoodDetail and calcFoodNutrition.
+   */
+  function _adaptFlatFood(flat) {
+    return {
+      id: flat.name, // use name as ID for Supabase foods
+      name: flat.name,
+      per100g: {
+        calories: Math.round(flat.calories * 100),
+        protein: Math.round(flat.protein * 100 * 10) / 10,
+        carbs: Math.round(flat.carbs * 100 * 10) / 10,
+        fat: Math.round(flat.fat * 100 * 10) / 10,
+      },
+      units: [
+        { label: 'g', type: 'weight', grams: 1, defaultQty: 100 },
+      ],
+      defaultUnit: 'g',
+      displayCalories: Math.round(flat.calories * 100),
+      displayServing: '100 g',
+    };
+  }
+
   function _bootApp() {
     UI.init();
     UI.bindNavigation(goToPrevDay, goToNextDay);
@@ -56,11 +79,12 @@ const App = (function () {
       });
     }
 
-    fetch('data/foods.json')
+    // Load both: handmade foods (with units) + USDA common foods (grams only)
+    var handmadePromise = fetch('data/foods.json')
       .then(function (res) { return res.json(); })
       .then(function (json) {
         unitConversions = json.unitConversions;
-        foodDatabase = json.foods.map(function (food) {
+        return json.foods.map(function (food) {
           var defaultUnitData = food.units.find(function (u) { return u.label === food.defaultUnit; }) || food.units[0];
           var n = Storage.calcFoodNutrition(food, defaultUnitData.defaultQty, defaultUnitData, json.unitConversions);
           return Object.assign({}, food, {
@@ -71,8 +95,22 @@ const App = (function () {
       })
       .catch(function () {
         unitConversions = {};
-        foodDatabase = [];
+        return [];
       });
+
+    var usdaPromise = fetch('data/common_foods.json')
+      .then(function (res) { return res.json(); })
+      .then(function (foods) {
+        return foods.map(_adaptFlatFood);
+      })
+      .catch(function () {
+        return [];
+      });
+
+    Promise.all([handmadePromise, usdaPromise]).then(function (results) {
+      // Handmade foods first, then USDA foods
+      foodDatabase = results[0].concat(results[1]);
+    });
 
     _loadAndRenderDay();
   }
@@ -105,7 +143,13 @@ const App = (function () {
 
   function handleAddFood(mealType) {
     var recentFoods = _getRecentFoods(5);
-    UI.showAddFoodPanel(mealType, foodDatabase, recentFoods, onFoodPicked);
+    UI.showAddFoodPanel(mealType, foodDatabase, recentFoods, onFoodPicked, searchFoodsFromDB);
+  }
+
+  function searchFoodsFromDB(query) {
+    return SupabaseAuth.searchFoods(query).then(function (results) {
+      return results.map(_adaptFlatFood);
+    });
   }
 
   function handleDeleteEntry(mealType, entry) {

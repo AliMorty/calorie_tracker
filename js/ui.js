@@ -445,7 +445,9 @@ const UI = (function () {
     panel.style.bottom = Math.max(0, keyboardHeight) + 'px';
   }
 
-  function showAddFoodPanel(mealType, foods, recentFoods, onSelect) {
+  var _searchTimer = null;
+
+  function showAddFoodPanel(mealType, foods, recentFoods, onSelect, searchDB) {
     var mealLabels = { breakfast: 'Breakfast', lunch: 'Lunch', dinner: 'Dinner', snacks: 'Snacks' };
     document.getElementById('panel-title').textContent = 'Add to ' + mealLabels[mealType];
     document.getElementById('food-search-input').value = '';
@@ -463,16 +465,38 @@ const UI = (function () {
     }
 
     document.getElementById('food-search-input').oninput = function () {
-      var query = this.value.trim().toLowerCase();
-      if (query) {
-        // Searching: show filtered results, keep recent visible below
-        var filtered = foods.filter(function (f) {
-          return f.name.toLowerCase().indexOf(query) !== -1;
-        });
-        _renderFoodList(filtered, mealType, onSelect);
-      } else {
-        // Cleared: restore all foods
+      var query = this.value.trim();
+      if (_searchTimer) clearTimeout(_searchTimer);
+
+      if (!query) {
         _renderFoodList(foods, mealType, onSelect);
+        return;
+      }
+
+      // Filter local list (case-insensitive)
+      var queryLower = query.toLowerCase();
+      var filtered = foods.filter(function (f) {
+        return f.name.toLowerCase().indexOf(queryLower) !== -1;
+      });
+      _renderFoodList(filtered, mealType, onSelect);
+
+      // After 3+ chars, also search Supabase with debounce
+      if (query.length >= 3 && searchDB) {
+        _searchTimer = setTimeout(function () {
+          searchDB(query).then(function (dbResults) {
+            // Merge: show DB results that aren't already in local results
+            var localNames = {};
+            for (var i = 0; i < filtered.length; i++) {
+              localNames[filtered[i].name] = true;
+            }
+            var extra = dbResults.filter(function (f) {
+              return !localNames[f.name];
+            });
+            if (extra.length > 0) {
+              _renderFoodList(filtered.concat(extra), mealType, onSelect);
+            }
+          });
+        }, 300);
       }
     };
 

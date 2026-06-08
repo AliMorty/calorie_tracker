@@ -74,6 +74,21 @@ const SupabaseAuth = (function () {
     return supabase;
   }
 
+  // ---------- food database search ----------
+
+  function searchFoods(query, limit) {
+    if (!supabase) return Promise.resolve([]);
+    limit = limit || 30;
+    return supabase
+      .from('foods')
+      .select('name, calories, protein, carbs, fat')
+      .ilike('name', '%' + query + '%')
+      .limit(limit)
+      .then(function (res) {
+        return (res.data || []);
+      });
+  }
+
   return {
     init: init,
     signInWithGoogle: signInWithGoogle,
@@ -81,5 +96,6 @@ const SupabaseAuth = (function () {
     getUser: getUser,
     isLoggedIn: isLoggedIn,
     getClient: getClient,
+    searchFoods: searchFoods,
   };
 })();

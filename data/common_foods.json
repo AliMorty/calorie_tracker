@@ -1,0 +1,702 @@
+[
+  {
+    "name": "Asparagus, raw",
+    "calories": 0.2,
+    "protein": 0.022,
+    "carbs": 0.0388,
+    "fat": 0.0012
+  },
+  {
+    "name": "Avocados, raw, Florida",
+    "calories": 1.2,
+    "protein": 0.0223,
+    "carbs": 0.0782,
+    "fat": 0.1006
+  },
+  {
+    "name": "Bagels, plain, enriched, with calcium propionate (includes onion, poppy, sesame)",
+    "calories": 2.64,
+    "protein": 0.1056,
+    "carbs": 0.5238,
+    "fat": 0.0132
+  },
+  {
+    "name": "Bananas, raw",
+    "calories": 0.89,
+    "protein": 0.0109,
+    "carbs": 0.2284,
+    "fat": 0.0033
+  },
+  {
+    "name": "Beans, black, mature seeds, raw",
+    "calories": 3.41,
+    "protein": 0.216,
+    "carbs": 0.6236,
+    "fat": 0.0142
+  },
+  {
+    "name": "Beans, kidney, red, mature seeds, raw",
+    "calories": 3.37,
+    "protein": 0.2253,
+    "carbs": 0.6129,
+    "fat": 0.0106
+  },
+  {
+    "name": "Beans, pinto, canned, drained solids",
+    "calories": 1.14,
+    "protein": 0.0699,
+    "carbs": 0.2022,
+    "fat": 0.009
+  },
+  {
+    "name": "Beans, snap, green, raw",
+    "calories": 0.31,
+    "protein": 0.0183,
+    "carbs": 0.0697,
+    "fat": 0.0022
+  },
+  {
+    "name": "Beef, ground, 95% lean meat / 5% fat, raw",
+    "calories": 1.37,
+    "protein": 0.2141,
+    "carbs": 0.0,
+    "fat": 0.05
+  },
+  {
+    "name": "Blueberries, raw",
+    "calories": 0.57,
+    "protein": 0.0074,
+    "carbs": 0.1449,
+    "fat": 0.0033
+  },
+  {
+    "name": "Bread, white, commercially prepared, toasted",
+    "calories": 2.9,
+    "protein": 0.09,
+    "carbs": 0.545,
+    "fat": 0.04
+  },
+  {
+    "name": "Bread, whole-wheat, commercially prepared",
+    "calories": 2.52,
+    "protein": 0.1245,
+    "carbs": 0.4271,
+    "fat": 0.035
+  },
+  {
+    "name": "Broccoli, cooked, boiled, drained, with salt",
+    "calories": 0.35,
+    "protein": 0.0238,
+    "carbs": 0.0718,
+    "fat": 0.0041
+  },
+  {
+    "name": "Broccoli, raw",
+    "calories": 0.34,
+    "protein": 0.0282,
+    "carbs": 0.0664,
+    "fat": 0.0037
+  },
+  {
+    "name": "Butter, salted",
+    "calories": 7.17,
+    "protein": 0.0085,
+    "carbs": 0.0006,
+    "fat": 0.8111
+  },
+  {
+    "name": "Butter, without salt",
+    "calories": 7.17,
+    "protein": 0.0085,
+    "carbs": 0.0006,
+    "fat": 0.8111
+  },
+  {
+    "name": "Cabbage, raw",
+    "calories": 0.25,
+    "protein": 0.0128,
+    "carbs": 0.058,
+    "fat": 0.001
+  },
+  {
+    "name": "Carrots, cooked, boiled, drained, with salt",
+    "calories": 0.35,
+    "protein": 0.0076,
+    "carbs": 0.0822,
+    "fat": 0.0018
+  },
+  {
+    "name": "Carrots, raw",
+    "calories": 0.41,
+    "protein": 0.0093,
+    "carbs": 0.0958,
+    "fat": 0.0024
+  },
+  {
+    "name": "Cauliflower, raw",
+    "calories": 0.25,
+    "protein": 0.0192,
+    "carbs": 0.0497,
+    "fat": 0.0028
+  },
+  {
+    "name": "Celery, raw",
+    "calories": 0.14,
+    "protein": 0.0069,
+    "carbs": 0.0297,
+    "fat": 0.0017
+  },
+  {
+    "name": "Cereals, oats, regular and quick, not fortified, dry",
+    "calories": 3.79,
+    "protein": 0.1315,
+    "carbs": 0.677,
+    "fat": 0.0652
+  },
+  {
+    "name": "Cheese, cheddar, sharp, sliced",
+    "calories": 4.1,
+    "protein": 0.2425,
+    "carbs": 0.0213,
+    "fat": 0.3382
+  },
+  {
+    "name": "Cheese, cottage, with vegetables",
+    "calories": 0.95,
+    "protein": 0.109,
+    "carbs": 0.03,
+    "fat": 0.042
+  },
+  {
+    "name": "Cheese, cream",
+    "calories": 3.5,
+    "protein": 0.0615,
+    "carbs": 0.0552,
+    "fat": 0.3444
+  },
+  {
+    "name": "Cheese, mozzarella, nonfat",
+    "calories": 1.41,
+    "protein": 0.317,
+    "carbs": 0.035,
+    "fat": 0.0
+  },
+  {
+    "name": "Cheese, parmesan, hard",
+    "calories": 3.92,
+    "protein": 0.3575,
+    "carbs": 0.0322,
+    "fat": 0.25
+  },
+  {
+    "name": "Cherries, sweet, raw",
+    "calories": 0.63,
+    "protein": 0.0106,
+    "carbs": 0.1601,
+    "fat": 0.002
+  },
+  {
+    "name": "Chicken breast, roll, oven-roasted",
+    "calories": 1.34,
+    "protein": 0.1459,
+    "carbs": 0.0179,
+    "fat": 0.0765
+  },
+  {
+    "name": "Corn, sweet, yellow, cooked, boiled, drained, with salt",
+    "calories": 0.96,
+    "protein": 0.0341,
+    "carbs": 0.2098,
+    "fat": 0.015
+  },
+  {
+    "name": "Crabapples, raw",
+    "calories": 0.76,
+    "protein": 0.004,
+    "carbs": 0.1995,
+    "fat": 0.003
+  },
+  {
+    "name": "Cream, sour, cultured",
+    "calories": 1.98,
+    "protein": 0.0244,
+    "carbs": 0.0463,
+    "fat": 0.1935
+  },
+  {
+    "name": "Crustaceans, shrimp, raw",
+    "calories": 0.85,
+    "protein": 0.201,
+    "carbs": 0.0,
+    "fat": 0.0051
+  },
+  {
+    "name": "Cucumber, with peel, raw",
+    "calories": 0.15,
+    "protein": 0.0065,
+    "carbs": 0.0363,
+    "fat": 0.0011
+  },
+  {
+    "name": "Egg, whole, cooked, fried",
+    "calories": 1.96,
+    "protein": 0.1361,
+    "carbs": 0.0083,
+    "fat": 0.1484
+  },
+  {
+    "name": "Egg, whole, raw, fresh",
+    "calories": 1.43,
+    "protein": 0.1256,
+    "carbs": 0.0072,
+    "fat": 0.0951
+  },
+  {
+    "name": "Eggplant, raw",
+    "calories": 0.25,
+    "protein": 0.0098,
+    "carbs": 0.0588,
+    "fat": 0.0018
+  },
+  {
+    "name": "Fish, cod, Atlantic, raw",
+    "calories": 0.82,
+    "protein": 0.1781,
+    "carbs": 0.0,
+    "fat": 0.0067
+  },
+  {
+    "name": "Fish, salmon, Atlantic, wild, raw",
+    "calories": 1.42,
+    "protein": 0.1984,
+    "carbs": 0.0,
+    "fat": 0.0634
+  },
+  {
+    "name": "Fish, tilapia, raw",
+    "calories": 0.96,
+    "protein": 0.2008,
+    "carbs": 0.0,
+    "fat": 0.017
+  },
+  {
+    "name": "Fish, tuna, fresh, bluefin, raw",
+    "calories": 1.44,
+    "protein": 0.2333,
+    "carbs": 0.0,
+    "fat": 0.049
+  },
+  {
+    "name": "Garlic, raw",
+    "calories": 1.49,
+    "protein": 0.0636,
+    "carbs": 0.3306,
+    "fat": 0.005
+  },
+  {
+    "name": "Grapes, red or green (European type, such as Thompson seedless), raw",
+    "calories": 0.69,
+    "protein": 0.0072,
+    "carbs": 0.181,
+    "fat": 0.0016
+  },
+  {
+    "name": "Honey",
+    "calories": 3.04,
+    "protein": 0.003,
+    "carbs": 0.824,
+    "fat": 0.0
+  },
+  {
+    "name": "Hummus, commercial",
+    "calories": 2.37,
+    "protein": 0.0778,
+    "carbs": 0.15,
+    "fat": 0.1782
+  },
+  {
+    "name": "Ice cream sandwich, made with light ice cream, vanilla",
+    "calories": 1.86,
+    "protein": 0.0429,
+    "carbs": 0.3964,
+    "fat": 0.0304
+  },
+  {
+    "name": "Kale, raw",
+    "calories": 0.35,
+    "protein": 0.0292,
+    "carbs": 0.0442,
+    "fat": 0.0149
+  },
+  {
+    "name": "Kiwifruit, green, raw",
+    "calories": 0.61,
+    "protein": 0.0114,
+    "carbs": 0.1466,
+    "fat": 0.0052
+  },
+  {
+    "name": "Lentils, mature seeds, cooked, boiled, with salt",
+    "calories": 1.14,
+    "protein": 0.0902,
+    "carbs": 0.1954,
+    "fat": 0.0038
+  },
+  {
+    "name": "Lettuce, cos or romaine, raw",
+    "calories": 0.17,
+    "protein": 0.0123,
+    "carbs": 0.0329,
+    "fat": 0.003
+  },
+  {
+    "name": "Lettuce, iceberg (includes crisphead types), raw",
+    "calories": 0.14,
+    "protein": 0.009,
+    "carbs": 0.0297,
+    "fat": 0.0014
+  },
+  {
+    "name": "Malabar spinach, cooked",
+    "calories": 0.23,
+    "protein": 0.0298,
+    "carbs": 0.0271,
+    "fat": 0.0078
+  },
+  {
+    "name": "Mangos, raw",
+    "calories": 0.6,
+    "protein": 0.0082,
+    "carbs": 0.1498,
+    "fat": 0.0038
+  },
+  {
+    "name": "Mayonnaise, made with tofu",
+    "calories": 3.22,
+    "protein": 0.0595,
+    "carbs": 0.0306,
+    "fat": 0.3179
+  },
+  {
+    "name": "Milk, whole, 3.25% milkfat, with added vitamin D",
+    "calories": 0.61,
+    "protein": 0.0315,
+    "carbs": 0.048,
+    "fat": 0.0325
+  },
+  {
+    "name": "Mushrooms, white, raw",
+    "calories": 0.22,
+    "protein": 0.0309,
+    "carbs": 0.0326,
+    "fat": 0.0034
+  },
+  {
+    "name": "Mustard, prepared, yellow",
+    "calories": 0.6,
+    "protein": 0.0374,
+    "carbs": 0.0583,
+    "fat": 0.0334
+  },
+  {
+    "name": "Nuts, almonds",
+    "calories": 5.79,
+    "protein": 0.2115,
+    "carbs": 0.2155,
+    "fat": 0.4993
+  },
+  {
+    "name": "Nuts, cashew nuts, raw",
+    "calories": 5.53,
+    "protein": 0.1822,
+    "carbs": 0.3019,
+    "fat": 0.4385
+  },
+  {
+    "name": "Nuts, walnuts, english",
+    "calories": 6.54,
+    "protein": 0.1523,
+    "carbs": 0.1371,
+    "fat": 0.6521
+  },
+  {
+    "name": "ON THE BORDER, soft taco with ground beef, cheese and lettuce",
+    "calories": 2.29,
+    "protein": 0.1319,
+    "carbs": 0.1928,
+    "fat": 0.1105
+  },
+  {
+    "name": "Oil, canola",
+    "calories": 8.84,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 1.0
+  },
+  {
+    "name": "Oil, coconut",
+    "calories": 8.92,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 0.9906
+  },
+  {
+    "name": "Oil, olive, salad or cooking",
+    "calories": 8.84,
+    "protein": 0.0,
+    "carbs": 0.0,
+    "fat": 1.0
+  },
+  {
+    "name": "Onions, raw",
+    "calories": 0.4,
+    "protein": 0.011,
+    "carbs": 0.0934,
+    "fat": 0.001
+  },
+  {
+    "name": "Oranges, raw, Florida",
+    "calories": 0.46,
+    "protein": 0.007,
+    "carbs": 0.1154,
+    "fat": 0.0021
+  },
+  {
+    "name": "Pasta, cooked, enriched, with added salt",
+    "calories": 1.57,
+    "protein": 0.058,
+    "carbs": 0.3059,
+    "fat": 0.0093
+  },
+  {
+    "name": "Peanut butter, smooth, reduced fat",
+    "calories": 5.2,
+    "protein": 0.259,
+    "carbs": 0.3565,
+    "fat": 0.34
+  },
+  {
+    "name": "Pears, raw",
+    "calories": 0.57,
+    "protein": 0.0036,
+    "carbs": 0.1523,
+    "fat": 0.0014
+  },
+  {
+    "name": "Peas, green, cooked, boiled, drained, with salt",
+    "calories": 0.84,
+    "protein": 0.0536,
+    "carbs": 0.1563,
+    "fat": 0.0022
+  },
+  {
+    "name": "Peas, green, raw",
+    "calories": 0.81,
+    "protein": 0.0542,
+    "carbs": 0.1445,
+    "fat": 0.004
+  },
+  {
+    "name": "Peppers, sweet, green, raw",
+    "calories": 0.2,
+    "protein": 0.0086,
+    "carbs": 0.0464,
+    "fat": 0.0017
+  },
+  {
+    "name": "Peppers, sweet, red, raw",
+    "calories": 0.26,
+    "protein": 0.0099,
+    "carbs": 0.0603,
+    "fat": 0.003
+  },
+  {
+    "name": "Pineapple, raw, all varieties",
+    "calories": 0.5,
+    "protein": 0.0054,
+    "carbs": 0.1312,
+    "fat": 0.0012
+  },
+  {
+    "name": "Pizza, cheese topping, thin crust, frozen, cooked",
+    "calories": 2.63,
+    "protein": 0.1191,
+    "carbs": 0.288,
+    "fat": 0.1107
+  },
+  {
+    "name": "Pork, cured, bacon, cooked, baked",
+    "calories": 5.48,
+    "protein": 0.3573,
+    "carbs": 0.0135,
+    "fat": 0.4327
+  },
+  {
+    "name": "Pork, loin, leg cap steak, boneless, separable lean and fat, cooked, broiled",
+    "calories": 1.58,
+    "protein": 0.2757,
+    "carbs": 0.0,
+    "fat": 0.0441
+  },
+  {
+    "name": "Potatoes, Russet, flesh and skin, baked",
+    "calories": 0.95,
+    "protein": 0.0263,
+    "carbs": 0.2144,
+    "fat": 0.0013
+  },
+  {
+    "name": "Potatoes, boiled, cooked in skin, skin, with salt",
+    "calories": 0.78,
+    "protein": 0.0286,
+    "carbs": 0.172,
+    "fat": 0.001
+  },
+  {
+    "name": "Raspberries, raw",
+    "calories": 0.52,
+    "protein": 0.012,
+    "carbs": 0.1194,
+    "fat": 0.0065
+  },
+  {
+    "name": "Rice, brown, long-grain, cooked (Includes foods for USDA's Food Distribution Program)",
+    "calories": 1.23,
+    "protein": 0.0274,
+    "carbs": 0.2558,
+    "fat": 0.0097
+  },
+  {
+    "name": "Rice, white, long-grain, regular, cooked, enriched, with salt",
+    "calories": 1.3,
+    "protein": 0.0269,
+    "carbs": 0.2817,
+    "fat": 0.0028
+  },
+  {
+    "name": "Rice, white, short-grain, cooked, unenriched",
+    "calories": 1.3,
+    "protein": 0.0236,
+    "carbs": 0.2873,
+    "fat": 0.0019
+  },
+  {
+    "name": "Seeds, sunflower seed kernels, dried",
+    "calories": 5.84,
+    "protein": 0.2078,
+    "carbs": 0.2,
+    "fat": 0.5146
+  },
+  {
+    "name": "Soup, chicken noodle, dry, mix",
+    "calories": 3.77,
+    "protein": 0.1542,
+    "carbs": 0.6232,
+    "fat": 0.0651
+  },
+  {
+    "name": "Soy sauce made from soy (tamari)",
+    "calories": 0.6,
+    "protein": 0.1051,
+    "carbs": 0.0557,
+    "fat": 0.001
+  },
+  {
+    "name": "Spinach, raw",
+    "calories": 0.23,
+    "protein": 0.0286,
+    "carbs": 0.0363,
+    "fat": 0.0039
+  },
+  {
+    "name": "Squash, summer, zucchini, includes skin, raw",
+    "calories": 0.17,
+    "protein": 0.0121,
+    "carbs": 0.0311,
+    "fat": 0.0032
+  },
+  {
+    "name": "Strawberries, raw",
+    "calories": 0.32,
+    "protein": 0.0067,
+    "carbs": 0.0768,
+    "fat": 0.003
+  },
+  {
+    "name": "Sweet potato, cooked, baked in skin, flesh, with salt",
+    "calories": 0.9,
+    "protein": 0.0201,
+    "carbs": 0.2071,
+    "fat": 0.0015
+  },
+  {
+    "name": "Tofu, raw, firm, prepared with calcium sulfate",
+    "calories": 1.44,
+    "protein": 0.1727,
+    "carbs": 0.0278,
+    "fat": 0.0872
+  },
+  {
+    "name": "Tomatoes, red, ripe, raw, year round average",
+    "calories": 0.18,
+    "protein": 0.0088,
+    "carbs": 0.0389,
+    "fat": 0.002
+  },
+  {
+    "name": "Tortillas, ready-to-bake or -fry, corn",
+    "calories": 2.18,
+    "protein": 0.057,
+    "carbs": 0.4464,
+    "fat": 0.0285
+  },
+  {
+    "name": "Turkey breast, sliced, prepackaged",
+    "calories": 1.06,
+    "protein": 0.1481,
+    "carbs": 0.022,
+    "fat": 0.0377
+  },
+  {
+    "name": "Turkey, Ground, raw",
+    "calories": 1.48,
+    "protein": 0.1966,
+    "carbs": 0.0,
+    "fat": 0.0766
+  },
+  {
+    "name": "Watermelon, raw",
+    "calories": 0.3,
+    "protein": 0.0061,
+    "carbs": 0.0755,
+    "fat": 0.0015
+  },
+  {
+    "name": "Wheat flour, white, all-purpose, unenriched",
+    "calories": 3.64,
+    "protein": 0.1033,
+    "carbs": 0.7631,
+    "fat": 0.0098
+  },
+  {
+    "name": "Yogurt, Greek, plain, lowfat",
+    "calories": 0.73,
+    "protein": 0.0995,
+    "carbs": 0.0394,
+    "fat": 0.0192
+  },
+  {
+    "name": "Yogurt, plain, low fat",
+    "calories": 0.63,
+    "protein": 0.0525,
+    "carbs": 0.0704,
+    "fat": 0.0155
+  },
+  {
+    "name": "Yogurt, plain, whole milk",
+    "calories": 0.61,
+    "protein": 0.0347,
+    "carbs": 0.0466,
+    "fat": 0.0325
+  }
+]
