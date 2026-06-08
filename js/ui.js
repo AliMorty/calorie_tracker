@@ -614,8 +614,7 @@ const UI = (function () {
       { facingMode: 'environment' },
       {
         fps: 10,
-        qrbox: { width: 250, height: 100 },
-        aspectRatio: 1.7,
+        disableFlip: false,
         formatsToSupport: [
           Html5QrcodeSupportedFormats.EAN_13,
           Html5QrcodeSupportedFormats.EAN_8,

@@ -1,4 +1,4 @@
-var CACHE_VERSION = 'v2';
+var CACHE_VERSION = 'v3';
 var CACHE_NAME = 'calorie-tracker-' + CACHE_VERSION;
 
 var FILES_TO_CACHE = [
