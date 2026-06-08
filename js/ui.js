@@ -448,15 +448,38 @@ const UI = (function () {
   var _searchTimer = null;
 
   function _rankSearchResults(foods, queryLower) {
+    var queryWords = queryLower.split(/\s+/);
+
+    function _scoreFood(name) {
+      var nameLower = name.toLowerCase();
+      // Strip commas/punctuation for word-order matching
+      var nameClean = nameLower.replace(/[,\-()]/g, ' ');
+      var score = 0;
+
+      // Bonus: exact query appears as contiguous substring
+      if (nameClean.indexOf(queryLower) !== -1) score -= 100;
+
+      // Bonus: query words appear in the same order in the name
+      var lastPos = -1;
+      var inOrder = true;
+      for (var i = 0; i < queryWords.length; i++) {
+        var pos = nameClean.indexOf(queryWords[i], lastPos + 1);
+        if (pos === -1 || pos <= lastPos) { inOrder = false; break; }
+        lastPos = pos;
+      }
+      if (inOrder) score -= 50;
+
+      // Bonus: name starts with first query word
+      if (nameClean.trimStart().indexOf(queryWords[0]) === 0) score -= 25;
+
+      // Shorter names = more generic = better
+      score += nameLower.length;
+
+      return score;
+    }
+
     return foods.slice().sort(function (a, b) {
-      var aName = a.name.toLowerCase();
-      var bName = b.name.toLowerCase();
-      var aStarts = aName.indexOf(queryLower) === 0 ? 0 : 1;
-      var bStarts = bName.indexOf(queryLower) === 0 ? 0 : 1;
-      // 1. Names starting with query come first
-      if (aStarts !== bStarts) return aStarts - bStarts;
-      // 2. Shorter names first (more generic/staple)
-      return aName.length - bName.length;
+      return _scoreFood(a.name) - _scoreFood(b.name);
     });
   }
 

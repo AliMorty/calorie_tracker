@@ -12,10 +12,67 @@ See CLAUDE.md for the full rules on how to use this file.
 |---|-------|--------|--------|--------|
 | 1 | Add Food panel height is content-driven - header cuts off or panel drifts | 2026-02-18 | 2026-02-18 | fixed |
 | 2 | Search results show recent foods above matches - should be reversed | 2026-02-18 | 2026-02-19 | fixed |
+| 3 | Supabase food search returns irrelevant results before staple foods | 2026-06-07 | — | workaround |
 
 ---
 
 <!-- Full issue entries go below this line, most recent at the top -->
+
+---
+
+## Issue #3 - Supabase food search returns irrelevant results before staple foods
+**Opened:** 2026-06-07
+**Closed:** —
+**Status:** workaround
+
+### What happened
+When searching the Supabase `foods` table (7,793 USDA SR Legacy foods), common staple foods are buried under processed/branded variants:
+
+1. **"brown rice"** → Returns snack bars and baby food ("Snacks, rice cakes, brown rice, sesame seed") instead of plain "Rice, brown, long-grain, cooked". Root cause: USDA names use inverted word order ("Rice, brown") so `ilike '%brown rice%'` doesn't match the staple food at all — only products where "brown rice" appears as a contiguous substring.
+
+2. **"dark chocolate"** → Returns "Candies, SPECIAL DARK Chocolate Bar" before "Chocolate, dark, 70-85% cacao solids". The branded candy has the query words in order and a shorter name, so it scores higher.
+
+### Root cause
+Two compounding problems:
+
+**Problem A — Query mismatch:** The initial `ilike '%brown rice%'` query searches for the exact contiguous string. USDA names invert word order with commas ("Rice, brown, long-grain, cooked"), so the staple food doesn't even match the query.
+
+**Problem B — No relevance ranking:** Supabase `ilike` returns results in insertion order with no relevance scoring. The first 30 matches are whatever the database finds first, which is often processed/branded products since USDA has many more of those than staple foods.
+
+**Deeper root cause:** USDA names are scientific/taxonomic ("Chicken, broilers or fryers, breast, skinless, boneless, meat only, cooked, grilled") while users search with everyday language ("chicken breast"). This is a fundamental mismatch that simple string matching cannot fully solve.
+
+### Fix attempts
+
+#### Attempt 1 — Client-side ranking (starts-with + name length)
+- **Files changed:** `js/ui.js`
+- **What was changed:** Added `_rankSearchResults()` that sorts results: names starting with the query first, then shorter names first
+- **Confidence:** Low — wouldn't help since the staple foods weren't even being returned by the query
+- **Outcome:** Did not fix the brown rice problem because the real issue was at the query level
+
+#### Attempt 2 — Split query into individual words
+- **Files changed:** `js/supabase.js`
+- **What was changed:** Split search query into words and apply separate `ilike` filters for each: "brown rice" → `ilike '%brown%' AND ilike '%rice%'`
+- **Confidence:** High that it would fix the missing results problem
+- **Outcome:** Worked — "Rice, brown, long-grain, cooked" now appears in results. But ranking still imperfect.
+
+#### Attempt 3 — Smarter ranking with word order and scoring
+- **Files changed:** `js/ui.js`
+- **What was changed:** Replaced simple ranking with a scoring system: exact contiguous match (-100), words in same order (-50), starts with first query word (-25), plus name length as tiebreaker
+- **Confidence:** Medium — improves ranking but cannot fully solve the USDA naming mismatch
+- **Outcome:** Better but not perfect. "dark chocolate" still shows a branded candy before the plain chocolate entry. Ranking is a workaround, not a real fix.
+
+### Final fix
+No final fix — current state is a **workaround**. The search is functional but ranking is imperfect due to the fundamental mismatch between USDA scientific naming and human search patterns.
+
+### Proposed real fix
+Use an LLM to generate a `search_tags` column for each food in the Supabase table, containing human-friendly aliases (e.g. "chicken breast" for "Chicken, broilers or fryers, breast, skinless..."). Then search against both `name` and `search_tags`. This would solve the problem properly but requires a one-time batch processing step.
+
+### Lessons
+- USDA food names are scientific/inverted, not how humans search. Any food database using USDA data will have this problem.
+- Simple `ilike` with a single contiguous string fails when the database uses comma-separated inverted naming.
+- Splitting into per-word matching is essential but insufficient — ranking/relevance is a separate problem.
+- Client-side ranking hacks have diminishing returns. A proper solution requires either PostgreSQL full-text search with `ts_rank`, or LLM-generated search aliases.
+- When building search, test with multi-word queries early — single-word queries ("chicken") hide the word-order problems that multi-word queries ("chicken breast") expose.
 
 ---
 

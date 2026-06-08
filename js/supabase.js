@@ -79,14 +79,18 @@ const SupabaseAuth = (function () {
   function searchFoods(query, limit) {
     if (!supabase) return Promise.resolve([]);
     limit = limit || 30;
-    return supabase
+    // Split query into words and match each independently
+    // "brown rice" → name must contain both "brown" AND "rice"
+    var words = query.trim().split(/\s+/);
+    var q = supabase
       .from('foods')
-      .select('name, calories, protein, carbs, fat')
-      .ilike('name', '%' + query + '%')
-      .limit(limit)
-      .then(function (res) {
-        return (res.data || []);
-      });
+      .select('name, calories, protein, carbs, fat');
+    for (var i = 0; i < words.length; i++) {
+      q = q.ilike('name', '%' + words[i] + '%');
+    }
+    return q.limit(limit).then(function (res) {
+      return (res.data || []);
+    });
   }
 
   return {
