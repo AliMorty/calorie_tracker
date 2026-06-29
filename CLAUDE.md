@@ -119,6 +119,17 @@ These rules exist to prevent the slow destruction of a working codebase through 
 - Document what was tried and why it didn't work in BUGS.md.
 - Ask Ali how to proceed rather than escalating changes.
 
+## Test on Small Samples Before Scaling
+
+Before running any expensive, large-scale, or token-heavy operation, ALWAYS prove it works on a tiny sample first. Do not run the full thing on the first try.
+
+- Start with a handful of items (e.g. 5-10), verify the output is correct, THEN scale up.
+- This applies especially to anything that calls an LLM, hits an API in bulk, or processes a large dataset.
+- **Do not run things in parallel without explicit permission from Ali.** Parallelism multiplies token usage and risk (rate-limiting, silent failures) — confirm with Ali before using it at all.
+- If a job will consume a lot of tokens, say so up front and get the go-ahead before launching.
+
+**Why this matters:** In session 012, an agent ran a 913-item macro-matching job with 8 parallel `claude -p` workers on the first try. The parallelism caused silent rate-limit failures (354 items wrongly marked "none") AND burned through the token budget, leaving the task stuck. A 10-item dry run would have caught the failure mode before wasting tokens.
+
 ## No Secrets in Committed Files
 
 Never include API keys, OAuth credentials, client secrets, database passwords, or any sensitive values in session summaries, documentation, or any file that gets committed to the repo. This repo is public.
