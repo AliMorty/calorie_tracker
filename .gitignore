@@ -1,0 +1,7 @@
+# Large raw USDA datasets (re-downloadable, not for version control)
+data/usda_branded/
+data/usda/*.zip
+data/usda/FoodData_Central_sr_legacy_food_csv_2018-04/
+
+# WSL / Windows metadata artifacts
+*:Zone.Identifier
