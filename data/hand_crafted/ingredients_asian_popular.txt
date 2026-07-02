@@ -1,0 +1,1388 @@
+# Pad Thai
+rice noodles
+shrimp
+chicken breast
+tofu
+eggs
+bean sprouts
+green onion
+garlic
+shallots
+tamarind paste
+fish sauce
+oyster sauce
+palm sugar
+brown sugar
+vegetable oil
+roasted peanuts
+lime
+dried chili flakes
+cilantro
+
+# Fried Rice
+jasmine rice
+eggs
+soy sauce
+sesame oil
+garlic
+green onion
+white onion
+vegetable oil
+frozen peas
+carrots
+shrimp
+chicken breast
+oyster sauce
+white pepper
+salt
+
+# Chicken Fried Rice
+jasmine rice
+chicken breast
+eggs
+soy sauce
+sesame oil
+garlic
+green onion
+white onion
+vegetable oil
+frozen peas
+carrots
+oyster sauce
+white pepper
+salt
+
+# Butter Chicken
+chicken thighs
+butter
+heavy cream
+tomatoes
+onion
+garlic
+ginger
+garam masala
+cumin
+coriander
+turmeric
+chili powder
+paprika
+kashmiri chili
+yogurt
+fenugreek leaves
+salt
+vegetable oil
+sugar
+
+# Chicken Tikka Masala
+chicken breast
+yogurt
+heavy cream
+tomatoes
+tomato puree
+onion
+garlic
+ginger
+garam masala
+cumin
+coriander
+turmeric
+chili powder
+paprika
+butter
+vegetable oil
+cilantro
+salt
+sugar
+
+# California Roll
+sushi rice
+nori seaweed
+imitation crab
+avocado
+cucumber
+rice vinegar
+sugar
+salt
+sesame seeds
+mayonnaise
+
+# Spicy Tuna Roll
+sushi rice
+nori seaweed
+tuna
+mayonnaise
+sriracha
+cucumber
+avocado
+rice vinegar
+sugar
+salt
+sesame seeds
+green onion
+
+# Ramen
+ramen noodles
+pork belly
+chicken broth
+soy sauce
+miso paste
+sesame oil
+garlic
+ginger
+green onion
+soft boiled egg
+nori seaweed
+bamboo shoots
+corn
+bean sprouts
+butter
+white pepper
+salt
+
+# Tonkotsu Ramen
+ramen noodles
+pork bones
+pork belly
+chicken broth
+soy sauce
+sesame oil
+garlic
+ginger
+green onion
+soft boiled egg
+nori seaweed
+bamboo shoots
+corn
+bean sprouts
+butter
+black garlic oil
+white pepper
+salt
+
+# Beef Pho
+rice noodles
+beef brisket
+beef bones
+beef broth
+onion
+ginger
+star anise
+cinnamon
+cloves
+cardamom
+coriander seeds
+fish sauce
+sugar
+salt
+bean sprouts
+lime
+basil
+hoisin sauce
+sriracha
+green onion
+cilantro
+
+# Chicken Pho
+rice noodles
+chicken breast
+chicken broth
+onion
+ginger
+star anise
+cinnamon
+cloves
+cardamom
+coriander seeds
+fish sauce
+sugar
+salt
+bean sprouts
+lime
+basil
+hoisin sauce
+sriracha
+green onion
+cilantro
+
+# Bibimbap
+white rice
+ground beef
+spinach
+carrots
+zucchini
+bean sprouts
+shiitake mushrooms
+eggs
+gochujang
+sesame oil
+soy sauce
+garlic
+sesame seeds
+sugar
+vegetable oil
+salt
+
+# Kung Pao Chicken
+chicken breast
+dried chili peppers
+roasted peanuts
+green onion
+garlic
+ginger
+soy sauce
+dark soy sauce
+rice vinegar
+sugar
+sesame oil
+cornstarch
+vegetable oil
+sichuan peppercorns
+salt
+chicken broth
+
+# Lo Mein
+lo mein noodles
+chicken breast
+shrimp
+beef
+cabbage
+carrots
+green onion
+garlic
+soy sauce
+dark soy sauce
+oyster sauce
+sesame oil
+vegetable oil
+sugar
+salt
+white pepper
+bean sprouts
+
+# Teriyaki Chicken
+chicken thighs
+soy sauce
+mirin
+sake
+sugar
+honey
+garlic
+ginger
+sesame seeds
+green onion
+vegetable oil
+cornstarch
+
+# Teriyaki Salmon
+salmon fillet
+soy sauce
+mirin
+sake
+sugar
+honey
+garlic
+ginger
+sesame seeds
+green onion
+vegetable oil
+
+# Green Curry
+coconut milk
+chicken breast
+green curry paste
+bamboo shoots
+green bell pepper
+thai basil
+fish sauce
+palm sugar
+lime leaves
+lemongrass
+galangal
+garlic
+shallots
+green chilies
+vegetable oil
+salt
+
+# Red Curry
+coconut milk
+chicken breast
+red curry paste
+bamboo shoots
+red bell pepper
+thai basil
+fish sauce
+palm sugar
+lime leaves
+lemongrass
+galangal
+garlic
+shallots
+red chilies
+vegetable oil
+salt
+
+# Massaman Curry
+coconut milk
+chicken thighs
+potatoes
+onion
+roasted peanuts
+massaman curry paste
+fish sauce
+palm sugar
+tamarind paste
+bay leaves
+cardamom
+cinnamon
+star anise
+vegetable oil
+salt
+
+# Tom Yum Soup
+shrimp
+chicken broth
+lemongrass
+galangal
+lime leaves
+fish sauce
+lime juice
+sugar
+mushrooms
+tomatoes
+green onion
+cilantro
+red chilies
+chili paste
+salt
+
+# Tom Kha Gai
+coconut milk
+chicken breast
+chicken broth
+lemongrass
+galangal
+lime leaves
+mushrooms
+fish sauce
+lime juice
+sugar
+green onion
+cilantro
+red chilies
+salt
+
+# Vietnamese Fresh Spring Rolls
+rice paper wrappers
+shrimp
+pork belly
+rice vermicelli
+lettuce
+mint
+cilantro
+bean sprouts
+cucumber
+carrots
+green onion
+hoisin sauce
+peanut butter
+garlic
+lime
+
+# Chinese Fried Spring Rolls
+spring roll wrappers
+ground pork
+cabbage
+carrots
+bean sprouts
+garlic
+ginger
+soy sauce
+sesame oil
+vegetable oil
+salt
+white pepper
+green onion
+cornstarch
+
+# Egg Rolls
+egg roll wrappers
+ground pork
+cabbage
+carrots
+bean sprouts
+garlic
+ginger
+soy sauce
+sesame oil
+vegetable oil
+salt
+white pepper
+green onion
+eggs
+
+# Pork and Cabbage Dumplings
+dumpling wrappers
+ground pork
+napa cabbage
+garlic
+ginger
+soy sauce
+sesame oil
+green onion
+rice wine
+white pepper
+salt
+sugar
+cornstarch
+
+# Gyoza
+gyoza wrappers
+ground pork
+napa cabbage
+garlic
+ginger
+soy sauce
+sesame oil
+green onion
+rice wine
+white pepper
+salt
+sugar
+vegetable oil
+
+# Edamame
+edamame
+salt
+water
+
+# Miso Soup
+dashi broth
+miso paste
+tofu
+wakame seaweed
+green onion
+salt
+
+# General Tso's Chicken
+chicken thighs
+cornstarch
+eggs
+flour
+vegetable oil
+dried chili peppers
+garlic
+ginger
+soy sauce
+dark soy sauce
+rice vinegar
+sugar
+sesame oil
+chicken broth
+green onion
+sesame seeds
+
+# Orange Chicken
+chicken thighs
+cornstarch
+eggs
+flour
+vegetable oil
+orange juice
+orange zest
+soy sauce
+rice vinegar
+sugar
+garlic
+ginger
+sesame oil
+chili flakes
+green onion
+sesame seeds
+
+# Beef and Broccoli
+beef sirloin
+broccoli
+garlic
+ginger
+soy sauce
+oyster sauce
+sesame oil
+vegetable oil
+cornstarch
+sugar
+chicken broth
+white pepper
+salt
+green onion
+baking soda
+
+# Sweet and Sour Pork
+pork shoulder
+cornstarch
+eggs
+flour
+vegetable oil
+bell peppers
+onion
+pineapple
+ketchup
+rice vinegar
+sugar
+soy sauce
+garlic
+salt
+
+# Mapo Tofu
+tofu
+ground pork
+sichuan peppercorns
+doubanjiang
+fermented black beans
+garlic
+ginger
+soy sauce
+sesame oil
+vegetable oil
+chicken broth
+cornstarch
+green onion
+chili oil
+salt
+sugar
+
+# Pad See Ew
+wide rice noodles
+chicken breast
+chinese broccoli
+eggs
+garlic
+soy sauce
+dark soy sauce
+oyster sauce
+fish sauce
+sugar
+vegetable oil
+white pepper
+
+# Laksa
+rice noodles
+shrimp
+tofu puffs
+coconut milk
+chicken broth
+laksa paste
+lemongrass
+galangal
+shallots
+garlic
+dried shrimp
+chili
+bean sprouts
+cucumber
+green onion
+cilantro
+lime
+fish sauce
+salt
+vegetable oil
+
+# Nasi Goreng
+jasmine rice
+eggs
+shrimp
+chicken breast
+kecap manis
+soy sauce
+garlic
+shallots
+vegetable oil
+chili paste
+salt
+cucumber
+tomatoes
+green onion
+fried shallots
+
+# Korean Fried Chicken
+chicken wings
+cornstarch
+flour
+eggs
+vegetable oil
+soy sauce
+gochujang
+honey
+garlic
+ginger
+sesame oil
+sesame seeds
+green onion
+salt
+white pepper
+
+# Japchae
+sweet potato glass noodles
+beef sirloin
+spinach
+shiitake mushrooms
+carrots
+onion
+eggs
+garlic
+soy sauce
+sesame oil
+sugar
+salt
+sesame seeds
+vegetable oil
+
+# Takoyaki
+flour
+eggs
+dashi broth
+octopus
+green onion
+pickled ginger
+tenkasu
+soy sauce
+salt
+mayonnaise
+takoyaki sauce
+bonito flakes
+nori powder
+vegetable oil
+
+# Chicken Katsu
+chicken breast
+panko breadcrumbs
+eggs
+flour
+vegetable oil
+salt
+white pepper
+tonkatsu sauce
+worcestershire sauce
+ketchup
+soy sauce
+
+# Tonkatsu
+pork cutlet
+panko breadcrumbs
+eggs
+flour
+vegetable oil
+salt
+white pepper
+tonkatsu sauce
+worcestershire sauce
+ketchup
+soy sauce
+cabbage
+
+# Okonomiyaki
+flour
+eggs
+dashi broth
+cabbage
+pork belly
+green onion
+pickled ginger
+tenkasu
+soy sauce
+salt
+mayonnaise
+okonomiyaki sauce
+bonito flakes
+nori powder
+vegetable oil
+
+# Dan Dan Noodles
+wheat noodles
+ground pork
+sichuan peppercorns
+doubanjiang
+sesame paste
+soy sauce
+black vinegar
+chili oil
+garlic
+ginger
+vegetable oil
+chicken broth
+sugar
+salt
+green onion
+bok choy
+
+# Hainanese Chicken Rice
+whole chicken
+jasmine rice
+ginger
+garlic
+green onion
+sesame oil
+soy sauce
+oyster sauce
+chicken broth
+salt
+chili sauce
+cilantro
+cucumber
+
+# Chana Masala
+chickpeas
+tomatoes
+onion
+garlic
+ginger
+cumin
+coriander
+turmeric
+garam masala
+chili powder
+amchur
+vegetable oil
+cilantro
+salt
+water
+
+# Palak Paneer
+spinach
+paneer
+onion
+tomatoes
+garlic
+ginger
+cumin
+coriander
+turmeric
+garam masala
+chili powder
+heavy cream
+butter
+vegetable oil
+cilantro
+salt
+sugar
+
+# Dal Tadka
+red lentils
+onion
+tomatoes
+garlic
+ginger
+cumin seeds
+mustard seeds
+turmeric
+chili powder
+garam masala
+butter
+ghee
+cilantro
+salt
+water
+
+# Chicken Biryani
+basmati rice
+chicken thighs
+yogurt
+onion
+tomatoes
+garlic
+ginger
+garam masala
+cumin
+coriander
+turmeric
+chili powder
+saffron
+milk
+ghee
+vegetable oil
+cilantro
+mint
+salt
+bay leaves
+cardamom
+cinnamon
+cloves
+
+# Samosas
+all-purpose flour
+potatoes
+peas
+onion
+garlic
+ginger
+cumin seeds
+coriander seeds
+garam masala
+chili powder
+amchur
+salt
+vegetable oil
+water
+cilantro
+
+# Naan
+all-purpose flour
+yogurt
+milk
+eggs
+butter
+baking powder
+baking soda
+sugar
+salt
+garlic
+cilantro
+vegetable oil
+
+# Chicken Saag
+chicken thighs
+spinach
+onion
+tomatoes
+garlic
+ginger
+cumin
+coriander
+turmeric
+garam masala
+chili powder
+heavy cream
+butter
+vegetable oil
+cilantro
+salt
+
+# Sashimi
+tuna
+salmon
+yellowtail
+soy sauce
+wasabi
+pickled ginger
+
+# Udon Noodle Soup
+udon noodles
+dashi broth
+soy sauce
+mirin
+sake
+green onion
+fish cake
+tempura bits
+nori seaweed
+soft boiled egg
+salt
+sugar
+
+# Tempura
+shrimp
+sweet potato
+broccoli
+bell pepper
+zucchini
+flour
+cornstarch
+eggs
+ice water
+vegetable oil
+salt
+soy sauce
+mirin
+dashi broth
+daikon radish
+ginger
+
+# Yakitori
+chicken thighs
+chicken skin
+green onion
+soy sauce
+mirin
+sake
+sugar
+sesame oil
+vegetable oil
+salt
+
+# Sesame Chicken
+chicken breast
+cornstarch
+eggs
+flour
+vegetable oil
+sesame seeds
+garlic
+ginger
+soy sauce
+honey
+rice vinegar
+sesame oil
+chili flakes
+green onion
+sugar
+
+# Wonton Soup
+wonton wrappers
+ground pork
+shrimp
+garlic
+ginger
+soy sauce
+sesame oil
+green onion
+white pepper
+salt
+chicken broth
+bok choy
+cornstarch
+
+# Hot and Sour Soup
+chicken broth
+tofu
+wood ear mushrooms
+bamboo shoots
+eggs
+soy sauce
+rice vinegar
+white pepper
+sesame oil
+cornstarch
+green onion
+chili oil
+salt
+sugar
+
+# Peking Duck
+whole duck
+soy sauce
+hoisin sauce
+honey
+five spice powder
+maltose
+rice wine
+ginger
+green onion
+mandarin pancakes
+cucumber
+salt
+
+# Mu Shu Pork
+pork tenderloin
+eggs
+wood ear mushrooms
+napa cabbage
+hoisin sauce
+soy sauce
+sesame oil
+vegetable oil
+garlic
+ginger
+green onion
+mandarin pancakes
+white pepper
+salt
+cornstarch
+
+# Scallion Pancake
+all-purpose flour
+hot water
+sesame oil
+green onion
+salt
+vegetable oil
+
+# Congee
+jasmine rice
+chicken broth
+ginger
+garlic
+soy sauce
+sesame oil
+green onion
+white pepper
+salt
+fried shallots
+cilantro
+century egg
+pork
+
+# Char Siu BBQ Pork
+pork shoulder
+hoisin sauce
+soy sauce
+honey
+oyster sauce
+sugar
+five spice powder
+garlic
+rice wine
+sesame oil
+
+# Mongolian Beef
+beef sirloin
+green onion
+garlic
+ginger
+soy sauce
+dark soy sauce
+oyster sauce
+hoisin sauce
+brown sugar
+sesame oil
+vegetable oil
+cornstarch
+chili flakes
+baking soda
+
+# Chicken Chow Mein
+chow mein noodles
+chicken breast
+cabbage
+carrots
+bean sprouts
+celery
+garlic
+soy sauce
+oyster sauce
+sesame oil
+vegetable oil
+sugar
+salt
+white pepper
+green onion
+cornstarch
+
+# Beef Chow Fun
+wide rice noodles
+beef sirloin
+bean sprouts
+green onion
+garlic
+soy sauce
+dark soy sauce
+oyster sauce
+sesame oil
+vegetable oil
+white pepper
+salt
+baking soda
+cornstarch
+
+# Karaage Japanese Fried Chicken
+chicken thighs
+soy sauce
+sake
+mirin
+ginger
+garlic
+potato starch
+vegetable oil
+lemon
+mayonnaise
+salt
+
+# Tteokbokki
+rice cakes
+fish cakes
+gochujang
+gochugaru
+soy sauce
+sugar
+garlic
+anchovy broth
+green onion
+sesame oil
+sesame seeds
+salt
+
+# Sundubu Jjigae Soft Tofu Stew
+soft tofu
+pork belly
+shrimp
+mushrooms
+kimchi
+gochugaru
+soy sauce
+sesame oil
+garlic
+green onion
+eggs
+anchovy broth
+salt
+vegetable oil
+
+# Kimchi Jjigae
+kimchi
+pork belly
+tofu
+onion
+garlic
+gochugaru
+soy sauce
+sesame oil
+green onion
+vegetable oil
+anchovy broth
+salt
+sugar
+
+# Bulgogi Korean BBQ Beef
+beef ribeye
+soy sauce
+sugar
+sesame oil
+garlic
+ginger
+pear
+green onion
+sesame seeds
+vegetable oil
+black pepper
+salt
+
+# Galbi Korean Short Ribs
+beef short ribs
+soy sauce
+sugar
+sesame oil
+garlic
+ginger
+pear
+green onion
+sesame seeds
+rice wine
+black pepper
+salt
+
+# Mango Sticky Rice
+glutinous rice
+coconut milk
+sugar
+salt
+fresh mango
+sesame seeds
+mung beans
+
+# Mochi Ice Cream
+glutinous rice flour
+sugar
+cornstarch
+water
+ice cream
+
+# Agedashi Tofu
+tofu
+potato starch
+dashi broth
+soy sauce
+mirin
+sake
+sugar
+green onion
+daikon radish
+bonito flakes
+nori
+vegetable oil
+
+# Spicy Miso Ramen
+ramen noodles
+chicken broth
+miso paste
+chili paste
+sesame oil
+garlic
+ginger
+pork belly
+soft boiled egg
+corn
+green onion
+nori seaweed
+butter
+salt
+white pepper
+
+# Thai Basil Chicken
+ground chicken
+thai basil
+garlic
+chilies
+oyster sauce
+fish sauce
+soy sauce
+dark soy sauce
+sugar
+vegetable oil
+eggs
+white rice
+salt
+
+# Banh Mi
+baguette
+pork belly
+head cheese
+pate
+pickled carrots
+pickled daikon
+cucumber
+cilantro
+jalapenos
+mayonnaise
+soy sauce
+fish sauce
+sugar
+salt
+vegetable oil
+
+# Bun Bo Hue
+round rice noodles
+beef shank
+pork hocks
+beef broth
+lemongrass
+shrimp paste
+chili oil
+gochugaru
+fish sauce
+sugar
+onion
+ginger
+green onion
+cilantro
+bean sprouts
+lime
+salt
+
+# Chicken Tandoori
+chicken
+yogurt
+lemon juice
+garlic
+ginger
+garam masala
+cumin
+coriander
+turmeric
+chili powder
+paprika
+kashmiri chili
+salt
+vegetable oil
+
+# Saag Paneer
+paneer
+spinach
+onion
+tomatoes
+garlic
+ginger
+cumin
+coriander
+turmeric
+garam masala
+chili powder
+heavy cream
+butter
+vegetable oil
+salt
+sugar
+fenugreek leaves
+
+# Dosa
+rice
+urad dal
+fenugreek seeds
+salt
+water
+vegetable oil
+potato
+onion
+turmeric
+mustard seeds
+curry leaves
+green chilies
+cilantro
+
+# Khao Man Gai Thai Chicken Rice
+chicken
+jasmine rice
+chicken broth
+ginger
+garlic
+cilantro root
+soy sauce
+oyster sauce
+sesame oil
+salt
+cucumber
+cilantro
+chili sauce
+fermented soybean paste
+
+# Vietnamese Broken Rice
+broken rice
+pork chop
+grilled pork
+steamed egg cake
+fish sauce
+sugar
+lime
+garlic
+shallots
+vegetable oil
+cucumber
+tomatoes
+green onion
+cilantro
+
+# Chicken Katsu Curry
+chicken breast
+panko breadcrumbs
+eggs
+flour
+vegetable oil
+curry roux
+onion
+potatoes
+carrots
+chicken broth
+soy sauce
+worcestershire sauce
+salt
+white pepper
+white rice
+
+# Roti Canai
+all-purpose flour
+butter
+eggs
+salt
+sugar
+water
+vegetable oil
+condensed milk
+
+# Laksa Lemak
+rice vermicelli
+shrimp
+fish cake
+tofu puffs
+coconut milk
+chicken broth
+lemongrass
+galangal
+turmeric
+shrimp paste
+chili
+shallots
+garlic
+bean sprouts
+cucumber
+cilantro
+lime
+salt
+vegetable oil

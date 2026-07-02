@@ -1,0 +1,1242 @@
+# Poutine
+french fries
+cheese curds
+beef gravy
+butter
+flour
+beef broth
+black pepper
+salt
+
+# Butter Tarts
+butter
+brown sugar
+eggs
+corn syrup
+vanilla extract
+all-purpose flour
+shortening
+salt
+raisins
+walnuts
+pecans
+
+# Tourtière (Quebec Meat Pie)
+ground pork
+ground beef
+onion
+garlic
+cinnamon
+cloves
+allspice
+nutmeg
+celery
+potato
+salt
+black pepper
+all-purpose flour
+butter
+shortening
+cold water
+
+# Beaver Tails (Fried Dough)
+all-purpose flour
+yeast
+sugar
+salt
+milk
+eggs
+butter
+vegetable oil
+cinnamon
+icing sugar
+lemon juice
+
+# Bannock (Indigenous Fry Bread)
+all-purpose flour
+baking powder
+salt
+sugar
+water
+vegetable oil
+butter
+
+# Montreal Smoked Meat Sandwich
+beef brisket
+curing salt
+black pepper
+coriander seeds
+mustard seeds
+garlic
+bay leaves
+allspice
+cloves
+rye bread
+yellow mustard
+dill pickles
+
+# Caesar Cocktail (as a sauce/dip base)
+clamato juice
+vodka
+worcestershire sauce
+hot sauce
+celery salt
+black pepper
+lemon juice
+celery stalk
+pickle
+
+# Split Pea Soup
+yellow split peas
+ham hock
+onion
+carrots
+celery
+garlic
+bay leaves
+salt
+black pepper
+thyme
+chicken broth
+
+# Jiggs Dinner (Newfoundland Boiled Dinner)
+salt beef
+cabbage
+potatoes
+carrots
+turnip
+parsnip
+peas pudding (yellow split peas)
+salt
+black pepper
+
+# Rappie Pie (Acadian)
+potatoes
+chicken
+onion
+salt
+black pepper
+butter
+chicken broth
+
+# Lobster Roll
+lobster meat
+mayonnaise
+celery
+lemon juice
+salt
+black pepper
+butter
+hot dog buns
+chives
+
+# Fish and Chips (East Coast style)
+cod
+all-purpose flour
+baking powder
+salt
+black pepper
+beer
+vegetable oil
+potatoes
+malt vinegar
+tartar sauce
+mayonnaise
+pickles
+capers
+
+# Peameal Bacon Sandwich
+peameal bacon
+cornmeal
+white bread roll
+yellow mustard
+butter
+
+# Back Bacon
+pork loin
+curing salt
+brown sugar
+maple syrup
+black pepper
+garlic
+
+# Maple Glazed Salmon
+salmon fillet
+maple syrup
+soy sauce
+garlic
+dijon mustard
+lemon juice
+black pepper
+salt
+butter
+
+# Salmon Chowder
+salmon fillet
+potatoes
+onion
+celery
+carrots
+cream
+butter
+flour
+dill
+salt
+black pepper
+chicken broth
+bacon
+
+# Nova Scotia Hodgepodge
+green beans
+carrots
+potatoes
+peas
+cream
+butter
+salt
+black pepper
+
+# Nanaimo Bars
+butter
+cocoa powder
+sugar
+eggs
+graham cracker crumbs
+coconut flakes
+chopped walnuts
+vanilla custard powder
+icing sugar
+milk
+dark chocolate
+
+# Saskatoon Berry Pie
+saskatoon berries
+sugar
+all-purpose flour
+lemon juice
+butter
+shortening
+salt
+cold water
+cinnamon
+
+# Apple Pie (Canadian style)
+apples
+sugar
+cinnamon
+nutmeg
+butter
+all-purpose flour
+shortening
+salt
+cold water
+lemon juice
+
+# Pancakes with Maple Syrup
+all-purpose flour
+baking powder
+sugar
+salt
+eggs
+milk
+butter
+maple syrup
+vanilla extract
+
+# French Toast
+white bread
+eggs
+milk
+cinnamon
+vanilla extract
+butter
+maple syrup
+icing sugar
+
+# Oatmeal with Maple Syrup
+rolled oats
+water
+milk
+maple syrup
+salt
+butter
+brown sugar
+cinnamon
+
+# Bacon and Eggs
+bacon
+eggs
+butter
+salt
+black pepper
+toast
+white bread
+
+# Grilled Cheese Sandwich
+white bread
+cheddar cheese
+butter
+yellow mustard
+
+# Tomato Soup
+tomatoes
+onion
+garlic
+butter
+cream
+chicken broth
+sugar
+salt
+black pepper
+basil
+bay leaves
+
+# Mac and Cheese (homemade)
+elbow macaroni
+cheddar cheese
+butter
+flour
+milk
+salt
+black pepper
+mustard powder
+paprika
+
+# Kraft Dinner (Canadian Mac & Cheese)
+macaroni pasta
+cheddar cheese powder
+butter
+milk
+salt
+
+# Shepherd's Pie
+ground beef
+onion
+garlic
+carrots
+peas
+corn
+tomato paste
+worcestershire sauce
+beef broth
+salt
+black pepper
+thyme
+rosemary
+potatoes
+butter
+milk
+cheddar cheese
+
+# Beef Stew
+beef chuck
+potatoes
+carrots
+onion
+celery
+garlic
+beef broth
+tomato paste
+worcestershire sauce
+bay leaves
+thyme
+rosemary
+salt
+black pepper
+flour
+vegetable oil
+
+# Roast Beef with Yorkshire Pudding
+beef roast
+salt
+black pepper
+garlic
+rosemary
+thyme
+vegetable oil
+all-purpose flour
+eggs
+milk
+
+# Pot Roast
+beef chuck roast
+onion
+carrots
+celery
+garlic
+potatoes
+beef broth
+tomato paste
+worcestershire sauce
+bay leaves
+thyme
+salt
+black pepper
+vegetable oil
+
+# Chicken Pot Pie
+chicken breast
+potatoes
+carrots
+peas
+celery
+onion
+garlic
+butter
+flour
+chicken broth
+cream
+salt
+black pepper
+thyme
+all-purpose flour
+shortening
+cold water
+
+# Roast Chicken
+whole chicken
+butter
+garlic
+lemon
+rosemary
+thyme
+salt
+black pepper
+onion
+carrots
+celery
+
+# BBQ Ribs
+pork ribs
+brown sugar
+paprika
+garlic powder
+onion powder
+salt
+black pepper
+cayenne pepper
+cumin
+chili powder
+ketchup
+apple cider vinegar
+worcestershire sauce
+honey
+mustard
+vegetable oil
+
+# Hamburger
+ground beef
+salt
+black pepper
+burger buns
+lettuce
+tomato
+onion
+cheddar cheese
+yellow mustard
+ketchup
+mayonnaise
+pickle
+vegetable oil
+
+# Hot Dog
+hot dogs
+hot dog buns
+yellow mustard
+ketchup
+relish
+onion
+sauerkraut
+
+# Clubhouse Sandwich
+white bread
+bacon
+chicken breast
+lettuce
+tomato
+mayonnaise
+salt
+black pepper
+cheddar cheese
+butter
+
+# BLT Sandwich
+bacon
+lettuce
+tomato
+white bread
+mayonnaise
+salt
+black pepper
+butter
+
+# Caesar Salad
+romaine lettuce
+parmesan cheese
+croutons
+garlic
+lemon juice
+worcestershire sauce
+dijon mustard
+anchovies
+olive oil
+eggs
+black pepper
+salt
+
+# Coleslaw
+green cabbage
+carrots
+mayonnaise
+apple cider vinegar
+sugar
+salt
+black pepper
+dijon mustard
+celery seed
+
+# Potato Salad
+potatoes
+mayonnaise
+mustard
+celery
+onion
+eggs
+salt
+black pepper
+dill pickles
+paprika
+
+# Devilled Eggs
+eggs
+mayonnaise
+yellow mustard
+apple cider vinegar
+salt
+black pepper
+paprika
+
+# Pancake Breakfast
+all-purpose flour
+baking powder
+sugar
+salt
+eggs
+milk
+butter
+maple syrup
+bacon
+sausage
+
+# Eggs Benedict
+eggs
+english muffins
+back bacon
+butter
+egg yolks
+lemon juice
+cayenne pepper
+salt
+chives
+
+# Clam Chowder (Maritime style)
+clams
+potatoes
+onion
+celery
+bacon
+butter
+flour
+cream
+milk
+salt
+black pepper
+thyme
+bay leaves
+
+# Donair (Halifax style)
+ground beef
+ground lamb
+garlic powder
+onion powder
+oregano
+cayenne pepper
+salt
+black pepper
+pita bread
+tomato
+onion
+evaporated milk
+white vinegar
+garlic
+sugar
+
+# Perogies (Ukrainian-Canadian)
+all-purpose flour
+eggs
+water
+salt
+potatoes
+cheddar cheese
+butter
+onion
+sour cream
+bacon
+chives
+black pepper
+
+# Cabbage Rolls (Ukrainian-Canadian)
+ground beef
+ground pork
+white rice
+onion
+garlic
+salt
+black pepper
+tomato sauce
+green cabbage
+paprika
+dill
+sour cream
+
+# Borscht (Ukrainian-Canadian)
+beets
+cabbage
+carrots
+potatoes
+onion
+garlic
+tomato paste
+beef broth
+salt
+black pepper
+dill
+sour cream
+butter
+lemon juice
+vinegar
+
+# Perogies with Sauerkraut
+sauerkraut
+onion
+butter
+black pepper
+all-purpose flour
+eggs
+water
+salt
+sour cream
+
+# Jerk Chicken (Caribbean-Canadian)
+chicken thighs
+scotch bonnet peppers
+allspice
+garlic
+ginger
+thyme
+green onions
+soy sauce
+vegetable oil
+brown sugar
+cinnamon
+black pepper
+salt
+lime juice
+nutmeg
+
+# Butter Chicken (Indo-Canadian)
+chicken breast
+butter
+onion
+garlic
+ginger
+tomatoes
+tomato paste
+cream
+garam masala
+cumin
+coriander
+turmeric
+paprika
+cayenne pepper
+salt
+vegetable oil
+fenugreek leaves
+
+# Curry (South Asian-Canadian)
+chicken
+onion
+garlic
+ginger
+tomatoes
+vegetable oil
+cumin seeds
+turmeric
+coriander powder
+garam masala
+chili powder
+salt
+yogurt
+cream
+cilantro
+
+# Chili
+ground beef
+kidney beans
+onion
+garlic
+tomatoes
+tomato paste
+beef broth
+chili powder
+cumin
+paprika
+oregano
+cayenne pepper
+salt
+black pepper
+vegetable oil
+
+# Beef Tacos (Tex-Mex-Canadian)
+ground beef
+taco seasoning
+chili powder
+cumin
+garlic powder
+onion powder
+salt
+black pepper
+corn tortillas
+cheddar cheese
+sour cream
+salsa
+lettuce
+tomato
+onion
+lime juice
+vegetable oil
+
+# Chicken Stir Fry
+chicken breast
+broccoli
+carrots
+bell peppers
+onion
+garlic
+ginger
+soy sauce
+oyster sauce
+sesame oil
+vegetable oil
+cornstarch
+salt
+black pepper
+green onions
+
+# Fried Rice
+white rice
+eggs
+soy sauce
+sesame oil
+vegetable oil
+onion
+garlic
+green onions
+carrots
+peas
+salt
+black pepper
+
+# Pasta with Meat Sauce (Spaghetti Bolognese)
+ground beef
+onion
+garlic
+carrots
+celery
+tomatoes
+tomato paste
+red wine
+beef broth
+olive oil
+salt
+black pepper
+basil
+oregano
+thyme
+bay leaves
+spaghetti
+parmesan cheese
+butter
+
+# Lasagna
+ground beef
+onion
+garlic
+tomatoes
+tomato paste
+olive oil
+salt
+black pepper
+oregano
+basil
+lasagna noodles
+ricotta cheese
+mozzarella cheese
+parmesan cheese
+eggs
+butter
+
+# Pizza (homemade)
+all-purpose flour
+yeast
+sugar
+salt
+olive oil
+water
+tomato sauce
+mozzarella cheese
+pepperoni
+mushrooms
+bell peppers
+onion
+olives
+oregano
+garlic powder
+
+# Vegetable Soup
+onion
+carrots
+celery
+potatoes
+green beans
+tomatoes
+garlic
+vegetable broth
+bay leaves
+thyme
+salt
+black pepper
+butter
+zucchini
+corn
+peas
+
+# Minestrone
+onion
+carrots
+celery
+garlic
+tomatoes
+kidney beans
+zucchini
+green beans
+pasta
+olive oil
+vegetable broth
+bay leaves
+thyme
+oregano
+basil
+parmesan cheese
+salt
+black pepper
+
+# Grilled Salmon
+salmon fillet
+lemon juice
+garlic
+olive oil
+dill
+salt
+black pepper
+butter
+capers
+
+# Tuna Casserole
+tuna
+egg noodles
+cream of mushroom soup
+milk
+peas
+cheddar cheese
+butter
+breadcrumbs
+salt
+black pepper
+onion
+
+# Turkey Dinner (Thanksgiving/Christmas)
+turkey
+butter
+garlic
+rosemary
+thyme
+sage
+salt
+black pepper
+onion
+celery
+carrots
+chicken broth
+stuffing bread
+cranberry sauce
+orange juice
+sugar
+gravy
+
+# Ham Dinner
+ham
+brown sugar
+maple syrup
+dijon mustard
+cloves
+pineapple
+apple juice
+
+# Meatloaf
+ground beef
+onion
+garlic
+eggs
+breadcrumbs
+milk
+ketchup
+worcestershire sauce
+salt
+black pepper
+mustard
+brown sugar
+
+# Potato Wedges
+potatoes
+vegetable oil
+garlic powder
+paprika
+salt
+black pepper
+onion powder
+dried rosemary
+
+# Mashed Potatoes
+potatoes
+butter
+milk
+cream
+salt
+black pepper
+chives
+
+# Scalloped Potatoes
+potatoes
+cream
+butter
+garlic
+onion
+cheddar cheese
+flour
+salt
+black pepper
+thyme
+
+# Stuffing
+white bread
+butter
+onion
+celery
+garlic
+chicken broth
+sage
+thyme
+rosemary
+salt
+black pepper
+eggs
+parsley
+
+# Baked Beans
+navy beans
+bacon
+onion
+molasses
+brown sugar
+mustard
+ketchup
+worcestershire sauce
+salt
+black pepper
+tomato paste
+apple cider vinegar
+
+# Cornbread
+cornmeal
+all-purpose flour
+sugar
+baking powder
+salt
+eggs
+milk
+butter
+vegetable oil
+
+# Blueberry Muffins
+all-purpose flour
+sugar
+baking powder
+salt
+eggs
+milk
+butter
+blueberries
+vanilla extract
+lemon zest
+
+# Oatmeal Cookies
+rolled oats
+all-purpose flour
+butter
+brown sugar
+sugar
+eggs
+vanilla extract
+baking soda
+salt
+cinnamon
+raisins
+
+# Chocolate Chip Cookies
+all-purpose flour
+butter
+brown sugar
+sugar
+eggs
+vanilla extract
+baking soda
+salt
+chocolate chips
+
+# Shortbread Cookies
+all-purpose flour
+butter
+icing sugar
+salt
+vanilla extract
+
+# Carrot Cake
+all-purpose flour
+sugar
+eggs
+vegetable oil
+carrots
+baking soda
+baking powder
+cinnamon
+nutmeg
+salt
+cream cheese
+icing sugar
+butter
+vanilla extract
+walnuts
+
+# Banana Bread
+all-purpose flour
+bananas
+sugar
+butter
+eggs
+baking soda
+salt
+vanilla extract
+cinnamon
+walnuts
+
+# Lemon Squares
+all-purpose flour
+butter
+icing sugar
+sugar
+eggs
+lemon juice
+lemon zest
+baking powder
+salt
+
+# Strawberry Shortcake
+all-purpose flour
+sugar
+baking powder
+salt
+butter
+eggs
+milk
+vanilla extract
+strawberries
+whipping cream
+icing sugar
+
+# Ice Cream with Maple Syrup
+vanilla ice cream
+maple syrup
+butter
+pecans
+
+# Common Spices and Pantry Staples
+salt
+black pepper
+garlic powder
+onion powder
+paprika
+smoked paprika
+cayenne pepper
+cumin
+coriander
+turmeric
+cinnamon
+nutmeg
+allspice
+cloves
+thyme
+rosemary
+oregano
+basil
+bay leaves
+dill
+sage
+chili powder
+mustard powder
+celery salt
+ginger
+fennel seeds
+caraway seeds
+red pepper flakes
+
+# Common Cooking Oils and Fats
+vegetable oil
+olive oil
+canola oil
+butter
+shortening
+lard
+sesame oil
+coconut oil
+
+# Common Sauces and Condiments
+ketchup
+yellow mustard
+dijon mustard
+mayonnaise
+hot sauce
+worcestershire sauce
+soy sauce
+oyster sauce
+fish sauce
+sriracha
+maple syrup
+honey
+apple cider vinegar
+white vinegar
+red wine vinegar
+balsamic vinegar
+tomato sauce
+tomato paste
+chicken broth
+beef broth
+vegetable broth
+cream of mushroom soup
+tartar sauce
+relish
+sour cream
+salsa
+ranch dressing
+caesar dressing
+
+# Common Dairy
+milk
+cream
+whipping cream
+butter
+cheddar cheese
+mozzarella cheese
+parmesan cheese
+ricotta cheese
+cream cheese
+sour cream
+yogurt
+eggs
+
+# Common Produce
+onion
+garlic
+ginger
+carrots
+celery
+potatoes
+sweet potatoes
+tomatoes
+lettuce
+romaine lettuce
+green cabbage
+broccoli
+cauliflower
+zucchini
+bell peppers
+mushrooms
+corn
+peas
+green beans
+spinach
+cucumber
+lemon
+lime
+apple
+banana
+blueberries
+strawberries
+cranberries
+
+# Common Grains and Starches
+white rice
+brown rice
+all-purpose flour
+whole wheat flour
+rolled oats
+breadcrumbs
+spaghetti
+macaroni
+elbow pasta
+penne
+lasagna noodles
+egg noodles
+white bread
+rye bread
+pita bread
+hot dog buns
+burger buns
+english muffins
+cornmeal
+graham cracker crumbs
+yeast
+baking powder
+baking soda
+
+# Common Proteins
+ground beef
+beef chuck
+beef brisket
+beef roast
+pork ribs
+pork loin
+ground pork
+bacon
+back bacon
+ham
+chicken breast
+chicken thighs
+whole chicken
+turkey
+salmon fillet
+cod
+tuna
+lobster meat
+clams
+eggs

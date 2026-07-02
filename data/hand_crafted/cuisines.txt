@@ -1,0 +1,20 @@
+canadian
+american
+british
+french
+italian
+greek
+mediterranean
+middle eastern
+iranian
+south asian
+chinese
+japanese
+korean
+southeast asian
+mexican
+latin american
+caribbean
+african
+eastern european
+jewish

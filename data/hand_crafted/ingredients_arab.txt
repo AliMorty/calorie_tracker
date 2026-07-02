@@ -1,0 +1,539 @@
+# hummus
+chickpeas
+tahini
+lemon juice
+garlic
+olive oil
+salt
+cumin
+paprika
+
+# falafel
+chickpeas
+fava beans
+onion
+garlic
+fresh parsley
+fresh cilantro
+cumin
+coriander
+salt
+black pepper
+baking soda
+flour
+vegetable oil
+
+# tabbouleh
+bulgur wheat
+fresh parsley
+fresh mint
+tomato
+green onion
+lemon juice
+olive oil
+salt
+black pepper
+
+# fattoush
+romaine lettuce
+tomato
+cucumber
+radish
+green onion
+fresh mint
+fresh parsley
+pita bread
+lemon juice
+olive oil
+sumac
+salt
+black pepper
+pomegranate molasses
+
+# baba ghanoush
+eggplant
+tahini
+lemon juice
+garlic
+olive oil
+salt
+fresh parsley
+pomegranate seeds
+
+# shawarma chicken
+chicken thighs
+yogurt
+lemon juice
+garlic
+olive oil
+cumin
+coriander
+turmeric
+paprika
+cinnamon
+cardamom
+black pepper
+salt
+cayenne pepper
+onion
+tomato
+parsley
+tahini sauce
+pita bread
+
+# shawarma lamb
+lamb leg
+yogurt
+lemon juice
+garlic
+olive oil
+cumin
+coriander
+turmeric
+paprika
+cinnamon
+allspice
+cardamom
+black pepper
+salt
+onion
+tomato
+parsley
+tahini sauce
+pita bread
+
+# mansaf
+lamb
+jameed
+yogurt
+rice
+onion
+ghee
+turmeric
+salt
+black pepper
+cinnamon
+almonds
+pine nuts
+fresh parsley
+
+# maqluba
+chicken
+rice
+eggplant
+tomato
+onion
+cauliflower
+potato
+olive oil
+turmeric
+cumin
+cinnamon
+allspice
+black pepper
+salt
+pine nuts
+almonds
+yogurt
+
+# kabsa
+chicken
+rice
+onion
+tomato
+garlic
+ghee
+olive oil
+turmeric
+cinnamon
+cardamom
+cloves
+black pepper
+bay leaves
+salt
+raisins
+almonds
+pine nuts
+fresh cilantro
+
+# kibbeh
+ground lamb
+bulgur wheat
+onion
+pine nuts
+allspice
+cinnamon
+black pepper
+salt
+vegetable oil
+mint
+
+# kibbeh nayeh
+ground lamb
+bulgur wheat
+onion
+allspice
+cinnamon
+black pepper
+salt
+fresh mint
+olive oil
+chilies
+
+# warak dawali
+grape leaves
+rice
+ground lamb
+tomato
+onion
+lemon juice
+olive oil
+allspice
+cinnamon
+black pepper
+salt
+mint
+
+# kousa mahshi
+zucchini
+rice
+ground lamb
+tomato
+onion
+allspice
+cinnamon
+black pepper
+salt
+olive oil
+fresh parsley
+lemon juice
+
+# felfel mahshi
+bell peppers
+rice
+ground lamb
+tomato
+onion
+allspice
+cinnamon
+black pepper
+salt
+olive oil
+fresh parsley
+tomato paste
+
+# molokhia
+molokhia leaves
+chicken
+beef broth
+garlic
+coriander
+butter
+ghee
+lemon juice
+onion
+salt
+black pepper
+rice
+pita bread
+
+# fatteh
+chickpeas
+pita bread
+yogurt
+tahini
+lemon juice
+garlic
+olive oil
+cumin
+paprika
+pine nuts
+fresh parsley
+salt
+
+# shakshuka
+eggs
+tomato
+onion
+garlic
+bell pepper
+tomato paste
+cumin
+paprika
+cayenne pepper
+olive oil
+salt
+black pepper
+fresh parsley
+fresh cilantro
+feta cheese
+
+# ful medames
+fava beans
+garlic
+lemon juice
+olive oil
+cumin
+salt
+black pepper
+fresh parsley
+tomato
+onion
+hard-boiled egg
+pita bread
+
+# koshari
+rice
+lentils
+macaroni pasta
+chickpeas
+tomato sauce
+fried onion
+garlic
+tomato paste
+olive oil
+cumin
+coriander
+salt
+black pepper
+cayenne pepper
+vinegar
+
+# musakhan
+chicken
+onion
+olive oil
+sumac
+allspice
+black pepper
+salt
+pine nuts
+taboon bread
+fresh parsley
+
+# arayes
+pita bread
+ground lamb
+onion
+tomato
+fresh parsley
+allspice
+cinnamon
+black pepper
+salt
+olive oil
+chili flakes
+
+# lentil soup
+red lentils
+onion
+garlic
+olive oil
+cumin
+turmeric
+lemon juice
+salt
+black pepper
+fresh parsley
+croutons
+
+# harira
+lamb
+chickpeas
+lentils
+tomato
+onion
+celery
+garlic
+olive oil
+cumin
+coriander
+cinnamon
+ginger
+saffron
+lemon juice
+fresh parsley
+fresh cilantro
+salt
+black pepper
+vermicelli
+
+# freekeh soup
+freekeh
+chicken
+onion
+olive oil
+allspice
+cinnamon
+black pepper
+salt
+pine nuts
+almonds
+
+# zaatar manakeesh
+flour
+water
+yeast
+salt
+olive oil
+zaatar
+sesame seeds
+sumac
+dried thyme
+
+# cheese manakeesh
+flour
+water
+yeast
+salt
+olive oil
+akkawi cheese
+nabulsi cheese
+nigella seeds
+
+# labneh
+yogurt
+salt
+olive oil
+zaatar
+tomato
+cucumber
+mint
+pita bread
+
+# mujaddara
+lentils
+rice
+onion
+olive oil
+cumin
+salt
+black pepper
+yogurt
+
+# batata harra
+potato
+garlic
+olive oil
+red chili flakes
+fresh cilantro
+lemon juice
+salt
+paprika
+
+# sambousek
+flour
+water
+salt
+butter
+ground lamb
+onion
+pine nuts
+allspice
+cinnamon
+black pepper
+vegetable oil
+
+# sfeeha
+flour
+water
+yeast
+salt
+sugar
+olive oil
+ground lamb
+onion
+tomato
+lemon juice
+allspice
+cinnamon
+pomegranate molasses
+pine nuts
+
+# knafeh
+kataifi pastry
+akkawi cheese
+nabulsi cheese
+sugar
+water
+rose water
+orange blossom water
+butter
+ghee
+pistachios
+semolina
+
+# baklava
+phyllo pastry
+walnuts
+pistachios
+butter
+sugar
+water
+honey
+lemon juice
+rose water
+cinnamon
+
+# mamoul
+semolina
+flour
+butter
+ghee
+sugar
+rose water
+orange blossom water
+dates
+walnuts
+pistachios
+
+# halawa
+tahini
+sugar
+water
+pistachios
+vanilla
+
+# basbousa
+semolina
+sugar
+yogurt
+butter
+desiccated coconut
+baking powder
+lemon juice
+rose water
+orange blossom water
+almonds
+
+# roz bil laban
+rice
+milk
+sugar
+rose water
+orange blossom water
+cinnamon
+pistachios
+desiccated coconut
+
+# laban drink
+yogurt
+water
+salt
+dried mint
+
+# jallab
+grape juice
+rose water
+raisins
+pine nuts
+ice
+
+# sahlab
+sahlab powder
+milk
+sugar
+rose water
+cinnamon
+desiccated coconut
+pistachios

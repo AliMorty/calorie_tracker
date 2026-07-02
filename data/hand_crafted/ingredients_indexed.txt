@@ -1,0 +1,1115 @@
+0: achiote paste
+1: acorn squash
+2: agave syrup
+3: akkawi cheese
+4: all-bran
+5: all-purpose flour
+6: allspice
+7: allspice berries
+8: almond
+9: almond butter
+10: almond extract
+11: almond milk
+12: almond slivers
+13: almonds
+14: almonds, raw
+15: almonds, roasted
+16: amchur
+17: anchovies
+18: anchovy broth
+19: angel hair pasta
+20: apple
+21: apple cider vinegar
+22: apple juice
+23: apple, fuji
+24: apple, gala
+25: apple, granny smith
+26: apple, honeycrisp
+27: apple, red delicious
+28: apples
+29: applesauce
+30: apricot
+31: arborio rice (risotto)
+32: artichoke
+33: arugula
+34: asiento (pork fat)
+35: asparagus
+36: avocado
+37: avocado oil
+38: back bacon
+39: bacon
+40: bacon, turkey
+41: bagels
+42: baguette
+43: baguette / french bread
+44: baked beans, canned
+45: baking powder
+46: baking soda
+47: balsamic vinaigrette
+48: balsamic vinegar
+49: bamboo shoots
+50: banana
+51: banana leaves
+52: bananas
+53: barberries (zereshk)
+54: barley, pearl
+55: basil
+56: basil, dried
+57: basmati rice
+58: bay leaves
+59: bbq sauce
+60: bean sprouts
+61: beef
+62: beef back ribs
+63: beef bones
+64: beef brisket
+65: beef broth
+66: beef broth / stock
+67: beef cheeks
+68: beef chuck
+69: beef chuck roast
+70: beef cutlets
+71: beef gravy
+72: beef ribeye
+73: beef roast
+74: beef roast, chuck
+75: beef roast, sirloin tip
+76: beef shank
+77: beef short ribs
+78: beef sirloin
+79: beef steak, flank
+80: beef steak, ribeye
+81: beef steak, sirloin
+82: beef steak, strip loin
+83: beef steak, tenderloin (filet mignon)
+84: beef tripe
+85: beer
+86: beet
+87: beets
+88: bell pepper
+89: bell pepper, green
+90: bell pepper, orange
+91: bell pepper, red
+92: bell pepper, yellow
+93: bell peppers
+94: biscuit dough (refrigerated)
+95: black bean paste
+96: black beans, canned
+97: black garlic oil
+98: black pepper
+99: black pepper, ground
+100: black tea
+101: black vinegar
+102: black-eyed peas, canned
+103: blackberries
+104: blueberries
+105: bok choy
+106: bolillo bread
+107: bologna
+108: bonito flakes
+109: brandy
+110: bread
+111: bread crumbs
+112: bread, multigrain
+113: bread, pita
+114: bread, rye
+115: bread, sourdough
+116: bread, white sandwich
+117: bread, whole wheat sandwich
+118: breadcrumbs
+119: breadcrumbs, panko
+120: breadcrumbs, plain
+121: breaded shrimp (frozen)
+122: breakfast sausage links
+123: breakfast sausage patties
+124: brie cheese
+125: broccoli
+126: broken rice
+127: brown rice
+128: brown rice, long grain
+129: brown sugar
+130: brussels sprouts
+131: bulgur wheat
+132: burger buns
+133: butter
+134: butter, salted
+135: butter, unsalted
+136: buttermilk
+137: butternut squash
+138: cabbage
+139: cabbage, green
+140: cabbage, napa
+141: cabbage, red
+142: cactus paddles
+143: caesar dressing
+144: cajun seasoning
+145: canned artichoke hearts
+146: canned chicken
+147: canned coconut milk
+148: canned corn
+149: canned crab
+150: canned green beans
+151: canned green chiles
+152: canned mackerel
+153: canned mushrooms
+154: canned peas
+155: canned pumpkin puree
+156: canned salmon
+157: canned sardines
+158: canned tomatoes, crushed
+159: canned tomatoes, diced
+160: canned tomatoes, whole
+161: canned tuna, in oil
+162: canned tuna, in water
+163: canola oil
+164: cantaloupe
+165: capers
+166: caraway seeds
+167: cardamom
+168: cardamom, ground
+169: carrot
+170: carrot juice
+171: carrots
+172: cashews
+173: catfish fillet
+174: cauliflower
+175: cayenne pepper
+176: celery
+177: celery root / celeriac
+178: celery salt
+179: celery seed
+180: celery stalk
+181: century egg
+182: cheddar cheese
+183: cheddar cheese powder
+184: cheddar cheese, marble
+185: cheddar cheese, old
+186: cheerios
+187: cheese curds
+188: cherries
+189: cherry juice
+190: cherry tomatoes
+191: chia seeds
+192: chicharrón
+193: chicken
+194: chicken breast
+195: chicken breast, boneless skinless
+196: chicken broth
+197: chicken broth / stock
+198: chicken drumstick
+199: chicken skin
+200: chicken thigh, bone-in skin-on
+201: chicken thigh, boneless skinless
+202: chicken thighs
+203: chicken wings
+204: chickpea flour
+205: chickpeas
+206: chickpeas / garbanzo beans, canned
+207: chicory
+208: chili
+209: chili flakes
+210: chili oil
+211: chili paste
+212: chili powder
+213: chili sauce
+214: chilies
+215: chinese broccoli
+216: chipotle peppers in adobo
+217: chipotles in adobo
+218: chips, all dressed
+219: chips, barbecue
+220: chips, ketchup
+221: chips, regular / plain
+222: chips, salt and vinegar
+223: chips, sour cream and onion
+224: chives
+225: chocolate
+226: chocolate chips
+227: chocolate chips, dark
+228: chocolate chips, milk
+229: chocolate chips, semi-sweet
+230: chocolate chips, white
+231: chopped walnuts
+232: chorizo
+233: chow mein noodles
+234: ciabatta
+235: cilantro
+236: cilantro root
+237: cilantro, dried
+238: cinnamon
+239: cinnamon stick
+240: cinnamon, ground
+241: clamato juice
+242: clams
+243: cloves
+244: cloves, ground
+245: cocoa powder
+246: cocoa powder, unsweetened
+247: coconut
+248: coconut aminos
+249: coconut cream
+250: coconut flakes
+251: coconut milk
+252: coconut milk beverage
+253: coconut oil
+254: coconut water
+255: cod
+256: cod fillet
+257: coffee cream
+258: coffee, ground
+259: coffee, instant
+260: coffee, whole bean
+261: colby cheese
+262: cold water
+263: collard greens
+264: condensed milk
+265: cookies, chocolate chip
+266: cookies, digestive
+267: cookies, oatmeal raisin
+268: cookies, oreo
+269: coriander
+270: coriander powder
+271: coriander seeds
+272: corn
+273: corn flakes
+274: corn kernels
+275: corn on the cob
+276: corn syrup
+277: corn tortilla
+278: corn tortillas
+279: corned beef
+280: cornmeal
+281: cornstarch
+282: cotija cheese
+283: cottage cheese, 1%
+284: cottage cheese, 2%
+285: cottage cheese, 4%
+286: couscous
+287: crab
+288: crackers, ritz
+289: crackers, soda
+290: crackers, whole grain
+291: cranberries
+292: cranberry cocktail
+293: cranberry juice
+294: cranberry sauce
+295: cream
+296: cream cheese
+297: cream cheese, light
+298: cream of mushroom soup
+299: cream of tartar
+300: cream of wheat
+301: crescent roll dough (refrigerated)
+302: croissants
+303: croutons
+304: crushed red pepper flakes
+305: crushed tomatoes
+306: cucumber
+307: cucumber, english
+308: cucumber, mini / persian
+309: cumin
+310: cumin seeds
+311: cumin, ground
+312: curing salt
+313: currants
+314: curry leaves
+315: curry paste, green
+316: curry paste, red
+317: curry paste, yellow
+318: curry powder
+319: curry roux
+320: daikon radish
+321: dandelion greens
+322: dark chocolate
+323: dark chocolate bar
+324: dark chocolate, baking
+325: dark soy sauce
+326: dashi broth
+327: dates
+328: desiccated coconut
+329: dijon mustard
+330: dill
+331: dill pickles
+332: dill, dried
+333: doubanjiang
+334: dried ancho chiles
+335: dried apricots
+336: dried arbol chiles
+337: dried chickpeas
+338: dried chili flakes
+339: dried chili peppers
+340: dried chipotle chiles
+341: dried corn husks
+342: dried cranberries
+343: dried dill
+344: dried fenugreek leaves
+345: dried guajillo chiles
+346: dried hibiscus flowers
+347: dried limes (limu omani)
+348: dried mango
+349: dried mint
+350: dried mulato chiles
+351: dried oregano
+352: dried pasilla chiles
+353: dried plums
+354: dried plums (aloo)
+355: dried red chilies
+356: dried rose petals
+357: dried rosemary
+358: dried shallot (mousir)
+359: dried shrimp
+360: dried thyme
+361: dried white beans
+362: dumpling wrappers
+363: edamame
+364: egg
+365: egg noodles
+366: egg roll wrappers
+367: egg whites
+368: egg yolk
+369: egg yolks
+370: eggplant
+371: eggplant / aubergine
+372: eggs
+373: eggs, large (whole)
+374: elbow macaroni
+375: elbow pasta
+376: enchilada sauce
+377: english muffins
+378: epazote
+379: espresso pods (nespresso / keurig)
+380: evaporated milk
+381: everything bagel seasoning
+382: farro
+383: fava beans
+384: fennel
+385: fennel seeds
+386: fenugreek leaves
+387: fenugreek seeds
+388: fermented black beans
+389: fermented soybean paste
+390: feta cheese
+391: fettuccine
+392: fig
+393: fig newtons
+394: fine bulgur wheat
+395: fish cake
+396: fish cakes
+397: fish sauce
+398: fish sticks (frozen)
+399: five spice powder
+400: flank steak
+401: flaxseed, ground
+402: flour
+403: flour tortillas
+404: flour tortillas, large / burrito size
+405: flour tortillas, small
+406: flour, all-purpose
+407: flour, bread
+408: flour, self-rising
+409: flour, whole wheat
+410: freekeh
+411: french fries
+412: fresh basil
+413: fresh chives
+414: fresh cilantro
+415: fresh dill
+416: fresh fenugreek
+417: fresh mango
+418: fresh mint
+419: fresh parsley
+420: fresh pasta (refrigerated)
+421: fresh rosemary
+422: fresh tarragon
+423: fresh thyme
+424: fried onion
+425: fried potato strips
+426: fried shallots
+427: frozen blueberries
+428: frozen broccoli
+429: frozen burritos
+430: frozen cauliflower
+431: frozen chicken fingers
+432: frozen chicken nuggets
+433: frozen corn
+434: frozen dumplings / potstickers
+435: frozen edamame
+436: frozen fish sticks
+437: frozen fries / french fries
+438: frozen lasagna
+439: frozen mac and cheese
+440: frozen mango chunks
+441: frozen mixed berries
+442: frozen onion rings
+443: frozen pancakes
+444: frozen peach slices
+445: frozen peas
+446: frozen pizza, cheese
+447: frozen pizza, pepperoni
+448: frozen pizza, vegetable
+449: frozen pot pie
+450: frozen raspberries
+451: frozen samosas
+452: frozen spinach
+453: frozen spring rolls
+454: frozen stir fry vegetables
+455: frozen strawberries
+456: frozen vegetables, mixed
+457: frozen waffles
+458: frozen yogurt
+459: full-fat yogurt
+460: fusilli
+461: galangal
+462: garam masala
+463: garlic
+464: garlic powder
+465: garlic salt
+466: gelatin, unflavoured
+467: gelato
+468: ghee
+469: giant lima beans
+470: ginger
+471: ginger root
+472: ginger, ground
+473: glutinous rice
+474: glutinous rice flour
+475: gnocchi (refrigerated)
+476: gochugaru
+477: gochujang
+478: gochujang (korean chili paste)
+479: gouda cheese
+480: graham cracker crumbs
+481: granola
+482: granola bars, chewy
+483: granola bars, regular
+484: grape juice
+485: grape leaves
+486: grapefruit
+487: grapefruit juice
+488: grapes, green
+489: grapes, red
+490: gravy
+491: greek yogurt
+492: greek yogurt, 0%
+493: greek yogurt, 2%
+494: greek yogurt, 5%
+495: green beans
+496: green bell pepper
+497: green bell peppers
+498: green cabbage
+499: green chilies
+500: green curry paste
+501: green lentils
+502: green olives
+503: green onion
+504: green onion / scallion
+505: green onions
+506: green pepper
+507: grilled pork
+508: ground beef
+509: ground beef, extra lean (10% fat)
+510: ground beef, lean (17% fat)
+511: ground beef, regular (27% fat)
+512: ground chicken
+513: ground lamb
+514: ground pork
+515: ground turkey
+516: guacamole
+517: guacamole, store-bought
+518: guava
+519: gummy bears / gummies
+520: gyoza wrappers
+521: habanero chile
+522: habanero pepper
+523: haddock fillet
+524: half and half (10% cream)
+525: halibut fillet
+526: ham
+527: ham hock
+528: ham, sliced (deli)
+529: hamburger buns
+530: hard-boiled egg
+531: harissa
+532: havarti cheese
+533: hazelnuts
+534: head cheese
+535: heavy cream
+536: heavy cream (35%)
+537: hemp seeds
+538: herbes de provence
+539: hoisin sauce
+540: hominy
+541: honey
+542: honey mustard dressing
+543: honeydew melon
+544: hot chocolate mix
+545: hot dog buns
+546: hot dogs
+547: hot sauce
+548: hot water
+549: hummus, store-bought
+550: ice
+551: ice cream
+552: ice cream, chocolate
+553: ice cream, cookie dough
+554: ice cream, neapolitan
+555: ice cream, rocky road
+556: ice cream, strawberry
+557: ice cream, vanilla
+558: ice water
+559: iced tea
+560: icing sugar
+561: imitation crab
+562: instant yeast
+563: italian dressing
+564: italian sausage, hot
+565: italian sausage, mild
+566: italian seasoning
+567: jalapeno pepper
+568: jalapenos
+569: jalapeño
+570: jameed
+571: jasmine rice
+572: jute leaves
+573: k-cups
+574: kalamata olives
+575: kale
+576: kashk (whey)
+577: kashkaval cheese
+578: kashmiri chili
+579: kataifi dough
+580: kataifi pastry
+581: kecap manis
+582: kefalotyri cheese
+583: ketchup
+584: kidney beans
+585: kidney beans, canned
+586: kielbasa sausage
+587: kimchi
+588: kiwi
+589: kombucha
+590: laksa paste
+591: lamb
+592: lamb broth
+593: lamb chops
+594: lamb intestines
+595: lamb leg
+596: lamb loin
+597: lamb offal
+598: lamb ribs
+599: lamb shoulder
+600: lard
+601: lard / shortening
+602: lasagna noodles
+603: lavash bread
+604: leek
+605: leeks
+606: lemon
+607: lemon juice
+608: lemon pepper seasoning
+609: lemon zest
+610: lemonade
+611: lemongrass
+612: lemongrass paste
+613: lentils
+614: lentils, canned
+615: lentils, green (dried)
+616: lentils, red (dried)
+617: lettuce
+618: lettuce, butter / bibb
+619: lettuce, green leaf
+620: lettuce, iceberg
+621: lettuce, romaine
+622: lima beans, canned
+623: lime
+624: lime juice
+625: lime leaves
+626: lime zest
+627: linguine
+628: lo mein noodles
+629: lobster
+630: lobster meat
+631: macaroni
+632: macaroni pasta
+633: mahi mahi fillet
+634: mahlab
+635: malt vinegar
+636: maltose
+637: mandarin / clementine
+638: mandarin oranges, canned
+639: mandarin pancakes
+640: mango
+641: maple syrup
+642: margarine
+643: marjoram, dried
+644: masa harina
+645: massaman curry paste
+646: mastic
+647: matcha powder
+648: mayonnaise
+649: mayonnaise, light
+650: milk
+651: milk chocolate bar
+652: milk, 1%
+653: milk, 2%
+654: milk, chocolate
+655: milk, skim (0%)
+656: milk, whole (3.25%)
+657: mint
+658: miracle whip
+659: mirin
+660: mirin (rice wine)
+661: miso paste
+662: miso paste, red
+663: miso paste, white
+664: mixed greens
+665: mixed nuts
+666: molasses
+667: molokhia leaves
+668: montreal steak spice
+669: mozzarella cheese
+670: mozzarella cheese, fresh
+671: mung beans
+672: mushroom, cremini / brown
+673: mushroom, oyster
+674: mushroom, portobello
+675: mushroom, shiitake
+676: mushroom, white button
+677: mushrooms
+678: mussels
+679: mustard
+680: mustard powder
+681: mustard seeds
+682: mustard, dijon
+683: mustard, whole grain
+684: mustard, yellow
+685: naan
+686: nabulsi cheese
+687: napa cabbage
+688: navy beans
+689: navy beans, canned
+690: nectarine
+691: nigella seeds
+692: non-stick cooking spray
+693: nori
+694: nori powder
+695: nori seaweed
+696: nori sheets
+697: nutmeg
+698: nutmeg, ground
+699: nutritional yeast
+700: oat bran
+701: oat milk
+702: oats, quick
+703: oats, rolled / old fashioned
+704: oats, steel cut
+705: oaxaca cheese
+706: octopus
+707: oil
+708: okonomiyaki sauce
+709: old bay seasoning
+710: olive oil
+711: olive oil, extra virgin
+712: olive oil, light
+713: olives
+714: olives, black (canned)
+715: olives, green (jarred)
+716: onion
+717: onion powder
+718: onion, red
+719: onion, white
+720: onion, yellow
+721: orange
+722: orange blossom water
+723: orange juice
+724: orange juice, pulp-free
+725: orange peel
+726: orange zest
+727: oregano
+728: oregano, dried
+729: orzo pasta
+730: ouzo
+731: oyster sauce
+732: pad thai sauce
+733: palm sugar
+734: paneer
+735: panko breadcrumbs
+736: papaya
+737: paprika
+738: paprika, smoked
+739: paprika, sweet
+740: parmesan cheese
+741: parsley
+742: parsley, dried
+743: parsnip
+744: parsnips
+745: pasta
+746: pasta sauce, alfredo
+747: pasta sauce, arrabiata
+748: pasta sauce, tomato basil
+749: pate
+750: peach
+751: peaches, canned
+752: peameal bacon
+753: peanut butter
+754: peanut butter, natural
+755: peanuts
+756: peanuts, roasted
+757: pear
+758: pearl barley
+759: pearl onions
+760: peas
+761: peas pudding (yellow split peas)
+762: pecans
+763: pectin
+764: penne
+765: pepperoni
+766: phyllo dough
+767: phyllo pastry
+768: pickle
+769: pickled carrots
+770: pickled cucumber (cornichon)
+771: pickled daikon
+772: pickled ginger
+773: pickled red onion
+774: pickles
+775: pickles, bread and butter
+776: pickles, dill
+777: pie crust, pre-made
+778: pine nuts
+779: pineapple
+780: pineapple juice
+781: pineapple, canned chunks
+782: pinto beans
+783: pinto beans, canned
+784: pistachio
+785: pistachio slivers
+786: pistachios
+787: pita bread
+788: pita chips
+789: pizza dough (refrigerated)
+790: plantain
+791: plantain chips
+792: plum
+793: poblano pepper
+794: poblano peppers
+795: polenta / cornmeal
+796: pomegranate
+797: pomegranate molasses
+798: pomegranate seeds
+799: popcorn, microwave
+800: popcorn, pre-popped (butter)
+801: popcorn, pre-popped (plain)
+802: poppy seeds
+803: popsicles / ice pops
+804: pork
+805: pork belly
+806: pork bones
+807: pork carnitas
+808: pork chop
+809: pork chops, bone-in
+810: pork chops, boneless
+811: pork cutlet
+812: pork hocks
+813: pork loin
+814: pork ribs
+815: pork ribs, back
+816: pork roast
+817: pork shoulder
+818: pork tenderloin
+819: potato
+820: potato starch
+821: potato, mini / baby
+822: potato, red
+823: potato, russet
+824: potato, yellow / yukon gold
+825: potatoes
+826: poultry seasoning
+827: powdered sugar
+828: prawns
+829: pre-marinated chicken
+830: pre-marinated pork tenderloin
+831: preserved lemon
+832: pretzels
+833: processed cheese / velveeta
+834: prosciutto
+835: protein bars
+836: protein powder, plant-based
+837: protein powder, whey
+838: provolone cheese
+839: prunes
+840: prunes / dried plums
+841: puff pastry (frozen)
+842: pumpkin
+843: pumpkin seeds
+844: quinoa
+845: radish
+846: radishes
+847: raisin bran
+848: raisins
+849: ramen noodles
+850: ranch dressing
+851: raspberries
+852: red bell pepper
+853: red chili flakes
+854: red chilies
+855: red curry paste
+856: red lentils
+857: red onion
+858: red pepper
+859: red pepper flakes
+860: red pepper paste
+861: red wine
+862: red wine vinegar
+863: refried beans
+864: relish
+865: relish, dill
+866: relish, sweet
+867: reshteh noodles
+868: rice
+869: rice cakes
+870: rice flour
+871: rice milk
+872: rice noodles
+873: rice paper wrappers
+874: rice vermicelli
+875: rice vinegar
+876: rice wine
+877: ricotta cheese
+878: rigatoni
+879: roasted peanuts
+880: roasted red peppers
+881: roasted red peppers (jarred)
+882: rolled oats
+883: romaine lettuce
+884: romaine lettuce leaves
+885: rose water
+886: rosemary
+887: rosemary, dried
+888: rotisserie chicken
+889: round rice noodles
+890: rye bread
+891: saffron
+892: sage
+893: sage, dried
+894: sahlab powder
+895: sake
+896: salami
+897: salmon
+898: salmon fillet
+899: salmon, atlantic (fresh)
+900: salmon, frozen fillet
+901: salmon, smoked
+902: salmon, sockeye (fresh)
+903: salsa
+904: salsa verde
+905: salsa, hot
+906: salsa, medium
+907: salsa, mild
+908: salt
+909: salt beef
+910: salt, kosher
+911: salt, sea
+912: salt, table
+913: saskatoon berries
+914: sauerkraut
+915: sausage
+916: scallops
+917: scotch bonnet peppers
+918: sea bream
+919: semolina
+920: serrano chiles
+921: serrano pepper
+922: sesame oil
+923: sesame paste
+924: sesame seeds
+925: shallots
+926: shiitake mushrooms
+927: short grain rice
+928: shortening
+929: shredded cabbage
+930: shredded cheese
+931: shredded chicken
+932: shredded lettuce
+933: shredded wheat
+934: shrimp
+935: shrimp paste
+936: shrimp, cooked (frozen)
+937: shrimp, raw (frozen)
+938: sichuan peppercorns
+939: smoked meat
+940: smoked paprika
+941: snap peas
+942: snow peas
+943: soba noodles
+944: soft boiled egg
+945: soft tofu
+946: sole fillet
+947: sorbet
+948: sour cherries
+949: sour cherry juice
+950: sour cream
+951: sour cream, light
+952: soy milk
+953: soy sauce
+954: soy sauce, low sodium
+955: spaghetti
+956: spaghetti squash
+957: special k
+958: spinach
+959: spinach, baby
+960: split peas, green (dried)
+961: split peas, yellow (dried)
+962: sports drink (gatorade / powerade)
+963: spring roll wrappers
+964: squid
+965: squid / calamari
+966: sriracha
+967: sriracha mayo
+968: stale bread
+969: star anise
+970: steamed egg cake
+971: stewing beef
+972: strawberries
+973: stuffing bread
+974: sugar
+975: sugar, brown (dark)
+976: sugar, brown (light)
+977: sugar, granulated (white)
+978: sugar, icing / powdered
+979: sugar, raw / turbinado
+980: sumac
+981: sunflower seed butter
+982: sunflower seeds
+983: sushi rice
+984: sweet chili sauce
+985: sweet potato
+986: sweet potato glass noodles
+987: sweet potatoes
+988: sweetened condensed milk
+989: swiss chard
+990: swiss cheese
+991: table cream (18%)
+992: taboon bread
+993: taco seasoning
+994: tahini
+995: tahini sauce
+996: takoyaki sauce
+997: tamarind paste
+998: tartar sauce
+999: tasajo beef
+1000: tea, black
+1001: tea, chai
+1002: tea, green
+1003: tea, herbal
+1004: tempeh
+1005: tempura bits
+1006: tenkasu
+1007: teriyaki sauce
+1008: thai basil
+1009: thousand island dressing
+1010: thyme
+1011: thyme, dried
+1012: tilapia fillet
+1013: toast
+1014: tofu
+1015: tofu puffs
+1016: tofu, firm
+1017: tofu, silken
+1018: tomatillos
+1019: tomato
+1020: tomato paste
+1021: tomato puree
+1022: tomato sauce
+1023: tomato sauce, marinara
+1024: tomato sauce, plain
+1025: tomato, cherry
+1026: tomato, grape
+1027: tomato, on the vine
+1028: tomato, roma
+1029: tomatoes
+1030: tonkatsu sauce
+1031: tortilla chips
+1032: tostadas
+1033: trail mix
+1034: trout fillet
+1035: tubular pasta
+1036: tuna
+1037: tuna, fresh / frozen steak
+1038: turkey
+1039: turkey breast
+1040: turkey, deli sliced
+1041: turmeric
+1042: turmeric, ground
+1043: turnip
+1044: tzatziki
+1045: udon noodles
+1046: unsweetened baking chocolate
+1047: urad dal
+1048: vanilla
+1049: vanilla custard powder
+1050: vanilla extract
+1051: vanilla ice cream
+1052: veal cutlets
+1053: vegetable broth
+1054: vegetable broth / stock
+1055: vegetable oil
+1056: vermicelli
+1057: vermicelli noodles
+1058: vinegar
+1059: vodka
+1060: wakame seaweed
+1061: walnuts
+1062: warm water
+1063: wasabi
+1064: water
+1065: water, sparkling / soda water
+1066: watermelon
+1067: wheat berries
+1068: wheat flour
+1069: wheat germ
+1070: wheat noodles
+1071: wheat sprouts
+1072: whipped cream
+1073: whipping cream
+1074: whipping cream (33%)
+1075: white beans
+1076: white beans / cannellini, canned
+1077: white bread
+1078: white bread roll
+1079: white onion
+1080: white pepper
+1081: white rice
+1082: white rice, long grain
+1083: white vinegar
+1084: white wine
+1085: white wine vinegar
+1086: whole chicken
+1087: whole duck
+1088: whole fish
+1089: whole milk
+1090: whole wheat flour
+1091: whole white fish
+1092: wide rice noodles
+1093: wieners / hot dogs
+1094: wild rice
+1095: wonton wrappers
+1096: wood ear mushrooms
+1097: worcestershire sauce
+1098: wraps / flatbreads
+1099: yam
+1100: yeast
+1101: yeast, active dry
+1102: yeast, instant
+1103: yellow mustard
+1104: yellow split peas
+1105: yellowtail
+1106: yogurt
+1107: yogurt, flavoured
+1108: yogurt, peach
+1109: yogurt, plain (regular)
+1110: yogurt, strawberry
+1111: yogurt, vanilla
+1112: za'atar
+1113: zaatar
+1114: zucchini

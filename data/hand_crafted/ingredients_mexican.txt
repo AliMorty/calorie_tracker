@@ -1,0 +1,769 @@
+# tacos al pastor
+pork shoulder
+dried guajillo chiles
+dried ancho chiles
+achiote paste
+white onion
+garlic
+pineapple
+corn tortillas
+cilantro
+lime
+salt
+oregano
+cumin
+white vinegar
+
+# tacos de carne asada
+flank steak
+corn tortillas
+lime
+garlic
+white onion
+cilantro
+salt
+black pepper
+jalapeño
+vegetable oil
+
+# tacos de pollo
+chicken breast
+corn tortillas
+lime
+garlic
+cumin
+chili powder
+salt
+black pepper
+cilantro
+white onion
+vegetable oil
+
+# tacos de carnitas
+pork shoulder
+lard
+orange
+bay leaves
+garlic
+salt
+cumin
+black pepper
+corn tortillas
+cilantro
+white onion
+lime
+salsa verde
+
+# tacos de barbacoa
+beef cheeks
+chipotle peppers in adobo
+dried ancho chiles
+dried guajillo chiles
+garlic
+white onion
+cumin
+oregano
+bay leaves
+lime
+apple cider vinegar
+salt
+corn tortillas
+cilantro
+
+# tacos de birria
+beef chuck
+dried guajillo chiles
+dried ancho chiles
+dried pasilla chiles
+cinnamon
+cloves
+black pepper
+cumin
+oregano
+garlic
+white onion
+tomatoes
+apple cider vinegar
+corn tortillas
+cilantro
+lime
+
+# quesadillas
+flour tortillas
+shredded cheese
+butter
+jalapeño
+white onion
+cilantro
+sour cream
+salsa
+avocado
+
+# cheese quesadillas
+corn tortillas
+oaxaca cheese
+vegetable oil
+epazote
+
+# enchiladas rojas
+corn tortillas
+shredded chicken
+dried guajillo chiles
+dried ancho chiles
+garlic
+white onion
+tomatoes
+vegetable oil
+chicken broth
+salt
+cumin
+oregano
+cotija cheese
+sour cream
+
+# enchiladas verdes
+corn tortillas
+shredded chicken
+tomatillos
+jalapeño
+serrano chiles
+garlic
+white onion
+cilantro
+chicken broth
+vegetable oil
+salt
+cotija cheese
+sour cream
+
+# enchiladas suizas
+corn tortillas
+shredded chicken
+tomatillos
+jalapeño
+garlic
+white onion
+heavy cream
+chicken broth
+vegetable oil
+salt
+mozzarella cheese
+sour cream
+
+# tamales de rajas con queso
+masa harina
+lard
+chicken broth
+baking powder
+salt
+poblano peppers
+oaxaca cheese
+dried corn husks
+
+# tamales de pollo en salsa verde
+masa harina
+lard
+chicken broth
+baking powder
+salt
+shredded chicken
+tomatillos
+jalapeño
+garlic
+white onion
+cilantro
+dried corn husks
+
+# tamales de cerdo en chile rojo
+masa harina
+lard
+chicken broth
+baking powder
+salt
+pork shoulder
+dried guajillo chiles
+dried ancho chiles
+garlic
+white onion
+cumin
+oregano
+dried corn husks
+
+# pozole rojo
+hominy
+pork shoulder
+dried guajillo chiles
+dried ancho chiles
+garlic
+white onion
+oregano
+cumin
+bay leaves
+salt
+chicken broth
+shredded cabbage
+radishes
+tostadas
+lime
+cilantro
+
+# pozole verde
+hominy
+pork shoulder
+tomatillos
+jalapeño
+serrano chiles
+pumpkin seeds
+garlic
+white onion
+cilantro
+epazote
+chicken broth
+salt
+shredded cabbage
+radishes
+tostadas
+lime
+
+# mole negro
+chicken
+dried mulato chiles
+dried ancho chiles
+dried pasilla chiles
+dried chipotle chiles
+dried guajillo chiles
+tomatoes
+tomatillos
+white onion
+garlic
+dark chocolate
+raisins
+almonds
+peanuts
+sesame seeds
+pumpkin seeds
+plantain
+bread
+tortilla chips
+chicken broth
+cumin
+cinnamon
+cloves
+black pepper
+thyme
+oregano
+lard
+salt
+sugar
+
+# mole rojo
+chicken
+dried guajillo chiles
+dried ancho chiles
+tomatoes
+white onion
+garlic
+sesame seeds
+pumpkin seeds
+almonds
+chocolate
+chicken broth
+lard
+cumin
+cloves
+cinnamon
+salt
+
+# chiles rellenos de carne
+poblano peppers
+ground beef
+tomatoes
+white onion
+garlic
+raisins
+almonds
+salt
+cumin
+black pepper
+eggs
+flour
+vegetable oil
+tomato sauce
+
+# chiles rellenos de queso
+poblano peppers
+oaxaca cheese
+eggs
+flour
+vegetable oil
+tomato sauce
+tomatoes
+white onion
+garlic
+salt
+oregano
+
+# frijoles charros
+pinto beans
+bacon
+chorizo
+ham
+jalapeño
+tomatoes
+white onion
+garlic
+cilantro
+salt
+lard
+
+# frijoles refritos
+pinto beans
+lard
+white onion
+garlic
+salt
+cumin
+
+# arroz rojo
+white rice
+tomatoes
+white onion
+garlic
+chicken broth
+vegetable oil
+salt
+carrots
+peas
+cilantro
+
+# arroz verde
+white rice
+poblano peppers
+tomatillos
+cilantro
+garlic
+white onion
+chicken broth
+vegetable oil
+salt
+
+# guacamole
+avocado
+lime
+white onion
+jalapeño
+cilantro
+tomatoes
+salt
+garlic
+
+# salsa roja
+tomatoes
+jalapeño
+serrano chiles
+white onion
+garlic
+cilantro
+salt
+lime
+
+# salsa verde
+tomatillos
+jalapeño
+serrano chiles
+white onion
+garlic
+cilantro
+salt
+lime
+
+# pico de gallo
+tomatoes
+white onion
+jalapeño
+cilantro
+lime
+salt
+
+# sopa de lima
+chicken
+lime
+corn tortillas
+tomatoes
+white onion
+garlic
+habanero pepper
+vegetable oil
+chicken broth
+salt
+black pepper
+cilantro
+
+# sopa azteca (tortilla soup)
+corn tortillas
+tomatoes
+dried pasilla chiles
+dried ancho chiles
+white onion
+garlic
+chicken broth
+vegetable oil
+salt
+cumin
+avocado
+sour cream
+cotija cheese
+shredded chicken
+
+# caldo tlalpeño
+chicken
+chickpeas
+chipotle peppers in adobo
+tomatoes
+white onion
+garlic
+epazote
+chicken broth
+salt
+avocado
+lime
+
+# menudo
+beef tripe
+hominy
+dried guajillo chiles
+dried ancho chiles
+garlic
+white onion
+oregano
+red pepper flakes
+salt
+lime
+cilantro
+
+# chile colorado
+beef chuck
+dried guajillo chiles
+dried ancho chiles
+garlic
+white onion
+cumin
+oregano
+beef broth
+vegetable oil
+salt
+flour
+
+# picadillo
+ground beef
+tomatoes
+white onion
+garlic
+carrots
+potatoes
+jalapeño
+raisins
+almonds
+cumin
+salt
+black pepper
+vegetable oil
+
+# tinga de pollo
+shredded chicken
+chipotle peppers in adobo
+tomatoes
+white onion
+garlic
+oregano
+salt
+vegetable oil
+chicken broth
+
+# cochinita pibil
+pork shoulder
+achiote paste
+orange juice
+lime
+garlic
+white onion
+oregano
+cumin
+black pepper
+cloves
+cinnamon
+banana leaves
+corn tortillas
+pickled red onion
+habanero chile
+
+# pollo en crema con rajas
+chicken thighs
+poblano peppers
+sour cream
+heavy cream
+white onion
+garlic
+salt
+black pepper
+vegetable oil
+chicken broth
+
+# milanesa de res
+beef cutlets
+breadcrumbs
+eggs
+flour
+salt
+black pepper
+garlic powder
+vegetable oil
+lime
+
+# huevos rancheros
+eggs
+corn tortillas
+tomatoes
+jalapeño
+white onion
+garlic
+vegetable oil
+salt
+refried beans
+cotija cheese
+cilantro
+
+# huevos a la mexicana
+eggs
+tomatoes
+white onion
+jalapeño
+vegetable oil
+salt
+cilantro
+
+# chilaquiles rojos
+corn tortillas
+dried guajillo chiles
+dried ancho chiles
+tomatoes
+white onion
+garlic
+chicken broth
+vegetable oil
+salt
+sour cream
+cotija cheese
+cilantro
+eggs
+
+# chilaquiles verdes
+corn tortillas
+tomatillos
+jalapeño
+serrano chiles
+white onion
+garlic
+cilantro
+chicken broth
+vegetable oil
+salt
+sour cream
+cotija cheese
+shredded chicken
+
+# nopales con huevo
+cactus paddles
+eggs
+white onion
+jalapeño
+tomatoes
+vegetable oil
+salt
+cilantro
+
+# flautas de pollo
+shredded chicken
+corn tortillas
+vegetable oil
+sour cream
+salsa verde
+cotija cheese
+shredded cabbage
+guacamole
+salt
+
+# tostadas de tinga
+tostadas
+shredded chicken
+chipotle peppers in adobo
+tomatoes
+white onion
+garlic
+refried beans
+avocado
+sour cream
+cotija cheese
+shredded lettuce
+lime
+oregano
+
+# sopes
+masa harina
+lard
+salt
+refried beans
+shredded chicken
+cotija cheese
+sour cream
+shredded lettuce
+salsa
+avocado
+
+# gorditas
+masa harina
+lard
+salt
+refried beans
+shredded chicken
+salsa
+oaxaca cheese
+chicharrón
+
+# tlayuda
+corn tortilla
+black bean paste
+asiento (pork fat)
+oaxaca cheese
+tasajo beef
+chorizo
+shredded cabbage
+avocado
+tomatoes
+white onion
+lime
+vegetable oil
+
+# torta de carnitas
+bolillo bread
+pork carnitas
+refried beans
+avocado
+jalapeño
+tomatoes
+white onion
+cilantro
+sour cream
+lime
+mayonnaise
+lettuce
+
+# torta ahogada
+bolillo bread
+pork carnitas
+refried beans
+tomatoes
+dried arbol chiles
+white onion
+garlic
+oregano
+salt
+lime
+cilantro
+
+# esquites
+corn kernels
+butter
+mayonnaise
+lime
+chili powder
+cotija cheese
+epazote
+salt
+white onion
+jalapeño
+
+# elote en vaso
+corn kernels
+butter
+mayonnaise
+lime
+chili powder
+cotija cheese
+salt
+hot sauce
+
+# arroz con leche
+white rice
+whole milk
+sugar
+cinnamon stick
+lime zest
+vanilla extract
+salt
+
+# churros
+flour
+water
+butter
+sugar
+salt
+eggs
+vegetable oil
+cinnamon
+
+# tres leches cake
+eggs
+flour
+sugar
+baking powder
+salt
+whole milk
+sweetened condensed milk
+evaporated milk
+heavy cream
+vanilla extract
+butter
+
+# pan dulce conchas
+flour
+sugar
+butter
+eggs
+milk
+yeast
+salt
+vanilla extract
+cinnamon
+cocoa powder
+
+# atole de chocolate
+masa harina
+cocoa powder
+sugar
+whole milk
+water
+cinnamon
+vanilla extract
+salt
+
+# horchata
+white rice
+whole milk
+sugar
+cinnamon
+vanilla extract
+water
+
+# agua de jamaica
+dried hibiscus flowers
+sugar
+water
+lime
+
+# agua fresca de tamarindo
+tamarind paste
+sugar
+water
+lime
+salt

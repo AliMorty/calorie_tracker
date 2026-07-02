@@ -1,0 +1,547 @@
+# Moussaka
+ground lamb
+ground beef
+eggplant
+potato
+onion
+garlic
+olive oil
+tomato
+tomato paste
+red wine
+cinnamon
+allspice
+nutmeg
+black pepper
+salt
+butter
+all-purpose flour
+whole milk
+eggs
+kefalotyri cheese
+parmesan cheese
+
+# Spanakopita (Spinach Pie)
+spinach
+feta cheese
+eggs
+onion
+green onion
+fresh dill
+fresh parsley
+olive oil
+phyllo dough
+butter
+nutmeg
+black pepper
+salt
+
+# Tiropita (Cheese Pie)
+feta cheese
+ricotta cheese
+eggs
+phyllo dough
+butter
+olive oil
+black pepper
+nutmeg
+fresh mint
+
+# Pastitsio (Greek Baked Pasta)
+tubular pasta
+ground beef
+ground lamb
+onion
+garlic
+tomato paste
+crushed tomatoes
+red wine
+cinnamon
+allspice
+cloves
+olive oil
+butter
+all-purpose flour
+whole milk
+eggs
+kefalotyri cheese
+parmesan cheese
+nutmeg
+salt
+black pepper
+
+# Greek Salad (Horiatiki)
+tomato
+cucumber
+red onion
+green bell pepper
+kalamata olives
+feta cheese
+dried oregano
+olive oil
+red wine vinegar
+salt
+
+# Tzatziki
+greek yogurt
+cucumber
+garlic
+fresh dill
+olive oil
+lemon juice
+white wine vinegar
+salt
+black pepper
+
+# Souvlaki
+pork tenderloin
+lemon juice
+olive oil
+garlic
+dried oregano
+dried thyme
+salt
+black pepper
+pita bread
+tomato
+red onion
+tzatziki
+
+# Gyros
+pork shoulder
+chicken thighs
+onion
+garlic
+dried oregano
+paprika
+cumin
+coriander
+cinnamon
+olive oil
+lemon juice
+salt
+black pepper
+pita bread
+tomato
+red onion
+tzatziki
+french fries
+
+# Chicken Souvlaki
+chicken breast
+lemon juice
+olive oil
+garlic
+dried oregano
+dried thyme
+salt
+black pepper
+pita bread
+tomato
+red onion
+tzatziki
+
+# Fasolada (White Bean Soup)
+dried white beans
+onion
+carrot
+celery
+tomato
+tomato paste
+olive oil
+fresh parsley
+dried oregano
+salt
+black pepper
+water
+
+# Avgolemono Soup
+chicken broth
+chicken breast
+orzo pasta
+eggs
+lemon juice
+fresh dill
+salt
+white pepper
+olive oil
+
+# Lamb Kleftiko
+lamb shoulder
+garlic
+lemon juice
+olive oil
+dried oregano
+fresh rosemary
+tomato
+potato
+red onion
+feta cheese
+kalamata olives
+salt
+black pepper
+
+# Stifado (Beef Stew)
+beef chuck
+pearl onions
+garlic
+tomato paste
+crushed tomatoes
+red wine
+red wine vinegar
+olive oil
+cinnamon stick
+cloves
+allspice berries
+bay leaves
+fresh rosemary
+salt
+black pepper
+
+# Gigantes Plaki (Baked Giant Beans)
+giant lima beans
+onion
+garlic
+tomato
+tomato paste
+olive oil
+fresh parsley
+dried oregano
+celery
+carrot
+sugar
+salt
+black pepper
+water
+
+# Dolmades (Stuffed Grape Leaves)
+grape leaves
+short grain rice
+ground beef
+ground lamb
+onion
+fresh parsley
+fresh dill
+fresh mint
+lemon juice
+olive oil
+salt
+black pepper
+water
+
+# Gemista (Stuffed Tomatoes and Peppers)
+tomatoes
+green bell peppers
+short grain rice
+ground beef
+onion
+garlic
+fresh parsley
+fresh mint
+olive oil
+tomato paste
+salt
+black pepper
+
+# Horta Vrasta (Boiled Greens)
+dandelion greens
+chicory
+spinach
+olive oil
+lemon juice
+salt
+
+# Melitzanosalata (Eggplant Dip)
+eggplant
+garlic
+olive oil
+lemon juice
+fresh parsley
+red onion
+red wine vinegar
+salt
+black pepper
+
+# Htipiti (Spicy Feta Dip)
+feta cheese
+roasted red peppers
+olive oil
+lemon juice
+chili flakes
+dried oregano
+black pepper
+
+# Skordalia (Garlic Dip)
+stale bread
+garlic
+olive oil
+lemon juice
+white wine vinegar
+salt
+water
+potato
+
+# Kolokithokeftedes (Zucchini Fritters)
+zucchini
+feta cheese
+eggs
+all-purpose flour
+fresh mint
+fresh dill
+green onion
+olive oil
+salt
+black pepper
+
+# Revithada (Chickpea Soup)
+dried chickpeas
+onion
+olive oil
+fresh rosemary
+lemon juice
+salt
+black pepper
+water
+
+# Psarosoupa (Fish Soup)
+whole fish
+potato
+carrot
+celery
+onion
+lemon juice
+olive oil
+fresh parsley
+salt
+black pepper
+water
+
+# Baked Sea Bream (Tsipoura sto Fourno)
+sea bream
+lemon juice
+olive oil
+garlic
+fresh rosemary
+fresh thyme
+tomato
+potato
+white wine
+salt
+black pepper
+
+# Fried Calamari
+squid
+all-purpose flour
+olive oil
+lemon juice
+salt
+black pepper
+dried oregano
+
+# Prawn Saganaki
+prawns
+feta cheese
+crushed tomatoes
+onion
+garlic
+olive oil
+ouzo
+fresh parsley
+chili flakes
+salt
+black pepper
+
+# Briami (Greek Ratatouille)
+zucchini
+eggplant
+potato
+tomato
+red onion
+garlic
+green bell pepper
+olive oil
+fresh parsley
+dried oregano
+salt
+black pepper
+
+# Magiritsa (Easter Lamb Soup)
+lamb offal
+lamb intestines
+green onion
+fresh dill
+leek
+butter
+olive oil
+short grain rice
+eggs
+lemon juice
+salt
+black pepper
+water
+
+# Keftedes (Fried Meatballs)
+ground beef
+ground pork
+onion
+garlic
+stale bread
+eggs
+fresh parsley
+dried mint
+dried oregano
+cinnamon
+olive oil
+salt
+black pepper
+
+# Soutzoukakia (Smyrna Meatballs in Sauce)
+ground beef
+ground pork
+garlic
+cumin
+cinnamon
+cloves
+red wine
+stale bread
+eggs
+olive oil
+crushed tomatoes
+onion
+tomato paste
+sugar
+salt
+black pepper
+
+# Papoutsakia (Stuffed Eggplant)
+eggplant
+ground beef
+onion
+garlic
+tomato
+tomato paste
+red wine
+cinnamon
+olive oil
+butter
+all-purpose flour
+whole milk
+eggs
+kefalotyri cheese
+nutmeg
+salt
+black pepper
+
+# Lamb Fricassee
+lamb shoulder
+leeks
+lettuce
+fresh dill
+green onion
+eggs
+lemon juice
+olive oil
+salt
+black pepper
+water
+
+# Pasteli (Sesame Honey Bar)
+sesame seeds
+honey
+
+# Loukoumades (Honey Doughnuts)
+all-purpose flour
+instant yeast
+warm water
+sugar
+salt
+olive oil
+honey
+cinnamon
+walnuts
+
+# Galaktoboureko (Custard Pie)
+semolina
+whole milk
+sugar
+eggs
+butter
+phyllo dough
+vanilla extract
+lemon zest
+water
+honey
+
+# Baklava
+phyllo dough
+walnuts
+pistachios
+almonds
+butter
+cinnamon
+cloves
+sugar
+water
+honey
+lemon juice
+orange blossom water
+
+# Rizogalo (Rice Pudding)
+short grain rice
+whole milk
+sugar
+vanilla extract
+cinnamon
+lemon zest
+
+# Vasilopita (New Year's Bread)
+all-purpose flour
+sugar
+butter
+eggs
+milk
+orange zest
+brandy
+instant yeast
+salt
+mahlab
+mastic
+
+# Tsoureki (Greek Easter Bread)
+all-purpose flour
+sugar
+butter
+eggs
+milk
+instant yeast
+mastic
+mahlab
+orange zest
+salt
+sesame seeds
+
+# Kourabiedes (Butter Cookies)
+butter
+powdered sugar
+egg yolk
+brandy
+vanilla extract
+all-purpose flour
+almonds
+baking powder
+salt
+
+# Melomakarona (Honey Cookies)
+all-purpose flour
+semolina
+olive oil
+orange juice
+orange zest
+brandy
+baking powder
+baking soda
+cinnamon
+cloves
+honey
+water
+walnuts

@@ -1,0 +1,684 @@
+# DAIRY
+milk, skim (0%)
+milk, 1%
+milk, 2%
+milk, whole (3.25%)
+milk, chocolate
+buttermilk
+evaporated milk
+sweetened condensed milk
+cottage cheese, 1%
+cottage cheese, 2%
+cottage cheese, 4%
+cream cheese
+cream cheese, light
+cheddar cheese
+cheddar cheese, old
+cheddar cheese, marble
+mozzarella cheese
+mozzarella cheese, fresh
+parmesan cheese
+feta cheese
+gouda cheese
+brie cheese
+swiss cheese
+colby cheese
+havarti cheese
+provolone cheese
+ricotta cheese
+processed cheese / velveeta
+greek yogurt, 0%
+greek yogurt, 2%
+greek yogurt, 5%
+yogurt, plain (regular)
+yogurt, flavoured
+yogurt, strawberry
+yogurt, vanilla
+yogurt, peach
+sour cream
+sour cream, light
+butter, salted
+butter, unsalted
+margarine
+heavy cream (35%)
+whipping cream (33%)
+half and half (10% cream)
+table cream (18%)
+coffee cream
+whipped cream
+
+# EGGS
+eggs, large (whole)
+egg whites
+egg yolks
+
+# POULTRY
+chicken breast, boneless skinless
+chicken thigh, boneless skinless
+chicken thigh, bone-in skin-on
+chicken drumstick
+chicken wings
+whole chicken
+ground chicken
+ground turkey
+turkey breast
+turkey, deli sliced
+rotisserie chicken
+
+# RED MEAT
+ground beef, lean (17% fat)
+ground beef, extra lean (10% fat)
+ground beef, regular (27% fat)
+beef steak, sirloin
+beef steak, ribeye
+beef steak, strip loin
+beef steak, tenderloin (filet mignon)
+beef steak, flank
+beef roast, chuck
+beef roast, sirloin tip
+beef short ribs
+beef back ribs
+stewing beef
+ground pork
+pork chops, bone-in
+pork chops, boneless
+pork tenderloin
+pork shoulder
+pork ribs, back
+pork roast
+pork belly
+lamb chops
+ground lamb
+lamb shoulder
+veal cutlets
+
+# PROCESSED MEATS
+bacon
+bacon, turkey
+ham, sliced (deli)
+salami
+pepperoni
+bologna
+wieners / hot dogs
+kielbasa sausage
+italian sausage, mild
+italian sausage, hot
+breakfast sausage links
+breakfast sausage patties
+prosciutto
+smoked meat
+corned beef
+
+# FISH & SEAFOOD
+salmon, atlantic (fresh)
+salmon, sockeye (fresh)
+salmon, frozen fillet
+salmon, smoked
+tuna, fresh / frozen steak
+tilapia fillet
+cod fillet
+halibut fillet
+sole fillet
+haddock fillet
+trout fillet
+catfish fillet
+mahi mahi fillet
+shrimp, raw (frozen)
+shrimp, cooked (frozen)
+scallops
+crab
+lobster
+mussels
+clams
+squid / calamari
+canned tuna, in water
+canned tuna, in oil
+canned salmon
+canned sardines
+canned mackerel
+canned crab
+fish sticks (frozen)
+breaded shrimp (frozen)
+
+# FRUITS
+apple, gala
+apple, fuji
+apple, granny smith
+apple, honeycrisp
+apple, red delicious
+banana
+orange
+mandarin / clementine
+grapefruit
+lemon
+lime
+pear
+peach
+nectarine
+plum
+apricot
+mango
+pineapple
+watermelon
+cantaloupe
+honeydew melon
+grapes, red
+grapes, green
+strawberries
+blueberries
+raspberries
+blackberries
+cherries
+kiwi
+pomegranate
+fig
+papaya
+guava
+avocado
+coconut
+dried cranberries
+raisins
+prunes / dried plums
+dried apricots
+dried mango
+dates
+frozen strawberries
+frozen blueberries
+frozen raspberries
+frozen mixed berries
+frozen mango chunks
+frozen peach slices
+
+# VEGETABLES
+onion, yellow
+onion, red
+onion, white
+green onion / scallion
+shallots
+garlic
+leek
+potato, russet
+potato, yellow / yukon gold
+potato, red
+potato, mini / baby
+sweet potato
+yam
+carrot
+celery
+broccoli
+cauliflower
+brussels sprouts
+cabbage, green
+cabbage, red
+cabbage, napa
+kale
+spinach
+spinach, baby
+lettuce, romaine
+lettuce, iceberg
+lettuce, green leaf
+lettuce, butter / bibb
+arugula
+mixed greens
+swiss chard
+collard greens
+bok choy
+tomato
+tomato, cherry
+tomato, grape
+tomato, roma
+tomato, on the vine
+cucumber, english
+cucumber, mini / persian
+bell pepper, red
+bell pepper, green
+bell pepper, yellow
+bell pepper, orange
+jalapeno pepper
+serrano pepper
+poblano pepper
+mushroom, white button
+mushroom, cremini / brown
+mushroom, portobello
+mushroom, shiitake
+mushroom, oyster
+zucchini
+eggplant / aubergine
+corn on the cob
+green beans
+snap peas
+snow peas
+asparagus
+beets
+parsnips
+turnip
+radish
+fennel
+celery root / celeriac
+artichoke
+butternut squash
+acorn squash
+spaghetti squash
+pumpkin
+ginger root
+
+# FRESH HERBS
+parsley
+cilantro
+basil
+dill
+mint
+thyme
+rosemary
+chives
+
+# FROZEN VEGETABLES
+frozen vegetables, mixed
+frozen broccoli
+frozen cauliflower
+frozen corn
+frozen peas
+frozen spinach
+frozen stir fry vegetables
+frozen edamame
+
+# GRAINS & PASTA
+white rice, long grain
+brown rice, long grain
+basmati rice
+jasmine rice
+arborio rice (risotto)
+wild rice
+spaghetti
+penne
+macaroni
+fusilli
+rigatoni
+fettuccine
+linguine
+angel hair pasta
+lasagna noodles
+egg noodles
+ramen noodles
+rice noodles
+udon noodles
+soba noodles
+couscous
+quinoa
+farro
+barley, pearl
+bulgur wheat
+polenta / cornmeal
+oats, rolled / old fashioned
+oats, quick
+oats, steel cut
+granola
+
+# BREAD & BAKERY
+bread, white sandwich
+bread, whole wheat sandwich
+bread, multigrain
+bread, sourdough
+bread, rye
+bread, pita
+naan
+baguette / french bread
+ciabatta
+bagels
+english muffins
+hamburger buns
+hot dog buns
+croissants
+flour tortillas, small
+flour tortillas, large / burrito size
+corn tortillas
+wraps / flatbreads
+
+# BREAKFAST CEREALS
+corn flakes
+cheerios
+raisin bran
+shredded wheat
+special k
+all-bran
+cream of wheat
+
+# CRACKERS
+crackers, soda
+crackers, whole grain
+crackers, ritz
+rice cakes
+
+# BEANS & LEGUMES
+kidney beans, canned
+black beans, canned
+chickpeas / garbanzo beans, canned
+pinto beans, canned
+navy beans, canned
+white beans / cannellini, canned
+lentils, green (dried)
+lentils, red (dried)
+lentils, canned
+split peas, green (dried)
+split peas, yellow (dried)
+black-eyed peas, canned
+lima beans, canned
+baked beans, canned
+tofu, firm
+tofu, silken
+tempeh
+
+# FROZEN MEALS & CONVENIENCE
+frozen pizza, pepperoni
+frozen pizza, cheese
+frozen pizza, vegetable
+frozen fries / french fries
+frozen onion rings
+frozen chicken nuggets
+frozen fish sticks
+frozen burritos
+frozen lasagna
+frozen pot pie
+frozen waffles
+frozen pancakes
+frozen spring rolls
+frozen samosas
+frozen dumplings / potstickers
+frozen mac and cheese
+frozen chicken fingers
+
+# CANNED & JARRED GOODS
+canned tomatoes, diced
+canned tomatoes, whole
+canned tomatoes, crushed
+tomato paste
+tomato sauce, plain
+tomato sauce, marinara
+pasta sauce, tomato basil
+pasta sauce, arrabiata
+pasta sauce, alfredo
+canned corn
+canned green beans
+canned peas
+canned mushrooms
+canned artichoke hearts
+canned coconut milk
+canned pumpkin puree
+chicken broth / stock
+beef broth / stock
+vegetable broth / stock
+canned chicken
+applesauce
+pineapple, canned chunks
+peaches, canned
+mandarin oranges, canned
+olives, black (canned)
+olives, green (jarred)
+roasted red peppers (jarred)
+pickles, dill
+pickles, bread and butter
+capers
+anchovies
+salsa, mild
+salsa, medium
+salsa, hot
+
+# SNACKS
+chips, regular / plain
+chips, barbecue
+chips, salt and vinegar
+chips, sour cream and onion
+chips, ketchup
+chips, all dressed
+tortilla chips
+pretzels
+popcorn, microwave
+popcorn, pre-popped (plain)
+popcorn, pre-popped (butter)
+granola bars, regular
+granola bars, chewy
+protein bars
+trail mix
+almonds, raw
+almonds, roasted
+walnuts
+peanuts, roasted
+cashews
+pecans
+pistachios
+hazelnuts
+mixed nuts
+sunflower seeds
+pumpkin seeds
+dark chocolate bar
+milk chocolate bar
+dried cranberries
+raisins
+dried mango
+gummy bears / gummies
+cookies, chocolate chip
+cookies, oatmeal raisin
+cookies, oreo
+cookies, digestive
+fig newtons
+
+# DRINKS
+orange juice
+orange juice, pulp-free
+apple juice
+cranberry juice
+cranberry cocktail
+grape juice
+pineapple juice
+grapefruit juice
+lemonade
+water, sparkling / soda water
+coconut water
+sports drink (gatorade / powerade)
+iced tea
+coffee, ground
+coffee, whole bean
+coffee, instant
+espresso pods (nespresso / keurig)
+k-cups
+tea, black
+tea, green
+tea, herbal
+tea, chai
+hot chocolate mix
+almond milk
+oat milk
+soy milk
+rice milk
+coconut milk beverage
+kombucha
+
+# CONDIMENTS & SAUCES
+ketchup
+mustard, yellow
+mustard, dijon
+mustard, whole grain
+mayonnaise
+mayonnaise, light
+miracle whip
+relish, sweet
+relish, dill
+hot sauce
+sriracha
+bbq sauce
+worcestershire sauce
+soy sauce
+soy sauce, low sodium
+teriyaki sauce
+oyster sauce
+fish sauce
+hoisin sauce
+sweet chili sauce
+tahini
+ranch dressing
+caesar dressing
+italian dressing
+balsamic vinaigrette
+honey mustard dressing
+thousand island dressing
+white wine vinegar
+red wine vinegar
+apple cider vinegar
+balsamic vinegar
+rice vinegar
+olive oil, extra virgin
+olive oil, light
+vegetable oil
+canola oil
+coconut oil
+avocado oil
+sesame oil
+non-stick cooking spray
+lard / shortening
+ghee
+
+# BAKING
+flour, all-purpose
+flour, whole wheat
+flour, bread
+flour, self-rising
+sugar, granulated (white)
+sugar, icing / powdered
+sugar, brown (light)
+sugar, brown (dark)
+sugar, raw / turbinado
+baking powder
+baking soda
+cornstarch
+yeast, instant
+yeast, active dry
+vanilla extract
+almond extract
+honey
+maple syrup
+molasses
+agave syrup
+corn syrup
+cocoa powder, unsweetened
+chocolate chips, semi-sweet
+chocolate chips, dark
+chocolate chips, milk
+chocolate chips, white
+dark chocolate, baking
+unsweetened baking chocolate
+cream of tartar
+gelatin, unflavoured
+pectin
+breadcrumbs, plain
+breadcrumbs, panko
+oat bran
+wheat germ
+flaxseed, ground
+chia seeds
+hemp seeds
+protein powder, whey
+protein powder, plant-based
+peanut butter
+peanut butter, natural
+almond butter
+sunflower seed butter
+
+# SPICES & SEASONINGS
+salt, table
+salt, kosher
+salt, sea
+black pepper, ground
+garlic powder
+onion powder
+cumin, ground
+paprika, sweet
+paprika, smoked
+chili powder
+cayenne pepper
+crushed red pepper flakes
+cinnamon, ground
+nutmeg, ground
+ginger, ground
+allspice
+cloves, ground
+cardamom, ground
+turmeric, ground
+curry powder
+garam masala
+oregano, dried
+basil, dried
+thyme, dried
+rosemary, dried
+bay leaves
+dill, dried
+parsley, dried
+cilantro, dried
+marjoram, dried
+sage, dried
+italian seasoning
+herbes de provence
+poultry seasoning
+old bay seasoning
+cajun seasoning
+montreal steak spice
+garlic salt
+celery salt
+mustard powder
+five spice powder
+everything bagel seasoning
+nutritional yeast
+lemon pepper seasoning
+
+# INTERNATIONAL / ETHNIC AISLE
+miso paste, white
+miso paste, red
+coconut aminos
+mirin (rice wine)
+black bean paste
+gochujang (korean chili paste)
+kimchi
+nori sheets
+rice paper wrappers
+wonton wrappers
+spring roll wrappers
+pad thai sauce
+curry paste, red
+curry paste, green
+curry paste, yellow
+coconut cream
+lemongrass paste
+chipotles in adobo
+enchilada sauce
+taco seasoning
+refried beans
+canned green chiles
+pita chips
+plantain chips
+matcha powder
+sriracha mayo
+
+# REFRIGERATED / DELI
+hummus, store-bought
+guacamole, store-bought
+fresh pasta (refrigerated)
+gnocchi (refrigerated)
+pizza dough (refrigerated)
+pie crust, pre-made
+puff pastry (frozen)
+crescent roll dough (refrigerated)
+biscuit dough (refrigerated)
+sauerkraut
+pre-marinated chicken
+pre-marinated pork tenderloin
+
+# ICE CREAM & FROZEN DESSERTS
+ice cream, vanilla
+ice cream, chocolate
+ice cream, strawberry
+ice cream, neapolitan
+ice cream, cookie dough
+ice cream, rocky road
+gelato
+frozen yogurt
+popsicles / ice pops
+sorbet

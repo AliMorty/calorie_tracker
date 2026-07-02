@@ -1,0 +1,913 @@
+achiote paste                              | -- NONE --
+acorn squash, cooked                       |  56.0 cal | Squash, winter, acorn, cooked, baked, without salt
+agave syrup                                | 310.0 cal | Sweetener, syrup, agave
+akkawi cheese                              | -- NONE --
+all-bran                                   | -- NONE --
+all-purpose flour                          | 364.0 cal | Wheat flour, white, all-purpose, enriched, bleached
+allspice                                   | 263.0 cal | Spices, allspice, ground
+almond                                     | 579.0 cal | Nuts, almonds
+almond butter                              | 614.0 cal | Nuts, almond butter, plain, without salt added
+almond extract                             | -- NONE --
+almond milk                                |  15.0 cal | Beverages, almond milk, unsweetened, shelf stable
+amchur                                     | -- NONE --
+anchovies                                  | 210.0 cal | Fish, anchovy, european, canned in oil, drained solids
+anchovy broth                              |  16.0 cal | Fish broth
+angel hair pasta, cooked                   | 158.0 cal | Pasta, cooked, enriched, without added salt
+apple, raw                                 |  52.0 cal | Apples, raw, with skin (Includes foods for USDA's Food Distribution Program)
+apple cider vinegar                        |  21.0 cal | Vinegar, cider
+apple juice                                |  46.0 cal | Apple juice, canned or bottled, unsweetened, without added ascorbic acid
+applesauce                                 |  42.0 cal | Applesauce, canned, unsweetened, without added ascorbic acid (Includes foods for USDA's Food Distribution Program)
+apricot, raw                               |  48.0 cal | Apricots, raw
+arborio rice (risotto), cooked             | 130.0 cal | Rice, white, short-grain, enriched, cooked
+artichoke, cooked                          |  53.0 cal | Artichokes, (globe or french), cooked, boiled, drained, without salt
+arugula, raw                               |  25.0 cal | Arugula, raw
+asiento (pork fat)                         | 626.0 cal | Pork, fresh, separable fat, cooked
+asparagus, cooked                          |  22.0 cal | Asparagus, cooked, boiled, drained
+avocado, raw                               | 160.0 cal | Avocados, raw, all commercial varieties
+avocado oil                                | 884.0 cal | Oil, avocado
+back bacon                                 | 110.0 cal | Canadian bacon, unprepared
+bacon                                      | 393.0 cal | Pork, cured, bacon, unprepared
+bacon, turkey                              | 226.0 cal | Bacon, turkey, unprepared
+bagels                                     | 264.0 cal | Bagels, plain, enriched, with calcium propionate (includes onion, poppy, sesame)
+baguette                                   | -- NONE --
+baked beans, canned                        |  94.0 cal | Beans, baked, canned, plain or vegetarian
+baking powder                              |  53.0 cal | Leavening agents, baking powder, double-acting, sodium aluminum sulfate
+baking soda                                |   0.0 cal | Leavening agents, baking soda
+balsamic vinaigrette                       | -- NONE --
+balsamic vinegar                           |  88.0 cal | Vinegar, balsamic
+bamboo shoots, cooked                      |  12.0 cal | Bamboo shoots, cooked, boiled, drained, without salt
+banana, raw                                |  89.0 cal | Bananas, raw
+banana leaves                              | -- NONE --
+barberries (zereshk)                       | -- NONE --
+barley, pearl, cooked                      | 123.0 cal | Barley, pearled, cooked
+basil                                      |  23.0 cal | Basil, fresh
+basil, dried                               | 233.0 cal | Spices, basil, dried
+basmati rice, cooked                       | 130.0 cal | Rice, white, long-grain, regular, enriched, cooked
+bay leaves                                 | 313.0 cal | Spices, bay leaf
+bbq sauce                                  | 172.0 cal | Sauce, barbecue
+bean sprouts, raw                          |  30.0 cal | Mung beans, mature seeds, sprouted, raw
+beef, cooked                               | 240.0 cal | Beef, ground, unspecified fat content, cooked
+beef back ribs, cooked                     | 360.0 cal | Beef, rib, back ribs, bone-in, separable lean and fat, trimmed to 0" fat, all grades, cooked, braised
+beef bones, cooked                         | -- NONE --
+beef brisket, cooked                       | 218.0 cal | Beef, brisket, whole, separable lean only, trimmed to 0" fat, all grades, cooked, braised
+beef broth                                 |   7.0 cal | Soup, beef broth or bouillon canned, ready-to-serve
+beef cheeks, cooked                        | -- NONE --
+beef chuck, cooked                         | 191.0 cal | Beef, chuck for stew, separable lean and fat, all grades, cooked, braised
+beef cutlets, cooked                       | -- NONE --
+beef gravy                                 |  53.0 cal | Gravy, beef, canned, ready-to-serve
+beef ribeye, cooked                        | 199.0 cal | Beef, ribeye filet, boneless, separable lean only, trimmed to 0" fat, all grades, cooked, grilled
+beef roast, cooked                         | 171.0 cal | Beef, chuck, clod roast, separable lean only, trimmed to 0" fat, choice, cooked, roasted
+beef roast, sirloin tip, cooked            | 174.0 cal | Beef, round, tip round, roast, separable lean only, trimmed to 0" fat, all grades, cooked, roasted
+beef shank, cooked                         | 201.0 cal | Beef, shank crosscuts, separable lean only, trimmed to 1/4" fat, choice, cooked, simmered
+beef short ribs, cooked                    | 295.0 cal | Beef, rib, shortribs, separable lean only, choice, cooked, braised
+beef sirloin, cooked                       | 183.0 cal | Beef, top sirloin, steak, separable lean only, trimmed to 0" fat, all grades, cooked, broiled
+beef steak, flank, cooked                  | 186.0 cal | Beef, flank, steak, separable lean only, trimmed to 0" fat, all grades, cooked, broiled
+beef steak, strip loin, cooked             | -- NONE --
+beef steak, tenderloin (filet mignon), cooked | 200.0 cal | Beef, tenderloin, steak, separable lean only, trimmed to 1/8" fat, all grades, cooked, broiled
+beef tripe, cooked                         |  94.0 cal | Beef, variety meats and by-products, tripe, cooked, simmered
+beer                                       |  43.0 cal | Alcoholic beverage, beer, regular, all
+beet, cooked                               |  44.0 cal | Beets, cooked, boiled, drained
+bell pepper, raw                           |  20.0 cal | Peppers, sweet, green, raw
+biscuit dough (refrigerated)               | 307.0 cal | Biscuits, plain or buttermilk, refrigerated dough, higher fat
+black bean paste                           | -- NONE --
+black beans, canned                        |  91.0 cal | Beans, black turtle, mature seeds, canned
+black garlic oil                           | -- NONE --
+black pepper                               | 251.0 cal | Spices, pepper, black
+black tea                                  |   1.0 cal | Beverages, tea, black, brewed, prepared with tap water
+black vinegar                              | -- NONE --
+black-eyed peas, canned                    | -- NONE --
+blackberries, raw                          |  43.0 cal | Blackberries, raw
+blueberries, raw                           |  57.0 cal | Blueberries, raw
+bok choy, cooked                           | -- NONE --
+bolillo bread                              | -- NONE --
+bologna                                    | 308.0 cal | Bologna, beef and pork
+bonito flakes                              | -- NONE --
+brandy                                     | -- NONE --
+bread                                      | 274.0 cal | Bread, wheat
+bread, multigrain                          | -- NONE --
+bread, sourdough                           | 272.0 cal | Bread, french or vienna (includes sourdough)
+bread, whole wheat sandwich                | 252.0 cal | Bread, whole-wheat, commercially prepared
+breadcrumbs                                | -- NONE --
+breaded shrimp (frozen)                    | 242.0 cal | Crustaceans, shrimp, mixed species, cooked, breaded and fried
+breakfast sausage links                    | 288.0 cal | Pork sausage, link/patty, unprepared
+breakfast sausage patties                  | 288.0 cal | Pork sausage, link/patty, unprepared
+brie cheese                                | 334.0 cal | Cheese, brie
+broccoli, cooked                           |  35.0 cal | Broccoli, cooked, boiled, drained, without salt
+broken rice, cooked                        | 130.0 cal | Rice, white, long-grain, regular, enriched, cooked
+brown rice, cooked                         | 123.0 cal | Rice, brown, long-grain, cooked (Includes foods for USDA's Food Distribution Program)
+brown sugar                                | 380.0 cal | Sugars, brown
+brussels sprouts, cooked                   |  36.0 cal | Brussels sprouts, cooked, boiled, drained, without salt
+bulgur wheat, cooked                       |  83.0 cal | Bulgur, cooked
+burger buns                                | -- NONE --
+butter                                     | 717.0 cal | Butter, salted
+buttermilk                                 |  40.0 cal | Milk, buttermilk, fluid, cultured, lowfat
+butternut squash, cooked                   |  40.0 cal | Squash, winter, butternut, cooked, baked, without salt
+cabbage, raw                               |  25.0 cal | Cabbage, raw
+cactus paddles, cooked                     | -- NONE --
+caesar dressing                            | 542.0 cal | Salad dressing, caesar dressing, regular
+cajun seasoning                            | -- NONE --
+canned artichoke hearts                    | -- NONE --
+canned chicken                             | 185.0 cal | Chicken, canned, no broth
+canned corn                                |  67.0 cal | Corn, sweet, yellow, canned, whole kernel, drained solids
+canned crab                                |  83.0 cal | Crustaceans, crab, blue, canned
+canned green beans                         |  21.0 cal | Beans, snap, green, canned, regular pack, drained solids
+canned green chiles                        |  21.0 cal | Peppers, chili, green, canned
+canned mackerel                            | 156.0 cal | Fish, mackerel, jack, canned, drained solids
+canned mushrooms                           |  25.0 cal | Mushrooms, canned, drained solids
+canned peas                                |  69.0 cal | Peas, green, canned, no salt added, drained solids
+canned pumpkin puree                       |  34.0 cal | Pumpkin, canned, without salt
+canned salmon                              | 138.0 cal | Fish, salmon, pink, canned, drained solids
+canned sardines                            | 208.0 cal | Fish, sardine, Atlantic, canned in oil, drained solids with bone
+canned tomatoes, diced                     | -- NONE --
+canned tomatoes, whole                     | -- NONE --
+canned tuna, in oil                        | 198.0 cal | Fish, tuna, light, canned in oil, drained solids
+canned tuna, in water                      |  86.0 cal | Fish, tuna, light, canned in water, drained solids (Includes foods for USDA's Food Distribution Program)
+canola oil                                 | 884.0 cal | Oil, canola
+cantaloupe, raw                            |  34.0 cal | Melons, cantaloupe, raw
+capers                                     |  23.0 cal | Capers, canned
+caraway seeds                              | 333.0 cal | Spices, caraway seed
+cardamom                                   | 311.0 cal | Spices, cardamom
+cardamom, ground                           | 311.0 cal | Spices, cardamom
+carrot, raw                                |  41.0 cal | Carrots, raw
+carrot juice                               |  40.0 cal | Carrot juice, canned
+cashews                                    | 553.0 cal | Nuts, cashew nuts, raw
+catfish fillet, cooked                     | 105.0 cal | Fish, catfish, channel, wild, cooked, dry heat
+cauliflower, raw                           |  25.0 cal | Cauliflower, raw
+cayenne pepper                             | 318.0 cal | Spices, pepper, red or cayenne
+celery, raw                                |  14.0 cal | Celery, raw
+celery root / celeriac, raw                |  42.0 cal | Celeriac, raw
+celery salt                                | -- NONE --
+celery seed                                | 392.0 cal | Spices, celery seed
+celery stalk, raw                          |  14.0 cal | Celery, raw
+century egg                                | -- NONE --
+cheddar cheese                             | 410.0 cal | Cheese, cheddar, sharp, sliced
+cheddar cheese powder                      | -- NONE --
+cheerios                                   | 372.0 cal | Cereals ready-to-eat, GENERAL MILLS, CHEERIOS
+cheese curds                               | -- NONE --
+cherries, raw                              |  63.0 cal | Cherries, sweet, raw
+cherry juice                               |  59.0 cal | Cherry juice, tart
+cherry tomatoes, raw                       |  18.0 cal | Tomatoes, red, ripe, raw, year round average
+chia seeds                                 | 486.0 cal | Seeds, chia seeds, dried
+chicharrón                                 | -- NONE --
+chicken, cooked                            | 167.0 cal | Chicken, roasting, meat only, cooked, roasted
+chicken breast, cooked                     | 165.0 cal | Chicken, broilers or fryers, breast, meat only, cooked, roasted
+chicken broth                              |   6.0 cal | Soup, chicken broth, ready-to-serve
+chicken drumstick, cooked                  | 191.0 cal | Chicken, broilers or fryers, drumstick, meat and skin, cooked, roasted
+chicken skin, cooked                       | 454.0 cal | Chicken, broilers or fryers, skin only, cooked, roasted
+chicken thigh, bone-in skin-on, cooked     | 232.0 cal | Chicken, broilers or fryers, thigh, meat and skin, cooked, roasted
+chicken thigh, boneless skinless, cooked   | 179.0 cal | Chicken, broilers or fryers, thigh, meat only, cooked, roasted
+chicken thighs, cooked                     | 232.0 cal | Chicken, broilers or fryers, thigh, meat and skin, cooked, roasted
+chicken wings, cooked                      | 254.0 cal | Chicken, broilers or fryers, wing, meat and skin, cooked, roasted
+chickpea flour                             | 387.0 cal | Chickpea flour (besan)
+chickpeas, cooked                          | 164.0 cal | Chickpeas (garbanzo beans, bengal gram), mature seeds, cooked, boiled, without salt
+chicory, raw                               |  23.0 cal | Chicory greens, raw
+chili                                      | 103.0 cal | Chili with beans, canned
+chili flakes                               | -- NONE --
+chili oil                                  | -- NONE --
+chili paste                                | -- NONE --
+chili powder                               | 282.0 cal | Spices, chili powder
+chili sauce                                |  92.0 cal | Sauce, tomato chili sauce, bottled, with salt
+chinese broccoli, cooked                   |  22.0 cal | Broccoli, chinese, cooked
+chipotle peppers in adobo                  | -- NONE --
+chips, all dressed                         | -- NONE --
+chips, barbecue                            | 487.0 cal | Snacks, potato chips, barbecue-flavor
+chips, ketchup                             | -- NONE --
+chips, regular / plain                     | 532.0 cal | Snacks, potato chips, plain, salted
+chips, salt and vinegar                    | 532.0 cal | Snacks, potato chips, plain, salted
+chips, sour cream and onion                | 531.0 cal | Snacks, potato chips, sour-cream-and-onion-flavor
+chives                                     |  30.0 cal | Chives, raw
+chocolate                                  | 535.0 cal | Candies, milk chocolate
+chocolate chips                            | -- NONE --
+chocolate chips, dark                      | 579.0 cal | Chocolate, dark, 60-69% cacao solids
+chocolate chips, milk                      | 535.0 cal | Candies, milk chocolate
+chocolate chips, semi-sweet                | 507.0 cal | Candies, sweet chocolate
+chocolate chips, white                     | 539.0 cal | Candies, white chocolate
+chopped walnuts                            | 654.0 cal | Nuts, walnuts, english
+chorizo, cooked                            | -- NONE --
+chow mein noodles, cooked                  | 471.0 cal | Noodles, chinese, chow mein
+ciabatta                                   | -- NONE --
+cilantro, raw                              |  23.0 cal | Coriander (cilantro) leaves, raw
+cilantro root, raw                         | -- NONE --
+cilantro, dried                            | -- NONE --
+cinnamon                                   | 247.0 cal | Spices, cinnamon, ground
+cinnamon stick                             | 247.0 cal | Spices, cinnamon, ground
+clamato juice                              | -- NONE --
+clams, cooked                              | 148.0 cal | Mollusks, clam, mixed species, cooked, moist heat
+cloves                                     | 274.0 cal | Spices, cloves, ground
+cocoa powder                               | 228.0 cal | Cocoa, dry powder, unsweetened
+coconut                                    | 354.0 cal | Nuts, coconut meat, raw
+coconut aminos                             | -- NONE --
+coconut cream                              | 330.0 cal | Nuts, coconut cream, raw (liquid expressed from grated meat)
+coconut flakes                             | 456.0 cal | Nuts, coconut meat, dried (desiccated), sweetened, flaked, packaged
+coconut milk                               | 197.0 cal | Nuts, coconut milk, canned (liquid expressed from grated meat and water)
+coconut milk beverage                      |  31.0 cal | Beverages, coconut milk, sweetened, fortified with calcium, vitamins A, B12, D2
+coconut oil                                | 892.0 cal | Oil, coconut
+coconut water                              |  18.0 cal | Beverages, Coconut water, ready-to-drink, unsweetened
+cod, cooked                                | 105.0 cal | Fish, cod, Atlantic, cooked, dry heat
+coffee cream                               | 195.0 cal | Cream, fluid, light (coffee cream or table cream)
+coffee, ground                             | -- NONE --
+coffee, instant                            | 353.0 cal | Beverages, coffee, instant, regular, powder
+coffee, whole bean                         | -- NONE --
+colby cheese                               | 394.0 cal | Cheese, colby
+collard greens, cooked                     |  33.0 cal | Collards, cooked, boiled, drained, without salt
+condensed milk                             | 321.0 cal | Milk, canned, condensed, sweetened
+cookies, chocolate chip                    | 492.0 cal | Cookies, chocolate chip, commercially prepared, regular, higher fat, enriched
+cookies, digestive                         | -- NONE --
+cookies, oatmeal raisin                    | 441.0 cal | Cookies, oatmeal, with raisins
+cookies, oreo                              | -- NONE --
+coriander                                  |  23.0 cal | Coriander (cilantro) leaves, raw
+coriander powder                           | 298.0 cal | Spices, coriander seed
+coriander seeds                            | 298.0 cal | Spices, coriander seed
+corn, cooked                               |  96.0 cal | Corn, sweet, yellow, cooked, boiled, drained, without salt
+corn flakes                                | 384.0 cal | Cereals ready-to-eat, RALSTON Corn Flakes
+corn on the cob, cooked                    |  94.0 cal | Corn, sweet, yellow, frozen, kernels on cob, cooked, boiled, drained, without salt
+corn syrup                                 | 283.0 cal | Syrups, corn, light
+corn tortilla                              | 218.0 cal | Tortillas, ready-to-bake or -fry, corn
+corned beef                                | 250.0 cal | Beef, cured, corned beef, canned
+cornmeal                                   | 362.0 cal | Cornmeal, whole-grain, yellow
+cornstarch                                 | 381.0 cal | Cornstarch
+cotija cheese                              | 366.0 cal | Cheese, mexican, queso cotija
+cottage cheese, 1%                         |  72.0 cal | Cheese, cottage, lowfat, 1% milkfat
+cottage cheese, 2%                         |  81.0 cal | Cheese, cottage, lowfat, 2% milkfat
+cottage cheese, 4%                         |  98.0 cal | Cheese, cottage, creamed, large or small curd
+couscous, cooked                           | 112.0 cal | Couscous, cooked
+crab, cooked                               |  83.0 cal | Crustaceans, crab, blue, cooked, moist heat
+crackers, ritz                             | 492.0 cal | Nabisco, Nabisco Ritz Crackers
+crackers, soda                             | 418.0 cal | Crackers, saltines (includes oyster, soda, soup)
+crackers, whole grain                      | 427.0 cal | Crackers, whole-wheat
+cranberries, raw                           |  46.0 cal | Cranberries, raw
+cranberry cocktail                         |  54.0 cal | Cranberry juice cocktail, bottled
+cranberry juice                            |  46.0 cal | Cranberry juice, unsweetened
+cranberry sauce                            | 159.0 cal | Cranberry sauce, canned, sweetened
+cream                                      | 340.0 cal | Cream, fluid, heavy whipping
+cream cheese                               | 350.0 cal | Cheese, cream
+cream cheese, light                        | 208.0 cal | Cheese, cream, low fat
+cream of mushroom soup                     |  79.0 cal | Soup, cream of mushroom, canned, condensed
+cream of tartar                            | 258.0 cal | Leavening agents, cream of tartar
+cream of wheat, cooked                     |  50.0 cal | Cereals, CREAM OF WHEAT, regular (10 minute), cooked with water, without salt
+crescent roll dough (refrigerated), cooked | -- NONE --
+croissants                                 | 406.0 cal | Croissants, butter
+croutons                                   | 407.0 cal | Croutons, plain
+crushed tomatoes                           |  32.0 cal | Tomatoes, crushed, canned
+cucumber, raw                              |  15.0 cal | Cucumber, with peel, raw
+cumin                                      | 375.0 cal | Spices, cumin seed
+cumin seeds                                | 375.0 cal | Spices, cumin seed
+cumin, ground                              | 375.0 cal | Spices, cumin seed
+curing salt                                | -- NONE --
+currants, raw                              |  63.0 cal | Currants, european black, raw
+curry leaves                               | -- NONE --
+curry paste, green                         | -- NONE --
+curry paste, red                           | -- NONE --
+curry paste, yellow                        | -- NONE --
+curry powder                               | 325.0 cal | Spices, curry powder
+curry roux                                 | -- NONE --
+daikon radish, raw                         |  18.0 cal | Radishes, oriental, raw
+dandelion greens, raw                      |  45.0 cal | Dandelion greens, raw
+dark chocolate                             | 550.0 cal | Candies, chocolate, dark, NFS (45-59% cacao solids 90%; 60-69% cacao solids 5%; 70-85% cacao solids 5%)
+dark chocolate, baking                     | 579.0 cal | Chocolate, dark, 60-69% cacao solids
+dark soy sauce                             | -- NONE --
+dashi broth                                |  16.0 cal | Fish broth
+dates                                      | 277.0 cal | Dates, medjool
+dijon mustard                              | -- NONE --
+dill                                       |  43.0 cal | Dill weed, fresh
+dill pickles                               |  12.0 cal | Pickles, cucumber, dill or kosher dill
+dill, dried                                | 253.0 cal | Spices, dill weed, dried
+doubanjiang                                | -- NONE --
+dried ancho chiles                         | 281.0 cal | Peppers, ancho, dried
+dried apricots                             | 241.0 cal | Apricots, dried, sulfured, uncooked
+dried arbol chiles                         | 324.0 cal | Peppers, hot chile, sun-dried
+dried chickpeas, cooked                    | 164.0 cal | Chickpeas (garbanzo beans, bengal gram), mature seeds, cooked, boiled, without salt
+dried chili peppers                        | 324.0 cal | Peppers, hot chile, sun-dried
+dried chipotle chiles                      | 324.0 cal | Peppers, hot chile, sun-dried
+dried corn husks                           | -- NONE --
+dried cranberries                          | 308.0 cal | Cranberries, dried, sweetened (Includes foods for USDA's Food Distribution Program)
+dried fenugreek leaves                     | -- NONE --
+dried guajillo chiles                      | 324.0 cal | Peppers, hot chile, sun-dried
+dried hibiscus flowers                     | -- NONE --
+dried limes (limu omani)                   | -- NONE --
+dried mango                                | 319.0 cal | Mango, dried, sweetened
+dried mint                                 | 285.0 cal | Spearmint, dried
+dried mulato chiles                        | 324.0 cal | Peppers, hot chile, sun-dried
+dried oregano                              | 265.0 cal | Spices, oregano, dried
+dried pasilla chiles                       | 345.0 cal | Peppers, pasilla, dried
+dried rose petals                          | -- NONE --
+dried rosemary                             | 331.0 cal | Spices, rosemary, dried
+dried shallot (mousir)                     | 348.0 cal | Shallots, freeze-dried
+dried shrimp                               | -- NONE --
+dried thyme                                | 276.0 cal | Spices, thyme, dried
+dried white beans, cooked                  | 139.0 cal | Beans, white, mature seeds, cooked, boiled, without salt
+dumpling wrappers, cooked                  | -- NONE --
+edamame, cooked                            | 121.0 cal | Edamame, frozen, prepared
+egg, cooked                                | 155.0 cal | Egg, whole, cooked, hard-boiled
+egg noodles, cooked                        | 138.0 cal | Noodles, egg, enriched, cooked
+egg roll wrappers, cooked                  | -- NONE --
+egg whites, cooked                         | -- NONE --
+egg yolk, cooked                           | -- NONE --
+eggplant, cooked                           |  35.0 cal | Eggplant, cooked, boiled, drained, without salt
+enchilada sauce                            |  30.0 cal | Sauce, enchilada, red, mild, ready to serve
+english muffins                            | 235.0 cal | English muffins, plain, enriched, without calcium propionate(includes sourdough)
+epazote                                    |  32.0 cal | Epazote, raw
+espresso pods (nespresso / keurig)         |   9.0 cal | Beverages, coffee, brewed, espresso, restaurant-prepared
+evaporated milk                            | 134.0 cal | Milk, canned, evaporated, with added vitamin A
+everything bagel seasoning                 | -- NONE --
+farro, cooked                              | 127.0 cal | Spelt, cooked
+fava beans, cooked                         | 110.0 cal | Broadbeans (fava beans), mature seeds, cooked, boiled, without salt
+fennel, raw                                |  31.0 cal | Fennel, bulb, raw
+fennel seeds                               | 345.0 cal | Spices, fennel seed
+fenugreek leaves                           | -- NONE --
+fenugreek seeds                            | 323.0 cal | Spices, fenugreek seed
+fermented black beans                      | -- NONE --
+fermented soybean paste                    | -- NONE --
+feta cheese                                | 265.0 cal | Cheese, feta
+fettuccine, cooked                         | -- NONE --
+fig, raw                                   |  74.0 cal | Figs, raw
+fig newtons                                | 348.0 cal | Cookies, fig bars
+fine bulgur wheat, cooked                  |  83.0 cal | Bulgur, cooked
+fish cake                                  | -- NONE --
+fish cakes                                 | -- NONE --
+fish sauce                                 |  35.0 cal | Sauce, fish, ready-to-serve
+fish sticks (frozen)                       | 277.0 cal | Fish, fish sticks, frozen, prepared
+five spice powder                          | -- NONE --
+flaxseed, ground                           | 534.0 cal | Seeds, flaxseed
+flour tortillas                            | 297.0 cal | Tortillas, ready-to-bake or -fry, flour, shelf stable
+flour, bread                               | 361.0 cal | Wheat flour, white, bread, enriched
+flour, self-rising                         | 354.0 cal | Wheat flour, white, all-purpose, self-rising, enriched
+flour, whole wheat                         | 340.0 cal | Wheat flour, whole-grain (Includes foods for USDA's Food Distribution Program)
+freekeh, cooked                            | -- NONE --
+french fries                               | 289.0 cal | Restaurant, family style, french fries
+fresh pasta (refrigerated), cooked         | 131.0 cal | Pasta, fresh-refrigerated, plain, cooked
+fresh tarragon                             | -- NONE --
+fried onion                                | 123.0 cal | Onions, yellow, sauteed
+fried shallots                             | -- NONE --
+frozen blueberries, raw                    |  57.0 cal | Blueberries, raw
+frozen broccoli, cooked                    |  28.0 cal | Broccoli, frozen, spears, cooked, boiled, drained, without salt
+frozen burritos                            | 239.0 cal | Burrito, beef and bean, frozen
+frozen cauliflower, cooked                 |  19.0 cal | Cauliflower, frozen, cooked, boiled, drained, without salt
+frozen chicken fingers                     | 240.0 cal | Chicken tenders, breaded, frozen, prepared
+frozen chicken nuggets                     | 261.0 cal | Chicken, nuggets, white meat, precooked, frozen, not reheated
+frozen corn, cooked                        |  94.0 cal | Corn, sweet, yellow, frozen, kernels on cob, cooked, boiled, drained, without salt
+frozen dumplings / potstickers             | 136.0 cal | Potsticker or wonton, pork and vegetable, frozen, unprepared
+frozen edamame, cooked                     | -- NONE --
+frozen lasagna                             | 124.0 cal | Lasagna with meat & sauce, frozen entree
+frozen mac and cheese                      | 149.0 cal | Macaroni and cheese, frozen entree
+frozen mango chunks, raw                   |  60.0 cal | Mangos, raw
+frozen mixed berries, raw                  | -- NONE --
+frozen onion rings                         | 258.0 cal | Onion rings, breaded, par fried, frozen, unprepared
+frozen pancakes                            | 233.0 cal | Pancakes plain, frozen, ready-to-heat (includes buttermilk)
+frozen peach slices, raw                   |  39.0 cal | Peaches, yellow, raw
+frozen peas, cooked                        |  78.0 cal | Peas, green, frozen, cooked, boiled, drained, without salt
+frozen pizza, cheese                       | 268.0 cal | Pizza, cheese topping, regular crust, frozen, cooked
+frozen pizza, pepperoni                    | 274.0 cal | Pizza, pepperoni topping, regular crust, frozen, cooked
+frozen pizza, vegetable, cooked            | -- NONE --
+frozen pot pie, cooked                     | -- NONE --
+frozen raspberries, raw                    |  52.0 cal | Raspberries, raw
+frozen samosas, cooked                     | -- NONE --
+frozen spinach, cooked                     |  34.0 cal | Spinach, frozen, chopped or leaf, cooked, boiled, drained, without salt
+frozen spring rolls, cooked                | -- NONE --
+frozen stir fry vegetables, cooked         |  65.0 cal | Vegetables, mixed, frozen, cooked, boiled, drained, without salt
+frozen strawberries                        |  35.0 cal | Strawberries, frozen, unsweetened (Includes foods for USDA's Food Distribution Program)
+frozen vegetables, mixed, cooked           |  65.0 cal | Vegetables, mixed, frozen, cooked, boiled, drained, without salt
+frozen waffles, cooked                     | -- NONE --
+frozen yogurt                              | 127.0 cal | Frozen yogurts, flavors other than chocolate
+full-fat yogurt                            | -- NONE --
+fusilli, cooked                            | -- NONE --
+galangal                                   | -- NONE --
+garam masala                               | -- NONE --
+garlic                                     | 149.0 cal | Garlic, raw
+garlic powder                              | 331.0 cal | Spices, garlic powder
+garlic salt                                | -- NONE --
+gelatin, unflavoured                       | 335.0 cal | Gelatins, dry powder, unsweetened
+gelato                                     | -- NONE --
+ghee                                       | 900.0 cal | Butter, Clarified butter (ghee)
+giant lima beans, cooked                   | 115.0 cal | Lima beans, large, mature seeds, cooked, boiled, without salt
+ginger                                     |  80.0 cal | Ginger root, raw
+ginger, ground                             | 335.0 cal | Spices, ginger, ground
+glutinous rice, cooked                     |  97.0 cal | Rice, white, glutinous, unenriched, cooked
+glutinous rice flour                       | -- NONE --
+gnocchi (refrigerated), cooked             | 131.0 cal | Pasta, fresh-refrigerated, plain, cooked
+gochugaru                                  | -- NONE --
+gochujang                                  | -- NONE --
+gouda cheese                               | 356.0 cal | Cheese, gouda
+graham cracker crumbs                      | 430.0 cal | Cookies, graham crackers, plain or honey (includes cinnamon)
+granola                                    | 489.0 cal | Cereals ready-to-eat, granola, homemade
+granola bars, chewy                        | 412.0 cal | Snacks, granola bar, chewy, reduced sugar, all flavors
+granola bars, regular                      | 443.0 cal | Snacks, granola bars, soft, uncoated, plain
+grape juice                                |  60.0 cal | Grape juice, canned or bottled, unsweetened, without added ascorbic acid
+grape leaves, cooked                       |  69.0 cal | Grape leaves, canned
+grapefruit, raw                            |  32.0 cal | Grapefruit, raw, pink and red and white, all areas
+grapefruit juice                           |  39.0 cal | Grapefruit juice, white, raw
+grapes, green, raw                         |  69.0 cal | Grapes, red or green (European type, such as Thompson seedless), raw
+gravy                                      | 367.0 cal | Gravy, brown, dry
+greek yogurt                               |  73.0 cal | Yogurt, Greek, plain, lowfat
+greek yogurt, 0%                           |  54.0 cal | Yogurt, Greek, nonfat, plain, CHOBANI
+greek yogurt, 2%                           |  73.0 cal | Yogurt, Greek, plain, lowfat
+greek yogurt, 5%                           |  97.0 cal | Yogurt, Greek, plain, whole milk
+green beans, cooked                        |  35.0 cal | Beans, snap, green, cooked, boiled, drained, without salt
+green chilies                              | -- NONE --
+green curry paste                          | -- NONE --
+green olives                               | 145.0 cal | Olives, pickled, canned or bottled, green
+green onion, raw                           |  34.0 cal | Onions, welsh, raw
+grilled pork, cooked                       | -- NONE --
+ground beef, cooked                        | 240.0 cal | Beef, ground, unspecified fat content, cooked
+ground beef, extra lean (10% fat), cooked  | 214.0 cal | Beef, ground, 90% lean meat / 10% fat, loaf, cooked, baked
+ground beef, lean (17% fat), cooked        | 240.0 cal | Beef, ground, 85% lean meat / 15% fat, loaf, cooked, baked
+ground beef, regular (27% fat), cooked     | 254.0 cal | Beef, ground, 75% lean meat / 25% fat, loaf, cooked, baked
+ground chicken, cooked                     | 189.0 cal | Chicken, ground, crumbles, cooked, pan-browned
+ground lamb, cooked                        | 283.0 cal | Lamb, ground, cooked, broiled
+ground pork, cooked                        | 297.0 cal | Pork, fresh, ground, cooked
+ground turkey, cooked                      | 203.0 cal | Turkey, Ground, cooked
+guacamole                                  | -- NONE --
+guava, raw                                 |  68.0 cal | Guavas, common, raw
+gummy bears / gummies                      | -- NONE --
+gyoza wrappers, cooked                     | -- NONE --
+habanero chile, raw                        | -- NONE --
+haddock fillet, cooked                     |  90.0 cal | Fish, haddock, cooked, dry heat
+half and half (10% cream)                  | 131.0 cal | Cream, fluid, half and half
+halibut fillet, cooked                     | 111.0 cal | Fish, halibut, Atlantic and Pacific, cooked, dry heat
+ham                                        | 164.0 cal | Ham, sliced, regular (approximately 11% fat)
+ham hock, cooked                           | 232.0 cal | Pork, fresh, leg (ham), shank half, separable lean and fat, cooked, roasted
+hard-boiled egg, cooked                    | 155.0 cal | Egg, whole, cooked, hard-boiled
+harissa                                    | -- NONE --
+havarti cheese                             | -- NONE --
+hazelnuts                                  | 628.0 cal | Nuts, hazelnuts or filberts
+head cheese                                | -- NONE --
+heavy cream                                | 340.0 cal | Cream, fluid, heavy whipping
+hemp seeds                                 | 553.0 cal | Seeds, hemp seed, hulled
+herbes de provence                         | -- NONE --
+hoisin sauce                               | 220.0 cal | Sauce, hoisin, ready-to-serve
+hominy, cooked                             |  72.0 cal | Hominy, canned, white
+honey                                      | 304.0 cal | Honey
+honey mustard dressing                     | 464.0 cal | Salad dressing, honey mustard, regular
+honeydew melon, raw                        |  36.0 cal | Melons, honeydew, raw
+hot chocolate mix                          | 400.0 cal | Cocoa mix, NESTLE, Rich Chocolate Hot Cocoa Mix
+hot dog buns                               | -- NONE --
+hot dogs                                   | -- NONE --
+hot sauce                                  |  11.0 cal | Sauce, ready-to-serve, pepper or hot
+hummus, store-bought                       | 237.0 cal | Hummus, commercial
+ice cream                                  | 207.0 cal | Ice creams, vanilla
+ice cream, chocolate                       | 216.0 cal | Ice creams, chocolate
+ice cream, cookie dough                    | -- NONE --
+ice cream, neapolitan                      | -- NONE --
+ice cream, rocky road                      | -- NONE --
+ice cream, strawberry                      | 192.0 cal | Ice creams, strawberry
+ice cream, vanilla                         | 207.0 cal | Ice creams, vanilla
+iced tea                                   | -- NONE --
+imitation crab                             |  95.0 cal | Crustaceans, crab, alaska king, imitation, made from surimi
+instant yeast                              | -- NONE --
+italian dressing                           | 240.0 cal | Salad dressing, italian dressing, commercial, regular
+italian sausage, hot, cooked               | -- NONE --
+italian sausage, mild, cooked              | 324.0 cal | Sausage, Italian, pork, mild, cooked, pan-fried
+italian seasoning                          | -- NONE --
+jalapeno pepper, raw                       |  29.0 cal | Peppers, jalapeno, raw
+jameed                                     | -- NONE --
+jasmine rice, cooked                       | 130.0 cal | Rice, white, long-grain, regular, enriched, cooked
+jute leaves, cooked                        |  37.0 cal | Jute, potherb, cooked, boiled, drained, without salt
+k-cups                                     | -- NONE --
+kalamata olives                            | -- NONE --
+kale, raw                                  |  35.0 cal | Kale, raw
+kashk (whey)                               | -- NONE --
+kashkaval cheese                           | 357.0 cal | Cheese, edam
+kashmiri chili                             |  40.0 cal | Peppers, hot chili, red, raw
+kataifi dough, cooked                      | -- NONE --
+kataifi pastry                             | -- NONE --
+kecap manis                                | -- NONE --
+kefalotyri cheese                          | 387.0 cal | Cheese, romano
+ketchup                                    | -- NONE --
+kidney beans, cooked                       | 127.0 cal | Beans, kidney, all types, mature seeds, cooked, boiled, without salt
+kidney beans, canned                       |  84.0 cal | Beans, kidney, all types, mature seeds, canned
+kielbasa sausage, cooked                   | 337.0 cal | Kielbasa, fully cooked, grilled
+kimchi                                     |  15.0 cal | Cabbage, kimchi
+kiwi, raw                                  |  61.0 cal | Kiwifruit, green, raw
+kombucha                                   | -- NONE --
+laksa paste                                | -- NONE --
+lamb, cooked                               | 283.0 cal | Lamb, ground, cooked, broiled
+lamb broth                                 | -- NONE --
+lamb chops, cooked                         | 332.0 cal | Lamb, New Zealand, imported, loin chop, separable lean and fat, cooked, fast fried
+lamb intestines, cooked                    | -- NONE --
+lamb leg, cooked                           | 191.0 cal | Lamb, leg, whole (shank and sirloin), separable lean only, trimmed to 1/4" fat, choice, cooked, roasted
+lamb loin, cooked                          | 216.0 cal | Lamb, loin, separable lean only, trimmed to 1/4" fat, choice, cooked, broiled
+lamb offal, cooked                         | -- NONE --
+lamb ribs, cooked                          | 361.0 cal | Lamb, rib, separable lean and fat, trimmed to 1/4" fat, choice, cooked, broiled
+lamb shoulder, cooked                      | 192.0 cal | Lamb, New Zealand, imported, square-cut shoulder, separable lean only, cooked, slow roasted
+lard                                       | 902.0 cal | Lard
+lard / shortening                          | 884.0 cal | Shortening, vegetable, household, composite
+lasagna noodles, cooked                    | -- NONE --
+lavash bread                               | -- NONE --
+leek, cooked                               |  31.0 cal | Leeks, (bulb and lower leaf-portion), cooked, boiled, drained, without salt
+lemon, raw                                 |  29.0 cal | Lemons, raw, without peel
+lemon juice                                |  22.0 cal | Lemon juice, raw
+lemon pepper seasoning                     | -- NONE --
+lemon zest                                 |  47.0 cal | Lemon peel, raw
+lemonade                                   |  40.0 cal | Lemonade, frozen concentrate, white, prepared with water
+lemongrass                                 | -- NONE --
+lemongrass paste                           | -- NONE --
+lentils, cooked                            | 116.0 cal | Lentils, mature seeds, cooked, boiled, without salt
+lentils, canned                            | 116.0 cal | Lentils, mature seeds, cooked, boiled, without salt
+lentils, green (dried), cooked             | 116.0 cal | Lentils, mature seeds, cooked, boiled, without salt
+lentils, red (dried), cooked               | 116.0 cal | Lentils, mature seeds, cooked, boiled, without salt
+lettuce, raw                               |  14.0 cal | Lettuce, iceberg (includes crisphead types), raw
+lettuce, butter / bibb, raw                |  13.0 cal | Lettuce, butterhead (includes boston and bibb types), raw
+lettuce, green leaf, raw                   |  15.0 cal | Lettuce, green leaf, raw
+lettuce, iceberg, raw                      |  14.0 cal | Lettuce, iceberg (includes crisphead types), raw
+lettuce, romaine, raw                      |  17.0 cal | Lettuce, cos or romaine, raw
+lima beans, canned                         |  79.0 cal | Lima beans, large, mature seeds, canned
+lime, raw                                  |  30.0 cal | Limes, raw
+lime juice                                 |  25.0 cal | Lime juice, raw
+lime leaves                                | -- NONE --
+lime zest                                  |  30.0 cal | Limes, raw
+linguine, cooked                           | -- NONE --
+lo mein noodles, cooked                    | 138.0 cal | Noodles, egg, enriched, cooked
+lobster, cooked                            |  89.0 cal | Crustaceans, lobster, northern, cooked, moist heat
+lobster meat, cooked                       | -- NONE --
+macaroni, cooked                           | -- NONE --
+mahi mahi fillet, cooked                   | -- NONE --
+mahlab                                     | -- NONE --
+malt vinegar                               | -- NONE --
+maltose                                    | -- NONE --
+mandarin / clementine, raw                 |  47.0 cal | Clementines, raw
+mandarin oranges, canned                   |  37.0 cal | Tangerines, (mandarin oranges), canned, juice pack
+mandarin pancakes                          | -- NONE --
+mango, raw                                 |  60.0 cal | Mangos, raw
+maple syrup                                | 260.0 cal | Syrups, maple
+margarine                                  | 713.0 cal | Margarine, regular, 80% fat, composite, tub, with salt
+marjoram, dried                            | 271.0 cal | Spices, marjoram, dried
+masa harina                                | 363.0 cal | Corn flour, masa, enriched, white
+massaman curry paste                       | -- NONE --
+mastic                                     | -- NONE --
+matcha powder                              | -- NONE --
+mayonnaise                                 | 680.0 cal | Salad dressing, mayonnaise, regular
+mayonnaise, light                          | 238.0 cal | Salad dressing, mayonnaise, light
+milk                                       | -- NONE --
+milk chocolate bar                         | 531.0 cal | Candies, SYMPHONY Milk Chocolate Bar
+milk, 1%                                   |  42.0 cal | Milk, lowfat, fluid, 1% milkfat, with added vitamin A and vitamin D
+milk, 2%                                   |  50.0 cal | Milk, reduced fat, fluid, 2% milkfat, with added vitamin A and vitamin D
+milk, chocolate                            |  83.0 cal | Milk, chocolate, fluid, commercial, whole, with added vitamin A and vitamin D
+milk, skim (0%)                            |  34.0 cal | Milk, nonfat, fluid, with added vitamin A and vitamin D (fat free or skim)
+milk, whole (3.25%)                        |  61.0 cal | Milk, whole, 3.25% milkfat, with added vitamin D
+mint, raw                                  | -- NONE --
+miracle whip                               |  84.0 cal | Salad dressing, KRAFT MIRACLE WHIP FREE Nonfat Dressing
+mirin                                      | -- NONE --
+miso paste                                 | 198.0 cal | Miso
+miso paste, red                            | 198.0 cal | Miso
+miso paste, white                          | 198.0 cal | Miso
+mixed greens, raw                          | -- NONE --
+mixed nuts                                 | 607.0 cal | Nuts, mixed nuts, dry roasted, with peanuts, without salt added
+molasses                                   | 290.0 cal | Molasses
+molokhia leaves, cooked                    | -- NONE --
+montreal steak spice                       | -- NONE --
+mozzarella cheese                          | 299.0 cal | Cheese, mozzarella, whole milk
+mozzarella cheese, fresh                   | 299.0 cal | Cheese, mozzarella, whole milk
+mung beans, cooked                         | 105.0 cal | Mung beans, mature seeds, cooked, boiled, without salt
+mushroom, cremini / brown, cooked          | -- NONE --
+mushroom, oyster, cooked                   | -- NONE --
+mushroom, portobello, cooked               |  29.0 cal | Mushrooms, portabella, grilled
+mushroom, shiitake, cooked                 |  56.0 cal | Mushrooms, shiitake, cooked, without salt
+mushroom, white button, cooked             |  28.0 cal | Mushrooms, white, cooked, boiled, drained, without salt
+mushrooms, cooked                          |  28.0 cal | Mushrooms, white, cooked, boiled, drained, without salt
+mussels, cooked                            | 172.0 cal | Mollusks, mussel, blue, cooked, moist heat
+mustard                                    |  60.0 cal | Mustard, prepared, yellow
+mustard powder                             | -- NONE --
+mustard seeds                              | 508.0 cal | Spices, mustard seed, ground
+mustard, whole grain                       |  60.0 cal | Mustard, prepared, yellow
+mustard, yellow                            |  60.0 cal | Mustard, prepared, yellow
+naan                                       | 291.0 cal | Bread, naan, plain, commercially prepared, refrigerated
+nabulsi cheese                             | -- NONE --
+navy beans, cooked                         | 140.0 cal | Beans, navy, mature seeds, cooked, boiled, without salt
+navy beans, canned                         | 113.0 cal | Beans, navy, mature seeds, canned
+nectarine, raw                             |  44.0 cal | Nectarines, raw
+nigella seeds                              | -- NONE --
+non-stick cooking spray                    | 792.0 cal | Oil, PAM cooking spray, original
+nori                                       | -- NONE --
+nutmeg                                     | 525.0 cal | Spices, nutmeg, ground
+nutritional yeast                          | -- NONE --
+oat bran, cooked                           |  40.0 cal | Oat bran, cooked
+oat milk                                   | -- NONE --
+oats, quick, cooked                        |  71.0 cal | Cereals, oats, regular and quick, unenriched, cooked with water (includes boiling and microwaving), without salt
+oats, rolled / old fashioned, cooked       |  71.0 cal | Cereals, oats, regular and quick, unenriched, cooked with water (includes boiling and microwaving), without salt
+oats, steel cut, cooked                    | -- NONE --
+oaxaca cheese                              | -- NONE --
+octopus, cooked                            | 164.0 cal | Mollusks, octopus, common, cooked, moist heat
+okonomiyaki sauce                          | -- NONE --
+old bay seasoning                          | -- NONE --
+olive oil                                  | 884.0 cal | Oil, olive, salad or cooking
+olives                                     | 116.0 cal | Olives, ripe, canned (small-extra large)
+olives, black (canned)                     | 116.0 cal | Olives, ripe, canned (small-extra large)
+onion, cooked                              |  44.0 cal | Onions, cooked, boiled, drained, without salt
+onion powder                               | 341.0 cal | Spices, onion powder
+orange, raw                                |  47.0 cal | Oranges, raw, all commercial varieties
+orange blossom water                       | -- NONE --
+orange juice                               |  45.0 cal | Orange juice, raw (Includes foods for USDA's Food Distribution Program)
+orange zest                                |  97.0 cal | Orange peel, raw
+oregano                                    | 265.0 cal | Spices, oregano, dried
+orzo pasta, cooked                         | 158.0 cal | Pasta, cooked, enriched, without added salt
+ouzo                                       | -- NONE --
+oyster sauce                               |  51.0 cal | Sauce, oyster, ready-to-serve
+pad thai sauce                             | -- NONE --
+palm sugar                                 | 387.0 cal | Sugars, granulated
+paneer                                     | -- NONE --
+panko breadcrumbs                          | -- NONE --
+papaya, raw                                |  43.0 cal | Papayas, raw
+paprika                                    | 282.0 cal | Spices, paprika
+paprika, smoked                            | 282.0 cal | Spices, paprika
+parmesan cheese                            | 392.0 cal | Cheese, parmesan, hard
+parsley, raw                               |  36.0 cal | Parsley, fresh
+parsley, dried                             | 292.0 cal | Spices, parsley, dried
+parsnip, cooked                            |  71.0 cal | Parsnips, cooked, boiled, drained, without salt
+pasta, cooked                              | 158.0 cal | Pasta, cooked, enriched, without added salt
+pasta sauce, alfredo                       | -- NONE --
+pasta sauce, arrabiata                     |  50.0 cal | Sauce, pasta, spaghetti/marinara, ready-to-serve
+pasta sauce, tomato basil                  |  50.0 cal | Sauce, pasta, spaghetti/marinara, ready-to-serve
+pate                                       | 319.0 cal | Pate, liver, not specified, canned
+peach, raw                                 |  39.0 cal | Peaches, yellow, raw
+peaches, canned                            |  74.0 cal | Peaches, canned, heavy syrup pack, solids and liquids
+peameal bacon, cooked                      | 146.0 cal | Canadian bacon, cooked, pan-fried
+peanut butter                              | 588.0 cal | Peanut Butter, smooth (Includes foods for USDA's Food Distribution Program)
+peanut butter, natural                     | 598.0 cal | Peanut butter, smooth style, without salt
+peanuts                                    | 567.0 cal | Peanuts, all types, raw
+peanuts, roasted                           | 587.0 cal | Peanuts, all types, dry-roasted, without salt
+pear, raw                                  |  57.0 cal | Pears, raw
+pearl onions, cooked                       | -- NONE --
+peas, cooked                               |  84.0 cal | Peas, green, cooked, boiled, drained, without salt
+peas pudding (yellow split peas), cooked   | 118.0 cal | Peas, split, mature seeds, cooked, boiled, without salt
+pecans                                     | 691.0 cal | Nuts, pecans
+pectin                                     |  11.0 cal | Pectin, liquid
+penne, cooked                              | -- NONE --
+pepperoni                                  | 504.0 cal | Pepperoni, beef and pork, sliced
+phyllo dough, cooked                       | 299.0 cal | Phyllo dough
+phyllo pastry, cooked                      | -- NONE --
+pickle                                     |  12.0 cal | Pickles, cucumber, dill or kosher dill
+pickled carrots                            | -- NONE --
+pickled cucumber (cornichon)               |  12.0 cal | Pickles, cucumber, dill or kosher dill
+pickled daikon                             | -- NONE --
+pickled ginger                             |  20.0 cal | Ginger root, pickled, canned, with artificial sweetener
+pickled red onion                          | -- NONE --
+pickles, bread and butter                  |  91.0 cal | Pickles, cucumber, sweet (includes bread and butter pickles)
+pie crust, pre-made                        | 506.0 cal | Pie crust, refrigerated, regular, baked
+pine nuts                                  | 673.0 cal | Nuts, pine nuts, dried
+pineapple, raw                             |  50.0 cal | Pineapple, raw, all varieties
+pineapple juice                            |  53.0 cal | Pineapple juice, canned or bottled, unsweetened, with added ascorbic acid
+pineapple, canned chunks                   |  60.0 cal | Pineapple, canned, juice pack, solids and liquids
+pinto beans, cooked                        | 143.0 cal | Beans, pinto, mature seeds, cooked, boiled, without salt
+pinto beans, canned                        |  82.0 cal | Beans, pinto, mature seeds, canned, solids and liquids
+pistachio                                  | 560.0 cal | Nuts, pistachio nuts, raw
+pita bread                                 | 275.0 cal | Bread, pita, white, enriched
+pita chips                                 | 457.0 cal | Snacks, pita chips, salted
+pizza dough (refrigerated), cooked         | -- NONE --
+plantain, cooked                           | 155.0 cal | Plantains, yellow, baked
+plantain chips                             | 531.0 cal | Snacks, plantain chips, salted
+plum, raw                                  |  46.0 cal | Plums, raw
+poblano pepper, cooked                     | -- NONE --
+pomegranate, raw                           |  83.0 cal | Pomegranates, raw
+pomegranate molasses                       | -- NONE --
+pomegranate seeds, raw                     |  83.0 cal | Pomegranates, raw
+popcorn, microwave                         | 535.0 cal | Popcorn, microwave, regular (butter) flavor, made with palm oil
+popcorn, pre-popped (butter)               | -- NONE --
+popcorn, pre-popped (plain)                | 387.0 cal | Snacks, popcorn, air-popped
+poppy seeds                                | 525.0 cal | Spices, poppy seed
+popsicles / ice pops                       |  79.0 cal | Frozen novelties, ice type, pop
+pork, cooked                               | 297.0 cal | Pork, fresh, ground, cooked
+pork belly, cooked                         | -- NONE --
+pork bones, cooked                         | -- NONE --
+pork carnitas                              | -- NONE --
+pork chop, cooked                          | 202.0 cal | Pork, fresh, blade, (chops), boneless, separable lean and fat, cooked, broiled
+pork chops, bone-in, cooked                | 208.0 cal | Pork, fresh, loin, center rib (chops), bone-in, separable lean only, cooked, braised
+pork chops, boneless, cooked               | 211.0 cal | Pork, fresh, loin, center rib (chops), boneless, separable lean only, cooked, braised
+pork cutlet, cooked                        | -- NONE --
+pork hocks, cooked                         | -- NONE --
+pork loin, cooked                          | 248.0 cal | Pork, fresh, loin, whole, separable lean and fat, cooked, roasted
+pork ribs, cooked                          | 273.0 cal | Pork, fresh, loin, country-style ribs, separable lean and fat, cooked, braised
+pork ribs, back, cooked                    | -- NONE --
+pork roast, cooked                         | 248.0 cal | Pork, fresh, loin, whole, separable lean and fat, cooked, roasted
+pork shoulder, cooked                      | 292.0 cal | Pork, fresh, shoulder, whole, separable lean and fat, cooked, roasted
+pork tenderloin, cooked                    | 143.0 cal | Pork, fresh, loin, tenderloin, separable lean only, cooked, roasted
+potato, cooked                             |  87.0 cal | Potatoes, boiled, cooked in skin, flesh, without salt
+potato starch                              | -- NONE --
+poultry seasoning                          | 307.0 cal | Spices, poultry seasoning
+pre-marinated chicken, cooked              | -- NONE --
+pre-marinated pork tenderloin, cooked      | 116.0 cal | Pork, fresh, loin, tenderloin, separable lean only, with added solution, cooked, roasted
+preserved lemon                            | -- NONE --
+pretzels                                   | 384.0 cal | Snacks, pretzels, hard, plain, salted
+processed cheese / velveeta                | 303.0 cal | KRAFT VELVEETA Pasteurized Process Cheese Spread
+prosciutto                                 | -- NONE --
+protein bars                               | 412.0 cal | Formulated Bar, SOUTH BEACH protein bar
+protein powder, plant-based                | 388.0 cal | Beverages, Protein powder soy based
+protein powder, whey                       | 352.0 cal | Beverages, Protein powder whey based
+provolone cheese                           | 351.0 cal | Cheese, provolone
+prunes                                     | 240.0 cal | Plums, dried (prunes), uncooked
+puff pastry (frozen)                       | 551.0 cal | Puff pastry, frozen, ready-to-bake
+pumpkin, cooked                            |  20.0 cal | Pumpkin, cooked, boiled, drained, without salt
+pumpkin seeds                              | 559.0 cal | Seeds, pumpkin and squash seed kernels, dried
+quinoa, cooked                             | 120.0 cal | Quinoa, cooked
+radish, raw                                |  16.0 cal | Radishes, raw
+raisin bran                                | 324.0 cal | Cereals ready-to-eat, POST Raisin Bran Cereal
+raisins                                    | 299.0 cal | Raisins, dark, seedless (Includes foods for USDA's Food Distribution Program)
+ramen noodles, cooked                      | 131.0 cal | Noodles, japanese, somen, cooked
+ranch dressing                             | 430.0 cal | Salad dressing, ranch dressing, regular
+raspberries, raw                           |  52.0 cal | Raspberries, raw
+red chilies, raw                           |  40.0 cal | Peppers, hot chili, red, raw
+red curry paste                            | -- NONE --
+red pepper, raw                            |  26.0 cal | Peppers, sweet, red, raw
+red pepper paste                           | -- NONE --
+red wine                                   |  85.0 cal | Alcoholic beverage, wine, table, red
+red wine vinegar                           |  19.0 cal | Vinegar, red wine
+refried beans                              |  90.0 cal | Refried beans, canned, traditional style
+relish                                     | 130.0 cal | Pickle relish, sweet
+relish, dill                               | -- NONE --
+relish, sweet                              | 130.0 cal | Pickle relish, sweet
+reshteh noodles, cooked                    | 138.0 cal | Noodles, egg, enriched, cooked
+rice cakes                                 | 387.0 cal | Snacks, rice cakes, brown rice, plain, unsalted
+rice flour                                 | 366.0 cal | Rice flour, white, unenriched
+rice milk                                  |  47.0 cal | Beverages, rice milk, unsweetened
+rice noodles, cooked                       | 108.0 cal | Rice noodles, cooked
+rice paper wrappers                        | -- NONE --
+rice vermicelli, cooked                    | 108.0 cal | Rice noodles, cooked
+rice vinegar                               | -- NONE --
+rice wine                                  | -- NONE --
+ricotta cheese                             | 150.0 cal | Cheese, ricotta, whole milk
+rigatoni, cooked                           | -- NONE --
+roasted red peppers                        | -- NONE --
+rose water                                 | -- NONE --
+rosemary                                   | 131.0 cal | Rosemary, fresh
+rotisserie chicken                         | -- NONE --
+round rice noodles, cooked                 | 108.0 cal | Rice noodles, cooked
+rye bread                                  | 259.0 cal | Bread, rye
+saffron                                    | 310.0 cal | Spices, saffron
+sage                                       | 315.0 cal | Spices, sage, ground
+sage, dried                                | -- NONE --
+sahlab powder                              | -- NONE --
+sake                                       | 134.0 cal | Alcoholic beverage, rice (sake)
+salami                                     | 425.0 cal | Salami, Italian, pork
+salmon, cooked                             | 182.0 cal | Fish, salmon, Atlantic, wild, cooked, dry heat
+salmon, atlantic (fresh), cooked           | 206.0 cal | Fish, salmon, Atlantic, farmed, cooked, dry heat
+salmon, smoked                             | 117.0 cal | Fish, salmon, chinook, smoked, (lox), regular
+salmon, sockeye (fresh)                    | 131.0 cal | Fish, salmon, sockeye, raw
+salsa                                      |  29.0 cal | Sauce, salsa, ready-to-serve
+salsa verde                                |  38.0 cal | Sauce, salsa, verde, ready-to-serve
+salt                                       |   0.0 cal | Salt, table
+salt beef                                  | -- NONE --
+saskatoon berries, raw                     | -- NONE --
+sauerkraut                                 |  19.0 cal | Sauerkraut, canned, solids and liquids
+sausage, cooked                            | 325.0 cal | Pork sausage, link/patty, cooked, pan-fried
+scallops, cooked                           | 111.0 cal | Mollusks, scallop, (bay and sea), cooked, steamed
+scotch bonnet peppers, raw                 | -- NONE --
+sea bream, cooked                          | -- NONE --
+semolina, cooked                           | -- NONE --
+serrano chiles, raw                        |  32.0 cal | Peppers, serrano, raw
+serrano pepper, raw                        |  32.0 cal | Peppers, serrano, raw
+sesame oil                                 | 884.0 cal | Oil, sesame, salad or cooking
+sesame seeds                               | 573.0 cal | Seeds, sesame seeds, whole, dried
+shallots, raw                              |  72.0 cal | Shallots, raw
+short grain rice, cooked                   | 130.0 cal | Rice, white, short-grain, enriched, cooked
+shortening                                 | 884.0 cal | Shortening, vegetable, household, composite
+shredded cheese                            | -- NONE --
+shredded chicken                           | -- NONE --
+shredded wheat                             | 351.0 cal | Cereals ready-to-eat, POST, Shredded Wheat, original spoon-size
+shrimp, cooked                             |  99.0 cal | Crustaceans, shrimp, cooked
+shrimp paste                               | -- NONE --
+sichuan peppercorns                        | -- NONE --
+smoked meat                                | -- NONE --
+snap peas, raw                             |  42.0 cal | Peas, edible-podded, raw
+snow peas, raw                             |  42.0 cal | Peas, edible-podded, raw
+soba noodles, cooked                       |  99.0 cal | Noodles, japanese, soba, cooked
+soft boiled egg, cooked                    | 155.0 cal | Egg, whole, cooked, hard-boiled
+soft tofu                                  |  61.0 cal | Tofu, soft, prepared with calcium sulfate and magnesium chloride (nigari)
+sole fillet, cooked                        |  86.0 cal | Fish, flatfish (flounder and sole species), cooked, dry heat
+sorbet                                     | -- NONE --
+sour cherries, raw                         |  50.0 cal | Cherries, sour, red, raw
+sour cherry juice                          |  59.0 cal | Cherry juice, tart
+sour cream                                 | 198.0 cal | Cream, sour, cultured
+sour cream, light                          | 136.0 cal | Sour cream, light
+soy milk                                   | -- NONE --
+soy sauce                                  |  53.0 cal | Soy sauce made from soy and wheat (shoyu)
+soy sauce, low sodium                      |  57.0 cal | Soy sauce made from soy and wheat (shoyu), low sodium
+spaghetti, cooked                          | -- NONE --
+spaghetti squash, cooked                   |  27.0 cal | Squash, winter, spaghetti, cooked, boiled, drained, or baked, without salt
+special k                                  | -- NONE --
+spinach, raw                               |  23.0 cal | Spinach, raw
+split peas, green (dried), cooked          | 118.0 cal | Peas, split, mature seeds, cooked, boiled, without salt
+split peas, yellow (dried), cooked         | 118.0 cal | Peas, split, mature seeds, cooked, boiled, without salt
+sports drink (gatorade / powerade)         |  26.0 cal | Beverages, PEPSICO QUAKER, Gatorade, G performance O 2, ready-to-drink.
+spring roll wrappers, cooked               | -- NONE --
+squid, cooked                              | 175.0 cal | Mollusks, squid, mixed species, cooked, fried
+sriracha                                   |  93.0 cal | Sauce, hot chile, sriracha
+sriracha mayo                              | -- NONE --
+star anise                                 | 337.0 cal | Spices, anise seed
+steamed egg cake, cooked                   | -- NONE --
+stewing beef, cooked                       | -- NONE --
+strawberries                               |  32.0 cal | Strawberries, raw
+stuffing bread                             | 386.0 cal | Bread, stuffing, dry mix
+sugar, granulated (white)                  | 387.0 cal | Sugars, granulated
+sugar, icing / powdered                    | 389.0 cal | Sugars, powdered
+sugar, raw / turbinado                     | 399.0 cal | Sugar, turbinado
+sumac                                      | -- NONE --
+sunflower seed butter                      | 617.0 cal | Seeds, sunflower seed butter, without salt
+sunflower seeds                            | 584.0 cal | Seeds, sunflower seed kernels, dried
+sushi rice, cooked                         | 130.0 cal | Rice, white, short-grain, cooked, unenriched
+sweet chili sauce                          | -- NONE --
+sweet potato, cooked                       |  76.0 cal | Sweet potato, cooked, boiled, without skin
+sweet potato glass noodles, cooked         | -- NONE --
+swiss chard, raw                           |  19.0 cal | Chard, swiss, raw
+swiss cheese                               | 393.0 cal | Cheese, swiss
+table cream (18%)                          | 195.0 cal | Cream, fluid, light (coffee cream or table cream)
+taboon bread                               | -- NONE --
+taco seasoning                             | 322.0 cal | Seasoning mix, dry, taco, original
+tahini                                     | 592.0 cal | Seeds, sesame butter, tahini, type of kernels unspecified
+tahini sauce                               | -- NONE --
+takoyaki sauce                             | -- NONE --
+tamarind paste                             | 239.0 cal | Tamarinds, raw
+tartar sauce                               | 211.0 cal | Sauce, tartar, ready-to-serve
+tasajo beef, cooked                        | -- NONE --
+tea, chai                                  | -- NONE --
+tea, green                                 |   1.0 cal | Beverages, tea, green, brewed, regular
+tea, herbal                                |   1.0 cal | Beverages, tea, herb, other than chamomile, brewed
+tempeh, cooked                             | 195.0 cal | Tempeh, cooked
+tempura bits                               | -- NONE --
+tenkasu                                    | -- NONE --
+teriyaki sauce                             |  89.0 cal | Sauce, teriyaki, ready-to-serve
+thai basil, raw                            | -- NONE --
+thousand island dressing                   | 379.0 cal | Salad dressing, thousand island, commercial, regular
+thyme                                      | 276.0 cal | Spices, thyme, dried
+tilapia fillet, cooked                     | 128.0 cal | Fish, tilapia, cooked, dry heat
+tofu, cooked                               | -- NONE --
+tofu puffs                                 | 270.0 cal | Tofu, fried
+tofu, firm, cooked                         |  78.0 cal | Tofu, firm, prepared with calcium sulfate and magnesium chloride (nigari)
+tofu, silken, cooked                       | -- NONE --
+tomatillos, raw                            |  32.0 cal | Tomatillos, raw
+tomato, raw                                |  18.0 cal | Tomatoes, red, ripe, raw, year round average
+tomato paste                               |  82.0 cal | Tomato products, canned, paste, without salt added (Includes foods for USDA's Food Distribution Program)
+tomato puree                               |  38.0 cal | Tomato products, canned, puree, without salt added
+tomato sauce                               |  24.0 cal | Tomato products, canned, sauce
+tomato sauce, marinara                     | -- NONE --
+tonkatsu sauce                             | -- NONE --
+tortilla chips                             | 497.0 cal | Tortilla chips, yellow, plain, salted
+tostadas                                   | 474.0 cal | Tostada shells, corn
+trail mix                                  | 462.0 cal | Snacks, trail mix, regular
+trout fillet, cooked                       | 190.0 cal | Fish, trout, mixed species, cooked, dry heat
+tubular pasta, cooked                      | 158.0 cal | Pasta, cooked, enriched, without added salt
+tuna, fresh / frozen steak, cooked         | 184.0 cal | Fish, tuna, fresh, bluefin, cooked, dry heat
+turkey, cooked                             | 159.0 cal | Turkey, whole, meat only, cooked, roasted
+turkey breast, cooked                      | 147.0 cal | Turkey, whole, breast, meat only, cooked, roasted
+turkey, deli sliced                        | 112.0 cal | Turkey, white, rotisserie, deli cut
+turmeric                                   | 312.0 cal | Spices, turmeric, ground
+turmeric, ground                           | 312.0 cal | Spices, turmeric, ground
+turnip, cooked                             |  22.0 cal | Turnips, cooked, boiled, drained, without salt
+tzatziki                                   | -- NONE --
+udon noodles, cooked                       | -- NONE --
+unsweetened baking chocolate               | 642.0 cal | Baking chocolate, unsweetened, squares
+urad dal, cooked                           | -- NONE --
+vanilla                                    | 288.0 cal | Vanilla extract
+vanilla custard powder                     | -- NONE --
+vanilla extract                            | 288.0 cal | Vanilla extract
+vanilla ice cream                          | 207.0 cal | Ice creams, vanilla
+veal cutlets, cooked                       | 151.0 cal | Veal, leg, top round, cap off, cutlet, boneless, cooked, grilled
+vegetable broth                            |   5.0 cal | Soup, vegetable broth, ready to serve
+vegetable broth / stock                    |   5.0 cal | Soup, vegetable broth, ready to serve
+vegetable oil                              | 884.0 cal | Oil, vegetable, soybean, refined
+vermicelli, cooked                         | -- NONE --
+vinegar                                    |  18.0 cal | Vinegar, distilled
+vodka                                      | 231.0 cal | Alcoholic beverage, distilled, vodka, 80 proof
+wakame seaweed                             |  45.0 cal | Seaweed, wakame, raw
+walnuts                                    | 654.0 cal | Nuts, walnuts, english
+wasabi                                     | 292.0 cal | Wasabi
+water                                      |   0.0 cal | Water, bottled, generic
+water, sparkling / soda water              |   0.0 cal | Beverages, GEROLSTEINER BRUNNEN GmbH & Co. KG,Gerolsteiner naturally sparkling mineral water,
+watermelon, raw                            |  30.0 cal | Watermelon, raw
+wheat berries, cooked                      | 132.0 cal | Wheat, KAMUT khorasan, cooked
+wheat germ                                 | 360.0 cal | Wheat germ, crude
+wheat noodles, cooked                      | -- NONE --
+wheat sprouts, raw                         | 198.0 cal | Wheat, sprouted
+whipped cream                              | 257.0 cal | Cream, whipped, cream topping, pressurized
+whipping cream                             | 340.0 cal | Cream, fluid, heavy whipping
+white beans, cooked                        | 139.0 cal | Beans, white, mature seeds, cooked, boiled, without salt
+white beans / cannellini, canned           | 114.0 cal | Beans, white, mature seeds, canned
+white bread                                | 266.0 cal | Bread, white, commercially prepared (includes soft bread crumbs)
+white bread roll                           | 266.0 cal | Bread, white, commercially prepared (includes soft bread crumbs)
+white pepper                               | 296.0 cal | Spices, pepper, white
+white rice, cooked                         | 130.0 cal | Rice, white, long-grain, regular, enriched, cooked
+white vinegar                              |  18.0 cal | Vinegar, distilled
+white wine                                 |  82.0 cal | Alcoholic beverage, wine, table, white
+white wine vinegar                         | -- NONE --
+whole chicken, cooked                      | -- NONE --
+whole duck, cooked                         | 201.0 cal | Duck, domesticated, meat only, cooked, roasted
+whole fish, cooked                         | -- NONE --
+whole white fish, cooked                   | 119.0 cal | Fish, sucker, white, cooked, dry heat
+wide rice noodles, cooked                  | 108.0 cal | Rice noodles, cooked
+wieners / hot dogs                         | -- NONE --
+wild rice, cooked                          | 101.0 cal | Wild rice, cooked
+wonton wrappers, cooked                    | 291.0 cal | Wonton wrappers (includes egg roll wrappers)
+wood ear mushrooms, cooked                 | -- NONE --
+worcestershire sauce                       |  77.0 cal | Sauce, worcestershire
+wraps / flatbreads                         | 249.0 cal | Focaccia, Italian flatbread, plain
+yam, cooked                                | 116.0 cal | Yam, cooked, boiled, drained, or baked, without salt
+yeast                                      | 325.0 cal | Leavening agents, yeast, baker's, active dry
+yeast, active dry                          | 325.0 cal | Leavening agents, yeast, baker's, active dry
+yeast, instant                             | -- NONE --
+yellowtail, cooked                         | 187.0 cal | Fish, yellowtail, mixed species, cooked, dry heat
+yogurt                                     |  61.0 cal | Yogurt, plain, whole milk
+yogurt, flavoured                          |  85.0 cal | Yogurt, vanilla, low fat.
+yogurt, peach                              |  80.0 cal | Yogurt, Greek, nonfat, peach, CHOBANI
+yogurt, plain (regular)                    |  61.0 cal | Yogurt, plain, whole milk
+yogurt, strawberry                         |  82.0 cal | Yogurt, Greek, strawberry, nonfat
+yogurt, vanilla                            |  85.0 cal | Yogurt, vanilla, low fat.
+za'atar                                    | -- NONE --
+zucchini, cooked                           |  15.0 cal | Squash, summer, zucchini, includes skin, cooked, boiled, drained, without salt

@@ -1,0 +1,202 @@
+REMOVE 7: allspice berries                              -> KEEP 6: allspice
+REMOVE 12: almond slivers                                -> KEEP 8: almond
+REMOVE 13: almonds                                       -> KEEP 8: almond
+REMOVE 14: almonds, raw                                  -> KEEP 8: almond
+REMOVE 15: almonds, roasted                              -> KEEP 8: almond
+REMOVE 23: apple, fuji                                   -> KEEP 20: apple
+REMOVE 24: apple, gala                                   -> KEEP 20: apple
+REMOVE 25: apple, granny smith                           -> KEEP 20: apple
+REMOVE 26: apple, honeycrisp                             -> KEEP 20: apple
+REMOVE 27: apple, red delicious                          -> KEEP 20: apple
+REMOVE 28: apples                                        -> KEEP 20: apple
+REMOVE 43: baguette / french bread                       -> KEEP 42: baguette
+REMOVE 52: bananas                                       -> KEEP 50: banana
+REMOVE 66: beef broth / stock                            -> KEEP 65: beef broth
+REMOVE 69: beef chuck roast                              -> KEEP 68: beef chuck
+REMOVE 74: beef roast, chuck                             -> KEEP 68: beef chuck
+REMOVE 80: beef steak, ribeye                            -> KEEP 72: beef ribeye
+REMOVE 81: beef steak, sirloin                           -> KEEP 78: beef sirloin
+REMOVE 87: beets                                         -> KEEP 86: beet
+REMOVE 89: bell pepper, green                            -> KEEP 88: bell pepper
+REMOVE 90: bell pepper, orange                           -> KEEP 88: bell pepper
+REMOVE 91: bell pepper, red                              -> KEEP 88: bell pepper
+REMOVE 92: bell pepper, yellow                           -> KEEP 88: bell pepper
+REMOVE 93: bell peppers                                  -> KEEP 88: bell pepper
+REMOVE 99: black pepper, ground                          -> KEEP 98: black pepper
+REMOVE 111: bread crumbs                                  -> KEEP 118: breadcrumbs
+REMOVE 113: bread, pita                                   -> KEEP 787: pita bread
+REMOVE 114: bread, rye                                    -> KEEP 890: rye bread
+REMOVE 116: bread, white sandwich                         -> KEEP 1077: white bread
+REMOVE 119: breadcrumbs, panko                            -> KEEP 735: panko breadcrumbs
+REMOVE 120: breadcrumbs, plain                            -> KEEP 118: breadcrumbs
+REMOVE 128: brown rice, long grain                        -> KEEP 127: brown rice
+REMOVE 134: butter, salted                                -> KEEP 133: butter
+REMOVE 135: butter, unsalted                              -> KEEP 133: butter
+REMOVE 139: cabbage, green                                -> KEEP 138: cabbage
+REMOVE 140: cabbage, napa                                 -> KEEP 138: cabbage
+REMOVE 141: cabbage, red                                  -> KEEP 138: cabbage
+REMOVE 147: canned coconut milk                           -> KEEP 251: coconut milk
+REMOVE 158: canned tomatoes, crushed                      -> KEEP 305: crushed tomatoes
+REMOVE 171: carrots                                       -> KEEP 169: carrot
+REMOVE 184: cheddar cheese, marble                        -> KEEP 182: cheddar cheese
+REMOVE 185: cheddar cheese, old                           -> KEEP 182: cheddar cheese
+REMOVE 195: chicken breast, boneless skinless             -> KEEP 194: chicken breast
+REMOVE 197: chicken broth / stock                         -> KEEP 196: chicken broth
+REMOVE 206: chickpeas / garbanzo beans, canned            -> KEEP 205: chickpeas
+REMOVE 214: chilies                                       -> KEEP 208: chili
+REMOVE 217: chipotles in adobo                            -> KEEP 216: chipotle peppers in adobo
+REMOVE 240: cinnamon, ground                              -> KEEP 238: cinnamon
+REMOVE 244: cloves, ground                                -> KEEP 243: cloves
+REMOVE 246: cocoa powder, unsweetened                     -> KEEP 245: cocoa powder
+REMOVE 256: cod fillet                                    -> KEEP 255: cod
+REMOVE 262: cold water                                    -> KEEP 1064: water
+REMOVE 274: corn kernels                                  -> KEEP 272: corn
+REMOVE 278: corn tortillas                                -> KEEP 277: corn tortilla
+REMOVE 304: crushed red pepper flakes                     -> KEEP 209: chili flakes
+REMOVE 307: cucumber, english                             -> KEEP 306: cucumber
+REMOVE 308: cucumber, mini / persian                      -> KEEP 306: cucumber
+REMOVE 323: dark chocolate bar                            -> KEEP 322: dark chocolate
+REMOVE 328: desiccated coconut                            -> KEEP 250: coconut flakes
+REMOVE 338: dried chili flakes                            -> KEEP 209: chili flakes
+REMOVE 343: dried dill                                    -> KEEP 332: dill, dried
+REMOVE 353: dried plums                                   -> KEEP 839: prunes
+REMOVE 354: dried plums (aloo)                            -> KEEP 839: prunes
+REMOVE 355: dried red chilies                             -> KEEP 339: dried chili peppers
+REMOVE 369: egg yolks                                     -> KEEP 368: egg yolk
+REMOVE 371: eggplant / aubergine                          -> KEEP 370: eggplant
+REMOVE 372: eggs                                          -> KEEP 364: egg
+REMOVE 373: eggs, large (whole)                           -> KEEP 364: egg
+REMOVE 374: elbow macaroni                                -> KEEP 631: macaroni
+REMOVE 375: elbow pasta                                   -> KEEP 631: macaroni
+REMOVE 400: flank steak                                   -> KEEP 79: beef steak, flank
+REMOVE 402: flour                                         -> KEEP 5: all-purpose flour
+REMOVE 404: flour tortillas, large / burrito size         -> KEEP 403: flour tortillas
+REMOVE 405: flour tortillas, small                        -> KEEP 403: flour tortillas
+REMOVE 406: flour, all-purpose                            -> KEEP 5: all-purpose flour
+REMOVE 412: fresh basil                                   -> KEEP 55: basil
+REMOVE 413: fresh chives                                  -> KEEP 224: chives
+REMOVE 414: fresh cilantro                                -> KEEP 235: cilantro
+REMOVE 415: fresh dill                                    -> KEEP 330: dill
+REMOVE 416: fresh fenugreek                               -> KEEP 386: fenugreek leaves
+REMOVE 417: fresh mango                                   -> KEEP 640: mango
+REMOVE 418: fresh mint                                    -> KEEP 657: mint
+REMOVE 419: fresh parsley                                 -> KEEP 741: parsley
+REMOVE 421: fresh rosemary                                -> KEEP 886: rosemary
+REMOVE 423: fresh thyme                                   -> KEEP 1010: thyme
+REMOVE 425: fried potato strips                           -> KEEP 411: french fries
+REMOVE 436: frozen fish sticks                            -> KEEP 398: fish sticks (frozen)
+REMOVE 437: frozen fries / french fries                   -> KEEP 411: french fries
+REMOVE 471: ginger root                                   -> KEEP 470: ginger
+REMOVE 478: gochujang (korean chili paste)                -> KEEP 477: gochujang
+REMOVE 489: grapes, red                                   -> KEEP 488: grapes, green
+REMOVE 496: green bell pepper                             -> KEEP 88: bell pepper
+REMOVE 497: green bell peppers                            -> KEEP 88: bell pepper
+REMOVE 498: green cabbage                                 -> KEEP 138: cabbage
+REMOVE 501: green lentils                                 -> KEEP 615: lentils, green (dried)
+REMOVE 504: green onion / scallion                        -> KEEP 503: green onion
+REMOVE 505: green onions                                  -> KEEP 503: green onion
+REMOVE 506: green pepper                                  -> KEEP 88: bell pepper
+REMOVE 517: guacamole, store-bought                       -> KEEP 516: guacamole
+REMOVE 522: habanero pepper                               -> KEEP 521: habanero chile
+REMOVE 528: ham, sliced (deli)                            -> KEEP 527: ham hock
+REMOVE 529: hamburger buns                                -> KEEP 132: burger buns
+REMOVE 536: heavy cream (35%)                             -> KEEP 535: heavy cream
+REMOVE 548: hot water                                     -> KEEP 1064: water
+REMOVE 550: ice                                           -> KEEP 1064: water
+REMOVE 558: ice water                                     -> KEEP 1064: water
+REMOVE 560: icing sugar                                   -> KEEP 978: sugar, icing / powdered
+REMOVE 568: jalapenos                                     -> KEEP 567: jalapeno pepper
+REMOVE 569: jalapeño                                      -> KEEP 567: jalapeno pepper
+REMOVE 605: leeks                                         -> KEEP 604: leek
+REMOVE 632: macaroni pasta                                -> KEEP 631: macaroni
+REMOVE 660: mirin (rice wine)                             -> KEEP 659: mirin
+REMOVE 682: mustard, dijon                                -> KEEP 329: dijon mustard
+REMOVE 687: napa cabbage                                  -> KEEP 138: cabbage
+REMOVE 694: nori powder                                   -> KEEP 693: nori
+REMOVE 695: nori seaweed                                  -> KEEP 693: nori
+REMOVE 696: nori sheets                                   -> KEEP 693: nori
+REMOVE 698: nutmeg, ground                                -> KEEP 697: nutmeg
+REMOVE 707: oil                                           -> KEEP 1055: vegetable oil
+REMOVE 711: olive oil, extra virgin                       -> KEEP 710: olive oil
+REMOVE 712: olive oil, light                              -> KEEP 710: olive oil
+REMOVE 715: olives, green (jarred)                        -> KEEP 502: green olives
+REMOVE 718: onion, red                                    -> KEEP 716: onion
+REMOVE 719: onion, white                                  -> KEEP 716: onion
+REMOVE 720: onion, yellow                                 -> KEEP 716: onion
+REMOVE 724: orange juice, pulp-free                       -> KEEP 723: orange juice
+REMOVE 725: orange peel                                   -> KEEP 726: orange zest
+REMOVE 728: oregano, dried                                -> KEEP 351: dried oregano
+REMOVE 739: paprika, sweet                                -> KEEP 737: paprika
+REMOVE 744: parsnips                                      -> KEEP 743: parsnip
+REMOVE 758: pearl barley                                  -> KEEP 54: barley, pearl
+REMOVE 774: pickles                                       -> KEEP 768: pickle
+REMOVE 776: pickles, dill                                 -> KEEP 331: dill pickles
+REMOVE 785: pistachio slivers                             -> KEEP 784: pistachio
+REMOVE 786: pistachios                                    -> KEEP 784: pistachio
+REMOVE 794: poblano peppers                               -> KEEP 793: poblano pepper
+REMOVE 795: polenta / cornmeal                            -> KEEP 280: cornmeal
+REMOVE 821: potato, mini / baby                           -> KEEP 819: potato
+REMOVE 822: potato, red                                   -> KEEP 819: potato
+REMOVE 823: potato, russet                                -> KEEP 819: potato
+REMOVE 824: potato, yellow / yukon gold                   -> KEEP 819: potato
+REMOVE 825: potatoes                                      -> KEEP 819: potato
+REMOVE 827: powdered sugar                                -> KEEP 978: sugar, icing / powdered
+REMOVE 828: prawns                                        -> KEEP 934: shrimp
+REMOVE 840: prunes / dried plums                          -> KEEP 839: prunes
+REMOVE 846: radishes                                      -> KEEP 845: radish
+REMOVE 852: red bell pepper                               -> KEEP 88: bell pepper
+REMOVE 853: red chili flakes                              -> KEEP 209: chili flakes
+REMOVE 856: red lentils                                   -> KEEP 616: lentils, red (dried)
+REMOVE 857: red onion                                     -> KEEP 716: onion
+REMOVE 859: red pepper flakes                             -> KEEP 209: chili flakes
+REMOVE 868: rice                                          -> KEEP 1081: white rice
+REMOVE 879: roasted peanuts                               -> KEEP 756: peanuts, roasted
+REMOVE 881: roasted red peppers (jarred)                  -> KEEP 880: roasted red peppers
+REMOVE 882: rolled oats                                   -> KEEP 703: oats, rolled / old fashioned
+REMOVE 883: romaine lettuce                               -> KEEP 621: lettuce, romaine
+REMOVE 884: romaine lettuce leaves                        -> KEEP 621: lettuce, romaine
+REMOVE 887: rosemary, dried                               -> KEEP 357: dried rosemary
+REMOVE 898: salmon fillet                                 -> KEEP 897: salmon
+REMOVE 900: salmon, frozen fillet                         -> KEEP 897: salmon
+REMOVE 905: salsa, hot                                    -> KEEP 903: salsa
+REMOVE 906: salsa, medium                                 -> KEEP 903: salsa
+REMOVE 907: salsa, mild                                   -> KEEP 903: salsa
+REMOVE 910: salt, kosher                                  -> KEEP 908: salt
+REMOVE 911: salt, sea                                     -> KEEP 908: salt
+REMOVE 912: salt, table                                   -> KEEP 908: salt
+REMOVE 923: sesame paste                                  -> KEEP 994: tahini
+REMOVE 926: shiitake mushrooms                            -> KEEP 675: mushroom, shiitake
+REMOVE 929: shredded cabbage                              -> KEEP 138: cabbage
+REMOVE 932: shredded lettuce                              -> KEEP 617: lettuce
+REMOVE 936: shrimp, cooked (frozen)                       -> KEEP 934: shrimp
+REMOVE 937: shrimp, raw (frozen)                          -> KEEP 934: shrimp
+REMOVE 940: smoked paprika                                -> KEEP 738: paprika, smoked
+REMOVE 959: spinach, baby                                 -> KEEP 958: spinach
+REMOVE 965: squid / calamari                              -> KEEP 964: squid
+REMOVE 968: stale bread                                   -> KEEP 110: bread
+REMOVE 974: sugar                                         -> KEEP 977: sugar, granulated (white)
+REMOVE 975: sugar, brown (dark)                           -> KEEP 129: brown sugar
+REMOVE 976: sugar, brown (light)                          -> KEEP 129: brown sugar
+REMOVE 987: sweet potatoes                                -> KEEP 985: sweet potato
+REMOVE 988: sweetened condensed milk                      -> KEEP 264: condensed milk
+REMOVE 1000: tea, black                                    -> KEEP 100: black tea
+REMOVE 1011: thyme, dried                                  -> KEEP 360: dried thyme
+REMOVE 1013: toast                                         -> KEEP 110: bread
+REMOVE 1024: tomato sauce, plain                           -> KEEP 1022: tomato sauce
+REMOVE 1025: tomato, cherry                                -> KEEP 190: cherry tomatoes
+REMOVE 1026: tomato, grape                                 -> KEEP 190: cherry tomatoes
+REMOVE 1027: tomato, on the vine                           -> KEEP 1019: tomato
+REMOVE 1028: tomato, roma                                  -> KEEP 1019: tomato
+REMOVE 1029: tomatoes                                      -> KEEP 1019: tomato
+REMOVE 1036: tuna                                          -> KEEP 1037: tuna, fresh / frozen steak
+REMOVE 1057: vermicelli noodles                            -> KEEP 1056: vermicelli
+REMOVE 1062: warm water                                    -> KEEP 1064: water
+REMOVE 1068: wheat flour                                   -> KEEP 5: all-purpose flour
+REMOVE 1074: whipping cream (33%)                          -> KEEP 1073: whipping cream
+REMOVE 1079: white onion                                   -> KEEP 716: onion
+REMOVE 1082: white rice, long grain                        -> KEEP 1081: white rice
+REMOVE 1089: whole milk                                    -> KEEP 656: milk, whole (3.25%)
+REMOVE 1090: whole wheat flour                             -> KEEP 409: flour, whole wheat
+REMOVE 1103: yellow mustard                                -> KEEP 684: mustard, yellow
+REMOVE 1104: yellow split peas                             -> KEEP 961: split peas, yellow (dried)
+REMOVE 1113: zaatar                                        -> KEEP 1112: za'atar

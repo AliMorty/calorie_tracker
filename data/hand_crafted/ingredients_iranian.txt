@@ -1,0 +1,779 @@
+# Ghormeh Sabzi (Herb Stew)
+lamb
+kidney beans
+dried fenugreek leaves
+parsley
+cilantro
+spinach
+green onion
+leek
+chives
+dried limes (limu omani)
+turmeric
+salt
+black pepper
+onion
+oil
+saffron
+
+# Gheyemeh (Split Pea Stew)
+beef
+yellow split peas
+onion
+tomato paste
+dried limes (limu omani)
+turmeric
+cinnamon
+black pepper
+salt
+oil
+saffron
+potato
+fried potato strips
+
+# Fesenjan (Pomegranate Walnut Stew)
+chicken
+walnuts
+pomegranate molasses
+onion
+turmeric
+cinnamon
+cardamom
+sugar
+salt
+black pepper
+oil
+saffron
+
+# Khoresh Karafs (Celery Stew)
+beef
+celery
+parsley
+mint
+onion
+lemon juice
+turmeric
+salt
+black pepper
+oil
+saffron
+
+# Khoresh Bademjan (Eggplant Stew)
+lamb
+eggplant
+onion
+tomato paste
+turmeric
+cinnamon
+saffron
+salt
+black pepper
+oil
+dried limes (limu omani)
+tomato
+
+# Khoresh Holu (Peach Stew)
+chicken
+peach
+onion
+saffron
+turmeric
+cinnamon
+sugar
+salt
+black pepper
+oil
+lemon juice
+
+# Khoresh Aloo Esfenaj (Spinach Plum Stew)
+lamb
+spinach
+dried plums (aloo)
+onion
+turmeric
+cinnamon
+salt
+black pepper
+oil
+saffron
+lemon juice
+
+# Khoresh Morgh (Chicken Stew)
+chicken
+onion
+tomato paste
+turmeric
+saffron
+salt
+black pepper
+oil
+lemon juice
+
+# Chelow (Persian Steamed Rice)
+basmati rice
+water
+salt
+oil
+butter
+saffron
+
+# Tahdig (Crispy Rice Crust)
+basmati rice
+water
+salt
+oil
+butter
+saffron
+lavash bread
+potato
+
+# Polo ba Morgh (Rice with Chicken)
+basmati rice
+chicken
+onion
+saffron
+turmeric
+salt
+black pepper
+oil
+butter
+tomato paste
+
+# Baghali Polo (Rice with Fava Beans and Dill)
+basmati rice
+fava beans
+fresh dill
+lamb
+onion
+turmeric
+saffron
+salt
+black pepper
+oil
+butter
+
+# Zereshk Polo (Rice with Barberries)
+basmati rice
+barberries (zereshk)
+saffron
+butter
+sugar
+onion
+chicken
+turmeric
+salt
+black pepper
+oil
+
+# Sabzi Polo (Herb Rice)
+basmati rice
+fresh parsley
+fresh cilantro
+fresh dill
+fresh fenugreek
+garlic
+salt
+oil
+butter
+saffron
+
+# Adas Polo (Lentil Rice)
+basmati rice
+green lentils
+raisins
+dates
+fried onion
+turmeric
+cinnamon
+cumin
+salt
+black pepper
+oil
+butter
+
+# Shirin Polo (Sweet Rice)
+basmati rice
+orange peel
+saffron
+sugar
+almond slivers
+pistachio slivers
+barberries (zereshk)
+chicken
+oil
+butter
+salt
+
+# Kabab Koobideh
+ground lamb
+ground beef
+onion
+parsley
+saffron
+turmeric
+salt
+black pepper
+baking soda
+egg
+
+# Kabab Barg (Lamb Fillet Kabab)
+lamb loin
+onion
+lemon juice
+saffron
+salt
+black pepper
+oil
+
+# Joojeh Kabab (Chicken Kabab)
+chicken
+lemon juice
+saffron
+onion
+yogurt
+turmeric
+salt
+black pepper
+oil
+butter
+
+# Kabab Shishlik (Lamb Rib Kabab)
+lamb ribs
+onion
+lemon juice
+saffron
+salt
+black pepper
+oil
+butter
+turmeric
+
+# Kabab Chenjeh (Lamb Cube Kabab)
+lamb
+onion
+lemon juice
+saffron
+salt
+black pepper
+oil
+
+# Ash Reshteh (Herb Noodle Soup)
+reshteh noodles
+kidney beans
+chickpeas
+lentils
+spinach
+parsley
+cilantro
+leek
+green onion
+fenugreek leaves
+turmeric
+kashk (whey)
+fried onion
+dried mint
+salt
+black pepper
+oil
+saffron
+
+# Ash Jow (Barley Soup)
+pearl barley
+chickpeas
+kidney beans
+lentils
+onion
+spinach
+parsley
+turmeric
+salt
+black pepper
+oil
+dried mint
+kashk (whey)
+fried onion
+
+# Abgoosht (Lamb and Chickpea Broth)
+lamb
+chickpeas
+white beans
+potato
+tomato
+onion
+turmeric
+dried limes (limu omani)
+salt
+black pepper
+oil
+
+# Aash Mast (Yogurt Soup)
+yogurt
+pearl barley
+rice
+spinach
+beet
+onion
+garlic
+dried mint
+salt
+black pepper
+oil
+flour
+
+# Haleem (Wheat and Meat Porridge)
+wheat berries
+lamb
+onion
+turmeric
+cinnamon
+salt
+black pepper
+oil
+butter
+sugar
+
+# Mirza Ghasemi (Eggplant and Egg Dip)
+eggplant
+tomato
+egg
+garlic
+turmeric
+salt
+black pepper
+oil
+
+# Kuku Sabzi (Herb Frittata)
+eggs
+parsley
+cilantro
+dill
+fenugreek leaves
+green onion
+walnuts
+barberries (zereshk)
+flour
+baking powder
+turmeric
+salt
+black pepper
+oil
+
+# Kuku Sib Zamini (Potato Frittata)
+eggs
+potato
+onion
+turmeric
+saffron
+salt
+black pepper
+oil
+
+# Kuku Kadoo (Zucchini Frittata)
+eggs
+zucchini
+onion
+turmeric
+saffron
+salt
+black pepper
+oil
+
+# Mast-o-Khiar (Yogurt and Cucumber)
+yogurt
+cucumber
+dried mint
+dried dill
+garlic
+salt
+black pepper
+walnuts
+raisins
+
+# Mast-o-Mousir (Yogurt and Shallot)
+yogurt
+dried shallot (mousir)
+salt
+dried mint
+
+# Salad Shirazi (Persian Salad)
+tomato
+cucumber
+onion
+parsley
+lemon juice
+olive oil
+salt
+black pepper
+dried mint
+
+# Salad Olivieh (Persian Potato Salad)
+potato
+chicken breast
+eggs
+carrot
+peas
+pickled cucumber (cornichon)
+mayonnaise
+lemon juice
+salt
+black pepper
+
+# Borani Bademjan (Eggplant Yogurt Dip)
+eggplant
+yogurt
+garlic
+turmeric
+salt
+dried mint
+oil
+fried onion
+walnuts
+
+# Borani Esfenaj (Spinach Yogurt Dip)
+spinach
+yogurt
+garlic
+salt
+dried mint
+oil
+fried onion
+
+# Nan-e Barbari (Flatbread)
+all-purpose flour
+water
+yeast
+salt
+oil
+sesame seeds
+nigella seeds
+
+# Nan-e Sangak (Whole Wheat Flatbread)
+whole wheat flour
+all-purpose flour
+water
+yeast
+salt
+sesame seeds
+
+# Nan-e Lavash (Thin Flatbread)
+all-purpose flour
+water
+yeast
+salt
+
+# Tahchin (Saffron Rice Cake with Chicken)
+basmati rice
+chicken
+yogurt
+eggs
+saffron
+turmeric
+salt
+black pepper
+oil
+butter
+barberries (zereshk)
+
+# Dolmeh Barg (Stuffed Grape Leaves)
+grape leaves
+rice
+ground lamb
+onion
+parsley
+dill
+cilantro
+green onion
+tomato paste
+lemon juice
+turmeric
+cinnamon
+salt
+black pepper
+oil
+dried plums
+
+# Dolmeh Felfel (Stuffed Bell Peppers)
+bell pepper
+rice
+ground beef
+onion
+tomato paste
+parsley
+dill
+turmeric
+cinnamon
+salt
+black pepper
+oil
+lemon juice
+
+# Kofta (Meatballs in Tomato Sauce)
+ground beef
+ground lamb
+onion
+egg
+turmeric
+cinnamon
+salt
+black pepper
+parsley
+rice
+yellow split peas
+tomato paste
+oil
+
+# Mahi Shekampor (Stuffed Fish)
+whole white fish
+walnuts
+pomegranate molasses
+barberries (zereshk)
+onion
+parsley
+cilantro
+garlic
+turmeric
+saffron
+salt
+black pepper
+oil
+
+# Zeytoun Parvardeh (Marinated Olives)
+green olives
+walnuts
+pomegranate molasses
+garlic
+dried mint
+parsley
+salt
+black pepper
+
+# Kotlet (Pan-fried Meat Patty)
+ground beef
+potato
+onion
+egg
+turmeric
+salt
+black pepper
+flour
+oil
+parsley
+
+# Sholeh Zard (Saffron Rice Pudding)
+white rice
+water
+sugar
+saffron
+rose water
+cardamom
+almond slivers
+cinnamon
+pistachio slivers
+butter
+
+# Firni / Fereni (Rice Flour Pudding)
+rice flour
+milk
+sugar
+rose water
+cardamom
+saffron
+almond slivers
+pistachio slivers
+
+# Halva (Saffron Wheat Pudding)
+wheat flour
+sugar
+butter
+saffron
+rose water
+cardamom
+water
+almond slivers
+pistachio slivers
+
+# Zoolbia (Fried Dough Sweet)
+all-purpose flour
+rice flour
+yogurt
+water
+yeast
+saffron
+rose water
+sugar
+oil
+
+# Bamieh (Fried Dough Fritters)
+all-purpose flour
+eggs
+butter
+water
+salt
+sugar
+saffron
+rose water
+oil
+
+# Nan-e Berenji (Rice Cookie)
+rice flour
+butter
+egg yolk
+powdered sugar
+rose water
+cardamom
+poppy seeds
+
+# Nan-e Nokhodchi (Chickpea Cookie)
+chickpea flour
+butter
+powdered sugar
+cardamom
+pistachio
+
+# Gaz (Nougat)
+egg whites
+sugar
+honey
+pistachio
+almond
+rose water
+cardamom
+
+# Sohan (Saffron Brittle Toffee)
+wheat sprouts
+butter
+sugar
+saffron
+rose water
+pistachio slivers
+almond slivers
+
+# Chai (Persian Tea)
+black tea
+water
+sugar
+cardamom
+saffron
+rose water
+
+# Doogh (Yogurt Drink)
+yogurt
+water
+dried mint
+salt
+dried rose petals
+
+# Sharbat Sekanjabin (Vinegar Mint Syrup Drink)
+sugar
+water
+white vinegar
+fresh mint
+cucumber
+
+# Sharbat Aab Limoo (Lemonade)
+lemon juice
+water
+sugar
+rose water
+saffron
+
+# Sharbat Albaloo (Sour Cherry Drink)
+sour cherry juice
+water
+sugar
+rose water
+
+# Ab Havij Bastani (Carrot Ice Cream Drink)
+carrot juice
+vanilla ice cream
+saffron
+rose water
+
+# Omelet (Persian Tomato Omelette)
+eggs
+tomato
+onion
+turmeric
+salt
+black pepper
+oil
+butter
+
+# Nargesi (Egg and Spinach)
+eggs
+spinach
+onion
+turmeric
+salt
+black pepper
+oil
+
+# Panir va Sabzi (Herb and Cheese Platter)
+feta cheese
+walnuts
+fresh parsley
+fresh mint
+fresh basil
+fresh tarragon
+fresh chives
+radish
+lavash bread
+
+# Kalam Polo (Rice with Cabbage and Meatballs)
+basmati rice
+cabbage
+ground beef
+onion
+tomato paste
+turmeric
+cinnamon
+cumin
+salt
+black pepper
+oil
+butter
+egg
+
+# Estamboli Polo (Tomato Rice with Potato)
+basmati rice
+ground beef
+potato
+tomato paste
+onion
+turmeric
+salt
+black pepper
+oil
+butter
+saffron
+
+# Lobia Polo (Rice with Green Beans)
+basmati rice
+green beans
+ground beef
+onion
+tomato paste
+turmeric
+cinnamon
+salt
+black pepper
+oil
+butter
+
+# Morassa Polo (Jeweled Rice)
+basmati rice
+chicken
+orange peel
+barberries (zereshk)
+pistachio slivers
+almond slivers
+raisins
+carrot
+saffron
+cardamom
+cinnamon
+rose water
+butter
+oil
+salt
+sugar

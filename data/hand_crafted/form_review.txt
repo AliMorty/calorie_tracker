@@ -1,0 +1,913 @@
+achiote paste                            | none    -> achiote paste
+acorn squash                             | cooked  -> acorn squash, cooked  <-- CHANGED
+agave syrup                              | none    -> agave syrup
+akkawi cheese                            | none    -> akkawi cheese
+all-bran                                 | none    -> all-bran
+all-purpose flour                        | none    -> all-purpose flour
+allspice                                 | none    -> allspice
+almond                                   | none    -> almond
+almond butter                            | none    -> almond butter
+almond extract                           | none    -> almond extract
+almond milk                              | none    -> almond milk
+amchur                                   | none    -> amchur
+anchovies                                | none    -> anchovies
+anchovy broth                            | none    -> anchovy broth
+angel hair pasta                         | cooked  -> angel hair pasta, cooked  <-- CHANGED
+apple                                    | raw     -> apple, raw  <-- CHANGED
+apple cider vinegar                      | none    -> apple cider vinegar
+apple juice                              | none    -> apple juice
+applesauce                               | none    -> applesauce
+apricot                                  | raw     -> apricot, raw  <-- CHANGED
+arborio rice (risotto)                   | cooked  -> arborio rice (risotto), cooked  <-- CHANGED
+artichoke                                | cooked  -> artichoke, cooked  <-- CHANGED
+arugula                                  | raw     -> arugula, raw  <-- CHANGED
+asiento (pork fat)                       | none    -> asiento (pork fat)
+asparagus                                | cooked  -> asparagus, cooked  <-- CHANGED
+avocado                                  | raw     -> avocado, raw  <-- CHANGED
+avocado oil                              | none    -> avocado oil
+back bacon                               | none    -> back bacon
+bacon                                    | none    -> bacon
+bacon, turkey                            | none    -> bacon, turkey
+bagels                                   | none    -> bagels
+baguette                                 | none    -> baguette
+baked beans, canned                      | none    -> baked beans, canned
+baking powder                            | none    -> baking powder
+baking soda                              | none    -> baking soda
+balsamic vinaigrette                     | none    -> balsamic vinaigrette
+balsamic vinegar                         | none    -> balsamic vinegar
+bamboo shoots                            | cooked  -> bamboo shoots, cooked  <-- CHANGED
+banana                                   | raw     -> banana, raw  <-- CHANGED
+banana leaves                            | none    -> banana leaves
+barberries (zereshk)                     | none    -> barberries (zereshk)
+barley, pearl                            | cooked  -> barley, pearl, cooked  <-- CHANGED
+basil                                    | none    -> basil
+basil, dried                             | none    -> basil, dried
+basmati rice                             | cooked  -> basmati rice, cooked  <-- CHANGED
+bay leaves                               | none    -> bay leaves
+bbq sauce                                | none    -> bbq sauce
+bean sprouts                             | raw     -> bean sprouts, raw  <-- CHANGED
+beef                                     | cooked  -> beef, cooked  <-- CHANGED
+beef back ribs                           | cooked  -> beef back ribs, cooked  <-- CHANGED
+beef bones                               | cooked  -> beef bones, cooked  <-- CHANGED
+beef brisket                             | cooked  -> beef brisket, cooked  <-- CHANGED
+beef broth                               | none    -> beef broth
+beef cheeks                              | cooked  -> beef cheeks, cooked  <-- CHANGED
+beef chuck                               | cooked  -> beef chuck, cooked  <-- CHANGED
+beef cutlets                             | cooked  -> beef cutlets, cooked  <-- CHANGED
+beef gravy                               | none    -> beef gravy
+beef ribeye                              | cooked  -> beef ribeye, cooked  <-- CHANGED
+beef roast                               | cooked  -> beef roast, cooked  <-- CHANGED
+beef roast, sirloin tip                  | cooked  -> beef roast, sirloin tip, cooked  <-- CHANGED
+beef shank                               | cooked  -> beef shank, cooked  <-- CHANGED
+beef short ribs                          | cooked  -> beef short ribs, cooked  <-- CHANGED
+beef sirloin                             | cooked  -> beef sirloin, cooked  <-- CHANGED
+beef steak, flank                        | cooked  -> beef steak, flank, cooked  <-- CHANGED
+beef steak, strip loin                   | cooked  -> beef steak, strip loin, cooked  <-- CHANGED
+beef steak, tenderloin (filet mignon)    | cooked  -> beef steak, tenderloin (filet mignon), cooked  <-- CHANGED
+beef tripe                               | cooked  -> beef tripe, cooked  <-- CHANGED
+beer                                     | none    -> beer
+beet                                     | cooked  -> beet, cooked  <-- CHANGED
+bell pepper                              | raw     -> bell pepper, raw  <-- CHANGED
+biscuit dough (refrigerated)             | none    -> biscuit dough (refrigerated)
+black bean paste                         | none    -> black bean paste
+black beans, canned                      | none    -> black beans, canned
+black garlic oil                         | none    -> black garlic oil
+black pepper                             | none    -> black pepper
+black tea                                | none    -> black tea
+black vinegar                            | none    -> black vinegar
+black-eyed peas, canned                  | none    -> black-eyed peas, canned
+blackberries                             | raw     -> blackberries, raw  <-- CHANGED
+blueberries                              | raw     -> blueberries, raw  <-- CHANGED
+bok choy                                 | cooked  -> bok choy, cooked  <-- CHANGED
+bolillo bread                            | none    -> bolillo bread
+bologna                                  | none    -> bologna
+bonito flakes                            | none    -> bonito flakes
+brandy                                   | none    -> brandy
+bread                                    | none    -> bread
+bread, multigrain                        | none    -> bread, multigrain
+bread, sourdough                         | none    -> bread, sourdough
+bread, whole wheat sandwich              | none    -> bread, whole wheat sandwich
+breadcrumbs                              | none    -> breadcrumbs
+breaded shrimp (frozen)                  | none    -> breaded shrimp (frozen)
+breakfast sausage links                  | none    -> breakfast sausage links
+breakfast sausage patties                | none    -> breakfast sausage patties
+brie cheese                              | none    -> brie cheese
+broccoli                                 | cooked  -> broccoli, cooked  <-- CHANGED
+broken rice                              | cooked  -> broken rice, cooked  <-- CHANGED
+brown rice                               | cooked  -> brown rice, cooked  <-- CHANGED
+brown sugar                              | none    -> brown sugar
+brussels sprouts                         | cooked  -> brussels sprouts, cooked  <-- CHANGED
+bulgur wheat                             | cooked  -> bulgur wheat, cooked  <-- CHANGED
+burger buns                              | none    -> burger buns
+butter                                   | none    -> butter
+buttermilk                               | none    -> buttermilk
+butternut squash                         | cooked  -> butternut squash, cooked  <-- CHANGED
+cabbage                                  | raw     -> cabbage, raw  <-- CHANGED
+cactus paddles                           | cooked  -> cactus paddles, cooked  <-- CHANGED
+caesar dressing                          | none    -> caesar dressing
+cajun seasoning                          | none    -> cajun seasoning
+canned artichoke hearts                  | none    -> canned artichoke hearts
+canned chicken                           | none    -> canned chicken
+canned corn                              | none    -> canned corn
+canned crab                              | none    -> canned crab
+canned green beans                       | none    -> canned green beans
+canned green chiles                      | none    -> canned green chiles
+canned mackerel                          | none    -> canned mackerel
+canned mushrooms                         | none    -> canned mushrooms
+canned peas                              | none    -> canned peas
+canned pumpkin puree                     | none    -> canned pumpkin puree
+canned salmon                            | none    -> canned salmon
+canned sardines                          | none    -> canned sardines
+canned tomatoes, diced                   | none    -> canned tomatoes, diced
+canned tomatoes, whole                   | none    -> canned tomatoes, whole
+canned tuna, in oil                      | none    -> canned tuna, in oil
+canned tuna, in water                    | none    -> canned tuna, in water
+canola oil                               | none    -> canola oil
+cantaloupe                               | raw     -> cantaloupe, raw  <-- CHANGED
+capers                                   | none    -> capers
+caraway seeds                            | none    -> caraway seeds
+cardamom                                 | none    -> cardamom
+cardamom, ground                         | none    -> cardamom, ground
+carrot                                   | raw     -> carrot, raw  <-- CHANGED
+carrot juice                             | none    -> carrot juice
+cashews                                  | none    -> cashews
+catfish fillet                           | cooked  -> catfish fillet, cooked  <-- CHANGED
+cauliflower                              | raw     -> cauliflower, raw  <-- CHANGED
+cayenne pepper                           | none    -> cayenne pepper
+celery                                   | raw     -> celery, raw  <-- CHANGED
+celery root / celeriac                   | raw     -> celery root / celeriac, raw  <-- CHANGED
+celery salt                              | none    -> celery salt
+celery seed                              | none    -> celery seed
+celery stalk                             | raw     -> celery stalk, raw  <-- CHANGED
+century egg                              | none    -> century egg
+cheddar cheese                           | none    -> cheddar cheese
+cheddar cheese powder                    | none    -> cheddar cheese powder
+cheerios                                 | none    -> cheerios
+cheese curds                             | none    -> cheese curds
+cherries                                 | raw     -> cherries, raw  <-- CHANGED
+cherry juice                             | none    -> cherry juice
+cherry tomatoes                          | raw     -> cherry tomatoes, raw  <-- CHANGED
+chia seeds                               | none    -> chia seeds
+chicharrón                               | none    -> chicharrón
+chicken                                  | cooked  -> chicken, cooked  <-- CHANGED
+chicken breast                           | cooked  -> chicken breast, cooked  <-- CHANGED
+chicken broth                            | none    -> chicken broth
+chicken drumstick                        | cooked  -> chicken drumstick, cooked  <-- CHANGED
+chicken skin                             | cooked  -> chicken skin, cooked  <-- CHANGED
+chicken thigh, bone-in skin-on           | cooked  -> chicken thigh, bone-in skin-on, cooked  <-- CHANGED
+chicken thigh, boneless skinless         | cooked  -> chicken thigh, boneless skinless, cooked  <-- CHANGED
+chicken thighs                           | cooked  -> chicken thighs, cooked  <-- CHANGED
+chicken wings                            | cooked  -> chicken wings, cooked  <-- CHANGED
+chickpea flour                           | none    -> chickpea flour
+chickpeas                                | cooked  -> chickpeas, cooked  <-- CHANGED
+chicory                                  | raw     -> chicory, raw  <-- CHANGED
+chili                                    | none    -> chili
+chili flakes                             | none    -> chili flakes
+chili oil                                | none    -> chili oil
+chili paste                              | none    -> chili paste
+chili powder                             | none    -> chili powder
+chili sauce                              | none    -> chili sauce
+chinese broccoli                         | cooked  -> chinese broccoli, cooked  <-- CHANGED
+chipotle peppers in adobo                | none    -> chipotle peppers in adobo
+chips, all dressed                       | none    -> chips, all dressed
+chips, barbecue                          | none    -> chips, barbecue
+chips, ketchup                           | none    -> chips, ketchup
+chips, regular / plain                   | none    -> chips, regular / plain
+chips, salt and vinegar                  | none    -> chips, salt and vinegar
+chips, sour cream and onion              | none    -> chips, sour cream and onion
+chives                                   | none    -> chives
+chocolate                                | none    -> chocolate
+chocolate chips                          | none    -> chocolate chips
+chocolate chips, dark                    | none    -> chocolate chips, dark
+chocolate chips, milk                    | none    -> chocolate chips, milk
+chocolate chips, semi-sweet              | none    -> chocolate chips, semi-sweet
+chocolate chips, white                   | none    -> chocolate chips, white
+chopped walnuts                          | none    -> chopped walnuts
+chorizo                                  | cooked  -> chorizo, cooked  <-- CHANGED
+chow mein noodles                        | cooked  -> chow mein noodles, cooked  <-- CHANGED
+ciabatta                                 | none    -> ciabatta
+cilantro                                 | raw     -> cilantro, raw  <-- CHANGED
+cilantro root                            | raw     -> cilantro root, raw  <-- CHANGED
+cilantro, dried                          | none    -> cilantro, dried
+cinnamon                                 | none    -> cinnamon
+cinnamon stick                           | none    -> cinnamon stick
+clamato juice                            | none    -> clamato juice
+clams                                    | cooked  -> clams, cooked  <-- CHANGED
+cloves                                   | none    -> cloves
+cocoa powder                             | none    -> cocoa powder
+coconut                                  | none    -> coconut
+coconut aminos                           | none    -> coconut aminos
+coconut cream                            | none    -> coconut cream
+coconut flakes                           | none    -> coconut flakes
+coconut milk                             | none    -> coconut milk
+coconut milk beverage                    | none    -> coconut milk beverage
+coconut oil                              | none    -> coconut oil
+coconut water                            | none    -> coconut water
+cod                                      | cooked  -> cod, cooked  <-- CHANGED
+coffee cream                             | none    -> coffee cream
+coffee, ground                           | none    -> coffee, ground
+coffee, instant                          | none    -> coffee, instant
+coffee, whole bean                       | none    -> coffee, whole bean
+colby cheese                             | none    -> colby cheese
+collard greens                           | cooked  -> collard greens, cooked  <-- CHANGED
+condensed milk                           | none    -> condensed milk
+cookies, chocolate chip                  | none    -> cookies, chocolate chip
+cookies, digestive                       | none    -> cookies, digestive
+cookies, oatmeal raisin                  | none    -> cookies, oatmeal raisin
+cookies, oreo                            | none    -> cookies, oreo
+coriander                                | none    -> coriander
+coriander powder                         | none    -> coriander powder
+coriander seeds                          | none    -> coriander seeds
+corn                                     | cooked  -> corn, cooked  <-- CHANGED
+corn flakes                              | none    -> corn flakes
+corn on the cob                          | cooked  -> corn on the cob, cooked  <-- CHANGED
+corn syrup                               | none    -> corn syrup
+corn tortilla                            | none    -> corn tortilla
+corned beef                              | none    -> corned beef
+cornmeal                                 | none    -> cornmeal
+cornstarch                               | none    -> cornstarch
+cotija cheese                            | none    -> cotija cheese
+cottage cheese, 1%                       | none    -> cottage cheese, 1%
+cottage cheese, 2%                       | none    -> cottage cheese, 2%
+cottage cheese, 4%                       | none    -> cottage cheese, 4%
+couscous                                 | cooked  -> couscous, cooked  <-- CHANGED
+crab                                     | cooked  -> crab, cooked  <-- CHANGED
+crackers, ritz                           | none    -> crackers, ritz
+crackers, soda                           | none    -> crackers, soda
+crackers, whole grain                    | none    -> crackers, whole grain
+cranberries                              | raw     -> cranberries, raw  <-- CHANGED
+cranberry cocktail                       | none    -> cranberry cocktail
+cranberry juice                          | none    -> cranberry juice
+cranberry sauce                          | none    -> cranberry sauce
+cream                                    | none    -> cream
+cream cheese                             | none    -> cream cheese
+cream cheese, light                      | none    -> cream cheese, light
+cream of mushroom soup                   | none    -> cream of mushroom soup
+cream of tartar                          | none    -> cream of tartar
+cream of wheat                           | cooked  -> cream of wheat, cooked  <-- CHANGED
+crescent roll dough (refrigerated)       | cooked  -> crescent roll dough (refrigerated), cooked  <-- CHANGED
+croissants                               | none    -> croissants
+croutons                                 | none    -> croutons
+crushed tomatoes                         | none    -> crushed tomatoes
+cucumber                                 | raw     -> cucumber, raw  <-- CHANGED
+cumin                                    | none    -> cumin
+cumin seeds                              | none    -> cumin seeds
+cumin, ground                            | none    -> cumin, ground
+curing salt                              | none    -> curing salt
+currants                                 | raw     -> currants, raw  <-- CHANGED
+curry leaves                             | none    -> curry leaves
+curry paste, green                       | none    -> curry paste, green
+curry paste, red                         | none    -> curry paste, red
+curry paste, yellow                      | none    -> curry paste, yellow
+curry powder                             | none    -> curry powder
+curry roux                               | none    -> curry roux
+daikon radish                            | raw     -> daikon radish, raw  <-- CHANGED
+dandelion greens                         | raw     -> dandelion greens, raw  <-- CHANGED
+dark chocolate                           | none    -> dark chocolate
+dark chocolate, baking                   | none    -> dark chocolate, baking
+dark soy sauce                           | none    -> dark soy sauce
+dashi broth                              | none    -> dashi broth
+dates                                    | none    -> dates
+dijon mustard                            | none    -> dijon mustard
+dill                                     | none    -> dill
+dill pickles                             | none    -> dill pickles
+dill, dried                              | none    -> dill, dried
+doubanjiang                              | none    -> doubanjiang
+dried ancho chiles                       | none    -> dried ancho chiles
+dried apricots                           | none    -> dried apricots
+dried arbol chiles                       | none    -> dried arbol chiles
+dried chickpeas                          | cooked  -> dried chickpeas, cooked  <-- CHANGED
+dried chili peppers                      | none    -> dried chili peppers
+dried chipotle chiles                    | none    -> dried chipotle chiles
+dried corn husks                         | none    -> dried corn husks
+dried cranberries                        | none    -> dried cranberries
+dried fenugreek leaves                   | none    -> dried fenugreek leaves
+dried guajillo chiles                    | none    -> dried guajillo chiles
+dried hibiscus flowers                   | none    -> dried hibiscus flowers
+dried limes (limu omani)                 | none    -> dried limes (limu omani)
+dried mango                              | none    -> dried mango
+dried mint                               | none    -> dried mint
+dried mulato chiles                      | none    -> dried mulato chiles
+dried oregano                            | none    -> dried oregano
+dried pasilla chiles                     | none    -> dried pasilla chiles
+dried rose petals                        | none    -> dried rose petals
+dried rosemary                           | none    -> dried rosemary
+dried shallot (mousir)                   | none    -> dried shallot (mousir)
+dried shrimp                             | none    -> dried shrimp
+dried thyme                              | none    -> dried thyme
+dried white beans                        | cooked  -> dried white beans, cooked  <-- CHANGED
+dumpling wrappers                        | cooked  -> dumpling wrappers, cooked  <-- CHANGED
+edamame                                  | cooked  -> edamame, cooked  <-- CHANGED
+egg                                      | cooked  -> egg, cooked  <-- CHANGED
+egg noodles                              | cooked  -> egg noodles, cooked  <-- CHANGED
+egg roll wrappers                        | cooked  -> egg roll wrappers, cooked  <-- CHANGED
+egg whites                               | cooked  -> egg whites, cooked  <-- CHANGED
+egg yolk                                 | cooked  -> egg yolk, cooked  <-- CHANGED
+eggplant                                 | cooked  -> eggplant, cooked  <-- CHANGED
+enchilada sauce                          | none    -> enchilada sauce
+english muffins                          | none    -> english muffins
+epazote                                  | none    -> epazote
+espresso pods (nespresso / keurig)       | none    -> espresso pods (nespresso / keurig)
+evaporated milk                          | none    -> evaporated milk
+everything bagel seasoning               | none    -> everything bagel seasoning
+farro                                    | cooked  -> farro, cooked  <-- CHANGED
+fava beans                               | cooked  -> fava beans, cooked  <-- CHANGED
+fennel                                   | raw     -> fennel, raw  <-- CHANGED
+fennel seeds                             | none    -> fennel seeds
+fenugreek leaves                         | none    -> fenugreek leaves
+fenugreek seeds                          | none    -> fenugreek seeds
+fermented black beans                    | none    -> fermented black beans
+fermented soybean paste                  | none    -> fermented soybean paste
+feta cheese                              | none    -> feta cheese
+fettuccine                               | cooked  -> fettuccine, cooked  <-- CHANGED
+fig                                      | raw     -> fig, raw  <-- CHANGED
+fig newtons                              | none    -> fig newtons
+fine bulgur wheat                        | cooked  -> fine bulgur wheat, cooked  <-- CHANGED
+fish cake                                | none    -> fish cake
+fish cakes                               | none    -> fish cakes
+fish sauce                               | none    -> fish sauce
+fish sticks (frozen)                     | none    -> fish sticks (frozen)
+five spice powder                        | none    -> five spice powder
+flaxseed, ground                         | none    -> flaxseed, ground
+flour tortillas                          | none    -> flour tortillas
+flour, bread                             | none    -> flour, bread
+flour, self-rising                       | none    -> flour, self-rising
+flour, whole wheat                       | none    -> flour, whole wheat
+freekeh                                  | cooked  -> freekeh, cooked  <-- CHANGED
+french fries                             | none    -> french fries
+fresh pasta (refrigerated)               | cooked  -> fresh pasta (refrigerated), cooked  <-- CHANGED
+fresh tarragon                           | none    -> fresh tarragon
+fried onion                              | none    -> fried onion
+fried shallots                           | none    -> fried shallots
+frozen blueberries                       | raw     -> frozen blueberries, raw  <-- CHANGED
+frozen broccoli                          | cooked  -> frozen broccoli, cooked  <-- CHANGED
+frozen burritos                          | none    -> frozen burritos
+frozen cauliflower                       | cooked  -> frozen cauliflower, cooked  <-- CHANGED
+frozen chicken fingers                   | none    -> frozen chicken fingers
+frozen chicken nuggets                   | none    -> frozen chicken nuggets
+frozen corn                              | cooked  -> frozen corn, cooked  <-- CHANGED
+frozen dumplings / potstickers           | none    -> frozen dumplings / potstickers
+frozen edamame                           | cooked  -> frozen edamame, cooked  <-- CHANGED
+frozen lasagna                           | none    -> frozen lasagna
+frozen mac and cheese                    | none    -> frozen mac and cheese
+frozen mango chunks                      | raw     -> frozen mango chunks, raw  <-- CHANGED
+frozen mixed berries                     | raw     -> frozen mixed berries, raw  <-- CHANGED
+frozen onion rings                       | none    -> frozen onion rings
+frozen pancakes                          | none    -> frozen pancakes
+frozen peach slices                      | raw     -> frozen peach slices, raw  <-- CHANGED
+frozen peas                              | cooked  -> frozen peas, cooked  <-- CHANGED
+frozen pizza, cheese                     | none    -> frozen pizza, cheese
+frozen pizza, pepperoni                  | none    -> frozen pizza, pepperoni
+frozen pizza, vegetable                  | cooked  -> frozen pizza, vegetable, cooked  <-- CHANGED
+frozen pot pie                           | cooked  -> frozen pot pie, cooked  <-- CHANGED
+frozen raspberries                       | raw     -> frozen raspberries, raw  <-- CHANGED
+frozen samosas                           | cooked  -> frozen samosas, cooked  <-- CHANGED
+frozen spinach                           | cooked  -> frozen spinach, cooked  <-- CHANGED
+frozen spring rolls                      | cooked  -> frozen spring rolls, cooked  <-- CHANGED
+frozen stir fry vegetables               | cooked  -> frozen stir fry vegetables, cooked  <-- CHANGED
+frozen strawberries                      | raw     -> frozen strawberries
+frozen vegetables, mixed                 | cooked  -> frozen vegetables, mixed, cooked  <-- CHANGED
+frozen waffles                           | cooked  -> frozen waffles, cooked  <-- CHANGED
+frozen yogurt                            | none    -> frozen yogurt
+full-fat yogurt                          | none    -> full-fat yogurt
+fusilli                                  | cooked  -> fusilli, cooked  <-- CHANGED
+galangal                                 | none    -> galangal
+garam masala                             | none    -> garam masala
+garlic                                   | none    -> garlic
+garlic powder                            | none    -> garlic powder
+garlic salt                              | none    -> garlic salt
+gelatin, unflavoured                     | none    -> gelatin, unflavoured
+gelato                                   | none    -> gelato
+ghee                                     | none    -> ghee
+giant lima beans                         | cooked  -> giant lima beans, cooked  <-- CHANGED
+ginger                                   | none    -> ginger
+ginger, ground                           | none    -> ginger, ground
+glutinous rice                           | cooked  -> glutinous rice, cooked  <-- CHANGED
+glutinous rice flour                     | none    -> glutinous rice flour
+gnocchi (refrigerated)                   | cooked  -> gnocchi (refrigerated), cooked  <-- CHANGED
+gochugaru                                | none    -> gochugaru
+gochujang                                | none    -> gochujang
+gouda cheese                             | none    -> gouda cheese
+graham cracker crumbs                    | none    -> graham cracker crumbs
+granola                                  | none    -> granola
+granola bars, chewy                      | none    -> granola bars, chewy
+granola bars, regular                    | none    -> granola bars, regular
+grape juice                              | none    -> grape juice
+grape leaves                             | cooked  -> grape leaves, cooked  <-- CHANGED
+grapefruit                               | raw     -> grapefruit, raw  <-- CHANGED
+grapefruit juice                         | none    -> grapefruit juice
+grapes, green                            | raw     -> grapes, green, raw  <-- CHANGED
+gravy                                    | none    -> gravy
+greek yogurt                             | none    -> greek yogurt
+greek yogurt, 0%                         | none    -> greek yogurt, 0%
+greek yogurt, 2%                         | none    -> greek yogurt, 2%
+greek yogurt, 5%                         | none    -> greek yogurt, 5%
+green beans                              | cooked  -> green beans, cooked  <-- CHANGED
+green chilies                            | none    -> green chilies
+green curry paste                        | none    -> green curry paste
+green olives                             | none    -> green olives
+green onion                              | raw     -> green onion, raw  <-- CHANGED
+grilled pork                             | cooked  -> grilled pork, cooked  <-- CHANGED
+ground beef                              | cooked  -> ground beef, cooked  <-- CHANGED
+ground beef, extra lean (10% fat)        | cooked  -> ground beef, extra lean (10% fat), cooked  <-- CHANGED
+ground beef, lean (17% fat)              | cooked  -> ground beef, lean (17% fat), cooked  <-- CHANGED
+ground beef, regular (27% fat)           | cooked  -> ground beef, regular (27% fat), cooked  <-- CHANGED
+ground chicken                           | cooked  -> ground chicken, cooked  <-- CHANGED
+ground lamb                              | cooked  -> ground lamb, cooked  <-- CHANGED
+ground pork                              | cooked  -> ground pork, cooked  <-- CHANGED
+ground turkey                            | cooked  -> ground turkey, cooked  <-- CHANGED
+guacamole                                | none    -> guacamole
+guava                                    | raw     -> guava, raw  <-- CHANGED
+gummy bears / gummies                    | none    -> gummy bears / gummies
+gyoza wrappers                           | cooked  -> gyoza wrappers, cooked  <-- CHANGED
+habanero chile                           | raw     -> habanero chile, raw  <-- CHANGED
+haddock fillet                           | cooked  -> haddock fillet, cooked  <-- CHANGED
+half and half (10% cream)                | none    -> half and half (10% cream)
+halibut fillet                           | cooked  -> halibut fillet, cooked  <-- CHANGED
+ham                                      | none    -> ham
+ham hock                                 | cooked  -> ham hock, cooked  <-- CHANGED
+hard-boiled egg                          | cooked  -> hard-boiled egg, cooked  <-- CHANGED
+harissa                                  | none    -> harissa
+havarti cheese                           | none    -> havarti cheese
+hazelnuts                                | none    -> hazelnuts
+head cheese                              | none    -> head cheese
+heavy cream                              | none    -> heavy cream
+hemp seeds                               | none    -> hemp seeds
+herbes de provence                       | none    -> herbes de provence
+hoisin sauce                             | none    -> hoisin sauce
+hominy                                   | cooked  -> hominy, cooked  <-- CHANGED
+honey                                    | none    -> honey
+honey mustard dressing                   | none    -> honey mustard dressing
+honeydew melon                           | raw     -> honeydew melon, raw  <-- CHANGED
+hot chocolate mix                        | none    -> hot chocolate mix
+hot dog buns                             | none    -> hot dog buns
+hot dogs                                 | none    -> hot dogs
+hot sauce                                | none    -> hot sauce
+hummus, store-bought                     | none    -> hummus, store-bought
+ice cream                                | none    -> ice cream
+ice cream, chocolate                     | none    -> ice cream, chocolate
+ice cream, cookie dough                  | none    -> ice cream, cookie dough
+ice cream, neapolitan                    | none    -> ice cream, neapolitan
+ice cream, rocky road                    | none    -> ice cream, rocky road
+ice cream, strawberry                    | none    -> ice cream, strawberry
+ice cream, vanilla                       | none    -> ice cream, vanilla
+iced tea                                 | none    -> iced tea
+imitation crab                           | none    -> imitation crab
+instant yeast                            | none    -> instant yeast
+italian dressing                         | none    -> italian dressing
+italian sausage, hot                     | cooked  -> italian sausage, hot, cooked  <-- CHANGED
+italian sausage, mild                    | cooked  -> italian sausage, mild, cooked  <-- CHANGED
+italian seasoning                        | none    -> italian seasoning
+jalapeno pepper                          | raw     -> jalapeno pepper, raw  <-- CHANGED
+jameed                                   | none    -> jameed
+jasmine rice                             | cooked  -> jasmine rice, cooked  <-- CHANGED
+jute leaves                              | cooked  -> jute leaves, cooked  <-- CHANGED
+k-cups                                   | none    -> k-cups
+kalamata olives                          | none    -> kalamata olives
+kale                                     | raw     -> kale, raw  <-- CHANGED
+kashk (whey)                             | none    -> kashk (whey)
+kashkaval cheese                         | none    -> kashkaval cheese
+kashmiri chili                           | none    -> kashmiri chili
+kataifi dough                            | cooked  -> kataifi dough, cooked  <-- CHANGED
+kataifi pastry                           | none    -> kataifi pastry
+kecap manis                              | none    -> kecap manis
+kefalotyri cheese                        | none    -> kefalotyri cheese
+ketchup                                  | none    -> ketchup
+kidney beans                             | cooked  -> kidney beans, cooked  <-- CHANGED
+kidney beans, canned                     | none    -> kidney beans, canned
+kielbasa sausage                         | cooked  -> kielbasa sausage, cooked  <-- CHANGED
+kimchi                                   | none    -> kimchi
+kiwi                                     | raw     -> kiwi, raw  <-- CHANGED
+kombucha                                 | none    -> kombucha
+laksa paste                              | none    -> laksa paste
+lamb                                     | cooked  -> lamb, cooked  <-- CHANGED
+lamb broth                               | none    -> lamb broth
+lamb chops                               | cooked  -> lamb chops, cooked  <-- CHANGED
+lamb intestines                          | cooked  -> lamb intestines, cooked  <-- CHANGED
+lamb leg                                 | cooked  -> lamb leg, cooked  <-- CHANGED
+lamb loin                                | cooked  -> lamb loin, cooked  <-- CHANGED
+lamb offal                               | cooked  -> lamb offal, cooked  <-- CHANGED
+lamb ribs                                | cooked  -> lamb ribs, cooked  <-- CHANGED
+lamb shoulder                            | cooked  -> lamb shoulder, cooked  <-- CHANGED
+lard                                     | none    -> lard
+lard / shortening                        | none    -> lard / shortening
+lasagna noodles                          | cooked  -> lasagna noodles, cooked  <-- CHANGED
+lavash bread                             | none    -> lavash bread
+leek                                     | cooked  -> leek, cooked  <-- CHANGED
+lemon                                    | raw     -> lemon, raw  <-- CHANGED
+lemon juice                              | none    -> lemon juice
+lemon pepper seasoning                   | none    -> lemon pepper seasoning
+lemon zest                               | none    -> lemon zest
+lemonade                                 | none    -> lemonade
+lemongrass                               | none    -> lemongrass
+lemongrass paste                         | none    -> lemongrass paste
+lentils                                  | cooked  -> lentils, cooked  <-- CHANGED
+lentils, canned                          | none    -> lentils, canned
+lentils, green (dried)                   | cooked  -> lentils, green (dried), cooked  <-- CHANGED
+lentils, red (dried)                     | cooked  -> lentils, red (dried), cooked  <-- CHANGED
+lettuce                                  | raw     -> lettuce, raw  <-- CHANGED
+lettuce, butter / bibb                   | raw     -> lettuce, butter / bibb, raw  <-- CHANGED
+lettuce, green leaf                      | raw     -> lettuce, green leaf, raw  <-- CHANGED
+lettuce, iceberg                         | raw     -> lettuce, iceberg, raw  <-- CHANGED
+lettuce, romaine                         | raw     -> lettuce, romaine, raw  <-- CHANGED
+lima beans, canned                       | none    -> lima beans, canned
+lime                                     | raw     -> lime, raw  <-- CHANGED
+lime juice                               | none    -> lime juice
+lime leaves                              | none    -> lime leaves
+lime zest                                | none    -> lime zest
+linguine                                 | cooked  -> linguine, cooked  <-- CHANGED
+lo mein noodles                          | cooked  -> lo mein noodles, cooked  <-- CHANGED
+lobster                                  | cooked  -> lobster, cooked  <-- CHANGED
+lobster meat                             | cooked  -> lobster meat, cooked  <-- CHANGED
+macaroni                                 | cooked  -> macaroni, cooked  <-- CHANGED
+mahi mahi fillet                         | cooked  -> mahi mahi fillet, cooked  <-- CHANGED
+mahlab                                   | none    -> mahlab
+malt vinegar                             | none    -> malt vinegar
+maltose                                  | none    -> maltose
+mandarin / clementine                    | raw     -> mandarin / clementine, raw  <-- CHANGED
+mandarin oranges, canned                 | none    -> mandarin oranges, canned
+mandarin pancakes                        | none    -> mandarin pancakes
+mango                                    | raw     -> mango, raw  <-- CHANGED
+maple syrup                              | none    -> maple syrup
+margarine                                | none    -> margarine
+marjoram, dried                          | none    -> marjoram, dried
+masa harina                              | none    -> masa harina
+massaman curry paste                     | none    -> massaman curry paste
+mastic                                   | none    -> mastic
+matcha powder                            | none    -> matcha powder
+mayonnaise                               | none    -> mayonnaise
+mayonnaise, light                        | none    -> mayonnaise, light
+milk                                     | none    -> milk
+milk chocolate bar                       | none    -> milk chocolate bar
+milk, 1%                                 | none    -> milk, 1%
+milk, 2%                                 | none    -> milk, 2%
+milk, chocolate                          | none    -> milk, chocolate
+milk, skim (0%)                          | none    -> milk, skim (0%)
+milk, whole (3.25%)                      | none    -> milk, whole (3.25%)
+mint                                     | raw     -> mint, raw  <-- CHANGED
+miracle whip                             | none    -> miracle whip
+mirin                                    | none    -> mirin
+miso paste                               | none    -> miso paste
+miso paste, red                          | none    -> miso paste, red
+miso paste, white                        | none    -> miso paste, white
+mixed greens                             | raw     -> mixed greens, raw  <-- CHANGED
+mixed nuts                               | none    -> mixed nuts
+molasses                                 | none    -> molasses
+molokhia leaves                          | cooked  -> molokhia leaves, cooked  <-- CHANGED
+montreal steak spice                     | none    -> montreal steak spice
+mozzarella cheese                        | none    -> mozzarella cheese
+mozzarella cheese, fresh                 | none    -> mozzarella cheese, fresh
+mung beans                               | cooked  -> mung beans, cooked  <-- CHANGED
+mushroom, cremini / brown                | cooked  -> mushroom, cremini / brown, cooked  <-- CHANGED
+mushroom, oyster                         | cooked  -> mushroom, oyster, cooked  <-- CHANGED
+mushroom, portobello                     | cooked  -> mushroom, portobello, cooked  <-- CHANGED
+mushroom, shiitake                       | cooked  -> mushroom, shiitake, cooked  <-- CHANGED
+mushroom, white button                   | cooked  -> mushroom, white button, cooked  <-- CHANGED
+mushrooms                                | cooked  -> mushrooms, cooked  <-- CHANGED
+mussels                                  | cooked  -> mussels, cooked  <-- CHANGED
+mustard                                  | none    -> mustard
+mustard powder                           | none    -> mustard powder
+mustard seeds                            | none    -> mustard seeds
+mustard, whole grain                     | none    -> mustard, whole grain
+mustard, yellow                          | none    -> mustard, yellow
+naan                                     | none    -> naan
+nabulsi cheese                           | none    -> nabulsi cheese
+navy beans                               | cooked  -> navy beans, cooked  <-- CHANGED
+navy beans, canned                       | none    -> navy beans, canned
+nectarine                                | raw     -> nectarine, raw  <-- CHANGED
+nigella seeds                            | none    -> nigella seeds
+non-stick cooking spray                  | none    -> non-stick cooking spray
+nori                                     | none    -> nori
+nutmeg                                   | none    -> nutmeg
+nutritional yeast                        | none    -> nutritional yeast
+oat bran                                 | cooked  -> oat bran, cooked  <-- CHANGED
+oat milk                                 | none    -> oat milk
+oats, quick                              | cooked  -> oats, quick, cooked  <-- CHANGED
+oats, rolled / old fashioned             | cooked  -> oats, rolled / old fashioned, cooked  <-- CHANGED
+oats, steel cut                          | cooked  -> oats, steel cut, cooked  <-- CHANGED
+oaxaca cheese                            | none    -> oaxaca cheese
+octopus                                  | cooked  -> octopus, cooked  <-- CHANGED
+okonomiyaki sauce                        | none    -> okonomiyaki sauce
+old bay seasoning                        | none    -> old bay seasoning
+olive oil                                | none    -> olive oil
+olives                                   | none    -> olives
+olives, black (canned)                   | none    -> olives, black (canned)
+onion                                    | cooked  -> onion, cooked  <-- CHANGED
+onion powder                             | none    -> onion powder
+orange                                   | raw     -> orange, raw  <-- CHANGED
+orange blossom water                     | none    -> orange blossom water
+orange juice                             | none    -> orange juice
+orange zest                              | none    -> orange zest
+oregano                                  | none    -> oregano
+orzo pasta                               | cooked  -> orzo pasta, cooked  <-- CHANGED
+ouzo                                     | none    -> ouzo
+oyster sauce                             | none    -> oyster sauce
+pad thai sauce                           | none    -> pad thai sauce
+palm sugar                               | none    -> palm sugar
+paneer                                   | none    -> paneer
+panko breadcrumbs                        | none    -> panko breadcrumbs
+papaya                                   | raw     -> papaya, raw  <-- CHANGED
+paprika                                  | none    -> paprika
+paprika, smoked                          | none    -> paprika, smoked
+parmesan cheese                          | none    -> parmesan cheese
+parsley                                  | raw     -> parsley, raw  <-- CHANGED
+parsley, dried                           | none    -> parsley, dried
+parsnip                                  | cooked  -> parsnip, cooked  <-- CHANGED
+pasta                                    | cooked  -> pasta, cooked  <-- CHANGED
+pasta sauce, alfredo                     | none    -> pasta sauce, alfredo
+pasta sauce, arrabiata                   | none    -> pasta sauce, arrabiata
+pasta sauce, tomato basil                | none    -> pasta sauce, tomato basil
+pate                                     | none    -> pate
+peach                                    | raw     -> peach, raw  <-- CHANGED
+peaches, canned                          | none    -> peaches, canned
+peameal bacon                            | cooked  -> peameal bacon, cooked  <-- CHANGED
+peanut butter                            | none    -> peanut butter
+peanut butter, natural                   | none    -> peanut butter, natural
+peanuts                                  | none    -> peanuts
+peanuts, roasted                         | none    -> peanuts, roasted
+pear                                     | raw     -> pear, raw  <-- CHANGED
+pearl onions                             | cooked  -> pearl onions, cooked  <-- CHANGED
+peas                                     | cooked  -> peas, cooked  <-- CHANGED
+peas pudding (yellow split peas)         | cooked  -> peas pudding (yellow split peas), cooked  <-- CHANGED
+pecans                                   | none    -> pecans
+pectin                                   | none    -> pectin
+penne                                    | cooked  -> penne, cooked  <-- CHANGED
+pepperoni                                | none    -> pepperoni
+phyllo dough                             | cooked  -> phyllo dough, cooked  <-- CHANGED
+phyllo pastry                            | cooked  -> phyllo pastry, cooked  <-- CHANGED
+pickle                                   | none    -> pickle
+pickled carrots                          | none    -> pickled carrots
+pickled cucumber (cornichon)             | none    -> pickled cucumber (cornichon)
+pickled daikon                           | none    -> pickled daikon
+pickled ginger                           | none    -> pickled ginger
+pickled red onion                        | none    -> pickled red onion
+pickles, bread and butter                | none    -> pickles, bread and butter
+pie crust, pre-made                      | none    -> pie crust, pre-made
+pine nuts                                | none    -> pine nuts
+pineapple                                | raw     -> pineapple, raw  <-- CHANGED
+pineapple juice                          | none    -> pineapple juice
+pineapple, canned chunks                 | none    -> pineapple, canned chunks
+pinto beans                              | cooked  -> pinto beans, cooked  <-- CHANGED
+pinto beans, canned                      | none    -> pinto beans, canned
+pistachio                                | none    -> pistachio
+pita bread                               | none    -> pita bread
+pita chips                               | none    -> pita chips
+pizza dough (refrigerated)               | cooked  -> pizza dough (refrigerated), cooked  <-- CHANGED
+plantain                                 | cooked  -> plantain, cooked  <-- CHANGED
+plantain chips                           | none    -> plantain chips
+plum                                     | raw     -> plum, raw  <-- CHANGED
+poblano pepper                           | cooked  -> poblano pepper, cooked  <-- CHANGED
+pomegranate                              | raw     -> pomegranate, raw  <-- CHANGED
+pomegranate molasses                     | none    -> pomegranate molasses
+pomegranate seeds                        | raw     -> pomegranate seeds, raw  <-- CHANGED
+popcorn, microwave                       | none    -> popcorn, microwave
+popcorn, pre-popped (butter)             | none    -> popcorn, pre-popped (butter)
+popcorn, pre-popped (plain)              | none    -> popcorn, pre-popped (plain)
+poppy seeds                              | none    -> poppy seeds
+popsicles / ice pops                     | none    -> popsicles / ice pops
+pork                                     | cooked  -> pork, cooked  <-- CHANGED
+pork belly                               | cooked  -> pork belly, cooked  <-- CHANGED
+pork bones                               | cooked  -> pork bones, cooked  <-- CHANGED
+pork carnitas                            | none    -> pork carnitas
+pork chop                                | cooked  -> pork chop, cooked  <-- CHANGED
+pork chops, bone-in                      | cooked  -> pork chops, bone-in, cooked  <-- CHANGED
+pork chops, boneless                     | cooked  -> pork chops, boneless, cooked  <-- CHANGED
+pork cutlet                              | cooked  -> pork cutlet, cooked  <-- CHANGED
+pork hocks                               | cooked  -> pork hocks, cooked  <-- CHANGED
+pork loin                                | cooked  -> pork loin, cooked  <-- CHANGED
+pork ribs                                | cooked  -> pork ribs, cooked  <-- CHANGED
+pork ribs, back                          | cooked  -> pork ribs, back, cooked  <-- CHANGED
+pork roast                               | cooked  -> pork roast, cooked  <-- CHANGED
+pork shoulder                            | cooked  -> pork shoulder, cooked  <-- CHANGED
+pork tenderloin                          | cooked  -> pork tenderloin, cooked  <-- CHANGED
+potato                                   | cooked  -> potato, cooked  <-- CHANGED
+potato starch                            | none    -> potato starch
+poultry seasoning                        | none    -> poultry seasoning
+pre-marinated chicken                    | cooked  -> pre-marinated chicken, cooked  <-- CHANGED
+pre-marinated pork tenderloin            | cooked  -> pre-marinated pork tenderloin, cooked  <-- CHANGED
+preserved lemon                          | none    -> preserved lemon
+pretzels                                 | none    -> pretzels
+processed cheese / velveeta              | none    -> processed cheese / velveeta
+prosciutto                               | none    -> prosciutto
+protein bars                             | none    -> protein bars
+protein powder, plant-based              | none    -> protein powder, plant-based
+protein powder, whey                     | none    -> protein powder, whey
+provolone cheese                         | none    -> provolone cheese
+prunes                                   | none    -> prunes
+puff pastry (frozen)                     | none    -> puff pastry (frozen)
+pumpkin                                  | cooked  -> pumpkin, cooked  <-- CHANGED
+pumpkin seeds                            | none    -> pumpkin seeds
+quinoa                                   | cooked  -> quinoa, cooked  <-- CHANGED
+radish                                   | raw     -> radish, raw  <-- CHANGED
+raisin bran                              | none    -> raisin bran
+raisins                                  | none    -> raisins
+ramen noodles                            | cooked  -> ramen noodles, cooked  <-- CHANGED
+ranch dressing                           | none    -> ranch dressing
+raspberries                              | raw     -> raspberries, raw  <-- CHANGED
+red chilies                              | raw     -> red chilies, raw  <-- CHANGED
+red curry paste                          | none    -> red curry paste
+red pepper                               | raw     -> red pepper, raw  <-- CHANGED
+red pepper paste                         | none    -> red pepper paste
+red wine                                 | none    -> red wine
+red wine vinegar                         | none    -> red wine vinegar
+refried beans                            | none    -> refried beans
+relish                                   | none    -> relish
+relish, dill                             | none    -> relish, dill
+relish, sweet                            | none    -> relish, sweet
+reshteh noodles                          | cooked  -> reshteh noodles, cooked  <-- CHANGED
+rice cakes                               | none    -> rice cakes
+rice flour                               | none    -> rice flour
+rice milk                                | none    -> rice milk
+rice noodles                             | cooked  -> rice noodles, cooked  <-- CHANGED
+rice paper wrappers                      | none    -> rice paper wrappers
+rice vermicelli                          | cooked  -> rice vermicelli, cooked  <-- CHANGED
+rice vinegar                             | none    -> rice vinegar
+rice wine                                | none    -> rice wine
+ricotta cheese                           | none    -> ricotta cheese
+rigatoni                                 | cooked  -> rigatoni, cooked  <-- CHANGED
+roasted red peppers                      | none    -> roasted red peppers
+rose water                               | none    -> rose water
+rosemary                                 | none    -> rosemary
+rotisserie chicken                       | none    -> rotisserie chicken
+round rice noodles                       | cooked  -> round rice noodles, cooked  <-- CHANGED
+rye bread                                | none    -> rye bread
+saffron                                  | none    -> saffron
+sage                                     | none    -> sage
+sage, dried                              | none    -> sage, dried
+sahlab powder                            | none    -> sahlab powder
+sake                                     | none    -> sake
+salami                                   | none    -> salami
+salmon                                   | cooked  -> salmon, cooked  <-- CHANGED
+salmon, atlantic (fresh)                 | cooked  -> salmon, atlantic (fresh), cooked  <-- CHANGED
+salmon, smoked                           | none    -> salmon, smoked
+salmon, sockeye (fresh)                  | none    -> salmon, sockeye (fresh)
+salsa                                    | none    -> salsa
+salsa verde                              | none    -> salsa verde
+salt                                     | none    -> salt
+salt beef                                | none    -> salt beef
+saskatoon berries                        | raw     -> saskatoon berries, raw  <-- CHANGED
+sauerkraut                               | none    -> sauerkraut
+sausage                                  | cooked  -> sausage, cooked  <-- CHANGED
+scallops                                 | cooked  -> scallops, cooked  <-- CHANGED
+scotch bonnet peppers                    | raw     -> scotch bonnet peppers, raw  <-- CHANGED
+sea bream                                | cooked  -> sea bream, cooked  <-- CHANGED
+semolina                                 | cooked  -> semolina, cooked  <-- CHANGED
+serrano chiles                           | raw     -> serrano chiles, raw  <-- CHANGED
+serrano pepper                           | raw     -> serrano pepper, raw  <-- CHANGED
+sesame oil                               | none    -> sesame oil
+sesame seeds                             | none    -> sesame seeds
+shallots                                 | raw     -> shallots, raw  <-- CHANGED
+short grain rice                         | cooked  -> short grain rice, cooked  <-- CHANGED
+shortening                               | none    -> shortening
+shredded cheese                          | none    -> shredded cheese
+shredded chicken                         | none    -> shredded chicken
+shredded wheat                           | none    -> shredded wheat
+shrimp                                   | cooked  -> shrimp, cooked  <-- CHANGED
+shrimp paste                             | none    -> shrimp paste
+sichuan peppercorns                      | none    -> sichuan peppercorns
+smoked meat                              | none    -> smoked meat
+snap peas                                | raw     -> snap peas, raw  <-- CHANGED
+snow peas                                | raw     -> snow peas, raw  <-- CHANGED
+soba noodles                             | cooked  -> soba noodles, cooked  <-- CHANGED
+soft boiled egg                          | cooked  -> soft boiled egg, cooked  <-- CHANGED
+soft tofu                                | none    -> soft tofu
+sole fillet                              | cooked  -> sole fillet, cooked  <-- CHANGED
+sorbet                                   | none    -> sorbet
+sour cherries                            | raw     -> sour cherries, raw  <-- CHANGED
+sour cherry juice                        | none    -> sour cherry juice
+sour cream                               | none    -> sour cream
+sour cream, light                        | none    -> sour cream, light
+soy milk                                 | none    -> soy milk
+soy sauce                                | none    -> soy sauce
+soy sauce, low sodium                    | none    -> soy sauce, low sodium
+spaghetti                                | cooked  -> spaghetti, cooked  <-- CHANGED
+spaghetti squash                         | cooked  -> spaghetti squash, cooked  <-- CHANGED
+special k                                | none    -> special k
+spinach                                  | raw     -> spinach, raw  <-- CHANGED
+split peas, green (dried)                | cooked  -> split peas, green (dried), cooked  <-- CHANGED
+split peas, yellow (dried)               | cooked  -> split peas, yellow (dried), cooked  <-- CHANGED
+sports drink (gatorade / powerade)       | none    -> sports drink (gatorade / powerade)
+spring roll wrappers                     | cooked  -> spring roll wrappers, cooked  <-- CHANGED
+squid                                    | cooked  -> squid, cooked  <-- CHANGED
+sriracha                                 | none    -> sriracha
+sriracha mayo                            | none    -> sriracha mayo
+star anise                               | none    -> star anise
+steamed egg cake                         | cooked  -> steamed egg cake, cooked  <-- CHANGED
+stewing beef                             | cooked  -> stewing beef, cooked  <-- CHANGED
+strawberries                             | raw     -> strawberries
+stuffing bread                           | none    -> stuffing bread
+sugar, granulated (white)                | none    -> sugar, granulated (white)
+sugar, icing / powdered                  | none    -> sugar, icing / powdered
+sugar, raw / turbinado                   | none    -> sugar, raw / turbinado
+sumac                                    | none    -> sumac
+sunflower seed butter                    | none    -> sunflower seed butter
+sunflower seeds                          | none    -> sunflower seeds
+sushi rice                               | cooked  -> sushi rice, cooked  <-- CHANGED
+sweet chili sauce                        | none    -> sweet chili sauce
+sweet potato                             | cooked  -> sweet potato, cooked  <-- CHANGED
+sweet potato glass noodles               | cooked  -> sweet potato glass noodles, cooked  <-- CHANGED
+swiss chard                              | raw     -> swiss chard, raw  <-- CHANGED
+swiss cheese                             | none    -> swiss cheese
+table cream (18%)                        | none    -> table cream (18%)
+taboon bread                             | none    -> taboon bread
+taco seasoning                           | none    -> taco seasoning
+tahini                                   | none    -> tahini
+tahini sauce                             | none    -> tahini sauce
+takoyaki sauce                           | none    -> takoyaki sauce
+tamarind paste                           | none    -> tamarind paste
+tartar sauce                             | none    -> tartar sauce
+tasajo beef                              | cooked  -> tasajo beef, cooked  <-- CHANGED
+tea, chai                                | none    -> tea, chai
+tea, green                               | none    -> tea, green
+tea, herbal                              | none    -> tea, herbal
+tempeh                                   | cooked  -> tempeh, cooked  <-- CHANGED
+tempura bits                             | none    -> tempura bits
+tenkasu                                  | none    -> tenkasu
+teriyaki sauce                           | none    -> teriyaki sauce
+thai basil                               | raw     -> thai basil, raw  <-- CHANGED
+thousand island dressing                 | none    -> thousand island dressing
+thyme                                    | none    -> thyme
+tilapia fillet                           | cooked  -> tilapia fillet, cooked  <-- CHANGED
+tofu                                     | cooked  -> tofu, cooked  <-- CHANGED
+tofu puffs                               | none    -> tofu puffs
+tofu, firm                               | cooked  -> tofu, firm, cooked  <-- CHANGED
+tofu, silken                             | cooked  -> tofu, silken, cooked  <-- CHANGED
+tomatillos                               | raw     -> tomatillos, raw  <-- CHANGED
+tomato                                   | raw     -> tomato, raw  <-- CHANGED
+tomato paste                             | none    -> tomato paste
+tomato puree                             | none    -> tomato puree
+tomato sauce                             | none    -> tomato sauce
+tomato sauce, marinara                   | none    -> tomato sauce, marinara
+tonkatsu sauce                           | none    -> tonkatsu sauce
+tortilla chips                           | none    -> tortilla chips
+tostadas                                 | none    -> tostadas
+trail mix                                | none    -> trail mix
+trout fillet                             | cooked  -> trout fillet, cooked  <-- CHANGED
+tubular pasta                            | cooked  -> tubular pasta, cooked  <-- CHANGED
+tuna, fresh / frozen steak               | cooked  -> tuna, fresh / frozen steak, cooked  <-- CHANGED
+turkey                                   | cooked  -> turkey, cooked  <-- CHANGED
+turkey breast                            | cooked  -> turkey breast, cooked  <-- CHANGED
+turkey, deli sliced                      | none    -> turkey, deli sliced
+turmeric                                 | none    -> turmeric
+turmeric, ground                         | none    -> turmeric, ground
+turnip                                   | cooked  -> turnip, cooked  <-- CHANGED
+tzatziki                                 | none    -> tzatziki
+udon noodles                             | cooked  -> udon noodles, cooked  <-- CHANGED
+unsweetened baking chocolate             | none    -> unsweetened baking chocolate
+urad dal                                 | cooked  -> urad dal, cooked  <-- CHANGED
+vanilla                                  | none    -> vanilla
+vanilla custard powder                   | none    -> vanilla custard powder
+vanilla extract                          | none    -> vanilla extract
+vanilla ice cream                        | none    -> vanilla ice cream
+veal cutlets                             | cooked  -> veal cutlets, cooked  <-- CHANGED
+vegetable broth                          | none    -> vegetable broth
+vegetable broth / stock                  | none    -> vegetable broth / stock
+vegetable oil                            | none    -> vegetable oil
+vermicelli                               | cooked  -> vermicelli, cooked  <-- CHANGED
+vinegar                                  | none    -> vinegar
+vodka                                    | none    -> vodka
+wakame seaweed                           | none    -> wakame seaweed
+walnuts                                  | none    -> walnuts
+wasabi                                   | none    -> wasabi
+water                                    | none    -> water
+water, sparkling / soda water            | none    -> water, sparkling / soda water
+watermelon                               | raw     -> watermelon, raw  <-- CHANGED
+wheat berries                            | cooked  -> wheat berries, cooked  <-- CHANGED
+wheat germ                               | none    -> wheat germ
+wheat noodles                            | cooked  -> wheat noodles, cooked  <-- CHANGED
+wheat sprouts                            | raw     -> wheat sprouts, raw  <-- CHANGED
+whipped cream                            | none    -> whipped cream
+whipping cream                           | none    -> whipping cream
+white beans                              | cooked  -> white beans, cooked  <-- CHANGED
+white beans / cannellini, canned         | none    -> white beans / cannellini, canned
+white bread                              | none    -> white bread
+white bread roll                         | none    -> white bread roll
+white pepper                             | none    -> white pepper
+white rice                               | cooked  -> white rice, cooked  <-- CHANGED
+white vinegar                            | none    -> white vinegar
+white wine                               | none    -> white wine
+white wine vinegar                       | none    -> white wine vinegar
+whole chicken                            | cooked  -> whole chicken, cooked  <-- CHANGED
+whole duck                               | cooked  -> whole duck, cooked  <-- CHANGED
+whole fish                               | cooked  -> whole fish, cooked  <-- CHANGED
+whole white fish                         | cooked  -> whole white fish, cooked  <-- CHANGED
+wide rice noodles                        | cooked  -> wide rice noodles, cooked  <-- CHANGED
+wieners / hot dogs                       | none    -> wieners / hot dogs
+wild rice                                | cooked  -> wild rice, cooked  <-- CHANGED
+wonton wrappers                          | cooked  -> wonton wrappers, cooked  <-- CHANGED
+wood ear mushrooms                       | cooked  -> wood ear mushrooms, cooked  <-- CHANGED
+worcestershire sauce                     | none    -> worcestershire sauce
+wraps / flatbreads                       | none    -> wraps / flatbreads
+yam                                      | cooked  -> yam, cooked  <-- CHANGED
+yeast                                    | none    -> yeast
+yeast, active dry                        | none    -> yeast, active dry
+yeast, instant                           | none    -> yeast, instant
+yellowtail                               | cooked  -> yellowtail, cooked  <-- CHANGED
+yogurt                                   | none    -> yogurt
+yogurt, flavoured                        | none    -> yogurt, flavoured
+yogurt, peach                            | none    -> yogurt, peach
+yogurt, plain (regular)                  | none    -> yogurt, plain (regular)
+yogurt, strawberry                       | none    -> yogurt, strawberry
+yogurt, vanilla                          | none    -> yogurt, vanilla
+za'atar                                  | none    -> za'atar
+zucchini                                 | cooked  -> zucchini, cooked  <-- CHANGED

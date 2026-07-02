@@ -1,0 +1,601 @@
+# Hummus
+chickpeas
+tahini
+lemon juice
+garlic
+olive oil
+salt
+cumin
+paprika
+parsley
+
+# Falafel
+chickpeas
+fava beans
+onion
+garlic
+parsley
+cilantro
+cumin
+coriander
+baking powder
+salt
+black pepper
+flour
+vegetable oil
+
+# Tabbouleh
+bulgur wheat
+parsley
+mint
+tomato
+cucumber
+green onion
+lemon juice
+olive oil
+salt
+black pepper
+
+# Shawarma (Chicken)
+chicken thighs
+yogurt
+lemon juice
+garlic
+cumin
+coriander
+turmeric
+paprika
+cinnamon
+cardamom
+black pepper
+salt
+olive oil
+white vinegar
+onion
+tomato
+parsley
+tahini
+pita bread
+
+# Shawarma (Lamb)
+lamb shoulder
+yogurt
+lemon juice
+garlic
+cumin
+coriander
+turmeric
+paprika
+cinnamon
+allspice
+cardamom
+black pepper
+salt
+olive oil
+white vinegar
+onion
+pita bread
+tahini
+parsley
+
+# Baba Ganoush
+eggplant
+tahini
+lemon juice
+garlic
+olive oil
+salt
+cumin
+parsley
+pomegranate seeds
+
+# Fattoush Salad
+romaine lettuce
+tomato
+cucumber
+radish
+green onion
+parsley
+mint
+pita bread
+olive oil
+lemon juice
+sumac
+salt
+black pepper
+pomegranate molasses
+
+# Kibbeh
+ground lamb
+bulgur wheat
+onion
+pine nuts
+allspice
+cinnamon
+cumin
+black pepper
+salt
+olive oil
+mint
+
+# Manakish (Za'atar Flatbread)
+all-purpose flour
+yeast
+sugar
+salt
+olive oil
+water
+za'atar
+sesame seeds
+dried thyme
+dried oregano
+sumac
+
+# Lebanese Lentil Soup
+red lentils
+onion
+garlic
+carrot
+cumin
+turmeric
+lemon juice
+olive oil
+salt
+black pepper
+cilantro
+pita bread
+
+# Mujaddara
+green lentils
+rice
+onion
+cumin
+olive oil
+salt
+black pepper
+yogurt
+
+# Fatteh
+pita bread
+chickpeas
+yogurt
+tahini
+lemon juice
+garlic
+butter
+pine nuts
+parsley
+paprika
+salt
+cumin
+
+# Stuffed Grape Leaves (Warak Dawali)
+grape leaves
+rice
+ground lamb
+onion
+tomato
+parsley
+mint
+lemon juice
+olive oil
+allspice
+cinnamon
+black pepper
+salt
+
+# Lebanese Garlic Sauce (Toum)
+garlic
+vegetable oil
+lemon juice
+salt
+ice water
+
+# Kafta (Grilled Ground Meat)
+ground beef
+ground lamb
+onion
+parsley
+allspice
+cinnamon
+cumin
+black pepper
+salt
+olive oil
+
+# Moroccan Chicken Tagine
+chicken thighs
+onion
+garlic
+preserved lemon
+green olives
+olive oil
+ginger
+turmeric
+cumin
+coriander
+cinnamon
+paprika
+saffron
+chicken broth
+fresh cilantro
+fresh parsley
+salt
+black pepper
+
+# Moroccan Lamb Tagine with Prunes
+lamb shoulder
+onion
+garlic
+prunes
+almonds
+honey
+olive oil
+ginger
+cinnamon
+cumin
+coriander
+turmeric
+saffron
+chicken broth
+sesame seeds
+salt
+black pepper
+cilantro
+
+# Couscous with Seven Vegetables
+couscous
+butter
+olive oil
+onion
+tomato
+carrot
+zucchini
+turnip
+pumpkin
+cabbage
+chickpeas
+raisins
+lamb broth
+cumin
+coriander
+turmeric
+cinnamon
+saffron
+salt
+black pepper
+fresh cilantro
+harissa
+
+# Harissa
+dried red chilies
+garlic
+caraway seeds
+coriander seeds
+cumin seeds
+olive oil
+salt
+lemon juice
+roasted red peppers
+
+# Shakshuka
+eggs
+tomato
+onion
+garlic
+bell pepper
+olive oil
+cumin
+paprika
+cayenne pepper
+salt
+black pepper
+fresh cilantro
+fresh parsley
+feta cheese
+
+# Turkish Lentil Soup (Mercimek Corbasi)
+red lentils
+onion
+carrot
+garlic
+olive oil
+butter
+cumin
+paprika
+dried mint
+salt
+black pepper
+lemon juice
+
+# Turkish Beef Kebab (Adana Kebab)
+ground beef
+ground lamb
+onion
+red bell pepper
+garlic
+red pepper flakes
+cumin
+sumac
+salt
+black pepper
+olive oil
+pita bread
+parsley
+
+# Turkish Stuffed Peppers (Biber Dolmasi)
+bell peppers
+rice
+ground beef
+onion
+tomato
+tomato paste
+olive oil
+pine nuts
+currants
+allspice
+cinnamon
+mint
+parsley
+salt
+black pepper
+yogurt
+
+# Pide (Turkish Flatbread with Toppings)
+all-purpose flour
+yeast
+sugar
+salt
+olive oil
+water
+ground beef
+onion
+tomato
+green pepper
+egg
+kashkaval cheese
+butter
+parsley
+
+# Menemen (Turkish Scrambled Eggs)
+eggs
+tomato
+green pepper
+onion
+olive oil
+butter
+red pepper flakes
+salt
+black pepper
+parsley
+
+# Borek (Turkish Pastry)
+phyllo dough
+feta cheese
+eggs
+parsley
+butter
+olive oil
+sesame seeds
+nigella seeds
+
+# Turkish Chickpea Stew (Nohut Yahnisi)
+chickpeas
+onion
+garlic
+tomato
+tomato paste
+olive oil
+cumin
+paprika
+salt
+black pepper
+parsley
+
+# Muhammara (Roasted Red Pepper Dip)
+roasted red peppers
+walnuts
+bread crumbs
+garlic
+lemon juice
+olive oil
+pomegranate molasses
+cumin
+red pepper flakes
+salt
+
+# Labneh (Strained Yogurt Dip)
+full-fat yogurt
+salt
+olive oil
+za'atar
+dried mint
+olives
+cherry tomatoes
+
+# Lebanese Rice with Vermicelli
+rice
+vermicelli noodles
+butter
+olive oil
+salt
+chicken broth
+
+# Moroccan Harira Soup
+lamb
+chickpeas
+lentils
+tomato
+onion
+celery
+fresh cilantro
+fresh parsley
+ginger
+turmeric
+cinnamon
+black pepper
+salt
+lemon juice
+egg
+flour
+butter
+olive oil
+vermicelli
+
+# Bastilla (Moroccan Chicken Pie)
+chicken
+eggs
+almonds
+onion
+fresh cilantro
+fresh parsley
+olive oil
+butter
+phyllo dough
+powdered sugar
+cinnamon
+ginger
+saffron
+turmeric
+black pepper
+salt
+lemon juice
+
+# Maakouda (Moroccan Potato Fritters)
+potatoes
+egg
+garlic
+cumin
+turmeric
+fresh cilantro
+fresh parsley
+salt
+black pepper
+flour
+vegetable oil
+
+# Turkish Red Lentil Patties (Mercimek Koftesi)
+red lentils
+fine bulgur wheat
+onion
+tomato paste
+red pepper paste
+cumin
+paprika
+olive oil
+salt
+black pepper
+green onion
+parsley
+lemon juice
+romaine lettuce leaves
+
+# Fatayer (Lebanese Stuffed Pastry)
+all-purpose flour
+yeast
+sugar
+salt
+olive oil
+water
+spinach
+onion
+sumac
+lemon juice
+
+# Manti (Turkish Dumplings)
+all-purpose flour
+egg
+salt
+water
+ground beef
+ground lamb
+onion
+black pepper
+allspice
+butter
+tomato paste
+red pepper flakes
+yogurt
+garlic
+dried mint
+paprika
+
+# Kebab Bil Karaz (Sour Cherry Kebab)
+ground lamb
+onion
+allspice
+cinnamon
+black pepper
+salt
+sour cherries
+cherry juice
+butter
+pine nuts
+pomegranate molasses
+pita bread
+parsley
+
+# Samke Harra (Lebanese Spicy Fish)
+whole fish
+onion
+garlic
+red pepper
+green pepper
+tomato
+olive oil
+cumin
+coriander
+turmeric
+cayenne pepper
+lemon juice
+fresh cilantro
+salt
+black pepper
+pine nuts
+tahini
+
+# Mloukhieh (Jute Leaf Stew)
+jute leaves
+chicken
+garlic
+coriander
+olive oil
+lemon juice
+salt
+white rice
+pita bread
+onion
+white vinegar
+
+# Knafeh (Lebanese Sweet Cheese Pastry)
+kataifi dough
+akkawi cheese
+mozzarella cheese
+butter
+sugar
+water
+rose water
+orange blossom water
+lemon juice
+pistachios
+
+# Maqluba (Upside-Down Rice)
+rice
+chicken
+eggplant
+cauliflower
+potato
+tomato
+onion
+olive oil
+allspice
+cinnamon
+turmeric
+cumin
+black pepper
+salt
+chicken broth
+pine nuts
+almonds
+parsley
+yogurt

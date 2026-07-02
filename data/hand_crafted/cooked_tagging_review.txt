@@ -1,0 +1,235 @@
+COOKED TAGGING REVIEW
+======================================================================
+
+Total items in file : 913
+Items tagged        : 125
+Items unchanged     : 788
+
+======================================================================
+TAGGED ITEMS (old name -> new name)
+======================================================================
+  'angel hair pasta'                                      -> 'angel hair pasta cooked'
+  'barley, pearl'                                         -> 'barley, pearl cooked'
+  'basmati rice'                                          -> 'basmati rice cooked'
+  'beef'                                                  -> 'beef cooked'
+  'beef back ribs'                                        -> 'beef back ribs cooked'
+  'beef brisket'                                          -> 'beef brisket cooked'
+  'beef chuck'                                            -> 'beef chuck cooked'
+  'beef cutlets'                                          -> 'beef cutlets cooked'
+  'beef ribeye'                                           -> 'beef ribeye cooked'
+  'beef roast'                                            -> 'beef roast cooked'
+  'beef roast, sirloin tip'                               -> 'beef roast, sirloin tip cooked'
+  'beef shank'                                            -> 'beef shank cooked'
+  'beef short ribs'                                       -> 'beef short ribs cooked'
+  'beef sirloin'                                          -> 'beef sirloin cooked'
+  'beef steak, flank'                                     -> 'beef steak, flank cooked'
+  'beef steak, strip loin'                                -> 'beef steak, strip loin cooked'
+  'beef steak, tenderloin (filet mignon)'                 -> 'beef steak, tenderloin (filet mignon) cooked'
+  'broken rice'                                           -> 'broken rice cooked'
+  'brown rice'                                            -> 'brown rice cooked'
+  'bulgur wheat'                                          -> 'bulgur wheat cooked'
+  'catfish fillet'                                        -> 'catfish fillet cooked'
+  'chicken'                                               -> 'chicken cooked'
+  'chicken breast'                                        -> 'chicken breast cooked'
+  'chicken drumstick'                                     -> 'chicken drumstick cooked'
+  'chicken thigh, bone-in skin-on'                        -> 'chicken thigh, bone-in skin-on cooked'
+  'chicken thigh, boneless skinless'                      -> 'chicken thigh, boneless skinless cooked'
+  'chicken thighs'                                        -> 'chicken thighs cooked'
+  'chicken wings'                                         -> 'chicken wings cooked'
+  'chickpeas'                                             -> 'chickpeas cooked'
+  'cod'                                                   -> 'cod cooked'
+  'couscous'                                              -> 'couscous cooked'
+  'crab'                                                  -> 'crab cooked'
+  'dried chickpeas'                                       -> 'dried chickpeas cooked'
+  'dried white beans'                                     -> 'dried white beans cooked'
+  'farro'                                                 -> 'farro cooked'
+  'fava beans'                                            -> 'fava beans cooked'
+  'fettuccine'                                            -> 'fettuccine cooked'
+  'fine bulgur wheat'                                     -> 'fine bulgur wheat cooked'
+  'freekeh'                                               -> 'freekeh cooked'
+  'fresh pasta (refrigerated)'                            -> 'fresh pasta (refrigerated) cooked'
+  'fusilli'                                               -> 'fusilli cooked'
+  'giant lima beans'                                      -> 'giant lima beans cooked'
+  'glutinous rice'                                        -> 'glutinous rice cooked'
+  'ground beef'                                           -> 'ground beef cooked'
+  'ground beef, extra lean (10% fat)'                     -> 'ground beef, extra lean (10% fat) cooked'
+  'ground beef, lean (17% fat)'                           -> 'ground beef, lean (17% fat) cooked'
+  'ground beef, regular (27% fat)'                        -> 'ground beef, regular (27% fat) cooked'
+  'ground chicken'                                        -> 'ground chicken cooked'
+  'ground lamb'                                           -> 'ground lamb cooked'
+  'ground pork'                                           -> 'ground pork cooked'
+  'ground turkey'                                         -> 'ground turkey cooked'
+  'haddock fillet'                                        -> 'haddock fillet cooked'
+  'halibut fillet'                                        -> 'halibut fillet cooked'
+  'jasmine rice'                                          -> 'jasmine rice cooked'
+  'kidney beans'                                          -> 'kidney beans cooked'
+  'lamb'                                                  -> 'lamb cooked'
+  'lamb chops'                                            -> 'lamb chops cooked'
+  'lamb leg'                                              -> 'lamb leg cooked'
+  'lamb loin'                                             -> 'lamb loin cooked'
+  'lamb ribs'                                             -> 'lamb ribs cooked'
+  'lamb shoulder'                                         -> 'lamb shoulder cooked'
+  'lasagna noodles'                                       -> 'lasagna noodles cooked'
+  'lentils'                                               -> 'lentils cooked'
+  'lentils, green (dried)'                                -> 'lentils, green (dried) cooked'
+  'lentils, red (dried)'                                  -> 'lentils, red (dried) cooked'
+  'linguine'                                              -> 'linguine cooked'
+  'lobster'                                               -> 'lobster cooked'
+  'lobster meat'                                          -> 'lobster meat cooked'
+  'macaroni'                                              -> 'macaroni cooked'
+  'mahi mahi fillet'                                      -> 'mahi mahi fillet cooked'
+  'mung beans'                                            -> 'mung beans cooked'
+  'mussels'                                               -> 'mussels cooked'
+  'navy beans'                                            -> 'navy beans cooked'
+  'oats, quick'                                           -> 'oats, quick cooked'
+  'oats, rolled / old fashioned'                          -> 'oats, rolled / old fashioned cooked'
+  'oats, steel cut'                                       -> 'oats, steel cut cooked'
+  'octopus'                                               -> 'octopus cooked'
+  'orzo pasta'                                            -> 'orzo pasta cooked'
+  'pasta'                                                 -> 'pasta cooked'
+  'penne'                                                 -> 'penne cooked'
+  'pinto beans'                                           -> 'pinto beans cooked'
+  'pork'                                                  -> 'pork cooked'
+  'pork belly'                                            -> 'pork belly cooked'
+  'pork chop'                                             -> 'pork chop cooked'
+  'pork chops, bone-in'                                   -> 'pork chops, bone-in cooked'
+  'pork chops, boneless'                                  -> 'pork chops, boneless cooked'
+  'pork cutlet'                                           -> 'pork cutlet cooked'
+  'pork hocks'                                            -> 'pork hocks cooked'
+  'pork loin'                                             -> 'pork loin cooked'
+  'pork ribs'                                             -> 'pork ribs cooked'
+  'pork ribs, back'                                       -> 'pork ribs, back cooked'
+  'pork roast'                                            -> 'pork roast cooked'
+  'pork shoulder'                                         -> 'pork shoulder cooked'
+  'pork tenderloin'                                       -> 'pork tenderloin cooked'
+  'quinoa'                                                -> 'quinoa cooked'
+  'rigatoni'                                              -> 'rigatoni cooked'
+  'salmon'                                                -> 'salmon cooked'
+  'salmon, atlantic (fresh)'                              -> 'salmon, atlantic (fresh) cooked'
+  'salmon, sockeye (fresh)'                               -> 'salmon, sockeye (fresh) cooked'
+  'scallops'                                              -> 'scallops cooked'
+  'sea bream'                                             -> 'sea bream cooked'
+  'short grain rice'                                      -> 'short grain rice cooked'
+  'shrimp'                                                -> 'shrimp cooked'
+  'sole fillet'                                           -> 'sole fillet cooked'
+  'spaghetti'                                             -> 'spaghetti cooked'
+  'split peas, green (dried)'                             -> 'split peas, green (dried) cooked'
+  'split peas, yellow (dried)'                            -> 'split peas, yellow (dried) cooked'
+  'squid'                                                 -> 'squid cooked'
+  'stewing beef'                                          -> 'stewing beef cooked'
+  'sushi rice'                                            -> 'sushi rice cooked'
+  'tilapia fillet'                                        -> 'tilapia fillet cooked'
+  'trout fillet'                                          -> 'trout fillet cooked'
+  'tubular pasta'                                         -> 'tubular pasta cooked'
+  'tuna, fresh / frozen steak'                            -> 'tuna, fresh / frozen steak cooked'
+  'turkey'                                                -> 'turkey cooked'
+  'turkey breast'                                         -> 'turkey breast cooked'
+  'urad dal'                                              -> 'urad dal cooked'
+  'veal cutlets'                                          -> 'veal cutlets cooked'
+  'wheat berries'                                         -> 'wheat berries cooked'
+  'white beans'                                           -> 'white beans cooked'
+  'white rice'                                            -> 'white rice cooked'
+  'whole fish'                                            -> 'whole fish cooked'
+  'whole white fish'                                      -> 'whole white fish cooked'
+  'wild rice'                                             -> 'wild rice cooked'
+  'yellowtail'                                            -> 'yellowtail cooked'
+
+======================================================================
+BORDERLINE / NEEDS HUMAN REVIEW
+======================================================================
+
+  Item : 'black-eyed peas, canned'
+  Note : Listed in TO_TAG because canned black-eyed peas are a pre-cooked convenience product and macros are per cooked weight. However 'canned' usually means leave unchanged per the rules. NEEDS REVIEW — removed from TO_TAG for safety.
+
+  Item : 'whole chicken'
+  Note : Could be roasted whole or broken down raw. Similar to 'rotisserie chicken' (which is excluded). If Ali buys whole raw chicken to cook himself, tag; if he buys it pre-roasted, don't. BORDERLINE — not tagged.
+
+  Item : 'whole duck'
+  Note : Same ambiguity as whole chicken. BORDERLINE — not tagged.
+
+  Item : 'beef tripe'
+  Note : Organ/specialty item. Tripe is cooked but macros don't change drastically. Rules say 'use judgment, when in doubt leave unchanged'. NOT tagged.
+
+  Item : 'beef cheeks'
+  Note : Organ/specialty item. BORDERLINE — not tagged.
+
+  Item : 'beef bones'
+  Note : Used for stock/broth, not eaten directly as a portion. NOT tagged.
+
+  Item : 'pork bones'
+  Note : Used for stock/broth, not eaten as a portion. NOT tagged.
+
+  Item : 'lamb intestines'
+  Note : Organ/specialty item. BORDERLINE — not tagged.
+
+  Item : 'lamb offal'
+  Note : Organ/specialty item. BORDERLINE — not tagged.
+
+  Item : 'chicken skin'
+  Note : Specialty item. Rules say leave unchanged. NOT tagged.
+
+  Item : 'ham hock'
+  Note : Often sold smoked/cured (preservation state). BORDERLINE — not tagged.
+
+  Item : 'oats, steel cut'
+  Note : Included in TO_TAG (cooked porridge). If Ali eats them raw/overnight-oats, this tag would be wrong. BORDERLINE — tagged, but flagged.
+
+  Item : 'oats, rolled / old fashioned'
+  Note : Included in TO_TAG (cooked porridge). Same caveat as steel cut. BORDERLINE.
+
+  Item : 'oats, quick'
+  Note : Included in TO_TAG (cooked porridge). Same caveat. BORDERLINE.
+
+  Item : 'couscous'
+  Note : Technically reconstituted with boiling water, macro change is moderate. Tagged as a cooked grain — BORDERLINE.
+
+  Item : 'barley, pearl'
+  Note : Tagged as a cooked grain. BORDERLINE — verify Ali cooks it.
+
+  Item : 'giant lima beans'
+  Note : Fresh or dried? If canned, should be left unchanged. Listed without 'canned' or 'dried' qualifier — assuming dried/fresh and cooked. BORDERLINE — tagged.
+
+  Item : 'urad dal'
+  Note : Dal is always cooked; tagged. BORDERLINE only because it doesn't have 'dried' qualifier, but dal == dried lentil in practice.
+
+  Item : 'fava beans'
+  Note : Can be eaten fresh (raw/blanched) or dried-and-cooked. BORDERLINE — tagged.
+
+  Item : 'mung beans'
+  Note : Can be sprouted (raw) or cooked. BORDERLINE — tagged under assumption of cooked.
+
+  Item : 'grilled pork'
+  Note : Already encodes a cooking method ('grilled'). NOT tagged — left unchanged.
+
+  Item : 'pork carnitas'
+  Note : Already a cooked preparation. NOT tagged.
+
+  Item : 'clams'
+  Note : Seafood — typically cooked. Could argue for tagging. BORDERLINE — not tagged (no explicit mention in rules; left unchanged to be safe).
+
+  Item : 'lobster'
+  Note : Included in TO_TAG. BORDERLINE — could be purchased pre-cooked (e.g. lobster tail from store). Flagged.
+
+  Item : 'lobster meat'
+  Note : Included in TO_TAG. Often sold pre-cooked. BORDERLINE — flagged.
+
+  Item : 'egg noodles'
+  Note : Pasta-like but often sold pre-cooked/dry. BORDERLINE — not tagged (not in the explicit pasta list above).
+
+  Item : 'reshteh noodles'
+  Note : Persian noodle, cooked in soups. BORDERLINE — not tagged (specialty item, not in the staple pasta list).
+
+  Item : 'soba noodles'
+  Note : Japanese buckwheat noodle, cooked. BORDERLINE — not tagged (not in the explicit pasta list; specialty item).
+
+  Item : 'udon noodles'
+  Note : Japanese wheat noodle, cooked. BORDERLINE — not tagged (specialty noodle).
+
+  Item : 'lo mein noodles'
+  Note : Chinese wheat noodle, cooked. BORDERLINE — not tagged (specialty noodle).
+
+  Item : 'wheat noodles'
+  Note : Generic term. BORDERLINE — not tagged.
+
+  Item : 'vermicelli'
+  Note : Could be wheat or rice vermicelli. BORDERLINE — not tagged (rice vermicelli is excluded per rules; wheat vermicelli is specialty).
