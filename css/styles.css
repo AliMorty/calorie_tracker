@@ -815,7 +815,8 @@ body {
 
 /* Animated panels: override display:none so CSS transitions work */
 .add-food-panel.hidden,
-.food-detail-screen.hidden {
+.food-detail-screen.hidden,
+.profile-screen.hidden {
   display: flex !important;
 }
 .overlay.hidden {
