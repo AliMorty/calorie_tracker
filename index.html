@@ -29,7 +29,10 @@
     <!-- User bar -->
     <div class="user-bar">
       <span id="user-display-name" class="user-name"></span>
-      <button id="sign-out-btn" class="sign-out-btn">Sign out</button>
+      <div class="user-bar-actions">
+        <button id="profile-btn" class="profile-btn" aria-label="Profile">Goals</button>
+        <button id="sign-out-btn" class="sign-out-btn">Sign out</button>
+      </div>
     </div>
 
     <!-- Date navigation header -->
@@ -95,6 +98,34 @@
       <!-- Rendered by ui.js -->
     </main>
 
+  </div>
+
+  <!-- Profile Screen (full-screen overlay) -->
+  <div id="profile-screen" class="profile-screen hidden">
+    <div class="food-detail-header">
+      <button id="profile-close-btn" class="fd-close-btn">&times;</button>
+      <span class="fd-meal-label">Daily Goals</span>
+      <div class="fd-header-spacer"></div>
+    </div>
+    <div class="profile-content">
+      <div class="profile-field">
+        <label class="profile-label" for="profile-calories">Calories</label>
+        <input type="number" id="profile-calories" class="profile-input" min="0" step="1" />
+      </div>
+      <div class="profile-field">
+        <label class="profile-label" for="profile-protein">Protein (g)</label>
+        <input type="number" id="profile-protein" class="profile-input" min="0" step="1" />
+      </div>
+      <div class="profile-field">
+        <label class="profile-label" for="profile-carbs">Carbs (g)</label>
+        <input type="number" id="profile-carbs" class="profile-input" min="0" step="1" />
+      </div>
+      <div class="profile-field">
+        <label class="profile-label" for="profile-fat">Fat (g)</label>
+        <input type="number" id="profile-fat" class="profile-input" min="0" step="1" />
+      </div>
+      <button id="profile-save-btn" class="fd-add-btn">Save</button>
+    </div>
   </div>
 
   <!-- Food Detail Screen (full-screen overlay) -->

@@ -79,6 +79,43 @@ const App = (function () {
       });
     }
 
+    // Bind profile (goals) screen
+    var profileBtn = document.getElementById('profile-btn');
+    var profileScreen = document.getElementById('profile-screen');
+    var profileCloseBtn = document.getElementById('profile-close-btn');
+    var profileSaveBtn = document.getElementById('profile-save-btn');
+
+    if (profileBtn) {
+      profileBtn.addEventListener('click', function () {
+        var goals = Storage.getGoals();
+        document.getElementById('profile-calories').value = goals.calories;
+        document.getElementById('profile-protein').value = goals.protein;
+        document.getElementById('profile-carbs').value = goals.carbs;
+        document.getElementById('profile-fat').value = goals.fat;
+        profileScreen.classList.remove('hidden');
+      });
+    }
+
+    if (profileCloseBtn) {
+      profileCloseBtn.addEventListener('click', function () {
+        profileScreen.classList.add('hidden');
+      });
+    }
+
+    if (profileSaveBtn) {
+      profileSaveBtn.addEventListener('click', function () {
+        var goals = {
+          calories: parseInt(document.getElementById('profile-calories').value) || 0,
+          protein:  parseInt(document.getElementById('profile-protein').value)  || 0,
+          carbs:    parseInt(document.getElementById('profile-carbs').value)    || 0,
+          fat:      parseInt(document.getElementById('profile-fat').value)      || 0,
+        };
+        Storage.saveGoals(goals);
+        profileScreen.classList.add('hidden');
+        renderDay();
+      });
+    }
+
     // Load both: handmade foods (with units) + USDA common foods (grams only)
     var handmadePromise = fetch('data/foods.json')
       .then(function (res) { return res.json(); })

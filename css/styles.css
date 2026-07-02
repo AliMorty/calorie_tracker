@@ -943,3 +943,75 @@ body {
 .barcode-confirm-btn:active {
   opacity: 0.7;
 }
+
+/* ---------- user-bar actions ---------- */
+.user-bar-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.profile-btn {
+  font-size: 0.75rem;
+  color: #888;
+  background: none;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+}
+
+/* ---------- profile screen ---------- */
+.profile-screen {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(160deg, #e8f0ff 0%, #f5e8e0 100%);
+  z-index: 200;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(100%);
+  transition: transform 0.2s ease-out;
+}
+
+.profile-screen.hidden {
+  pointer-events: none;
+}
+
+.profile-screen:not(.hidden) {
+  transform: translateX(0);
+}
+
+.profile-content {
+  padding: 1.5rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.profile-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.profile-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #555;
+}
+
+.profile-input {
+  font-size: 1.2rem;
+  padding: 0.6rem 0.8rem;
+  border: 1.5px solid #ddd;
+  border-radius: 10px;
+  background: #fff;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.profile-input:focus {
+  border-color: #6c8ebf;
+}
