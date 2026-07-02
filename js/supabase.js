@@ -84,7 +84,7 @@ const SupabaseAuth = (function () {
     var words = query.trim().split(/\s+/);
     var q = supabase
       .from('foods')
-      .select('name, calories, protein, carbs, fat');
+      .select('name, calories, protein, carbs, fat, usda_source');
     for (var i = 0; i < words.length; i++) {
       q = q.ilike('name', '%' + words[i] + '%');
     }

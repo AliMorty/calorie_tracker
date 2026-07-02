@@ -338,6 +338,7 @@ const UI = (function () {
     var mealLabels = { breakfast: 'Breakfast', lunch: 'Lunch', dinner: 'Dinner', snacks: 'Snacks' };
     document.getElementById('fd-meal-label').textContent = mealLabels[mealType];
     document.getElementById('fd-name').textContent = food.name;
+    document.getElementById('fd-source').textContent = food.usda_source || 'Generic';
 
     var unitSelect = document.getElementById('fd-unit');
     unitSelect.innerHTML = '';
