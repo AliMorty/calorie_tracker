@@ -37,8 +37,12 @@ const App = (function () {
 
     // Update user display
     var nameEl = document.getElementById('user-display-name');
-    if (nameEl && user.user_metadata) {
-      nameEl.textContent = user.user_metadata.full_name || user.email || '';
+    if (nameEl) {
+      nameEl.textContent = (user.user_metadata && user.user_metadata.full_name) || user.email || '';
+    }
+    var emailEl = document.getElementById('user-email');
+    if (emailEl) {
+      emailEl.textContent = user.email || '';
     }
 
     _bootApp();
@@ -79,40 +83,47 @@ const App = (function () {
       });
     }
 
-    // Bind profile (goals) screen
-    var profileBtn = document.getElementById('profile-btn');
-    var profileScreen = document.getElementById('profile-screen');
-    var profileCloseBtn = document.getElementById('profile-close-btn');
+    // Bottom-nav tab switching (Tracker <-> Profile)
+    var trackerView = document.getElementById('tracker-view');
+    var profileView = document.getElementById('profile-view');
+    var tabTracker = document.getElementById('tab-tracker');
+    var tabProfile = document.getElementById('tab-profile');
+
+    function _fillProfileInputs() {
+      var goals = Storage.getGoals();
+      document.getElementById('profile-calories').value = goals.calories;
+      document.getElementById('profile-protein').value = goals.protein;
+      document.getElementById('profile-carbs').value = goals.carbs;
+      document.getElementById('profile-fat').value = goals.fat;
+    }
+
+    function showTab(tab) {
+      var toProfile = tab === 'profile';
+      trackerView.classList.toggle('hidden', toProfile);
+      profileView.classList.toggle('hidden', !toProfile);
+      tabTracker.classList.toggle('active', !toProfile);
+      tabProfile.classList.toggle('active', toProfile);
+      if (toProfile) _fillProfileInputs();
+    }
+
+    if (tabTracker) {
+      tabTracker.addEventListener('click', function () { showTab('tracker'); });
+    }
+    if (tabProfile) {
+      tabProfile.addEventListener('click', function () { showTab('profile'); });
+    }
+
     var profileSaveBtn = document.getElementById('profile-save-btn');
-
-    if (profileBtn) {
-      profileBtn.addEventListener('click', function () {
-        var goals = Storage.getGoals();
-        document.getElementById('profile-calories').value = goals.calories;
-        document.getElementById('profile-protein').value = goals.protein;
-        document.getElementById('profile-carbs').value = goals.carbs;
-        document.getElementById('profile-fat').value = goals.fat;
-        profileScreen.classList.remove('hidden');
-      });
-    }
-
-    if (profileCloseBtn) {
-      profileCloseBtn.addEventListener('click', function () {
-        profileScreen.classList.add('hidden');
-      });
-    }
-
     if (profileSaveBtn) {
       profileSaveBtn.addEventListener('click', function () {
-        var goals = {
+        Storage.saveGoals({
           calories: parseInt(document.getElementById('profile-calories').value) || 0,
           protein:  parseInt(document.getElementById('profile-protein').value)  || 0,
           carbs:    parseInt(document.getElementById('profile-carbs').value)    || 0,
           fat:      parseInt(document.getElementById('profile-fat').value)      || 0,
-        };
-        Storage.saveGoals(goals);
-        profileScreen.classList.add('hidden');
+        });
         renderDay();
+        showTab('tracker');
       });
     }
 

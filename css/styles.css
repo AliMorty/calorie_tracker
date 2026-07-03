@@ -74,15 +74,6 @@ body {
 
 /* ---------- user bar ---------- */
 
-.user-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.5rem 1rem;
-  font-size: 0.8rem;
-  color: #666;
-}
-
 .sign-out-btn {
   font-size: 0.75rem;
   color: #888;
@@ -98,7 +89,50 @@ body {
 #app {
   max-width: 480px;
   margin: 0 auto;
-  padding: 0 0 2rem 0;
+  /* bottom padding leaves room for the fixed bottom nav */
+  padding: 0 0 5rem 0;
+}
+
+/* ---------- tab views + bottom nav ---------- */
+.tab-view {
+  /* views are shown/hidden via the global .hidden utility */
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  background: #fff;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+  z-index: 150;
+}
+
+.nav-tab {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+  padding: 0.55rem 0 calc(0.55rem + env(safe-area-inset-bottom));
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #999;
+  font-size: 0.7rem;
+}
+
+.nav-tab .nav-icon {
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.nav-tab.active {
+  color: #6c8ebf;
 }
 
 /* ---------- date header ---------- */
@@ -815,8 +849,7 @@ body {
 
 /* Animated panels: override display:none so CSS transitions work */
 .add-food-panel.hidden,
-.food-detail-screen.hidden,
-.profile-screen.hidden {
+.food-detail-screen.hidden {
   display: flex !important;
 }
 .overlay.hidden {
@@ -945,42 +978,24 @@ body {
   opacity: 0.7;
 }
 
-/* ---------- user-bar actions ---------- */
-.user-bar-actions {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.profile-btn {
-  font-size: 0.75rem;
-  color: #888;
-  background: none;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 0.25rem 0.5rem;
-  cursor: pointer;
-}
-
-/* ---------- profile screen ---------- */
-.profile-screen {
-  position: fixed;
-  inset: 0;
-  background: linear-gradient(160deg, #e8f0ff 0%, #f5e8e0 100%);
-  z-index: 200;
-  overflow-y: auto;
+/* ---------- profile view ---------- */
+.profile-account {
   display: flex;
   flex-direction: column;
-  transform: translateX(100%);
-  transition: transform 0.2s ease-out;
+  gap: 0.15rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
-.profile-screen.hidden {
-  pointer-events: none;
+.profile-account .user-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
 }
 
-.profile-screen:not(.hidden) {
-  transform: translateX(0);
+.profile-account .user-email {
+  font-size: 0.8rem;
+  color: #888;
 }
 
 .profile-content {
