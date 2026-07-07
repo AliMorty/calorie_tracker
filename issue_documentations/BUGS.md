@@ -13,10 +13,75 @@ See CLAUDE.md for the full rules on how to use this file.
 | 1 | Add Food panel height is content-driven - header cuts off or panel drifts | 2026-02-18 | 2026-02-18 | fixed |
 | 2 | Search results show recent foods above matches - should be reversed | 2026-02-18 | 2026-02-19 | fixed |
 | 3 | Supabase food search returns irrelevant results before staple foods | 2026-06-07 | — | workaround |
+| 4 | Tapping an added database (USDA) food entry does not reopen it for editing | 2026-07-03 | 2026-07-06 | fixed |
 
 ---
 
 <!-- Full issue entries go below this line, most recent at the top -->
+
+---
+
+## Issue #4 - Tapping an added database (USDA) food entry does not reopen it for editing
+**Opened:** 2026-07-03
+**Closed:** 2026-07-06
+**Status:** fixed
+(GitHub issue #5)
+
+### What happened
+In a meal's list of added foods, tapping an entry that was added from a **handmade** food
+(e.g. banana, bread — from `data/foods.json`) reopens the food-detail screen so the grams/serving
+can be edited. But tapping an entry that was added from a **database (USDA/Supabase)** food does
+nothing — the detail screen never opens, so those entries cannot be edited after adding.
+
+Reported by Ali on 2026-07-03. Not yet reproduced/confirmed on a specific device — noticed during
+normal use.
+
+### Root cause (hypothesis, not yet fixed — high confidence)
+`handleEditEntry` in `js/app.js:209-218` finds the food to edit by scanning the in-memory
+`foodDatabase` array for a matching `id`:
+
+```
+for (var i = 0; i < foodDatabase.length; i++) {
+  if (foodDatabase[i].id === entry.foodId) { food = foodDatabase[i]; break; }
+}
+if (!food) return;   // <- silently exits here for database foods
+```
+
+`foodDatabase` is only populated with the handmade foods (`data/foods.json`) plus the 100 local
+`data/common_foods.json` items (see `_bootApp`, `js/app.js:~147-160`). Foods added via Supabase
+search (`searchFoodsFromDB` → `SupabaseAuth.searchFoods`) are **not** added to `foodDatabase`, so
+when you later tap that entry, the lookup fails, `food` stays null, and `if (!food) return;`
+exits without opening anything. Handmade foods are in the array, so they work.
+
+### Final fix
+Applied the reconstruct-from-entry approach (option 1 below) in `js/app.js` `handleEditEntry`.
+When the food isn't found in `foodDatabase` and the entry was logged in grams
+(`servingUnit === 'g'`), we rebuild a gram-based food object from the entry's own stored macros:
+`per100g = storedMacro * 100 / servingQty`, with a single `g` unit. `showFoodDetail` then reopens
+normally and `onFoodConfirmed` updates the existing entry. No network/Supabase lookup needed, so it
+also works offline and for entries logged in past sessions. Minor rounding drift is possible
+(stored macros are rounded), which is acceptable for a calorie tracker.
+**Confidence:** high — root cause was confirmed by reading `handleEditEntry` (the silent
+`if (!food) return;`), and the reconstruction is the exact inverse of `calcFoodNutrition` for grams.
+Still needs a real device tap-test to confirm end-to-end.
+
+### Fix attempts
+Single change, described under Final fix.
+
+### Alternative approaches considered (for reference)
+Don't rely on `foodDatabase` for editing. Options, roughly in order of preference:
+1. Store enough of the food's data on the entry itself when it's added (it already saves
+   `foodId` + `name`; also persist the per-gram macros / unit info), then reconstruct a food
+   object from the entry in `handleEditEntry` instead of looking it up.
+2. Re-fetch the food from Supabase by name/id on tap.
+3. Cache every searched/picked food into `foodDatabase` so the later lookup succeeds.
+Option 1 is the most robust (works offline, no dependency on the food still existing in search).
+
+### Lessons
+`handleEditEntry`'s silent `if (!food) return;` hides the failure — there's no console error, so
+the tap just appears dead. When fixing, consider logging or a user-facing message when a food
+can't be resolved. Note the two food sources with different shapes: handmade foods have `units`
++ real `id`s; adapted USDA foods use `id: name` and grams-only (see `_adaptFlatFood`).
 
 ---
 

@@ -214,6 +214,26 @@ const App = (function () {
         break;
       }
     }
+    // Database (USDA) foods aren't kept in foodDatabase, so reconstruct a
+    // gram-based food object from the entry's own stored macros. This lets
+    // logged database foods be reopened and re-portioned (Issue #5), and
+    // works offline since it needs no lookup. Database foods are always
+    // logged in grams, so per-100g = stored macro * 100 / grams.
+    if (!food && entry.servingUnit === 'g' && entry.servingQty) {
+      var per = 100 / entry.servingQty;
+      food = {
+        id: entry.foodId,
+        name: entry.name,
+        per100g: {
+          calories: entry.calories * per,
+          protein: entry.protein * per,
+          carbs: entry.carbs * per,
+          fat: entry.fat * per,
+        },
+        units: [{ label: 'g', type: 'weight', grams: 1, defaultQty: 100 }],
+        defaultUnit: 'g',
+      };
+    }
     if (!food) return;
     UI.showFoodDetail(mealType, food, unitConversions, onFoodConfirmed, entry);
   }
