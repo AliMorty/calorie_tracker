@@ -8,7 +8,8 @@
   <title>Calorie Tracker</title>
   <link rel="stylesheet" href="css/styles.css">
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-  <script src="https://cdn.jsdelivr.net/npm/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
+  <!-- BarcodeDetector polyfill (ZXing-C++ WASM) — reliable EAN/UPC scanning on iOS Safari -->
+  <script src="https://cdn.jsdelivr.net/npm/barcode-detector@3.2.0/dist/iife/polyfill.min.js"></script>
 </head>
 <body>
 
@@ -205,7 +206,7 @@
         <button id="viewfinder-close-btn" class="viewfinder-close-btn">&times;</button>
       </div>
       <div class="viewfinder-camera">
-        <div id="barcode-reader"></div>
+        <video id="barcode-video" playsinline muted></video>
       </div>
       <div id="barcode-result" class="barcode-result hidden">
         <span id="barcode-number"></span>

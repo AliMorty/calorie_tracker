@@ -652,8 +652,10 @@ const UI = (function () {
 
   // ---------- expose ----------
 
-  // --- Barcode Scanner ---
-  var _barcodeScanner = null;
+  // --- Barcode Scanner (BarcodeDetector API + ZXing-C++ WASM polyfill) ---
+  var _barcodeDetector = null; // BarcodeDetector instance (reused)
+  var _barcodeStream = null;   // active camera MediaStream
+  var _scanLoopId = null;      // requestAnimationFrame handle
   var _scannerRunning = false;
 
   function _openBarcodeScanner() {
@@ -668,58 +670,88 @@ const UI = (function () {
 
     viewfinder.classList.remove('hidden');
 
-    if (!_barcodeScanner) {
-      _barcodeScanner = new Html5Qrcode('barcode-reader');
+    if (typeof BarcodeDetector === 'undefined') {
+      viewfinder.classList.add('hidden');
+      alert('Barcode scanning is not supported on this browser.');
+      return;
     }
 
-    _barcodeScanner.start(
-      { facingMode: 'environment' },
-      {
-        fps: 10,
-        qrbox: { width: 280, height: 120 },
-        formatsToSupport: [
-          Html5QrcodeSupportedFormats.EAN_13,
-          Html5QrcodeSupportedFormats.EAN_8,
-          Html5QrcodeSupportedFormats.UPC_A,
-          Html5QrcodeSupportedFormats.UPC_E,
-          Html5QrcodeSupportedFormats.CODE_128,
-          Html5QrcodeSupportedFormats.CODE_39
-        ]
-      },
-      function onSuccess(decodedText) {
-        // Green flash
-        var camera = document.querySelector('.viewfinder-camera');
-        camera.classList.add('scan-success');
+    if (!_barcodeDetector) {
+      _barcodeDetector = new BarcodeDetector({
+        formats: ['ean_13', 'ean_8', 'upc_a', 'upc_e', 'code_128', 'code_39']
+      });
+    }
 
-        // Show result
-        document.getElementById('barcode-number').textContent = decodedText;
-        document.getElementById('barcode-result').classList.remove('hidden');
+    var video = document.getElementById('barcode-video');
 
-        // Stop scanning after successful read
-        _barcodeScanner.stop().then(function () {
-          _scannerRunning = false;
-        });
-      },
-      function onError() {
-        // Ignore scan errors — just means no barcode found in this frame
-      }
-    ).then(function () {
+    navigator.mediaDevices.getUserMedia({
+      video: { facingMode: 'environment' }
+    }).then(function (stream) {
+      _barcodeStream = stream;
+      video.srcObject = stream;
+      video.setAttribute('playsinline', ''); // iOS Safari requires this to show video inline
+      video.muted = true;
+      return video.play();
+    }).then(function () {
       _scannerRunning = true;
+      _scanTick(video);
     }).catch(function (err) {
       console.error('Barcode scanner failed to start:', err);
+      _stopStream();
       viewfinder.classList.add('hidden');
       alert('Could not access camera. Please allow camera permissions and try again.');
     });
   }
 
+  // Continuously check each camera frame for a barcode. Continuous polling is
+  // far more reliable than a single-shot detect on mobile Safari.
+  function _scanTick(video) {
+    if (!_scannerRunning) return;
+    _barcodeDetector.detect(video).then(function (codes) {
+      if (!_scannerRunning) return;
+      if (codes && codes.length > 0) {
+        _onBarcodeDetected(codes[0].rawValue);
+      } else {
+        _scanLoopId = requestAnimationFrame(function () { _scanTick(video); });
+      }
+    }).catch(function () {
+      // detect() can reject on a frame that isn't ready yet — just keep looping.
+      if (_scannerRunning) {
+        _scanLoopId = requestAnimationFrame(function () { _scanTick(video); });
+      }
+    });
+  }
+
+  function _onBarcodeDetected(code) {
+    _scannerRunning = false;
+    if (_scanLoopId) { cancelAnimationFrame(_scanLoopId); _scanLoopId = null; }
+
+    // Green flash + show the detected number; freeze on the last frame.
+    document.querySelector('.viewfinder-camera').classList.add('scan-success');
+    document.getElementById('barcode-number').textContent = code;
+    document.getElementById('barcode-result').classList.remove('hidden');
+
+    _stopStream();
+  }
+
+  // Stop the loop and release the camera (turns the camera light off).
+  function _stopStream() {
+    if (_scanLoopId) { cancelAnimationFrame(_scanLoopId); _scanLoopId = null; }
+    if (_barcodeStream) {
+      _barcodeStream.getTracks().forEach(function (t) { t.stop(); });
+      _barcodeStream = null;
+    }
+  }
+
   function _closeBarcodeScanner() {
     var viewfinder = document.getElementById('barcode-viewfinder');
 
-    if (_scannerRunning && _barcodeScanner) {
-      _barcodeScanner.stop().then(function () {
-        _scannerRunning = false;
-      });
-    }
+    _scannerRunning = false;
+    _stopStream();
+
+    var video = document.getElementById('barcode-video');
+    if (video) { video.srcObject = null; }
+
     viewfinder.classList.add('hidden');
     document.getElementById('barcode-result').classList.add('hidden');
     document.querySelector('.viewfinder-camera').classList.remove('scan-success');

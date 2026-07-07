@@ -969,13 +969,10 @@ body {
   position: relative;
 }
 
-#barcode-reader {
+#barcode-video {
   width: 100%;
   height: 100%;
-}
-
-#barcode-reader video {
-  object-fit: cover !important;
+  object-fit: cover;
 }
 
 /* Green flash on successful scan */
