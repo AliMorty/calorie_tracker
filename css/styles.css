@@ -3,6 +3,47 @@
    Mobile-first, light theme, Cronometer-inspired
    =================================================== */
 
+/* ---------- theme tokens (light defaults) ---------- */
+
+:root {
+  /* Tell the browser we support both schemes so native controls
+     (dropdowns, number inputs) also render correctly in dark mode. */
+  color-scheme: light dark;
+
+  --bg: #f5f6f8;             /* page background */
+  --surface: #ffffff;        /* cards, panels, inputs */
+  --text: #1a1a2e;           /* primary text */
+  --text-secondary: #505050; /* secondary text */
+  --text-muted: #8e8ea0;     /* labels, hints */
+  --border: #e0e0ea;         /* input borders, dividers */
+  --border-subtle: #f0f0f5;  /* row separators */
+  --track: #eaedf3;          /* progress-bar background */
+  --input-bg: #f8f8fc;       /* search input fill */
+  --active-bg: #f5f5ff;      /* pressed-row highlight */
+  --fd-grad-1: #e8f0ff;      /* food-detail background gradient */
+  --fd-grad-2: #f5e8e0;
+}
+
+/* Auto dark mode: follows the device's system setting, like iOS.
+   No toggle, no JavaScript — the browser applies this when the
+   phone/OS is set to dark. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #16181d;
+    --surface: #22252b;
+    --text: #e9e9ec;
+    --text-secondary: #b8b8c2;
+    --text-muted: #9a9aa8;
+    --border: #363a42;
+    --border-subtle: #2b2e34;
+    --track: #2b2e34;
+    --input-bg: #2b2e34;
+    --active-bg: #2b2e34;
+    --fd-grad-1: #1b1e24;
+    --fd-grad-2: #24201d;
+  }
+}
+
 /* ---------- reset & base ---------- */
 
 *, *::before, *::after {
@@ -19,8 +60,8 @@ html {
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     'Helvetica Neue', Arial, sans-serif;
-  background-color: #f5f6f8;
-  color: #1a1a2e;
+  background-color: var(--bg);
+  color: var(--text);
   line-height: 1.5;
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
@@ -44,12 +85,12 @@ body {
 .login-title {
   font-size: 1.75rem;
   font-weight: 700;
-  color: #1a1a2e;
+  color: var(--text);
   margin-bottom: 0.5rem;
 }
 
 .login-subtitle {
-  color: #666;
+  color: var(--text-secondary);
   margin-bottom: 2rem;
 }
 
@@ -76,9 +117,9 @@ body {
 
 .sign-out-btn {
   font-size: 0.75rem;
-  color: #888;
+  color: var(--text-muted);
   background: none;
-  border: 1px solid #ddd;
+  border: 1px solid var(--border);
   border-radius: 4px;
   padding: 0.25rem 0.5rem;
   cursor: pointer;
@@ -106,8 +147,8 @@ body {
   width: 100%;
   max-width: 480px;
   display: flex;
-  background: #fff;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  background: var(--surface);
+  border-top: 1px solid var(--border);
   box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
   z-index: 150;
 }
@@ -122,7 +163,7 @@ body {
   background: none;
   border: none;
   cursor: pointer;
-  color: #999;
+  color: var(--text-muted);
   font-size: 0.7rem;
 }
 
@@ -142,8 +183,8 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 1rem;
-  background: #ffffff;
-  border-bottom: 1px solid #e8e8ee;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
   z-index: 10;
@@ -152,7 +193,7 @@ body {
 .date-label {
   font-size: 1.1rem;
   font-weight: 600;
-  color: #1a1a2e;
+  color: var(--text);
 }
 
 .nav-btn {
@@ -178,7 +219,7 @@ body {
 /* ---------- summary card ---------- */
 
 .summary-card {
-  background: #ffffff;
+  background: var(--surface);
   margin: 0.75rem;
   border-radius: 12px;
   padding: 1rem 1rem 0.75rem;
@@ -201,7 +242,7 @@ body {
 .summary-cal-number {
   font-size: 1.6rem;
   font-weight: 700;
-  color: #1a1a2e;
+  color: var(--text);
 }
 
 .summary-cal-number.over {
@@ -210,7 +251,7 @@ body {
 
 .summary-cal-label {
   font-size: 0.75rem;
-  color: #8e8ea0;
+  color: var(--text-muted);
   text-transform: uppercase;
   letter-spacing: 0.03em;
   margin-top: 0.1rem;
@@ -221,7 +262,7 @@ body {
 .progress-bar-container {
   width: 100%;
   height: 8px;
-  background: #eaedf3;
+  background: var(--track);
   border-radius: 4px;
   overflow: hidden;
   margin-bottom: 0.75rem;
@@ -271,7 +312,7 @@ body {
   display: flex;
   justify-content: space-between;
   font-size: 0.8rem;
-  color: #555;
+  color: var(--text-secondary);
 }
 
 .macro-name {
@@ -281,7 +322,7 @@ body {
 /* ---------- meal sections ---------- */
 
 .meal-section {
-  background: #ffffff;
+  background: var(--surface);
   margin: 0.75rem;
   border-radius: 12px;
   padding: 0;
@@ -294,7 +335,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0.75rem 1rem;
-  border-bottom: 1px solid #f0f0f5;
+  border-bottom: 1px solid var(--border-subtle);
 }
 
 .meal-header-left {
@@ -306,12 +347,12 @@ body {
 .meal-title {
   font-size: 1rem;
   font-weight: 700;
-  color: #1a1a2e;
+  color: var(--text);
 }
 
 .meal-macros-summary {
   font-size: 0.8rem;
-  color: #8e8ea0;
+  color: var(--text-muted);
   font-weight: 500;
 }
 
@@ -365,7 +406,7 @@ body {
 .swipe-container {
   position: relative;
   overflow: hidden;
-  border-bottom: 1px solid #f6f6fa;
+  border-bottom: 1px solid var(--border-subtle);
   touch-action: pan-y;
 }
 
@@ -396,7 +437,7 @@ body {
   padding: 0.6rem 1rem;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
-  background: #fff;
+  background: var(--surface);
   position: relative;
   transition: transform 0.2s ease;
   will-change: transform;
@@ -407,7 +448,7 @@ body {
 }
 
 .food-entry:active {
-  background-color: #f5f5ff;
+  background-color: var(--active-bg);
 }
 
 .food-entry.removing {
@@ -433,7 +474,7 @@ body {
 .food-name {
   font-size: 0.9rem;
   font-weight: 500;
-  color: #1a1a2e;
+  color: var(--text);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -441,7 +482,7 @@ body {
 
 .food-portion {
   font-size: 0.75rem;
-  color: #8e8ea0;
+  color: var(--text-muted);
 }
 
 .food-macros {
@@ -454,7 +495,7 @@ body {
 .food-cal {
   font-size: 0.9rem;
   font-weight: 700;
-  color: #1a1a2e;
+  color: var(--text);
   min-width: 2.5rem;
   text-align: right;
 }
@@ -463,14 +504,14 @@ body {
   content: ' cal';
   font-size: 0.65rem;
   font-weight: 400;
-  color: #8e8ea0;
+  color: var(--text-muted);
 }
 
 .food-macro-detail {
   display: flex;
   gap: 0.3rem;
   font-size: 0.7rem;
-  color: #8e8ea0;
+  color: var(--text-muted);
 }
 
 .fm-p::before { content: 'P '; color: #4a6cf7; font-weight: 600; }
@@ -482,7 +523,7 @@ body {
 .empty-meal {
   padding: 1.5rem 1rem;
   text-align: center;
-  color: #b0b0c0;
+  color: var(--text-muted);
   font-size: 0.85rem;
   font-style: italic;
 }
@@ -505,7 +546,7 @@ body {
 .food-detail-screen {
   position: fixed;
   inset: 0;
-  background: linear-gradient(160deg, #e8f0ff 0%, #f5e8e0 100%);
+  background: linear-gradient(160deg, var(--fd-grad-1) 0%, var(--fd-grad-2) 100%);
   z-index: 200;
   overflow-y: auto;
   display: flex;
@@ -535,7 +576,7 @@ body {
   background: none;
   border: none;
   font-size: 1.6rem;
-  color: #555;
+  color: var(--text-secondary);
   cursor: pointer;
   line-height: 1;
   padding: 0.1rem 0.3rem;
@@ -545,7 +586,7 @@ body {
 .fd-meal-label {
   font-size: 1rem;
   font-weight: 700;
-  color: #1a1a2e;
+  color: var(--text);
 }
 
 .fd-header-spacer {
@@ -568,17 +609,17 @@ body {
 .fd-name {
   font-size: 1.4rem;
   font-weight: 700;
-  color: #1a1a2e;
+  color: var(--text);
   line-height: 1.2;
 }
 
 .fd-source {
   font-size: 0.85rem;
-  color: #8e8ea0;
+  color: var(--text-muted);
 }
 
 .fd-macro-card {
-  background: #fff;
+  background: var(--surface);
   border-radius: 14px;
   display: flex;
   align-items: center;
@@ -597,19 +638,19 @@ body {
 .fd-macro-divider {
   width: 1px;
   height: 36px;
-  background: #e0e0ea;
+  background: var(--border);
   flex-shrink: 0;
 }
 
 .fd-macro-value {
   font-size: 1.2rem;
   font-weight: 700;
-  color: #1a1a2e;
+  color: var(--text);
 }
 
 .fd-macro-label {
   font-size: 0.7rem;
-  color: #8e8ea0;
+  color: var(--text-muted);
   text-align: center;
 }
 
@@ -625,11 +666,11 @@ body {
 .fd-qty {
   width: 90px;
   padding: 0.75rem 0.9rem;
-  border: 1.5px solid #e0e0ea;
+  border: 1.5px solid var(--border);
   border-radius: 12px;
   font-size: 1rem;
-  background: #fff;
-  color: #1a1a2e;
+  background: var(--surface);
+  color: var(--text);
   outline: none;
   text-align: center;
   flex-shrink: 0;
@@ -642,11 +683,11 @@ body {
 .fd-unit {
   flex: 1;
   padding: 0.75rem 0.9rem;
-  border: 1.5px solid #e0e0ea;
+  border: 1.5px solid var(--border);
   border-radius: 12px;
   font-size: 1rem;
-  background: #fff;
-  color: #1a1a2e;
+  background: var(--surface);
+  color: var(--text);
   outline: none;
   appearance: none;
   -webkit-appearance: none;
@@ -702,7 +743,7 @@ body {
   right: 0;
   max-width: 480px;
   margin: 0 auto;
-  background: #fff;
+  background: var(--surface);
   border-radius: 0;
   z-index: 101;
   display: flex;
@@ -720,7 +761,7 @@ body {
   display: flex;
   align-items: center;
   padding: 1rem;
-  border-bottom: 1px solid #f0f0f5;
+  border-bottom: 1px solid var(--border-subtle);
   gap: 0.75rem;
   flex-shrink: 0;
 }
@@ -729,7 +770,7 @@ body {
   background: none;
   border: none;
   font-size: 1.6rem;
-  color: #8e8ea0;
+  color: var(--text-muted);
   cursor: pointer;
   line-height: 1;
   padding: 0.1rem 0.3rem;
@@ -739,12 +780,12 @@ body {
 .panel-title {
   font-size: 1rem;
   font-weight: 700;
-  color: #1a1a2e;
+  color: var(--text);
 }
 
 .panel-search-bar {
   padding: 0.75rem 1rem;
-  border-bottom: 1px solid #f0f0f5;
+  border-bottom: 1px solid var(--border-subtle);
   flex-shrink: 0;
   display: flex;
   align-items: center;
@@ -755,17 +796,17 @@ body {
   flex: 1;
   min-width: 0;
   padding: 0.6rem 0.9rem;
-  border: 1.5px solid #e0e0ea;
+  border: 1.5px solid var(--border);
   border-radius: 10px;
   font-size: 1rem;
   outline: none;
-  background: #f8f8fc;
-  color: #1a1a2e;
+  background: var(--input-bg);
+  color: var(--text);
 }
 
 .food-search-input:focus {
   border-color: #4a6cf7;
-  background: #fff;
+  background: var(--surface);
 }
 
 .panel-body {
@@ -777,7 +818,7 @@ body {
   padding: 0.6rem 1rem 0.3rem;
   font-size: 0.72rem;
   font-weight: 700;
-  color: #8e8ea0;
+  color: var(--text-muted);
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -789,7 +830,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0.75rem 1rem;
-  border-bottom: 1px solid #f6f6fa;
+  border-bottom: 1px solid var(--border-subtle);
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
 }
@@ -799,7 +840,7 @@ body {
 }
 
 .food-list-item:active {
-  background-color: #f0f3ff;
+  background-color: var(--active-bg);
 }
 
 .food-list-item-info {
@@ -810,19 +851,19 @@ body {
 .food-list-item-name {
   font-size: 0.9rem;
   font-weight: 500;
-  color: #1a1a2e;
+  color: var(--text);
 }
 
 .food-list-item-serving {
   font-size: 0.75rem;
-  color: #8e8ea0;
+  color: var(--text-muted);
   margin-top: 0.1rem;
 }
 
 .food-list-item-cal {
   font-size: 0.9rem;
   font-weight: 700;
-  color: #1a1a2e;
+  color: var(--text);
   flex-shrink: 0;
 }
 
@@ -830,13 +871,13 @@ body {
   content: ' cal';
   font-size: 0.65rem;
   font-weight: 400;
-  color: #8e8ea0;
+  color: var(--text-muted);
 }
 
 .food-list-empty {
   padding: 2rem 1rem;
   text-align: center;
-  color: #b0b0c0;
+  color: var(--text-muted);
   font-size: 0.85rem;
   font-style: italic;
 }
@@ -990,12 +1031,12 @@ body {
 .profile-account .user-name {
   font-size: 1.1rem;
   font-weight: 600;
-  color: #333;
+  color: var(--text);
 }
 
 .profile-account .user-email {
   font-size: 0.8rem;
-  color: #888;
+  color: var(--text-muted);
 }
 
 .profile-content {
@@ -1014,15 +1055,15 @@ body {
 .profile-label {
   font-size: 0.85rem;
   font-weight: 600;
-  color: #555;
+  color: var(--text-secondary);
 }
 
 .profile-input {
   font-size: 1.2rem;
   padding: 0.6rem 0.8rem;
-  border: 1.5px solid #ddd;
+  border: 1.5px solid var(--border);
   border-radius: 10px;
-  background: #fff;
+  background: var(--surface);
   outline: none;
   width: 100%;
   box-sizing: border-box;
