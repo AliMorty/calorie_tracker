@@ -757,6 +757,10 @@ const UI = (function () {
     document.querySelector('.viewfinder-camera').classList.remove('scan-success');
 
     viewfinder.classList.remove('hidden');
+    _sizeViewfinder();
+    if (window.visualViewport) {
+      window.visualViewport.addEventListener('resize', _sizeViewfinder);
+    }
 
     if (typeof BarcodeDetector === 'undefined') {
       viewfinder.classList.add('hidden');
@@ -851,11 +855,24 @@ const UI = (function () {
     }
   }
 
+  // Size the full-screen scanner to the *visible* viewport. On iOS Safari the
+  // bottom toolbar overlaps a fixed 100vh element, hiding the Confirm bar.
+  function _sizeViewfinder() {
+    var viewfinder = document.getElementById('barcode-viewfinder');
+    var h = window.visualViewport ? window.visualViewport.height : window.innerHeight;
+    viewfinder.style.height = h + 'px';
+  }
+
   function _closeBarcodeScanner() {
     var viewfinder = document.getElementById('barcode-viewfinder');
 
     _scannerRunning = false;
     _stopStream();
+
+    if (window.visualViewport) {
+      window.visualViewport.removeEventListener('resize', _sizeViewfinder);
+    }
+    viewfinder.style.height = '';
 
     var video = document.getElementById('barcode-video');
     if (video) { video.srcObject = null; }

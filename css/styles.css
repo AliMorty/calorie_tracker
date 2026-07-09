@@ -1053,7 +1053,10 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  /* Height is set to the visible viewport in JS (iOS Safari's bottom toolbar
+     otherwise covers the result bar). dvh/vh are fallbacks. */
+  height: 100vh;
+  height: 100dvh;
   z-index: 300;
   background: #000;
   display: flex;
