@@ -800,7 +800,27 @@ const UI = (function () {
     document.getElementById('barcode-number').textContent = code;
     document.getElementById('barcode-result').classList.remove('hidden');
 
+    _showToast('Barcode ' + code + ' scanned successfully');
+
     _stopStream();
+  }
+
+  // Lightweight auto-dismissing toast message.
+  var _toastTimer = null;
+  function _showToast(message) {
+    var toast = document.getElementById('app-toast');
+    if (!toast) {
+      toast = document.createElement('div');
+      toast.id = 'app-toast';
+      toast.className = 'app-toast';
+      document.body.appendChild(toast);
+    }
+    toast.textContent = message;
+    toast.classList.add('show');
+    clearTimeout(_toastTimer);
+    _toastTimer = setTimeout(function () {
+      toast.classList.remove('show');
+    }, 2600);
   }
 
   // Stop the loop and release the camera (turns the camera light off).
