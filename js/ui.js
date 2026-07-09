@@ -597,16 +597,25 @@ const UI = (function () {
 
     if (!name) { alert('Please enter a food name.'); return null; }
     if (!(amount > 0)) { alert('Please enter the serving amount (e.g. 250 for grams, or 1 for one cup).'); return null; }
-    if (isNaN(cal)) { alert('Please enter the calories.'); return null; }
+
+    var protein = isNaN(p) ? 0 : p;
+    var carbs = isNaN(c) ? 0 : c;
+    var fat = isNaN(f) ? 0 : f;
+
+    // If calories are left blank, derive them from the macros using the
+    // Atwater factors: 4 kcal/g protein, 4 kcal/g carbs, 9 kcal/g fat.
+    if (isNaN(cal)) {
+      cal = Math.round(4 * protein + 4 * carbs + 9 * fat);
+    }
 
     return {
       name: name,
       refAmount: amount,
       unit: unit,
       calories: cal,
-      protein: isNaN(p) ? 0 : p,
-      carbs: isNaN(c) ? 0 : c,
-      fat: isNaN(f) ? 0 : f,
+      protein: protein,
+      carbs: carbs,
+      fat: fat,
       save: document.getElementById('mf-save').checked,
     };
   }
