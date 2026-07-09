@@ -204,7 +204,32 @@ const App = (function () {
 
   function handleAddFood(mealType) {
     var recentFoods = _getRecentFoods(5);
-    UI.showAddFoodPanel(mealType, foodDatabase, recentFoods, onFoodPicked, searchFoodsFromDB, onManualFood);
+    UI.showAddFoodPanel(mealType, foodDatabase, recentFoods, onFoodPicked, searchFoodsFromDB, onManualFood, lookupBarcode);
+  }
+
+  // Look up a scanned barcode against the free Open Food Facts database.
+  // Resolves to a food object ready for showFoodDetail, or null if not found.
+  function lookupBarcode(code) {
+    var url = 'https://world.openfoodfacts.org/api/v2/product/' +
+      encodeURIComponent(code) + '.json?fields=product_name,nutriments';
+    return fetch(url)
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        if (!data || data.status !== 1 || !data.product) return null;
+        var n = data.product.nutriments || {};
+        var kcal = n['energy-kcal_100g'];
+        if (kcal === undefined || kcal === null) return null; // no usable macros
+        // Open Food Facts gives per-100g values; store per-gram like everything else.
+        var perGram = {
+          name: (data.product.product_name || '').trim() || ('Barcode ' + code),
+          calories: Number(kcal) / 100,
+          protein: Number(n['proteins_100g'] || 0) / 100,
+          carbs: Number(n['carbohydrates_100g'] || 0) / 100,
+          fat: Number(n['fat_100g'] || 0) / 100,
+        };
+        return _adaptFlatFood(perGram);
+      })
+      .catch(function () { return null; });
   }
 
   // Handle a manually-entered food. `raw` has the macros for `refGrams` grams;

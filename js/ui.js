@@ -484,10 +484,20 @@ const UI = (function () {
     });
   }
 
-  function showAddFoodPanel(mealType, foods, recentFoods, onSelect, searchDB, onManualFood) {
+  // Context for the currently-open add-food panel, so the barcode scanner
+  // (bound once at init) can act against the active meal/callbacks.
+  var _activeMealType = null;
+  var _activeOnSelect = null;
+  var _activeOnBarcodeLookup = null;
+
+  function showAddFoodPanel(mealType, foods, recentFoods, onSelect, searchDB, onManualFood, onBarcodeLookup) {
     var mealLabels = { breakfast: 'Breakfast', lunch: 'Lunch', dinner: 'Dinner', snacks: 'Snacks' };
     document.getElementById('panel-title').textContent = 'Add to ' + mealLabels[mealType];
     document.getElementById('food-search-input').value = '';
+
+    _activeMealType = mealType;
+    _activeOnSelect = onSelect;
+    _activeOnBarcodeLookup = onBarcodeLookup;
 
     hideManualFoodForm(); // always start on the search/browse view
 
@@ -871,12 +881,29 @@ const UI = (function () {
 
     document.getElementById('barcode-confirm-btn').onclick = function () {
       var code = document.getElementById('barcode-number').textContent;
-      if (code) {
-        // Phase 3: this will trigger food database lookup
-        console.log('Barcode confirmed:', code);
-        alert('Barcode: ' + code + '\n\nFood lookup coming in Phase 3!');
+      if (!code || !_activeOnBarcodeLookup) {
+        _closeBarcodeScanner();
+        return;
       }
-      _closeBarcodeScanner();
+
+      _showToast('Looking up ' + code + '…');
+
+      _activeOnBarcodeLookup(code).then(function (food) {
+        _closeBarcodeScanner();
+        if (food) {
+          // Found: open the detail screen to set how much was eaten.
+          _showToast(food.name + ' found');
+          _activeOnSelect(_activeMealType, food);
+        } else {
+          // Not in the database: fall back to manual entry.
+          _showToast('Product not found — add it manually');
+          _resetManualForm();
+          _showManualFoodForm();
+        }
+      }).catch(function () {
+        _closeBarcodeScanner();
+        _showToast('Lookup failed — check your connection');
+      });
     };
   }
 
