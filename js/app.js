@@ -55,8 +55,9 @@ const App = (function () {
    */
   function _adaptFlatFood(flat) {
     var unit = flat.unit || 'g';
-    // Grams default to a 100 g reference serving; other units default to 1.
-    var defQty = unit === 'g' ? 100 : 1;
+    // Prefer an explicit reference amount (e.g. a barcode product's label
+    // serving); otherwise grams default to 100 and other units to 1.
+    var defQty = flat.defaultQty > 0 ? flat.defaultQty : (unit === 'g' ? 100 : 1);
     return {
       id: flat.name, // use name as ID for Supabase foods
       name: flat.name,
@@ -211,7 +212,7 @@ const App = (function () {
   // Resolves to a food object ready for showFoodDetail, or null if not found.
   function lookupBarcode(code) {
     var url = 'https://world.openfoodfacts.org/api/v2/product/' +
-      encodeURIComponent(code) + '.json?fields=product_name,nutriments';
+      encodeURIComponent(code) + '.json?fields=product_name,nutriments,serving_quantity';
     return fetch(url)
       .then(function (r) { return r.json(); })
       .then(function (data) {
@@ -227,6 +228,10 @@ const App = (function () {
           carbs: Number(n['carbohydrates_100g'] || 0) / 100,
           fat: Number(n['fat_100g'] || 0) / 100,
         };
+        // Open the amount screen at the product's own label serving (e.g. 80 g)
+        // so it matches the package; falls back to 100 g if none is given.
+        var servingG = Number(data.product.serving_quantity);
+        if (servingG > 0) perGram.defaultQty = servingG;
         return _adaptFlatFood(perGram);
       })
       .catch(function () { return null; });
