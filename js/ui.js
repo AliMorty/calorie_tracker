@@ -818,14 +818,36 @@ const UI = (function () {
     _scannerRunning = false;
     if (_scanLoopId) { cancelAnimationFrame(_scanLoopId); _scanLoopId = null; }
 
-    // Green flash + show the detected number; freeze on the last frame.
+    // Green flash + freeze the frame, then look the product up automatically
+    // (no Confirm tap — the Confirm bar was unreachable on iOS Safari).
     document.querySelector('.viewfinder-camera').classList.add('scan-success');
-    document.getElementById('barcode-number').textContent = code;
-    document.getElementById('barcode-result').classList.remove('hidden');
-
-    _showToast('Barcode ' + code + ' scanned successfully');
-
     _stopStream();
+    _showToast('Barcode ' + code + ' scanned — looking up…');
+
+    _lookupAndHandle(code);
+  }
+
+  // Query the food database for a scanned code, then either open the amount
+  // screen (found) or fall back to manual entry (not found).
+  function _lookupAndHandle(code) {
+    if (!code || !_activeOnBarcodeLookup) {
+      _closeBarcodeScanner();
+      return;
+    }
+    _activeOnBarcodeLookup(code).then(function (food) {
+      _closeBarcodeScanner();
+      if (food) {
+        _showToast(food.name + ' found');
+        _activeOnSelect(_activeMealType, food);
+      } else {
+        _showToast('Product not found — add it manually');
+        _resetManualForm();
+        _showManualFoodForm();
+      }
+    }).catch(function () {
+      _closeBarcodeScanner();
+      _showToast('Lookup failed — check your connection');
+    });
   }
 
   // Lightweight auto-dismissing toast message.
@@ -896,31 +918,14 @@ const UI = (function () {
       _closeBarcodeScanner();
     };
 
+    // Lookup now happens automatically on scan; this button is a fallback.
     document.getElementById('barcode-confirm-btn').onclick = function () {
       var code = document.getElementById('barcode-number').textContent;
-      if (!code || !_activeOnBarcodeLookup) {
+      if (code) {
+        _lookupAndHandle(code);
+      } else {
         _closeBarcodeScanner();
-        return;
       }
-
-      _showToast('Looking up ' + code + '…');
-
-      _activeOnBarcodeLookup(code).then(function (food) {
-        _closeBarcodeScanner();
-        if (food) {
-          // Found: open the detail screen to set how much was eaten.
-          _showToast(food.name + ' found');
-          _activeOnSelect(_activeMealType, food);
-        } else {
-          // Not in the database: fall back to manual entry.
-          _showToast('Product not found — add it manually');
-          _resetManualForm();
-          _showManualFoodForm();
-        }
-      }).catch(function () {
-        _closeBarcodeScanner();
-        _showToast('Lookup failed — check your connection');
-      });
     };
   }
 
