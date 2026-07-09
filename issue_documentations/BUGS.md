@@ -14,7 +14,7 @@ See CLAUDE.md for the full rules on how to use this file.
 | 2 | Search results show recent foods above matches - should be reversed | 2026-02-18 | 2026-02-19 | fixed |
 | 3 | Supabase food search returns irrelevant results before staple foods | 2026-06-07 | — | workaround |
 | 4 | Tapping an added database (USDA) food entry does not reopen it for editing | 2026-07-03 | 2026-07-06 | fixed |
-| 5 | Barcode scanner Confirm button/result bar pushed off-screen | 2026-07-08 | 2026-07-08 | fixed |
+| 5 | Barcode scanner Confirm button/result bar pushed off-screen | 2026-07-08 | 2026-07-08 | workaround |
 
 ---
 
@@ -24,28 +24,48 @@ See CLAUDE.md for the full rules on how to use this file.
 
 ## Issue #5 - Barcode scanner Confirm button/result bar pushed off-screen
 **Opened:** 2026-07-08
-**Closed:** 2026-07-08
-**Status:** fixed
+**Closed:** 2026-07-08 (worked around, not truly fixed)
+**Status:** workaround
 
 ### What happened
 On the barcode scanner (iPhone Safari), scanning worked (green flash), but no result/number
-showed and the Confirm button was not visible — it sat off the bottom of the screen.
+showed and the Confirm button was not visible — it sat off the bottom of the screen. Even after the
+first fix, "when I scroll firmly it barely shows up" — i.e. the control was below the visible area
+and only revealed by scrolling (which collapses Safari's toolbar).
 
-### Root cause
-`.viewfinder-camera` in `css/styles.css` had both `height: 100%` and `flex: 1`. Inside the
-full-viewport flex column (`.barcode-viewfinder`), `height: 100%` forced the camera to the full
-viewport height, so the header + camera already filled the screen and the `.barcode-result` bar
-(number + Confirm) was pushed below the visible area.
+### Root cause (two layers)
+1. **Flexbox conflict:** `.viewfinder-camera` had both `height: 100%` and `flex: 1`, forcing the
+   camera to full-viewport height so the `.barcode-result` bar (number + Confirm) was pushed below.
+2. **iOS Safari fixed + toolbar:** the full-screen `position: fixed` scanner is sized to the layout
+   viewport, but Safari's bottom toolbar **overlays** fixed content, hiding the bottom bar until the
+   page is scrolled. `100vh`/`100dvh`/`visualViewport` each measure subtly different things here.
 
-### Final fix
-Removed `height: 100%` from `.viewfinder-camera` (kept `flex: 1` + added `min-height: 0`) so the
-camera fills only the leftover space and the result bar stays on screen. Also added
-`env(safe-area-inset-bottom)` padding to `.barcode-result` so the Confirm button clears the iPhone
-home indicator. Confidence: high — clear flexbox sizing conflict; matches the reported symptom.
+### Fix attempts
+- **Attempt 1 (`9a83659`):** removed `height:100%` from `.viewfinder-camera` (kept `flex:1` +
+  `min-height:0`), added `env(safe-area-inset-bottom)` padding to `.barcode-result`.
+  Outcome: improved but the button was still not reliably reachable.
+- **Attempt 2 (`7bd1caf`):** size the viewfinder to `window.visualViewport.height` on open + on
+  resize; dvh/vh CSS fallbacks. Outcome: the right approach in principle, but **never cleanly
+  verified on-device** — service-worker caching made it unclear whether the new build was even being
+  tested, and no screenshot was captured.
+- **Resolution (`758f15e`):** switched barcode handling to **auto-lookup on scan**, removing the need
+  for the Confirm button entirely. The scanner now works because it no longer depends on the
+  unreachable control — this is a **workaround, not a fix**.
+
+### Remaining / honest status
+The result bar (`#barcode-result`) and Confirm button (`#barcode-confirm-btn`) are now **vestigial**
+and likely still partially off-screen on iOS Safari. A proper fix would anchor scanner controls as an
+**absolutely-positioned overlay pinned to the bottom of the visible viewport**, so viewport/toolbar
+changes cannot hide them. Do that before adding any new on-screen control inside the viewfinder.
 
 ### Lessons
-In a fixed full-height flex column, size children with `flex` alone; a `height: 100%` on a flex
-child fights the flex layout and overflows. Watch iOS safe areas for bottom-anchored controls.
+- In a fixed full-height flex column, size children with `flex` alone; `height:100%` on a flex child
+  overflows.
+- iOS Safari `position: fixed` + the disappearing toolbar is notoriously fiddly; prefer
+  `visualViewport`-based sizing and/or overlay-anchored controls, and watch safe areas.
+- **Process:** ask for a screenshot FIRST on iOS-only layout bugs (Bug #1 lesson, repeated here), and
+  remember that the service-worker cache can make you "fix blind" — you may be testing a stale build.
+  Bump `CACHE_VERSION` and hard-reload before trusting a negative result.
 
 ---
 
