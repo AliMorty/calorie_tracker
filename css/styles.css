@@ -1085,8 +1085,11 @@ body {
 
 .viewfinder-camera {
   width: 100%;
-  height: 100%;
+  /* flex:1 fills the space left after the header + result bar. A fixed
+     height:100% here forced full-viewport height and pushed the result bar
+     (with the Confirm button) off the bottom of the screen. */
   flex: 1;
+  min-height: 0;
   background: #000;
   overflow: hidden;
   position: relative;
@@ -1108,10 +1111,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.6rem 1rem;
+  padding: 0.6rem 1rem calc(0.6rem + env(safe-area-inset-bottom));
   background: #1a1a2e;
   color: #fff;
   font-size: 0.95rem;
+  flex-shrink: 0;
 }
 
 .barcode-result.hidden {

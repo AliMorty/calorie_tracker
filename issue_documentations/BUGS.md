@@ -14,10 +14,38 @@ See CLAUDE.md for the full rules on how to use this file.
 | 2 | Search results show recent foods above matches - should be reversed | 2026-02-18 | 2026-02-19 | fixed |
 | 3 | Supabase food search returns irrelevant results before staple foods | 2026-06-07 | — | workaround |
 | 4 | Tapping an added database (USDA) food entry does not reopen it for editing | 2026-07-03 | 2026-07-06 | fixed |
+| 5 | Barcode scanner Confirm button/result bar pushed off-screen | 2026-07-08 | 2026-07-08 | fixed |
 
 ---
 
 <!-- Full issue entries go below this line, most recent at the top -->
+
+---
+
+## Issue #5 - Barcode scanner Confirm button/result bar pushed off-screen
+**Opened:** 2026-07-08
+**Closed:** 2026-07-08
+**Status:** fixed
+
+### What happened
+On the barcode scanner (iPhone Safari), scanning worked (green flash), but no result/number
+showed and the Confirm button was not visible — it sat off the bottom of the screen.
+
+### Root cause
+`.viewfinder-camera` in `css/styles.css` had both `height: 100%` and `flex: 1`. Inside the
+full-viewport flex column (`.barcode-viewfinder`), `height: 100%` forced the camera to the full
+viewport height, so the header + camera already filled the screen and the `.barcode-result` bar
+(number + Confirm) was pushed below the visible area.
+
+### Final fix
+Removed `height: 100%` from `.viewfinder-camera` (kept `flex: 1` + added `min-height: 0`) so the
+camera fills only the leftover space and the result bar stays on screen. Also added
+`env(safe-area-inset-bottom)` padding to `.barcode-result` so the Confirm button clears the iPhone
+home indicator. Confidence: high — clear flexbox sizing conflict; matches the reported symptom.
+
+### Lessons
+In a fixed full-height flex column, size children with `flex` alone; a `height: 100%` on a flex
+child fights the flex layout and overflows. Watch iOS safe areas for bottom-anchored controls.
 
 ---
 
