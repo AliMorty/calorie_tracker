@@ -484,13 +484,27 @@ const UI = (function () {
     });
   }
 
-  function showAddFoodPanel(mealType, foods, recentFoods, onSelect, searchDB) {
+  function showAddFoodPanel(mealType, foods, recentFoods, onSelect, searchDB, onManualFood) {
     var mealLabels = { breakfast: 'Breakfast', lunch: 'Lunch', dinner: 'Dinner', snacks: 'Snacks' };
     document.getElementById('panel-title').textContent = 'Add to ' + mealLabels[mealType];
     document.getElementById('food-search-input').value = '';
 
+    hideManualFoodForm(); // always start on the search/browse view
+
     _renderFoodList(foods, mealType, onSelect);
     _renderRecentSection(recentFoods, mealType, onSelect);
+
+    // Manual food entry
+    document.getElementById('manual-add-btn').onclick = function () {
+      _resetManualForm();
+      _showManualFoodForm();
+    };
+    document.getElementById('mf-cancel-btn').onclick = hideManualFoodForm;
+    document.getElementById('mf-continue-btn').onclick = function () {
+      var raw = _readManualForm();
+      if (!raw) return; // validation failed (alert already shown)
+      if (onManualFood) onManualFood(mealType, raw);
+    };
 
     document.getElementById('add-food-overlay').classList.remove('hidden');
     document.getElementById('add-food-panel').classList.remove('hidden');
@@ -540,6 +554,58 @@ const UI = (function () {
 
     document.getElementById('panel-close-btn').onclick = hideAddFoodPanel;
     document.getElementById('add-food-overlay').onclick = hideAddFoodPanel;
+  }
+
+  function _showManualFoodForm() {
+    document.getElementById('manual-add-btn').classList.add('hidden');
+    document.getElementById('all-foods-section').classList.add('hidden');
+    document.getElementById('recent-section').classList.add('hidden');
+    document.getElementById('manual-food-form').classList.remove('hidden');
+    document.getElementById('mf-name').focus();
+  }
+
+  function hideManualFoodForm() {
+    document.getElementById('manual-food-form').classList.add('hidden');
+    document.getElementById('manual-add-btn').classList.remove('hidden');
+    document.getElementById('all-foods-section').classList.remove('hidden');
+    // Recent only reappears if it actually has items.
+    var recentList = document.getElementById('recent-list');
+    if (recentList && recentList.children.length > 0) {
+      document.getElementById('recent-section').classList.remove('hidden');
+    }
+  }
+
+  function _resetManualForm() {
+    document.getElementById('mf-name').value = '';
+    document.getElementById('mf-ref-grams').value = '100';
+    document.getElementById('mf-calories').value = '';
+    document.getElementById('mf-protein').value = '';
+    document.getElementById('mf-carbs').value = '';
+    document.getElementById('mf-fat').value = '';
+    document.getElementById('mf-save').checked = false;
+  }
+
+  function _readManualForm() {
+    var name = document.getElementById('mf-name').value.trim();
+    var grams = parseFloat(document.getElementById('mf-ref-grams').value);
+    var cal = parseFloat(document.getElementById('mf-calories').value);
+    var p = parseFloat(document.getElementById('mf-protein').value);
+    var c = parseFloat(document.getElementById('mf-carbs').value);
+    var f = parseFloat(document.getElementById('mf-fat').value);
+
+    if (!name) { alert('Please enter a food name.'); return null; }
+    if (!(grams > 0)) { alert('Please enter the serving size in grams (e.g. 250).'); return null; }
+    if (isNaN(cal)) { alert('Please enter the calories.'); return null; }
+
+    return {
+      name: name,
+      refGrams: grams,
+      calories: cal,
+      protein: isNaN(p) ? 0 : p,
+      carbs: isNaN(c) ? 0 : c,
+      fat: isNaN(f) ? 0 : f,
+      save: document.getElementById('mf-save').checked,
+    };
   }
 
   function hideAddFoodPanel() {
@@ -790,6 +856,7 @@ const UI = (function () {
     bindNavigation: bindNavigation,
     showAddFoodPanel: showAddFoodPanel,
     hideAddFoodPanel: hideAddFoodPanel,
+    hideManualFoodForm: hideManualFoodForm,
     showFoodDetail: showFoodDetail,
     hideFoodDetail: hideFoodDetail,
   };

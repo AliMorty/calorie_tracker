@@ -155,9 +155,18 @@ const App = (function () {
         return [];
       });
 
-    Promise.all([handmadePromise, usdaPromise]).then(function (results) {
-      // Handmade foods first, then USDA foods
-      foodDatabase = results[0].concat(results[1]);
+    // The user's own manually-saved foods (per-gram), adapted like USDA foods.
+    var userFoodsPromise = Promise.resolve(Storage.getUserFoods())
+      .then(function (foods) {
+        return foods.map(_adaptFlatFood);
+      })
+      .catch(function () {
+        return [];
+      });
+
+    Promise.all([handmadePromise, usdaPromise, userFoodsPromise]).then(function (results) {
+      // Handmade foods first, then USDA foods, then the user's saved foods
+      foodDatabase = results[0].concat(results[1]).concat(results[2]);
     });
 
     _loadAndRenderDay();
@@ -191,7 +200,45 @@ const App = (function () {
 
   function handleAddFood(mealType) {
     var recentFoods = _getRecentFoods(5);
-    UI.showAddFoodPanel(mealType, foodDatabase, recentFoods, onFoodPicked, searchFoodsFromDB);
+    UI.showAddFoodPanel(mealType, foodDatabase, recentFoods, onFoodPicked, searchFoodsFromDB, onManualFood);
+  }
+
+  // Handle a manually-entered food. `raw` has the macros for `refGrams` grams;
+  // normalize to per-gram, optionally save it to the user's reusable list, then
+  // open the detail screen so the amount actually eaten can be set and rescaled.
+  function onManualFood(mealType, raw) {
+    var g = raw.refGrams > 0 ? raw.refGrams : 100;
+    var perGram = {
+      name: raw.name,
+      calories: raw.calories / g,
+      protein: raw.protein / g,
+      carbs: raw.carbs / g,
+      fat: raw.fat / g,
+    };
+
+    if (raw.save) {
+      Storage.saveUserFood(perGram);
+      // Make it reusable immediately this session (search/browse/edit).
+      foodDatabase.push(_adaptFlatFood(perGram));
+    }
+
+    var food = {
+      id: raw.name,
+      name: raw.name,
+      per100g: {
+        calories: perGram.calories * 100,
+        protein: perGram.protein * 100,
+        carbs: perGram.carbs * 100,
+        fat: perGram.fat * 100,
+      },
+      // Prefill the detail screen with the reference serving; the user then
+      // changes it to however much they actually ate and the macros rescale.
+      units: [{ label: 'g', type: 'weight', grams: 1, defaultQty: g }],
+      defaultUnit: 'g',
+    };
+
+    UI.hideManualFoodForm();
+    UI.showFoodDetail(mealType, food, unitConversions, onFoodConfirmed, null);
   }
 
   function searchFoodsFromDB(query) {

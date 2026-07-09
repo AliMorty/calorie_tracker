@@ -272,6 +272,63 @@ const Storage = (function () {
     _write(KEYS.goals, goals);
   }
 
+  // ---------- user-created foods ----------
+  // Per-user list of manually-added foods (macros stored PER GRAM, same as the
+  // shared foods table). Falls back to localStorage when signed out.
+
+  function getUserFoods() {
+    if (!_isOnline()) {
+      return Promise.resolve(_read(KEYS.customFoods) || []);
+    }
+    return _db()
+      .from('user_foods')
+      .select('name, calories, protein, carbs, fat')
+      .eq('user_id', _userId())
+      .then(function (result) {
+        if (result.error) {
+          console.error('Supabase user_foods select error:', result.error);
+          return [];
+        }
+        return (result.data || []).map(function (r) {
+          return {
+            name: r.name,
+            calories: Number(r.calories),
+            protein: Number(r.protein),
+            carbs: Number(r.carbs),
+            fat: Number(r.fat),
+          };
+        });
+      });
+  }
+
+  function saveUserFood(food) {
+    // food: { name, calories, protein, carbs, fat } — all PER GRAM
+    if (!_isOnline()) {
+      var list = _read(KEYS.customFoods) || [];
+      list.push(food);
+      _write(KEYS.customFoods, list);
+      return Promise.resolve(food);
+    }
+    return _db()
+      .from('user_foods')
+      .insert({
+        user_id: _userId(),
+        name: food.name,
+        calories: food.calories,
+        protein: food.protein,
+        carbs: food.carbs,
+        fat: food.fat,
+      })
+      .select()
+      .then(function (result) {
+        if (result.error) {
+          console.error('Supabase user_foods insert error:', result.error);
+          return null;
+        }
+        return food;
+      });
+  }
+
   // ---------- utility ----------
 
   function _generateId() {
@@ -381,6 +438,8 @@ const Storage = (function () {
     updateFoodEntry: updateFoodEntry,
     getGoals: getGoals,
     saveGoals: saveGoals,
+    getUserFoods: getUserFoods,
+    saveUserFood: saveUserFood,
     computeDayTotals: computeDayTotals,
     computeMealTotals: computeMealTotals,
     getDummyDayData: getDummyDayData,
