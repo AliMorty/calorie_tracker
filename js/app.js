@@ -49,10 +49,14 @@ const App = (function () {
   }
 
   /**
-   * Convert a flat food object (per-gram values) into the format
-   * expected by showFoodDetail and calcFoodNutrition.
+   * Convert a flat food object (per-UNIT values) into the format expected by
+   * showFoodDetail and calcFoodNutrition. `flat.unit` defaults to 'g' (grams);
+   * manually-saved foods may use any label (e.g. 'cup') with no conversion.
    */
   function _adaptFlatFood(flat) {
+    var unit = flat.unit || 'g';
+    // Grams default to a 100 g reference serving; other units default to 1.
+    var defQty = unit === 'g' ? 100 : 1;
     return {
       id: flat.name, // use name as ID for Supabase foods
       name: flat.name,
@@ -63,11 +67,11 @@ const App = (function () {
         fat: Math.round(flat.fat * 100 * 10) / 10,
       },
       units: [
-        { label: 'g', type: 'weight', grams: 1, defaultQty: 100 },
+        { label: unit, type: 'weight', grams: 1, defaultQty: defQty },
       ],
-      defaultUnit: 'g',
-      displayCalories: Math.round(flat.calories * 100),
-      displayServing: '100 g',
+      defaultUnit: unit,
+      displayCalories: Math.round(flat.calories * defQty),
+      displayServing: defQty + ' ' + unit,
     };
   }
 
@@ -207,34 +211,38 @@ const App = (function () {
   // normalize to per-gram, optionally save it to the user's reusable list, then
   // open the detail screen so the amount actually eaten can be set and rescaled.
   function onManualFood(mealType, raw) {
-    var g = raw.refGrams > 0 ? raw.refGrams : 100;
-    var perGram = {
+    var amt = raw.refAmount > 0 ? raw.refAmount : 1;
+    var unit = raw.unit || 'g';
+    // Macros PER ONE UNIT (the unit is just a label — no conversion is done).
+    var perUnit = {
       name: raw.name,
-      calories: raw.calories / g,
-      protein: raw.protein / g,
-      carbs: raw.carbs / g,
-      fat: raw.fat / g,
+      unit: unit,
+      calories: raw.calories / amt,
+      protein: raw.protein / amt,
+      carbs: raw.carbs / amt,
+      fat: raw.fat / amt,
     };
 
     if (raw.save) {
-      Storage.saveUserFood(perGram);
+      Storage.saveUserFood(perUnit);
       // Make it reusable immediately this session (search/browse/edit).
-      foodDatabase.push(_adaptFlatFood(perGram));
+      foodDatabase.push(_adaptFlatFood(perUnit));
     }
 
     var food = {
       id: raw.name,
       name: raw.name,
       per100g: {
-        calories: perGram.calories * 100,
-        protein: perGram.protein * 100,
-        carbs: perGram.carbs * 100,
-        fat: perGram.fat * 100,
+        calories: perUnit.calories * 100,
+        protein: perUnit.protein * 100,
+        carbs: perUnit.carbs * 100,
+        fat: perUnit.fat * 100,
       },
-      // Prefill the detail screen with the reference serving; the user then
+      // grams:1 with the chosen label means "qty is measured in <unit>", scaled
+      // linearly with no conversion. Prefill the reference amount; the user then
       // changes it to however much they actually ate and the macros rescale.
-      units: [{ label: 'g', type: 'weight', grams: 1, defaultQty: g }],
-      defaultUnit: 'g',
+      units: [{ label: unit, type: 'weight', grams: 1, defaultQty: amt }],
+      defaultUnit: unit,
     };
 
     UI.hideManualFoodForm();

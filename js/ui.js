@@ -577,7 +577,8 @@ const UI = (function () {
 
   function _resetManualForm() {
     document.getElementById('mf-name').value = '';
-    document.getElementById('mf-ref-grams').value = '100';
+    document.getElementById('mf-ref-amount').value = '100';
+    document.getElementById('mf-ref-unit').value = 'g';
     document.getElementById('mf-calories').value = '';
     document.getElementById('mf-protein').value = '';
     document.getElementById('mf-carbs').value = '';
@@ -587,19 +588,21 @@ const UI = (function () {
 
   function _readManualForm() {
     var name = document.getElementById('mf-name').value.trim();
-    var grams = parseFloat(document.getElementById('mf-ref-grams').value);
+    var amount = parseFloat(document.getElementById('mf-ref-amount').value);
+    var unit = document.getElementById('mf-ref-unit').value.trim() || 'g';
     var cal = parseFloat(document.getElementById('mf-calories').value);
     var p = parseFloat(document.getElementById('mf-protein').value);
     var c = parseFloat(document.getElementById('mf-carbs').value);
     var f = parseFloat(document.getElementById('mf-fat').value);
 
     if (!name) { alert('Please enter a food name.'); return null; }
-    if (!(grams > 0)) { alert('Please enter the serving size in grams (e.g. 250).'); return null; }
+    if (!(amount > 0)) { alert('Please enter the serving amount (e.g. 250 for grams, or 1 for one cup).'); return null; }
     if (isNaN(cal)) { alert('Please enter the calories.'); return null; }
 
     return {
       name: name,
-      refGrams: grams,
+      refAmount: amount,
+      unit: unit,
       calories: cal,
       protein: isNaN(p) ? 0 : p,
       carbs: isNaN(c) ? 0 : c,

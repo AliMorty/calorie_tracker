@@ -933,6 +933,12 @@ body {
   border-color: #4a6cf7;
 }
 
+.mf-per-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+}
+
 .mf-macros-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;

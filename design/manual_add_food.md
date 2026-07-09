@@ -16,8 +16,13 @@ macros, specify the serving size those macros are for, then log however much the
 2. The manual form collects:
    - **Name** of the food
    - **Macros**: calories, protein, carbs, fat
-   - **Serving size the macros are given for** — e.g. "per 250 g". Ali's example: the label says
-     values per 250 g; he enters those, then logs whatever amount he consumed and it **rescales**.
+   - **Serving size the macros are given for** — an amount + a **free-text unit** (e.g. "per 250 g",
+     or "per 1 cup"). Ali's example: the label says values per 250 g; he enters those, then logs
+     whatever amount he consumed and it **rescales**.
+   - **Unit is a label only — NO conversion.** The user can type any unit (g, cup, slice, …). Macros
+     are stored per one unit and rescale linearly in that same unit; the app never converts between
+     units. Implemented as a `grams:1` unit with the chosen label, so the existing gram machinery
+     works unchanged. The `user_foods` table stores the unit label (defaults to `g`).
 3. A **checkbox: "Add this to my list of foods?"**
    - **No** → one-time only: the food is added to *today's log* for this meal, but not saved for reuse.
    - **Yes** → in addition to logging it, the food is **saved to the user's personal food list**, so

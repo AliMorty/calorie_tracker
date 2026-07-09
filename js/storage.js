@@ -282,7 +282,7 @@ const Storage = (function () {
     }
     return _db()
       .from('user_foods')
-      .select('name, calories, protein, carbs, fat')
+      .select('name, calories, protein, carbs, fat, unit')
       .eq('user_id', _userId())
       .then(function (result) {
         if (result.error) {
@@ -292,6 +292,7 @@ const Storage = (function () {
         return (result.data || []).map(function (r) {
           return {
             name: r.name,
+            unit: r.unit || 'g',
             calories: Number(r.calories),
             protein: Number(r.protein),
             carbs: Number(r.carbs),
@@ -302,7 +303,7 @@ const Storage = (function () {
   }
 
   function saveUserFood(food) {
-    // food: { name, calories, protein, carbs, fat } — all PER GRAM
+    // food: { name, unit, calories, protein, carbs, fat } — macros PER ONE UNIT
     if (!_isOnline()) {
       var list = _read(KEYS.customFoods) || [];
       list.push(food);
@@ -314,6 +315,7 @@ const Storage = (function () {
       .insert({
         user_id: _userId(),
         name: food.name,
+        unit: food.unit || 'g',
         calories: food.calories,
         protein: food.protein,
         carbs: food.carbs,
