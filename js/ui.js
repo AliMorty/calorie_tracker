@@ -352,6 +352,17 @@ const UI = (function () {
     var defaultIdx = food.units.findIndex(function (u) { return u.label === food.defaultUnit; });
     if (defaultIdx === -1) defaultIdx = 0;
 
+    // "Add this to my food list" checkbox — only for scanned foods, and never
+    // in edit mode (the food is already saved if it was going to be).
+    var saveRow = document.getElementById('fd-save-row');
+    var saveCheckbox = document.getElementById('fd-save');
+    saveCheckbox.checked = false;
+    if (food.saveable && !existingEntry) {
+      saveRow.classList.remove('hidden');
+    } else {
+      saveRow.classList.add('hidden');
+    }
+
     var qtyInput = document.getElementById('fd-qty');
     var addBtn = document.getElementById('fd-add-btn');
 
@@ -390,7 +401,8 @@ const UI = (function () {
     addBtn.onclick = function () {
       var qty = parseFloat(qtyInput.value) || 0;
       var unit = food.units[parseInt(unitSelect.value)];
-      onConfirm(mealType, food, qty, unit, existingEntry);
+      var saveToMyFoods = !saveRow.classList.contains('hidden') && saveCheckbox.checked;
+      onConfirm(mealType, food, qty, unit, existingEntry, saveToMyFoods);
     };
 
     document.getElementById('fd-close-btn').onclick = hideFoodDetailToRight;

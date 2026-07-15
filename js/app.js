@@ -232,7 +232,11 @@ const App = (function () {
         // so it matches the package; falls back to 100 g if none is given.
         var servingG = Number(data.product.serving_quantity);
         if (servingG > 0) perGram.defaultQty = servingG;
-        return _adaptFlatFood(perGram);
+        var food = _adaptFlatFood(perGram);
+        // Scanned foods get the "Add this to my food list" checkbox on the
+        // detail screen; search/recent/manual foods do not.
+        food.saveable = true;
+        return food;
       })
       .catch(function () { return null; });
   }
@@ -327,7 +331,27 @@ const App = (function () {
     UI.showFoodDetail(mealType, food, unitConversions, onFoodConfirmed, null);
   }
 
-  function onFoodConfirmed(mealType, food, qty, unit, existingEntry) {
+  function onFoodConfirmed(mealType, food, qty, unit, existingEntry, saveToMyFoods) {
+    // "Add this to my food list" was ticked on a scanned food: persist it to the
+    // per-user user_foods table (macros PER GRAM) so it's reusable later, and
+    // make it searchable immediately this session. Skip if a food with the same
+    // name already exists — user_foods has no unique constraint.
+    if (saveToMyFoods) {
+      var exists = foodDatabase.some(function (f) { return f.name === food.name; });
+      if (!exists) {
+        var perGram = {
+          name: food.name,
+          unit: food.units[0].label,
+          calories: food.per100g.calories / 100,
+          protein: food.per100g.protein / 100,
+          carbs: food.per100g.carbs / 100,
+          fat: food.per100g.fat / 100,
+        };
+        Storage.saveUserFood(perGram);
+        foodDatabase.push(_adaptFlatFood(perGram));
+      }
+    }
+
     var nutrition = Storage.calcFoodNutrition(food, qty, unit, unitConversions);
     var entryData = {
       servingQty: qty,
