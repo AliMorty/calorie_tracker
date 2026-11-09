@@ -117,6 +117,22 @@ const Demo = (function () {
     document.getElementById('demo-hints-close').onclick = function () {
       document.getElementById('demo-hints').classList.add('hidden');
     };
+    _checkCamera();
+  }
+
+  // Many reviewers use a desktop with no webcam: say so up front instead of
+  // offering a scan step they can't do. Device kinds are visible without
+  // asking for camera permission.
+  function _checkCamera() {
+    if (!navigator.mediaDevices || !navigator.mediaDevices.enumerateDevices) return;
+    navigator.mediaDevices.enumerateDevices().then(function (devices) {
+      var hasCamera = devices.some(function (d) { return d.kind === 'videoinput'; });
+      if (hasCamera) return;
+      var item = document.querySelector('#demo-hints [data-step="scan"]');
+      item.classList.add('unavailable');
+      item.textContent = 'No camera found on this device. On a phone or a laptop with a camera, ' +
+        'you can scan a packaged food\'s barcode.';
+    }).catch(function () { /* leave the hint as is */ });
   }
 
   /** Tick off a hint step: 'add', 'edit', 'delete' or 'day'. */

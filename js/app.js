@@ -282,6 +282,7 @@ const App = (function () {
         // Scanned foods get the "Add this to my food list" checkbox on the
         // detail screen; search/recent/manual foods do not.
         food.saveable = true;
+        _demoStep('scan');
         return food;
       })
       .catch(function () { return null; });

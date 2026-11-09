@@ -826,7 +826,11 @@ const UI = (function () {
       console.error('Barcode scanner failed to start:', err);
       _stopStream();
       viewfinder.classList.add('hidden');
-      alert('Could not access camera. Please allow camera permissions and try again.');
+      if (err && (err.name === 'NotFoundError' || err.name === 'OverconstrainedError')) {
+        alert('No camera found. Barcode scanning needs a camera — try it on a phone or a laptop with a webcam.');
+      } else {
+        alert('Could not access camera. Please allow camera permissions and try again.');
+      }
     });
   }
 

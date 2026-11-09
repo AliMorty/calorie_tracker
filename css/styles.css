@@ -218,6 +218,23 @@ body {
   box-sizing: border-box;
 }
 
+/* scan step on a device with no camera: informational, no checkbox */
+.demo-hints-list li.unavailable {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.demo-hints-list li.unavailable::before {
+  content: 'i';
+  border-color: var(--text-muted);
+  color: var(--text-muted);
+  font-size: 0.65rem;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  line-height: 0.75rem;
+}
+
 .demo-hints-list li.done {
   color: var(--text-muted);
   text-decoration: line-through;
