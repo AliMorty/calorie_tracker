@@ -46,7 +46,7 @@ trustworthy and which were only written and read. Newest entries at the top.
 | No sideways scrolling at iPhone width | Headless-tested (agent), emulated iPhone 13 | Page width ≤ screen width. |
 | No Supabase writes / no JS errors (desktop + emulated iPhone) | Headless-tested (agent) | Watched all requests: zero non-GET requests to Supabase; zero page errors. |
 | Anything on a real iPhone | **Not checked** | Emulation doesn't reproduce Safari's toolbar, keyboard or camera behaviour. |
-| Live site (GitHub Pages) | **Not checked** | Not pushed yet. |
+| Live site (GitHub Pages), commit `5b10b99` | Headless-tested (agent) | 2026-11-09 against `alimorty.github.io/calorie_tracker`: demo seeds 8 entries today, × delete, Supabase search (goat cheese), add food, back arrow = one day, panel above nav, emulated-iPhone swipe delete, no sideways scroll. Zero Supabase writes. Only console error: service worker 404 (pre-existing, below). |
 
 ### PC layout fixes
 | What | Level | Evidence |
@@ -74,4 +74,4 @@ after a cross-tab account switch) were fixed afterwards.
 | What | Level | Evidence |
 |---|---|---|
 | No service key / secrets in tracked files or history | Checked (scan) | Pattern scan of all commits; only the public `sb_publishable_` key. One Google OAuth client secret found in a local-only orphaned git object (never on GitHub `main`); rotation recommended. |
-| Service worker never registers on the live site | Checked from outside | `/sw.js` is 404 at `alimorty.github.io` root; not confirmed in a browser. |
+| Service worker never registers on the live site | Confirmed in browser (headless) | 0 registrations; console error "Failed to register a ServiceWorker … /sw.js … 404". Pre-existing; left unfixed on purpose (offline caching adds little for one-time visitors and could serve stale files). |
