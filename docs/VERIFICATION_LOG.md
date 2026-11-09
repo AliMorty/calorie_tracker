@@ -36,6 +36,7 @@ trustworthy and which were only written and read. Newest entries at the top.
 | No camera: scan button says "No camera found…" instead of "allow permissions" | Headless-tested (agent) | Alert text captured; scanner closed again. |
 | Camera present but permission denied: old "allow camera permissions" message | **Code-read only** | |
 | No Supabase writes / no JS errors in either case | Headless-tested (agent) | |
+| Hint wording changed to "(camera permission required)" (Ali's text), sw v20 | Headless-tested (agent) | Fake-camera scan test rerun after the change: scan still works, hint ticks, no writes/errors. Static text only. |
 | Scan step overall | Outside check (Ali) | Ali reported "i checked and it worked" on 2026-11-09 before the push; device and camera not stated. |
 
 ### Demo mode (branch `feature/demo-mode`)
