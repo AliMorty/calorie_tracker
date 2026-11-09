@@ -28,7 +28,7 @@ trustworthy and which were only written and read. Newest entries at the top.
 | Ali's own saved foods still appear when signed in | **Not checked** | Ask Ali to search for one of their saved foods while signed in. |
 | A second real account can't see Ali's data | **Not checked** | Only the signed-out case was tested. |
 
-### Demo scan step + no-camera message (branch `feature/demo-scan-hint`, not pushed)
+### Demo scan step + no-camera message (branch `feature/demo-scan-hint`, pushed to main 2026-11-09)
 | What | Level | Evidence |
 |---|---|---|
 | 5th hint "Scan a packaged food's barcode" ticks after a successful scan | Headless-tested (agent), fake camera | Chromium's fake camera fed a generated EAN-13 image of 3017620422003; scanner read it, Open Food Facts returned "Nutella" (539 cal/100 g), hint ticked. Real webcam / phone camera not used. |
@@ -36,6 +36,7 @@ trustworthy and which were only written and read. Newest entries at the top.
 | No camera: scan button says "No camera found…" instead of "allow permissions" | Headless-tested (agent) | Alert text captured; scanner closed again. |
 | Camera present but permission denied: old "allow camera permissions" message | **Code-read only** | |
 | No Supabase writes / no JS errors in either case | Headless-tested (agent) | |
+| Scan step overall | Outside check (Ali) | Ali reported "i checked and it worked" on 2026-11-09 before the push; device and camera not stated. |
 
 ### Demo mode (branch `feature/demo-mode`)
 | What | Level | Evidence |
