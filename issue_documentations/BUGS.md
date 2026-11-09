@@ -15,10 +15,84 @@ See CLAUDE.md for the full rules on how to use this file.
 | 3 | Supabase food search returns irrelevant results before staple foods | 2026-06-07 | — | workaround |
 | 4 | Tapping an added database (USDA) food entry does not reopen it for editing | 2026-07-03 | 2026-07-06 | fixed |
 | 5 | Barcode scanner Confirm button/result bar pushed off-screen | 2026-07-08 | 2026-07-08 | workaround |
+| 6 | Bottom nav bar drawn on top of the add-food search panel | 2026-11-08 | — | open (fix browser-tested, not pushed) |
+| 7 | App set itself up 2+ times for signed-in users (double data loads, stacked click handlers) | 2026-11-09 | — | open (fix tested in simulated sign-in) |
 
 ---
 
 <!-- Full issue entries go below this line, most recent at the top -->
+
+---
+
+## Issue #7 - App set itself up 2+ times for signed-in users
+**Opened:** 2026-11-09
+**Closed:** open
+**Status:** open (fix tested in a simulated sign-in; not pushed; not tested with a real account)
+**GitHub issue:** not opened (agent's `gh` token is read-only/expired)
+
+### What happened
+Suspected since session 014, never confirmed by Ali in use. For a signed-in user, `_bootApp()`
+can run more than once, so every button listener it adds (day arrows, sign out, tabs, save goals)
+is attached multiple times. The original guess was "day arrows jump 2+ days" — this turned out
+to be WRONG: the arrows pass the same function reference each time, and the browser ignores an
+identical duplicate listener. Measured real symptoms (simulated sign-in, see Fix attempts):
+every signed-in page load fetched `food_logs` and `user_foods` twice, and anonymous-function
+handlers ran twice per click (e.g. Save goals saved twice, Sign out fired twice).
+
+### Root cause
+`js/app.js` `onAuthChange` → `_showApp` → `_bootApp` runs on every auth event.
+`SupabaseAuth.init` (`js/supabase.js:54-67`) both subscribes with `onAuthStateChange`
+and calls `getSession()`. Confirmed in the supabase-js v2 source: subscribing immediately emits
+`INITIAL_SESSION` with the current session, so a signed-in load calls `_bootApp` twice.
+`TOKEN_REFRESHED` (about hourly) calls it again while the tab stays open.
+Demo mode is not affected (it calls `_showApp` once).
+
+### Fix attempts
+- **Files changed:** `js/app.js` (`isBooted` flag; guard in `_showApp` before `_bootApp()`)
+- **What was changed and why:** setup runs once per page load; later auth events only refresh the
+  name/email. Sign-in via Google redirects and reloads the page, so a fresh sign-in still boots.
+- **Confidence level:** high that the cause is right (seen in library code); medium-high that the
+  guard has no side effects.
+- **Follow-up (after independent review):** if a *different* user id arrives after boot (account
+  switched in another tab), the page reloads instead of showing the old diary.
+- **Test (2026-11-09, headless Chromium via Playwright, fake session, all Supabase REST calls
+  stubbed to return [] so no real data was read or written):** before fix: 2× GET food_logs,
+  2× GET user_foods on load, Save goals ran 2× per click. After fix: 1×, 1×, 1×. Day arrows moved
+  exactly one day both before and after.
+- **Outcome:** worked in simulation. Still to check with a real signed-in account.
+
+### Lessons
+Auth listeners fire more often than "once on load". Anything that binds DOM listeners must be
+idempotent or guarded.
+
+---
+
+## Issue #6 - Bottom nav bar drawn on top of the add-food search panel
+**Opened:** 2026-11-08
+**Closed:** open
+**Status:** open (fix browser-tested on desktop, not pushed)
+**GitHub issue:** not opened (agent's `gh` token is read-only/expired)
+
+### What happened
+Seen by an agent in desktop Chrome while testing demo mode: with the add-food panel open, the
+Tracker/Profile bar stays visible over the bottom of the panel and can hide the last result.
+
+### Root cause
+`css/styles.css`: `.bottom-nav` has `z-index: 150`, higher than `.add-food-panel` (101) and its
+`.overlay` backdrop (100), so the nav is painted on top.
+
+### Fix attempts
+- **Files changed:** `css/styles.css` – `.overlay` z-index 100 → 155, `.add-food-panel` 101 → 160.
+- **What was changed and why:** stack panel and backdrop above the nav (150) but below the food
+  detail screen (200), so the existing panel → detail ordering is unchanged.
+- **Confidence level:** high; pure stacking order. Barcode scanner (300) and toast (400) remain above.
+- **Test (2026-11-09, headless Chromium, 1366×800, demo mode):** with the Dinner search panel open,
+  the element drawn 15px above the bottom of the window is the search panel, not the nav.
+- **Outcome:** worked (desktop). Not checked on a real phone.
+
+### Lessons
+z-index values in this file: nav 150, overlay 155, add panel 160, food detail 200, scanner 300,
+toast 400. Keep new layers consistent with this order.
 
 ---
 

@@ -47,7 +47,32 @@ const Storage = (function () {
   // ---------- Supabase helpers ----------
 
   function _isOnline() {
+    if (_demo) return false;
     return typeof SupabaseAuth !== 'undefined' && SupabaseAuth.isLoggedIn();
+  }
+
+  // ---------- demo mode ----------
+  // Demo visitors never touch Supabase. Their data goes to separate
+  // localStorage keys so a real signed-out diary is never overwritten.
+
+  var _demo = false;
+
+  function enableDemoMode() {
+    _demo = true;
+    KEYS.diary = 'ct_demo_diary';
+    KEYS.goals = 'ct_demo_goals';
+    KEYS.customFoods = 'ct_demo_custom_foods';
+    // Start every demo with default goals and no saved foods
+    try {
+      localStorage.removeItem(KEYS.goals);
+      localStorage.removeItem(KEYS.customFoods);
+    } catch (e) {
+      console.error('Storage reset error', e);
+    }
+  }
+
+  function saveDemoDiary(diary) {
+    _write(KEYS.diary, diary);
   }
 
   function _db() {
@@ -446,5 +471,7 @@ const Storage = (function () {
     computeMealTotals: computeMealTotals,
     getDummyDayData: getDummyDayData,
     calcFoodNutrition: calcFoodNutrition,
+    enableDemoMode: enableDemoMode,
+    saveDemoDiary: saveDemoDiary,
   };
 })();

@@ -1,4 +1,4 @@
-var CACHE_VERSION = 'v17';
+var CACHE_VERSION = 'v18';
 var CACHE_NAME = 'calorie-tracker-' + CACHE_VERSION;
 
 var FILES_TO_CACHE = [
@@ -8,6 +8,7 @@ var FILES_TO_CACHE = [
   '/js/supabase.js',
   '/js/storage.js',
   '/js/ui.js',
+  '/js/demo.js',
   '/js/app.js',
   '/data/foods.json',
   '/data/common_foods.json'

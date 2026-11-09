@@ -248,6 +248,19 @@ const UI = (function () {
       '</span>';
     row.appendChild(macros);
 
+    // Delete button for mouse users, who can't swipe (CSS shows it only on
+    // devices with a mouse/trackpad)
+    var delBtn = document.createElement('button');
+    delBtn.className = 'food-delete-btn';
+    delBtn.setAttribute('aria-label', 'Remove ' + entry.name);
+    delBtn.title = 'Remove';
+    delBtn.innerHTML = '&times;';
+    delBtn.addEventListener('click', function (ev) {
+      ev.stopPropagation(); // don't also open the edit screen
+      onDeleteEntry(mealType, entry);
+    });
+    row.appendChild(delBtn);
+
     row.addEventListener('click', (function (e, mt) {
       return function () { onEditEntry(mt, e); };
     })(entry, mealType));
@@ -334,7 +347,7 @@ const UI = (function () {
    * @param {function} onConfirm - callback(mealType, food, qty, unit, existingEntry)
    * @param {object|null} existingEntry - if editing, the entry being edited; null for new
    */
-  function showFoodDetail(mealType, food, unitConversions, onConfirm, existingEntry) {
+  function showFoodDetail(mealType, food, unitConversions, onConfirm, existingEntry, onRemove) {
     var mealLabels = { breakfast: 'Breakfast', lunch: 'Lunch', dinner: 'Dinner', snacks: 'Snacks' };
     document.getElementById('fd-meal-label').textContent = mealLabels[mealType];
     document.getElementById('fd-name').textContent = food.name;
@@ -404,6 +417,16 @@ const UI = (function () {
       var saveToMyFoods = !saveRow.classList.contains('hidden') && saveCheckbox.checked;
       onConfirm(mealType, food, qty, unit, existingEntry, saveToMyFoods);
     };
+
+    // "Remove from log" — edit mode only
+    var removeBtn = document.getElementById('fd-remove-btn');
+    if (existingEntry && onRemove) {
+      removeBtn.classList.remove('hidden');
+      removeBtn.onclick = onRemove;
+    } else {
+      removeBtn.classList.add('hidden');
+      removeBtn.onclick = null;
+    }
 
     document.getElementById('fd-close-btn').onclick = hideFoodDetailToRight;
     document.getElementById('food-detail-screen').classList.remove('hidden');

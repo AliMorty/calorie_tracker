@@ -12,13 +12,39 @@ const App = (function () {
   var dayData = null;
   var foodDatabase = [];
   var unitConversions = {};
+  var isDemo = false;
+  var isBooted = false;
+  var bootedUserId = null;
 
   function init() {
+    document.getElementById('demo-btn').addEventListener('click', startDemo);
     // Initialize auth and wait for session check
     SupabaseAuth.init(onAuthChange);
   }
 
+  // Demo mode: no sign-in, sample week in browser storage, no Supabase writes.
+  function startDemo() {
+    isDemo = true;
+    Storage.enableDemoMode();
+    Demo.seed().then(function () {
+      _showApp({ email: '', user_metadata: { full_name: 'Demo user' } });
+      document.getElementById('sign-out-btn').textContent = 'Exit demo';
+      Demo.showHints();
+    }).catch(function (err) {
+      // e.g. data/foods.json failed to load — say so instead of doing nothing
+      console.error('Demo seed failed:', err);
+      isDemo = false;
+      alert('Sorry, the demo could not load. Please check your connection and try again.');
+    });
+  }
+
+  function _demoStep(step) {
+    if (isDemo) Demo.markDone(step);
+  }
+
   function onAuthChange(user) {
+    // Auth events (e.g. the initial "no session") must not end a demo
+    if (isDemo) return;
     if (user) {
       _showApp(user);
     } else {
@@ -45,6 +71,19 @@ const App = (function () {
       emailEl.textContent = user.email || '';
     }
 
+    // Supabase reports a signed-in user more than once (INITIAL_SESSION plus
+    // our own getSession(), then again on hourly token refresh). Booting each
+    // time re-fetched the diary and stacked click handlers (e.g. Save goals
+    // ran twice per click).
+    // A different account signed in from another tab: start clean rather
+    // than keep showing the previous user's diary.
+    if (isBooted && user.id !== bootedUserId) {
+      window.location.reload();
+      return;
+    }
+    if (isBooted) return;
+    isBooted = true;
+    bootedUserId = user.id;
     _bootApp();
   }
 
@@ -84,6 +123,11 @@ const App = (function () {
     var signOutBtn = document.getElementById('sign-out-btn');
     if (signOutBtn) {
       signOutBtn.addEventListener('click', function () {
+        // Leaving the demo just reloads back to the landing screen
+        if (isDemo) {
+          window.location.reload();
+          return;
+        }
         SupabaseAuth.signOut();
       });
     }
@@ -195,11 +239,13 @@ const App = (function () {
 
   function goToPrevDay() {
     currentDate.setDate(currentDate.getDate() - 1);
+    _demoStep('day');
     _loadAndRenderDay();
   }
 
   function goToNextDay() {
     currentDate.setDate(currentDate.getDate() + 1);
+    _demoStep('day');
     _loadAndRenderDay();
   }
 
@@ -290,6 +336,7 @@ const App = (function () {
   }
 
   function handleDeleteEntry(mealType, entry) {
+    _demoStep('delete');
     Promise.resolve(Storage.removeFoodEntry(currentDate, mealType, entry.id)).then(function () {
       _loadAndRenderDay();
     });
@@ -324,7 +371,12 @@ const App = (function () {
       };
     }
     if (!food) return;
-    UI.showFoodDetail(mealType, food, unitConversions, onFoodConfirmed, entry);
+    // "Remove" on the detail screen: the delete path for mouse users, who
+    // can't swipe.
+    UI.showFoodDetail(mealType, food, unitConversions, onFoodConfirmed, entry, function () {
+      UI.hideFoodDetail();
+      handleDeleteEntry(mealType, entry);
+    });
   }
 
   function onFoodPicked(mealType, food) {
@@ -362,6 +414,8 @@ const App = (function () {
       carbs: nutrition.carbs,
       fat: nutrition.fat,
     };
+
+    _demoStep(existingEntry ? 'edit' : 'add');
 
     var promise;
     if (existingEntry) {
